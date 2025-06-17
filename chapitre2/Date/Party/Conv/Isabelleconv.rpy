@@ -167,7 +167,7 @@ label isabelleconv:
         isa "ahahah."
         tra "What are you two talking about?"
         isa "Nothing, nothing, we were just talking about relationships."
-        hug "Hey Isabelle, do you remember the guy who used at college?"
+        hug "Hey Isabelle, do you remember the guy who used to play piano at college?"
         isa "What are you talking about?"
         hug "I think he lives across the hall, look."
         "Isabelle joins Hugo."
