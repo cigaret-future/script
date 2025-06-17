@@ -1,0 +1,240 @@
+label sacha_sarah_date:
+    
+    "Someone knocks on the door."
+    "I put on a shirt and go opening the door."
+    "Its sacha."
+    scene opendoorsacha
+    sac "Hey, do you have a phone charger?"
+    name "Hmm, I think so, but I'm not sure if I have two."
+    sac "Can I borrow yours?"
+    name "I'm not sure..."
+    sac "Yeah, I get it. Can I charge my phone quickly at your place?"
+    name "Uhh..."
+    scene sachaenteringeric
+    sac "It won't take long, I just need to send an urgent message."
+    "He enters without waiting for an invitation."
+    name "Make yourself at home..."
+    scene sachawoweric
+    sac "Oh, your place is cool. Did you decorate it?"
+    name "No, it's a furnished apartment. The landlord did the decorating... I guess."
+    sac "Yeah, it definitely has that downtown building vibe."
+    name "Yeah, I need to add a personal touch."
+    sac "Do you want to borrow some posters?"
+    sac "I'll lend you one in exchange for a charger."
+    name "No, thanks. I'll find my own style."
+    sac "Suit yourself, I have plenty at home."
+    scene sachawoweric2
+    sac "Wow, nice hardwood floor, classy. It's like living in luxury."
+    name "You don't have hardwood floors at your place?"
+    sac "Nope, I have ugly linoleum."
+    name "That's odd."
+    sac "Why don't I have hardwood floors? It's not fair..."
+    scene sachawoweric3
+    name "You can plug in your phone over there if you want."
+    scene charging
+    sac "Thanks, it won't take long, just until it turns on."
+    name "Okay."
+    sac "You're a student, right?"
+    name "Yeah, in art history."
+    sac "Lucky you, enjoy these years."
+    "sacha sits on the couch"
+    scene chattingeric
+    name "Do you work?"
+    sac "Yeah, unfortunately..."
+    sac "In a clothing store. It's a total mess. I'm probably going to quit soon."
+    sac "Our manager is so strung out that we're afraid he'll drop dead from a heart attack."
+    name "Wow, that's intense."
+    sac "Yeah, last time he spent an hour in the bathroom. He probably fell asleep in the stall."
+    name "Yeah, with a manager like that, no wonder it's chaotic."
+    sac "Yet, he wears a suit and all. Silk shirts worth a fortune. The guy's well-off."
+    name "Well, if he can afford coke, he must be."
+    sac "No, I mean, he doesn't seem extreme at work. Some rich people look like addicts. Not him. He's kind of the model employee."
+    sac "he's always stressed."
+    name "Doesn't that affect his work?"
+    sac "Eventually, it might."
+    sac "Managers... they're a real pain."
+    sac "Well, not all of them. Sarah is okay. I haven't worked with her, but she seems cool."
+    name "Sarah, our neighbor?"
+    sac "Yeah, have you met her?"
+    name "Yes, we had a... disagreement."
+    scene closeupsacha2
+    sac "Already? But you just moved in... how did you already make her mad?"
+    name "No, she wasn't mad. One night I played music too loud with the window open, and she asked me to turn it down, that's all."
+    scene closeupsacha
+    sac "Haha, what a pain."
+    name "No, I get it."
+    sac "No, but she's done much worse here."
+    sac "Oh my God, what a hypocrite. She tried to discipline you."
+    name "What?"
+    scene sachagetcomputereric
+    
+    sac "Wait, can i use your computer?"
+    name "Yeah, go ahead."
+    name "what do you want to do?"
+    scene sachamusiccloseup
+    sac "I want to check something."
+    name "Ugh, you're silly... stop it."
+    sac "I'm going to reconcile you both"
+    name "No, but she wasn't mad."
+    sac "There's this song I really want to listen to"
+    sac "how do you turn up the volume?"
+    
+    sac "There we go."
+    name "Come on, she is probably already sleeping"
+    sac "she better not"
+    
+    scene sachadancing1
+    "He gets up to open the window."
+    sac "I want to see her reaction when she sticks her head out."
+    scene sachadance
+    name "She's going to kill you."
+    sac "No, don't worry."
+    scene sachadance3
+    "After a few minutes, I hear a window open."
+    scene sachabothered2
+    sar "What the fuck are you doing there?"
+
+    "Sacha dances at the window, taunting her."
+    scene sachadance3
+    sac "What, don't you like music anymore?"
+    sar "Oh my God. I hate you."
+    sar "Where is [name]?"
+    sac "He's there."
+    sar "[name]?! Don't listen to him."
+    sac "He can't hear you."
+    sac "What's up? Trying to play the good neighbor?"
+    sar "I'm going to come down."
+    sac "Come down, come party with us."
+    sar "I hate you."
+    sac "Come down."
+    sar "Seriously, I need to sleep."
+    sac "Come on, come say hi to our neighbor. Apparently, you've been rude to him."
+    sar "What are you talking about?"
+    sac "Fuck the 17th!"
+    "He pulls his head back inside."
+    scene sachadancing2eric
+    name "what did she said?"
+    sac "She'll come down."
+    name "Wow, it's the second time I've met you, and you're already causing trouble at my place."
+    sac "Don't worry, she's really chill."
+    "A few moments later, my doorbell rings."
+    scene sachademon
+    sac "Oh shit, she's here."
+    "Sacha hides behind the bed."
+    scene ericgotothedoor
+    name "She knows you're here."
+    sac "Go open the door."
+    "I go to the door to let Sarah in."
+    scene sarahentering2
+    name "I'm so sorry. He invited himself in and put on some music. I told him, but he wouldn't listen."
+    sar "Where is he?"
+    "She comes in."
+    scene sarahsearchingeric
+    sar "Where's that little rat?"
+    scene sarahsearching3
+    "Sacha tries to hold back a burst of laughter"
+    
+    sar "Get out of here."
+    sar "seriously how old are you?"
+    scene sarahtalking
+    sar "You shouldn't let him in. He'll never stop crashing here, like he lives on the streets."
+    sac "I like discovering other places."
+    sar "What excuse did he use?"
+    sar "Did he need a blender?"
+    name "A phone charger."
+    sar "A phone charger..."
+    sac "I can't find mine."
+    sar "You’re such a jerk, I have work tomorrow. I can't party right now."
+    sac "I have work tomorrow too, what do you think?"
+    sar "Yeah, you’ll be folding shirts."
+    sac "Yeah, that’s work too."
+    "sarah takes the laptop and stops the music."
+    stop music
+    scene sarahcloseup
+    sar "You guys are such kids. Am I the only responsible one here?"
+    sac "If responsible means boring, yes."
+    sar "And you? don’t have class tomorrow?"
+    name "Yeah, but I start late."
+    sar "I see."
+    scene sarahtalktosacha
+    sac "Are you really going to play mom now?"
+    sar "It can't hurt."
+    sar "Someone has to keep an eye on you guys."
+    
+    sar "Come on, leave him alone. Don't you want to go home?"
+    sac "Am I not allowed to visit my neighbors anymore?"
+    sar "You just want to cause trouble."
+    sar "Come on, leave him alone"
+    scene sarahpushsacha
+    sac "Okay, okay, I didn't know you lived here too. Anyway, I just came to charge my phone."
+    sar "Sure."
+    "I watch them amused by their interaction. They seem like brother and sister."
+    "sacha takes his phone and opens the door."
+    sac "And you? Are you staying?"
+    sar "I'm making sure you actually leave."
+    sac "Alright, good night then. I see I'm intruding."
+    sar "Yeah, and buy a charger."
+    name "See you, sacha."
+    "sarah stays in the apartment with me."
+    scene sarahericfinal2
+    sar "Jeez, I really have to keep an eye on him."
+    name "I told him not to play the music too loud."
+    name "I knew it would bother you."
+    sar "You did well."
+    name "But apparently, you're not the responsible neighbor you seem to be."
+    sar "I officially protest, that's slander."
+    name "Haha, you can't escape your past."
+    sar "Don't worry, I haven't completely changed."
+    sar "You'll get to see other sides of my personality."
+    sar "I'm not just the responsible mom."
+    sar "Even if some people might like that."
+    name "Yeah, don't worry, I don't see you as the boring person."
+    name "Sacha seems a bit extreme even for me."
+    sar "He is a mess."
+    sar "But he's adorable."
+    name "I bet he is."
+    sar "See, what did I tell you about him borrowing stuff?"
+    name "He basically rushed into my apartment and started analyzing my decor."
+    sar "Wow, he's not shy."
+    sar "Anyway, I should go back home. I didn't throw him out to take his place."
+    sar "I'm going to become the caretaker of this building."
+    name "Don't worry, I wasn't going to sleep just now, unlike some."
+    sar "Come on, you don't really want me here, do you?"
+    name "I don't mind, really."
+    scene sarahfinaleric2
+    sar "Maybe next time, haha."
+    name "Alright, see you next time then."
+    sar "Sleep well."
+    name "You too."
+    $ sarah_relation_status_text = "I'll probably meet Sarah in the stairs (She'll ask to see you in a few days if you run into her in the stairs)"
+    $ day_until_new_date = 2
+    $ print(f"nombre de day avant date : {day_until_new_date}")
+    
+   
+    
+    
+    $ sacha_sarah_date_done = True
+    "She leaves the apartment."
+    jump gotobed
+
+#     name "Hey sarah, what's up?"
+#     sar "Not much. I'm going to work to pay for my food. And you? Enjoying your freedom, I hope."
+#     name "I'm looking for inspiration for my thesis."
+#     sar "I hope you find it."
+#     sar "Will you let me read it?"
+#     name "Yeah, once I've made some progress, you can give me your opinion."
+#     sar "I wrote a thesis too, you know."
+#     name "Oh really?"
+#     sar "Yes, in law."
+#     name "Wow, that must have been quite the challenge."
+#     sar "It was."
+#     sar "Anyway, I'll see you around."
+#     name "See you."
+#     "I get a text from sarah."
+#     sar "Hey, are you busy?"
+#     name "Not really, what's up?"
+#     sar "Wanna hang out with sacha and me at my place?"
+#     name "Yeah, sure."
+#     "I put on a shirt and go up to sarah's apartment."
+#  "   The door is open. I enter the living room to find sarah, sacha, and a friend of theirs I don't know.
+#     name "Hello everyone.""
