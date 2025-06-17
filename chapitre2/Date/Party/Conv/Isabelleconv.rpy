@@ -168,8 +168,8 @@ label isabelleconv:
         tra "What are you two talking about?"
         isa "Nothing, nothing, we were just talking about relationships."
         hug "Hey Isabelle, do you remember the guy who used to play piano at college?"
-        isa "What are you talking about?"
-        hug "I think he lives across the hall, look."
+        isa "What?.."
+        hug "I think he lives across the street, look."
         isa "Are you spying on people now?"
         "Isabelle joins Hugo."
         "Tracy comes closer to me"
@@ -295,17 +295,18 @@ label isabelleconv:
         name "Haha, yeah, I get it, don't worry."
         "Suddenly Tracy turns to me and looks me straight in the eyes."
         "She moves closer to me and kisses me."
-        scene tracyroom3
+        scene kisseric
         "I'm surprised, but I don't pull away."
         "I feel her soft lips against mine, and I let myself get carried away by the moment."
         "Tracy pulls back and looks at me, a shy smile on her lips."
-        scene tracyroom5
+        scene kisseric2
         tra "Sorry, I just wanted to kiss you."
         name "Oh, uh, no problem."
         tra "It's the alcohol."
         tra "I'm not usually like this."
         name "What do you mean, not usually like this?"
         tra "ahah, you know."
+        scene kisseric
         "Tracy kisses me again."
         tra "I'm so drunk ahah"
         name "It's okay."
@@ -314,14 +315,17 @@ label isabelleconv:
         "Like a pressure being released."
         "Suddenly, I really need to pee..."
         "Wtf..."
-        name "Wait, I need to go to the bathroom, can you wait for me here?"
+        name "Wait, I need to go to the toilet, can you wait for me here?"
         tra "Oh sure, go ahead."
         tra "Don't worry."
-        "I leave the bedroom and go straight into the bathroom next door."
+        scene corridorscreenfloutracy
+        "I leave the bedroom and go straight into the toilet next door."
+        scene ericpeeing
         "I realize that I'm a bit drunk too."
         "Maybe I should have waited?"
         "No, I would have needed to go anyway."
         "As I come out, I bump right into Isabelle."
+         
         isa "Hey, what are you doing?"
         name "Nothing, I was just peeing."
         isa "So, is the owner mad?"
@@ -335,12 +339,15 @@ label isabelleconv:
         name "What?"
         isa "Are you two together or what?"
         name "What are you talking about?"
-        "Isabelle pushes me into the bathroom."
-        isa "I'm really good at telling if people are telling the truth."
-        isa "So?"
-        name "Is this an interrogation?"
-        isa ""
+        jump isabelledate
+ 
+
+
+
    
+
+
+
 
 
 
