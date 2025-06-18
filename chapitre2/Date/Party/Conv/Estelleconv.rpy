@@ -71,7 +71,7 @@ label estelleconv :
             "I get up and leave the apartment."
             "Slowly, I recognize the place."
             "I stagger home, my head still heavy from the night before."
-            $ estellepartyconv_count += 1
+    
             jump livingroom
 
         

@@ -172,6 +172,7 @@ label start:
     default estellepartyconv_count = 0
 
     default trioconv_count = 0
+    default trio_musicasked = False
 
     default zoeyaxelconv_count = 0
     default zoeyconv_count = 0

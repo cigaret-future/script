@@ -275,7 +275,7 @@ label stacymelanieconv:
 # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// TRIO CONV
 # /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-label trioaskformusc:
+label trioaskformusic:
     scene kitchenarrowflou
     
     show jennifer062 at left with dissolve:
@@ -292,93 +292,97 @@ label trioaskformusc:
     jeni "Uh, no?"
     elo "Nah it's not us."
     bru "I like the vibe, though."
+    $ trio_musicasked = True
+    jump kitchenparty
 
 label trioconv:
-    
-    scene kitchenarrowflou
-    
-    show jennifer062 at left with dissolve:
-        xalign 0.3
-        zoom 0.94
-    show bruno061 at center with dissolve:
-        xalign 0.5
-        zoom 1.02
-    show elodie063 at right with dissolve:
-        xalign 0.7
-        zoom 0.98
+    if trio_musicasked == True and trio_musicasked == False:
+        jump trioaskformusic
+    else:
+        scene kitchenarrowflou
         
+        show jennifer062 at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        show bruno061 at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        show elodie063 at right with dissolve:
+            xalign 0.7
+            zoom 0.98
+            
 
 
-    "I approach a group with some familiar faces."
-    name "Hi! You’re here too, this party is so cool."
-    elo "Sup..."
-    jeni "Hello!"
-    bru "Hey, Hugo told me he invited you."
-    name "This place is huge, do you know the person who lives here?"
+        "I approach a group with some familiar faces."
+        name "Hi! You’re here too, this party is so cool."
+        elo "Sup..."
+        jeni "Hello!"
+        bru "Hey, Hugo told me he invited you."
+        name "This place is huge, do you know the person who lives here?"
 
-    show elodie065 at right with dissolve:
-        xalign 0.7
-        zoom 0.98
-    hide elodie063 with dissolve
-    elo "No, but we’d like to ahah."
-    bru "It’s always useful to have a rich friend."
-    bru "But she’s probably not interested."
-    name "Why?"
-    elo "We’re not cool enough for her."
-    jeni "We don’t know, we don’t really know her."
-    jeni "We could go talk to her."
-    bru "So we can get her disdain in our faces?"
-    bru "Hell no."
-    elo "Anyway, we prefer to observe."
-    name "I see."
-    jeni "So, are you enjoying yourself tonight?"
-    name "I’m mostly just wandering around, trying to get a feel for the place."
-    name "I’ve bumped into a few familiar faces, but I don’t know many people here. Just trying to blend in, you know?"
-    elo "Well, if you’re up for it, Jennifer could use someone to vent to about her breakup."
-    name "Oh, I’m sorry to hear that."
-    bru "Don’t worry, Jennifer’s breakups are like seasons—there’s always another one around the corner."
-    jeni "It’s fine, really. It’s not like I’m going to announce it to the whole party."
-    elo "Come on, he seems like someone you can trust, don’t you think?"
-    name "No pressure, though. If you don’t feel like talking about it, I totally get it."
-    jeni "No, it’s okay. It’s not a big deal, it just happened recently."
-    name "Were you together for a long time?"
-    jeni "Not really. We only dated for about a week, but it just didn’t click."
-    name "Ah, I see. So it wasn’t one of those long-term heartbreaks."
-    jeni "Yeah, nothing like that..."
-    bru "She’s just afraid of being alone, that’s all."
-    bru "We’re here, don’t worry."
-    if gender == "male":
-        elo "And I’m sure you’ll find a girl tonight to replace her."
-    elif gender == "fem":
-        elo "And I’m sure you’ll find a guy tonight to replace him."
-    jeni "You think?"
-    if gender == "male":
-        elo "Yes, just don’t ask him right away to be your boyfriend."
-    elif gender == "fem":
-        elo "Yes, just don’t ask her right away to be your girlfriend."
-    bru "Yeah..."
-    bru "And have a drink first."
-    "Bruno hands her a beer."
-    "She grabs it and takes a few sips."
-    jeni "I need to drink more, otherwise I’ll be awkward."
-    elo "Yes, take it easy though."
-    elo "The last time you tried that technique, you almost threw up on your date."
-    bru "Hey, do you want a beer [name]?"
-    menu:
-        "Yes":
-            name "Ah yes, thank you."
-            "I take the beer Bruno hands me and take a sip."
-            $ drink_count += 1
+        show elodie065 at right with dissolve:
+            xalign 0.7
+            zoom 0.98
+        hide elodie063 with dissolve
+        elo "No, but we’d like to ahah."
+        bru "It’s always useful to have a rich friend."
+        bru "But she’s probably not interested."
+        name "Why?"
+        elo "We’re not cool enough for her."
+        jeni "We don’t know, we don’t really know her."
+        jeni "We could go talk to her."
+        bru "So we can get her disdain in our faces?"
+        bru "Hell no."
+        elo "Anyway, we prefer to observe."
+        name "I see."
+        jeni "So, are you enjoying yourself tonight?"
+        name "I’m mostly just wandering around, trying to get a feel for the place."
+        name "I’ve bumped into a few familiar faces, but I don’t know many people here. Just trying to blend in, you know?"
+        elo "Well, if you’re up for it, Jennifer could use someone to vent to about her breakup."
+        name "Oh, I’m sorry to hear that."
+        bru "Don’t worry, Jennifer’s breakups are like seasons—there’s always another one around the corner."
+        jeni "It’s fine, really. It’s not like I’m going to announce it to the whole party."
+        elo "Come on, he seems like someone you can trust, don’t you think?"
+        name "No pressure, though. If you don’t feel like talking about it, I totally get it."
+        jeni "No, it’s okay. It’s not a big deal, it just happened recently."
+        name "Were you together for a long time?"
+        jeni "Not really. We only dated for about a week, but it just didn’t click."
+        name "Ah, I see. So it wasn’t one of those long-term heartbreaks."
+        jeni "Yeah, nothing like that..."
+        bru "She’s just afraid of being alone, that’s all."
+        bru "We’re here, don’t worry."
+        if gender == "male":
+            elo "And I’m sure you’ll find a girl tonight to replace her."
+        elif gender == "fem":
+            elo "And I’m sure you’ll find a guy tonight to replace him."
+        jeni "You think?"
+        if gender == "male":
+            elo "Yes, just don’t ask him right away to be your boyfriend."
+        elif gender == "fem":
+            elo "Yes, just don’t ask her right away to be your girlfriend."
+        bru "Yeah..."
+        bru "And have a drink first."
+        "Bruno hands her a beer."
+        "She grabs it and takes a few sips."
+        jeni "I need to drink more, otherwise I’ll be awkward."
+        elo "Yes, take it easy though."
+        elo "The last time you tried that technique, you almost threw up on your date."
+        bru "Hey, do you want a beer [name]?"
+        menu:
+            "Yes":
+                name "Ah yes, thank you."
+                "I take the beer Bruno hands me and take a sip."
+                $ drink_count += 1
 
-            show text "Your mind blurs slightly." at Move((0.5, 0.6), (0.5, 0.5), 10.0)
-            pause 5.0
-            hide text with dissolve
-                
-        "No thanks":
-            name "I’m fine, thanks."
-            bru "As you wish."
-    bru "I hope people will want to dance at some point, I don’t want to have to make conversation all evening."
+                show text "Your mind blurs slightly." at Move((0.5, 0.6), (0.5, 0.5), 10.0)
+                pause 5.0
+                hide text with dissolve
+                    
+            "No thanks":
+                name "I’m fine, thanks."
+                bru "As you wish."
+        bru "I hope people will want to dance at some point, I don’t want to have to make conversation all evening."
 
-    "They keep talking while drinking."
-    "I can try to keep wandering around and talking to people."
-    jump kitchenparty
+        "They keep talking while drinking."
+        "I can try to keep wandering around and talking to people."
+        jump kitchenparty
