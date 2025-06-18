@@ -324,6 +324,12 @@ label isabelleconv:
         "I realize that I'm a bit drunk too."
         "Maybe I should have waited?"
         "No, I would have needed to go anyway."
+        "I'm not sure why she kissed me."
+        "It was a bit weird, but oh well."
+        "She seems like a cool person."
+        "I just hope it won't cause any drama with Melanie."
+        "Oh well."
+
         "As I come out, I bump right into Isabelle."
          
         isa "Hey, what are you doing?"
@@ -339,7 +345,14 @@ label isabelleconv:
         name "What?"
         isa "Are you two together or what?"
         name "What are you talking about?"
-        jump isabelledate
+        "Isabelle tries to push me into the bathroom"
+        menu: 
+            "Resist and go back to the bedroom.":
+            jump tracydate
+            "Let her do it (I know where this is going)":
+            jump isabelledate
+
+            
  
 
 

@@ -12,18 +12,16 @@ label isabelledate:
     isa "Anyway."
     isa "I don't really care."
     isa "I'll show you how it's done."
-    isa "Get on your knees."
-
     scene firsteric
-    "Isabelle me prendla main et la pose sur son entrejambe"
-    isa "Regarde comme t'est chanceux"
-    isa "My dick is so hard for you babe"
-    isa "J'ai surement déja un peu jouis, tellement tu est mignon"
-    isa "allez, mets toi à genoux"
-    "elle me pousse gentiment mais fermement sur mes genoux et baisse son pantalon"
+    "Isabelle takes my hand and puts it on her crotch."
+    isa "Look how lucky you are."
+    isa "My dick is so hard for you, babe."
+    isa "I've probably already leaked a bit, you're so cute."
+    isa "Come on, get on your knees."
+    "She gently but firmly pushes me to my knees and pulls down her pants."
     scene contreplongeeric
-    "Je me retrouve nez à nez avec sa bite"
-    "Une odeur de sueur et de sperme evahie mes narines"
+    "I find myself face to face with her cock."
+    "A smell of sweat and cum fills my nostrils."
     scene contreplongeeric2
     ""
     scene contreplongeeric3
@@ -185,23 +183,23 @@ label isabelledate:
     scene closeisafinal2
     ""
     scene closeisafinal
-    "Isabelle looks at me with a defiant expression"
+    "Isabelle looks at me with a defiant expression."
     scene closeisafinal2
-    isa "I’m hesitating whether to keep fucking your mouth."
+    isa "I'm hesitating whether to keep fucking your mouth."
     scene closeisafinal
-    isa "You look like you can’t take it anymore."
+    isa "You look like you can't take it anymore."
     scene closeisafinal2
-    isa "But you’re so cute when you’re desperately sucking like that."
+    isa "But you're so cute when you're desperately sucking like that."
 
     # //:::::://////////////////////////////////// closeupsideEric1
     scene closeupsideeric1
     isa "Do you want me to cum in your mouth?"
-    "Isabelle’s cock is already leaking cum into my mouth even though she hasn’t ejaculated yet."
-    "My mouth is completely invaded by her cock."
+    "Isabelle's cock is already leaking cum into my mouth even though she hasn't ejaculated yet."
+    "My mouth is completely filled by her cock."
     scene closeupsideeric2
-    "I’m having trouble fully processing the situation."
+    "I'm having trouble fully processing the situation."
     scene closeupsideeric3
-    "I’m sucking this futanari’s cock even though I just met her."
+    "I'm sucking this futanari's cock even though I just met her."
     scene closeupsideeric2
     "I hope no one finds out."
     scene closeupsideeric1
@@ -211,19 +209,19 @@ label isabelledate:
     scene closeupsideeric3
     isa "Yes…"
     scene underangleeric4
-    isa "Don’t hold back…"
+    isa "Don't hold back…"
     scene underangleeric6
     ""
     scene underangleeric7
-    isa "That’s it, I love it when it’s sloppy."
+    isa "That's it, I love it when it's sloppy."
     scene underangleeric8
-    isa "Don’t pretend—I know you love it too."
+    isa "Don't pretend—I know you love it too."
     scene underangleeric7
     "I feel the heat of her gaze on me."
     scene underangleeric6
     "My heart is racing; I feel completely under her control."
     scene underangleeric4
-    "J'ai du mal à contenir "
+    "I'm having trouble holding back."
     scene underangleeric6
     ""
     scene underangleeric7
@@ -231,23 +229,23 @@ label isabelledate:
     scene underangleeric8
     ""
     scene underangleeric7
-    "Je me sens tellement sale"
+    "I feel so dirty."
     scene underangleeric6
-    "La bite d'Isabelle fais des allez-retour dans ma bouche"
+    "Isabelle's cock is going back and forth in my mouth."
     scene underangleeric4
-    "visiblement excité par mon désaroi, elle continue faire l'amour à ma gorge"
+    "Clearly excited by my distress, she keeps fucking my throat."
     scene underangleeric6
-    "Elle est presque précautionneuse dans ses mouvements"
+    "She's almost careful in her movements."
     scene underangleeric7
-    "Comme si elle ne voulait pas me mettre mal à l'aise"
+    "As if she doesn't want to make me uncomfortable."
     scene underangleeric8
-    "Mais elle ne peut s'empêcher d'enfoncer profondement sa bite, me faisant gag à chaque fois"
+    "But she can't help but push her cock deep, making me gag every time."
     scene underangleeric7
     isa "You like it don't you?"
     scene underangleeric6
-    isa "I am sorry i know, my precum is a bit much"
+    isa "I'm sorry, I know my precum is a bit much."
     scene underangleeric4
-    isa "Tu t'en sors très bien, ne t'en fais pas"
+    isa "You're doing very well, don't worry."
     scene underangleeric6
     ""
     scene underangleeric8
@@ -257,17 +255,17 @@ label isabelledate:
     scene underangleeric6
     ""
     scene underangleeric4
-    isa "C'est tellement bon"
+    isa "It's so good."
     scene underangleeric6
-    isa "ta bouche est tellement bonne"
+    isa "Your mouth feels so good."
     scene underangleeric7
-    isa "T'est vraiment un bon suceur"
+    isa "You're really a good sucker."
     scene underangleeric8
-    "D'un mouvement de main brusque  elle me remets contre la cuvette"
-    isa "Fuuuck, it's so good"
-    isa "fuck,"
+    "With a sudden movement, she puts me back against the toilet."
+    isa "Fuuuck, it's so good."
+    isa "Fuck."
     scene fastgoingeric1
-    "Elle accèleres le rythme, produisant de plus en plus de sperme"
+    "She speeds up, producing more and more cum."
     scene fastgoingeric2
     ""
     scene fastgoingeric3
@@ -334,7 +332,9 @@ label isabelledate:
     ""
     jump vestibule
 
-label isabelledate2:
+
+
+# label isabelledate2:
     scene firsteric3
     "Isabelle et moi rentrons dans les toilettes. Elle fermes la porte et mets le verrou"
     isa "Enfin seuls..."
