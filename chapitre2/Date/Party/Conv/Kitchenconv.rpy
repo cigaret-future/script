@@ -298,7 +298,38 @@ label trioaskformusic:
 label trioconv:
     if trio_musicasked == True and trio_musicasked == False:
         jump trioaskformusic
+    elif drink_count >= 5 and drink_count <= 10:
+        jump trioconvbourre1
+    elif drink_count >= 10 and trioconv_count == 1:
+
     else:
+        jump trioconv1
+
+
+
+
+
+
+
+
+
+    label trioconvbourre:
+        scene kitchenarrowflou
+        
+        show jennifer062 at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        show bruno061 at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        show elodie063 at right with dissolve:
+            xalign 0.7
+            zoom 0.98
+        "I approach the group of friends."
+        
+
+
+    label trioconv1:
         scene kitchenarrowflou
         
         show jennifer062 at left with dissolve:
