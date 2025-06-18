@@ -1,10 +1,14 @@
 label estelleconv :
     label estelleconv_direction:
+
+        if drink_count >= 10:
+            jump estelleconvbourre3
         
-        if drink_count >= 5 and estellebourreconv_done == False:
+        elif drink_count >= 5 and and drink_count < 10 and estellebourreconv_done == False:
             jump estelleconvbourre1
-        elif drink_count >= 5 and estellebourreconv_done == True:
+        elif drink_count >= 5 and drink_count < 10 and estellebourreconv_done == True:
             jump estelleconvbourre2
+        
 
 
         elif estellepartyconv_count == 0:
@@ -46,6 +50,33 @@ label estelleconv :
             $ estellebourreconv_done = True
             $ estellepartyconv_count += 1
             jump livingroom
+        
+        label estelleconvbourre3:
+            scene livingroomarrow
+            scene livingroomarrowflou with dissolve
+            show estherparty with dissolve
+            est "Don't you think you've had enough to drink?"
+            name "No, as long as I can crawl, I'm fine."
+            est "You know you can die from alcohol poisoning, right?"
+            est "If you die, could you do it a bit further away, please."
+            est "I don't want to be the one who has to call for help."
+            "As I try to articulate a response, I feel myself losing balance and fall to the floor."
+            "I wake up a few minutes later, lying on a bed."
+            "The light is off, and I can hear music playing in the distance."
+            "I try to get up, but my head is spinning and I feel nauseous."
+            "I'd better stay lying down for a while."
+            "I fall asleep again."
+            "The next day, I wake up in an unfamiliar room."
+            "It seems there's no one around."
+            "I get up and leave the apartment."
+            "Slowly, I recognize the place."
+            "I stagger home, my head still heavy from the night before."
+            $ estellepartyconv_count += 1
+            jump livingroom
+
+        
+
+
 
     label estelleconv1:
         scene livingroomarrow
