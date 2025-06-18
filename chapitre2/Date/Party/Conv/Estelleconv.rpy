@@ -65,35 +65,31 @@ label estelleconv :
             jump livingroom
         est "soo..."
         name "sooo..."
-        name "Tu connais beaucoups de gens ici?"
-        est "Oui la plupart"
-        name "oh ok"
-        est "Mais je ne suis pas là pour faire la fête"
-        est "Je suis là pour me faire un peu de fric"
-        name "ah bon?"
-        est "Oui, je fais un peu de babysitting"
-        name "ah ok"
-        est "Mais je ne fais pas ça pour l'argent"
-        name "ah bon?"
-        est "Je fais ça pour la gloire"
-        name "la gloire?"
-        est "Oui, je suis une influenceuse"
-        name "ah ok"
-        est "Je fais des vidéos sur les réseaux sociaux"
-        name "ah ok quelle genre de vidéo?"
-        est ""
+        name "Do you know a lot of people here?"
+        est "Yeah, most of them."
+        name "Oh, okay."
+        est "This party is kind of lame, isn't it?"
+        name "Yeah, totally... so lame."
+        name "It's so lame that I came to talk to you."
+        name "Can you imagine?"
+        est "Do you think you're funny?"
+        name "I was just trying to make conversation."
+        est "Well, you don't have to try so hard."
+        jump livingroom
+
         if estelle_spankconv_done == True:
-            est "hey, ducoup tu cherches quelque chose en particulier ici?"
-            name "qu'est ce que tu veux dire?"
+            est "Hey, so are you looking for something in particular here?"
+            name "What do you mean?"
             show estherhorny2 with dissolve
             hide estherparty with dissolve
-            est "Ba tu sais.."
-            est "Quelqu'un qui te remettes à ta place"
-            est "en te mettant des fessées par exemple"
-            name "what, je vois pas de quoi tu parles"
-            est "Tu sais, je suis pas la seule à avoir remarqué que tu es un peu trop sage"
-            est "Tu"
-            
+            est "Well, you know..."
+            est "Someone to put you in your place."
+            name "What?"
+            est "Well, you know, like Camille."
+            est "Is that what you're looking for?"
+            name "I don't see what you're talking about."
+            est "Yeah, play innocent."
+            est "I know your secret."
         hide estherparty
         
         jump livingroom
