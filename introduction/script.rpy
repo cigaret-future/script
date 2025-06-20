@@ -13,6 +13,7 @@ define mela = Character('Melanie', color="#8dcee7")
 define bru = Character('Bruno', color="#457409")
 define jeni = Character('Jennifer', color="#ff7f7f")
 define axel = Character('Axel', color="#868484")
+define seb = Character('Sebastian', color="#ffffff")
 init python:
 
     renpy.music.register_channel('coffee_ambiance', "music")

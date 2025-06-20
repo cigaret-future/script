@@ -4,7 +4,7 @@ label estelleconv :
         if drink_count >= 10:
             jump estelleconvbourre3
         
-        elif drink_count >= 5 and and drink_count < 10 and estellebourreconv_done == False:
+        elif drink_count >= 5 and drink_count < 10 and estellebourreconv_done == False:
             jump estelleconvbourre1
         elif drink_count >= 5 and drink_count < 10 and estellebourreconv_done == True:
             jump estelleconvbourre2

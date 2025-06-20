@@ -235,7 +235,6 @@ label stacymelanieconv:
         "Why do I always get myself into trouble like this?"
         jump kitchenparty
 
-
     label stacyconvbourre:
         label stacyconvbourre1:
             scene kitchenarrow
@@ -300,10 +299,12 @@ label trioconv:
         jump trioaskformusic
     elif drink_count >= 5 and drink_count <= 10:
         jump trioconvbourre1
-    elif drink_count >= 10 and trioconv_count == 1:
-
-    else:
+    elif drink_count >= 10:
+        jump trioconvbourre2
+    elif trioconv_count == 0:
         jump trioconv1
+    elif trioconv_count == 1:
+        jump trioconv2
 
 
 
@@ -330,6 +331,7 @@ label trioconv:
 
 
     label trioconv1:
+
         scene kitchenarrowflou
         
         show jennifer062 at left with dissolve:
@@ -382,9 +384,9 @@ label trioconv:
         jeni "Yeah, nothing like that..."
         bru "She’s just afraid of being alone, that’s all."
         bru "We’re here, don’t worry."
-        if gender == "male":
+        if gender == "fem":
             elo "And I’m sure you’ll find a girl tonight to replace her."
-        elif gender == "fem":
+        elif gender == "male":
             elo "And I’m sure you’ll find a guy tonight to replace him."
         jeni "You think?"
         if gender == "male":
@@ -417,3 +419,16 @@ label trioconv:
         "They keep talking while drinking."
         "I can try to keep wandering around and talking to people."
         jump kitchenparty
+
+    label trioconv2:
+        scene kitchenarrowflou
+        
+        show jennifer062 at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        show bruno061 at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        show elodie063 at right with dissolve:
+            xalign 0.7
+            zoom 0.98

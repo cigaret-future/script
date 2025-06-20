@@ -61,7 +61,7 @@ screen kitchenpartyscreen:
                 hotspot (1445, 193, 213, 434) action Jump("vestibule")
                 hotspot (437, 474, 434, 716) action Jump("stacymelanieconv")
                 hotspot (1836, 412, 387, 578) action Jump("trioconv")
-                hotspot (23, 1143, 418, 270) action Jump("livingroom")
+                hotspot (23, 1143, 418, 270) action Jump("balcony")
                 hotspot (1190, 676, 244, 224) action Jump("drinking")
         else:
             imagemap:
@@ -70,7 +70,7 @@ screen kitchenpartyscreen:
                 hotspot (1445, 193, 213, 434) action Jump("vestibule")
                 hotspot (437, 474, 434, 716) action Jump("stacymelanieconv")
                 hotspot (1836, 412, 387, 578) action Jump("trioconv")
-                hotspot (23, 1143, 418, 270) action Jump("livingroom")
+                hotspot (23, 1143, 418, 270) action Jump("balcony")
                 hotspot (1190, 676, 244, 224) action Jump("drinking")
 
 
@@ -87,3 +87,15 @@ screen upstairspartyscreen:
             hotspot (520, 236, 331, 720) action Jump("toiletparty")
             hotspot (1602, 115, 373, 1127) action Jump("partybathroom")
             
+
+label balcony:
+    show screen balconypary
+    call screen balconypary
+
+screen balconypary:
+    frame:
+        imagemap:
+            ground "party/balconynobodyarrow.png"
+            hover "party/balconynobodyarrowhover.png"
+            hotspot (243, 209, 287, 1154) action Jump("kitchenparty")
+            hotspot (1440, 209, 287, 1154) action Jump("sebastianconv")

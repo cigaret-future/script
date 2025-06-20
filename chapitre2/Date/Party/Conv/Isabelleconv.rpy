@@ -329,7 +329,7 @@ label isabelleconv:
         "She seems like a cool person."
         "I just hope it won't cause any drama with Melanie."
         "Oh well."
-
+        scene isabelleintercept
         "As I come out, I bump right into Isabelle."
          
         isa "Hey, what are you doing?"
@@ -348,9 +348,9 @@ label isabelleconv:
         "Isabelle tries to push me into the bathroom"
         menu: 
             "Resist and go back to the bedroom.":
-            jump tracydate
+                jump tracydate
             "Let her do it (I know where this is going)":
-            jump isabelledate
+                jump isabelledate
 
             
  
