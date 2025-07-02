@@ -49,6 +49,7 @@ label estelleconv :
             name "Thanks, I knew I could count on you."
             $ estellebourreconv_done = True
             $ estellepartyconv_count += 1
+            hide esther12 with dissolve
             jump livingroom
         
         label estelleconvbourre3:
@@ -61,6 +62,8 @@ label estelleconv :
             est "If you die, could you do it a bit further away, please."
             est "I don't want to be the one who has to call for help."
             "As I try to articulate a response, I feel myself losing balance and fall to the floor."
+            hide estherparty with dissolve
+            scene black
             "I wake up a few minutes later, lying on a bed."
             "The light is off, and I can hear music playing in the distance."
             "I try to get up, but my head is spinning and I feel nauseous."
@@ -71,7 +74,7 @@ label estelleconv :
             "I get up and leave the apartment."
             "Slowly, I recognize the place."
             "I stagger home, my head still heavy from the night before."
-    
+            
             jump livingroom
 
         

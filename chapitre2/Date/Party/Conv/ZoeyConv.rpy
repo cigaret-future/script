@@ -1,9 +1,11 @@
 label zoeyconv_direction:
     if drink_count > 10: 
-        "Je m'avance vers Zoey et Axel, ma vision se brouille."
+        "I walk over to Zoey and Axel, my vision blurring."
         scene black
-        "Une personne me bouscule et je tombe au sol."
-        ""
+        "Someone bumps into me and I fall to the ground."
+        
+    elif zoey_vestibul_asked == True:
+        jump zoeysscene
     elif zoeyaxelconv_count == 0:
         jump zoeyconv
     elif zoeyaxelconv_count == 1:
@@ -301,84 +303,92 @@ label axzoeyconv3:
     zoey "Don't go too far."
     "I slip out of Zoey's grasp and stand up."
     "I feel like I'm getting a bit of control back."
+    $ zoeyaxelconv_count += 1
+    
     jump kitchenparty
    
     
 
-label kitchenZoeyConv:
-    "As I leave the kitchen, I bump into Zoey waiting for me."
-    zoey "Hey [name], I was looking for you."
-    zoey "Feels like you're always keeping an eye on me."
-    zoey "Maybe I should do the same."
-    zoey "From now on, I'll just watch you."
-    name "I have no idea what you're talking about."
-    zoey "..."
-    zoey "Ugh, I can't keep a straight face."
-    zoey "You're just too cute."
-    zoey "I just want to..."
-    hug "Hey, what's up, guys?"
-    hug "Who picked this music?"
-    zoey "No idea, why?"
-    hug "It's so basic."
-    zoey "Hey, screw you."
-    hug "Wait, was it you?"
-    zoey "I just wanted to dance, and everyone loved my playlist."
-    zoey "I set the mood."
-    hug "Wow, I can't decide if I should apologize or just judge you."
-    zoey "Why not both?"
-    hug "I think I'll just judge you."
-    hug "Come on, admit it wasn't that great, [name]."
-    name "It was alright, I guess."
-    zoey "Yeah, yeah, you looked like you were having fun dancing earlier."
-    "Zoey gives me a playful slap on the butt."
-    name "I was just trying not to hurt your feelings."
-    zoey "Oh, you little brat."
-    hug "See, you really do have terrible taste."
-    hug "Alright, I'm going to see if I can find someone who knows if there's a projector here."
-    zoey "You seriously want to watch a movie?"
-    zoey "Don't even think about setting up in the bedroom."
-    hug "Hey, leave me alone, it wasn't my idea."
-    hug "I'll go ask Stephanie."
+label kitchenzoeyconv:
+        $ zoey_vestibul_asked == True
+        scene vestibulearrowflou
+        "As I leave the kitchen, I bump into Zoey waiting for me."
+        zoey "Hey [name], I was looking for you."
+        zoey "Feels like you're always keeping an eye on me."
+        zoey "Maybe I should do the same."
+        zoey "From now on, I'll just watch you."
+        name "I have no idea what you're talking about."
+        zoey "..."
+        zoey "Ugh, I can't keep a straight face."
+        zoey "You're just too cute."
+        zoey "I just want to..."
+        hug "Hey, what's up, guys?"
+        hug "Who picked this music?"
+        zoey "No idea, why?"
+        hug "It's so basic."
+        zoey "Hey, screw you."
+        hug "Wait, was it you?"
+        zoey "I just wanted to dance, and everyone loved my playlist."
+        zoey "I set the mood."
+        hug "Wow, I can't decide if I should apologize or just judge you."
+        zoey "Why not both?"
+        hug "I think I'll just judge you."
+        hug "Come on, admit it wasn't that great, [name]."
+        name "It was alright, I guess."
+        zoey "Yeah, yeah, you looked like you were having fun dancing earlier."
+        "Zoey gives me a playful slap on the butt."
+        name "I was just trying not to hurt your feelings."
+        zoey "Oh, you little brat."
+        hug "See, you really do have terrible taste."
+        hug "Alright, I'm going to see if I can find someone who knows if there's a projector here."
+        zoey "You seriously want to watch a movie?"
+        zoey "Don't even think about setting up in the bedroom."
+        hug "Hey, leave me alone, it wasn't my idea."
+        hug "I'll go ask Stephanie."
 
 
-    name "Is he really going to watch a movie?"
-    zoey "He's all over the place, that guy."
-    name "He seems pretty funny."
-    zoey "I'm funny too, you know."
-    zoey "Hey, do you want to come upstairs with me?"
-    name "Upstairs?"
-    zoey "Yeah, I want to chill for a bit."
-    name "I don't know, I was just starting to enjoy the party."
-    zoey "Oh come on, don't be like that."
-    zoey "Come upstairs with me."
-    zoey "I want to show you something."
-    name "What is it?"
-    zoey "You'll see, it's a surprise."
-    menu:
-        "Go upstairs with Zoey":
-            zoey "I knew you couldn't resist."
-            "Zoey takes my hand and leads me to the stairs."
-            "I follow her, a little nervous but also excited."
-            jump zoeysscene
-        "Maybe later":
-            zoey "Alright, I'll wait for you. Don't take too long!"
-            "I watch Zoey head back to the living room, and I take a moment to compose myself."
-            jump livingroom
+        name "Is he really going to watch a movie?"
+        zoey "He's all over the place, that guy."
+        name "He seems pretty funny."
+        zoey "I'm funny too, you know."
+        zoey "Hey, do you want to come upstairs with me?"
+        name "Upstairs?"
+        zoey "Yeah, I want to chill for a bit."
+        name "I don't know, I was just starting to enjoy the party."
+        zoey "Oh come on, don't be like that."
+        zoey "Come upstairs with me."
+        zoey "I want to show you something."
+        name "What is it?"
+        zoey "You'll see, it's a surprise."
+        menu:
+            "Go upstairs with Zoey":
+                zoey "I knew you couldn't resist."
+                "Zoey takes my hand and leads me to the stairs."
+                "I follow her, a little nervous but also excited."
+                jump zoeysscene
+            "Maybe later":
+                zoey "Alright, I'll wait for you. Don't take too long!"
+                "I watch Zoey head back to the living room, and I take a moment to compose myself."
+                jump livingroom
+    
+
+
    
-
-
-   
-    label zoeysscene:
-
-
+label zoeysscene:
+        scene dancingcloserzoey8
         "Zoey leads me upstairs, her hand firmly holding mine."
+        scene goingroomzoey
         "We reach the top floor, passing a few people chatting in the hallway."
         "Zoey opens the door to a bedroom and pulls me inside."
         "Some people glance at us and laugh as we go in."
+        scene discoverroom2
         zoey "So..."
         zoey "Finally alone."
         "Zoey closes the door behind us, leaving us in the softly lit room."
-        "The room is cozy, with a big bed in the center and warm lighting."
+        scene discoverroom
+        "Elle allumes la lumière"
+        "The room is cozy, with a big bed in the center"
+        scene roomzoeyasking
         zoey "I wanted to talk to you for a bit."
         zoey "I feel like you've been avoiding me tonight."
         zoey "And I wanted to clear the air between us."
@@ -395,50 +405,77 @@ label kitchenZoeyConv:
         zoey "Just close your eyes and let yourself go."
         "Zoey steps closer, her presence overwhelming."
         "She lowers her pants, revealing her cock, already hard."
+        scene roomzoeyasking2
         "There's a faint scent of sweat and sex in the air."
         "It fills my senses, and my heart starts racing."
         "I try not to show how flustered I am."
         zoey "See what you do to me?"
         zoey "Come on, baby."
         zoey "Get on your knees."
+        scene startbjzoey1
         "With one hand, she gently pushes me down, making me kneel in front of her."
         "She holds my head and brings it closer to her cock."
         name "Fuck, it's so big."
         zoey "Yeah, you'll definitely feel it."
         zoey "Put it in your mouth."
+        scene startbjzoey2
         "I let her guide me and wrap my lips around Zoey's tip."
         "A salty, musky taste fills my mouth."
         "I swirl my tongue gently around her head, tasting her precum."
         zoey "I knew you wanted this too."
         zoey "You look so cute with my cock in your mouth."
         zoey "It really suits you."
+        scene startbjzoeyv24
         "Zoey presses my head onto her cock, gradually pushing her tip inside."
+        scene startbjzoeyv23
         "Then deeper and deeper into my throat."
+        scene startbjzoeyv24
         "She moves my head back and forth on her cock."
+        scene startbjzoeyv23
         "Forcing me to relax my throat to take her in."
         zoey "Yeah, that's it."
         zoey "You're really made for this."
         zoey "I hope you can hold your breath."
         zoey "I want to go even deeper inside you."
+        scene startbjzoeyv22
         "With a thrust of her hips, she pushes her penis even further down my throat."
         "Making me gag and drool suddenly."
+        scene startbjzoeyv23
         zoey "Relax"
         zoey "Just enjoy"
+        scene startbjzoeyv24
         "Bracing herself with her strong legs,"
+        scene startbjzoeyv23
         "Zoey thrusts into my mouth as if it were just a toy,"
+        scene startbjzoeyv22
+        ""
+        scene startbjzoeyv23
+        ""
+        scene startbjzoeyv24
+        ""
+        scene startbjzoeyv23
         "Making me feel strangely small."
-        "Her hips and body seem to fill my entire world."
+        scene startbjzoeyv22
+        "Her cock seem to fill my entire world."
+        scene startbjzoeyv23 
         "With every thrust, I feel her taking more and more control over me."
+        scene startbjzoeyv24
         "I'm completely giving in to her, letting her do whatever she wants."
+        scene startbjzoeyv23
         "Even though I'm struggling to breathe, I keep taking her deep in my throat."
+        scene startbjzoeyv21
         "After a while, I pull back to catch my breath."
+        
         name "Damn..."
         name "Your cock..."
         name "feels so good..."
         zoey "I know."
+        scene bjzoeyv2
         zoey "Come on, suck me a little more. Then I'll take you from behind."
+        scene bjzoeyv22
         zoey "You're going to love it."
-       
+        scene bjzoeyv23
+        ""
 
 
 
@@ -461,25 +498,6 @@ label kitchenZoeyConv:
        
 
 
-   
-   
 
 
-    name ""
-   
-
-
-
-
-    show axelsmile with dissolve
-    hide axel1 with dissolve
-    axel "Ahah, enfin "
-
-    zoey "I hope you are, because it's going to be a blast!"
-    name "I think so, I just need to get my stuff together"
-    show zoeyparty2 with dissolve
-    hide zoeyparty with dissolve
-    zoey "Great! I can't wait to see you there!"
-
-
-    jump zoeyscene
+        jump zoeyscene

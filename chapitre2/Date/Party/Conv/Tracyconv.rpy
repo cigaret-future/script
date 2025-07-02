@@ -1,9 +1,12 @@
 label tracydate:
+    scene corridorscreenfloutracy
     "I free myself from Isabelle's grip and pretend to go back downstairs."
-    "Isabelle goes into the bathroom."
+    "Isabelle goes into the toilet."
     "I take the opportunity to return to the room and close the door behind me."
+    scene tracylookingatphone
     "Tracy is on the bed, looking at her phone."
     "I sit down next to her and she puts her phone away."
+    scene tracytalkingbed
     tra "So, what do you want to do?"
     name "I don't know."
     name "We could play cards or something."
@@ -49,7 +52,9 @@ label tracydate:
     name "Oh no."
     tra "Do you have any last wishes?"
     name "I think i do."
+    scene black
     "Tracy moves closer to me and kisses me."
+    scene kissingtracyv2
     "We lie down on the bed, kissing."
     "Her lipstick is soft and sweet."
     "I feel her hands on my body, she caresses me gently."
@@ -62,52 +67,73 @@ label tracydate:
     "..."
     "We stay here for half an hour, kissing and cuddling."
     "We eventually get up, a little embarrassed."
-    "Tracy reçoit une message sur son téléphone."
-    "Melanie lui demande où elle est."
+    "Tracy receives a message on her phone."
+    "Melanie is asking where she is."
 
-    tra "It's Mel"
+    tra "It's Mel."
     "Tracy reads the message and smiles."
     tra "She wants to know where I am."
     "Tracy replies that she's with me and that we're talking."
     "Tracy sends the message and puts her phone away."
     tra "I think we should go back downstairs."
     name "Yeah, I think so too."
+    scene corridorscreenfloutracy
+    "I'm a bit apprehensive about Melanie's reaction."
     "We get up and leave the room."
-    "Downstairs, Tracy finds Mélanie and tells her she was with me."
-    "Mélanie looks at us with a knowing smile."
+    scene mainroommelanie
+    "Downstairs, Tracy finds Melanie and tells her she was with me."
+    "Melanie looks at us with a knowing smile."
     "She comes closer to me."
-    mel "So, how was it?"
+    scene mainroommelanie2 with dissolve
+    mela "So, how was it?"
     name "What do you mean?"
-    mel "Don't worry, your secret is safe with me, haha."
+    mela "Don't worry, your secret is safe with me, haha."
     "I laugh awkwardly, not really knowing what to say."
-    "Tracy and Mélanie exchange a look, Tracy comes to snuggle against Mélanie."
-    "Mélanie strokes her hair."
+    "Tracy and Melanie exchange a look, Tracy comes to snuggle against Melanie."
+    "Melanie strokes her hair."
     "I watch them, not really knowing what to do."
     "I feel a bit weird."
-    "Mélanie gives her a playful slap on the cheek."
-    mel "Naughty."
+    "Melanie gives her a playful slap on the cheek."
+    mela "Naughty."
     "Tracy blushes and looks down."
-    mel "Come on, let's go upstairs."
-    "Mélanie takes Tracy's hand and leads her upstairs."
+    mela "Come on, let's go upstairs."
+    "Melanie takes Tracy's hand and leads her upstairs."
     "I watch them leave, feeling a bit lost."
     "Tracy looks at me, both embarrassed and excited."
     "Maybe I should follow them?"
+    $ stacydate_activated = True
+    jump livingroom
 
 
+  
+        
 
 
-    label tracydate2:
-        "I follow them upstairs."
-        "I gently open the bedroom door."
-        "I peek inside."
-        "I find them in the room where we were before."
-        "Tracy is sitting on the bed, Mélanie is standing next to her."
-        "Mélanie has her pants down and is showing her dick to Tracy."
-        "Tracy is slowly sucking her."
-        mel "That's it."
-        mel "Do what you do best."
-        mel "Did you think you could escape me?"
-        "Etc etc...."
-
-
+label tracydate2:
+    scene doorclosestacy2
+    "I follow them upstairs."
     
+    "Je les entends dans la chambre."
+    "I gently open the bedroom door."
+    scene doorclosestacy
+    ""
+    scene designerview085
+    "I find them in the room where we were before."
+    "Tracy is sitting on the bed, Melanie is standing next to her."
+    "Melanie has her pants down and is showing her dick to Tracy."
+    "Tracy is slowly sucking her."
+   
+    mela "Did you think you could escape me?"
+    
+   
+    mela "That's it."
+    mela "Do what you do best."
+    scene designerview084
+    ""
+    scene designerview085
+    ""
+    scene designerviewlook084
+    ""
+    scene designerviewlook085
+    ""
+    jump upstairs

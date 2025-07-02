@@ -204,8 +204,11 @@ label stacymelanieconv:
         # jump kitchenparty
 
     label stacyaskformusic:
-        scene kitchenarrow
-        scene kitchenarrowflou with dissolve 
+        if stacydate_activated == True:
+            scene kitchenarrownomelblur
+        else:
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve 
         show tracy2 with dissolve
         show tracy2 at right:
             xalign 0.8
@@ -237,62 +240,69 @@ label stacymelanieconv:
 
     label stacyconvbourre:
         label stacyconvbourre1:
-            scene kitchenarrow
-            scene kitchenarrowflou with dissolve 
-            show tracy2 with dissolve
-            name "Do you think people choose their favorite dish, or does the dish choose them?"
-            tra "Hmm. You mean like astrology?"
-            name "Exactly. For me, it's risotto. It appeared to me in a dream."
-            tra "I love risotto, it's such a comforting dish ahah..."
-            name "I took it as a sign. Since then, I order it everywhere. Even in Japanese restaurants."
-            tra "And does it work?"
-            name "No. But I still have hope. Sometimes you have to force destiny a little."
-            tra "I see."
-            $ stacybourreconv_done = True
-            jump kitchenparty
-        label stacyconvbourre2:
-            scene kitchenarrow
-            scene kitchenarrowflou with dissolve 
-            show tracy2 at right:
-                xalign 0.8
-            show designergirl15 with dissolve:
-                xalign 0.2
-                yalign 0.99
-            name "Hey, do you know where I can find a bathroom?"
-            tra "Yeah, it's upstairs"
-            name "thanks"
-            show designgirl009 with dissolve:
-                xalign 0.2
-                yalign 0.99
-            hide designergirl15 with dissolve
+            if stacydate_activated == True:
+                scene kitchenarrownomelblur
+            else:
+                scene kitchenarrow
+                scene kitchenarrowflou with dissolve 
+                show tracy2 with dissolve
+                name "Do you think people choose their favorite dish, or does the dish choose them?"
+                tra "Hmm. You mean like astrology?"
+                name "Exactly. For me, it's risotto. It appeared to me in a dream."
+                tra "I love risotto, it's such a comforting dish ahah..."
+                name "I took it as a sign. Since then, I order it everywhere. Even in Japanese restaurants."
+                tra "And does it work?"
+                name "No. But I still have hope. Sometimes you have to force destiny a little."
+                tra "I see."
+                $ stacybourreconv_done = True
+                jump kitchenparty
+            label stacyconvbourre2:
+                scene kitchenarrow
+                scene kitchenarrowflou with dissolve 
+                show tracy2 at right:
+                    xalign 0.8
+                show designergirl15 with dissolve:
+                    xalign 0.2
+                    yalign 0.99
+                name "Hey, do you know where I can find a bathroom?"
+                tra "Yeah, it's upstairs"
+                name "thanks"
+                show designgirl009 with dissolve:
+                    xalign 0.2
+                    yalign 0.99
+                hide designergirl15 with dissolve
 
-            mela "Wouhouuu, let's party right?"
-            
-            jump kitchenparty
+                mela "Wouhouuu, let's party right?"
+                
+                jump kitchenparty
 
 
-# ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// TRIO CONV
-# /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// TRIO CONV
+    # /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-label trioaskformusic:
-    scene kitchenarrowflou
-    
-    show jennifer062 at left with dissolve:
-        xalign 0.3
-        zoom 0.94
-    show bruno061 at center with dissolve:
-        xalign 0.5
-        zoom 1.02
-    show elodie063 at right with dissolve:
-        xalign 0.7
-        zoom 0.98
+    label trioaskformusic:
+        if stacydate_activated == True:
+                scene kitchenarrownomelblur
+        else:
+                scene kitchenarrow
+                scene kitchenarrowflou with dissolve 
+        
+        show jennifer062 at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        show bruno061 at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        show elodie063 at right with dissolve:
+            xalign 0.7
+            zoom 0.98
 
-    name "Hey, was it one of you who put your music on the speakers?"
-    jeni "Uh, no?"
-    elo "Nah it's not us."
-    bru "I like the vibe, though."
-    $ trio_musicasked = True
-    jump kitchenparty
+        name "Hey, was it one of you who put your music on the speakers?"
+        jeni "Uh, no?"
+        elo "Nah it's not us."
+        bru "I like the vibe, though."
+        $ trio_musicasked = True
+        jump kitchenparty
 
 label trioconv:
     if trio_musicasked == True and trio_musicasked == False:
@@ -314,8 +324,12 @@ label trioconv:
 
 
 
-    label trioconvbourre:
-        scene kitchenarrowflou
+    label trioconvbourre1:
+        if stacydate_activated == True:
+            scene kitchenarrownomelblur
+        else:
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve 
         
         show jennifer062 at left with dissolve:
             xalign 0.3
@@ -332,7 +346,11 @@ label trioconv:
 
     label trioconv1:
 
-        scene kitchenarrowflou
+        if stacydate_activated == True:
+            scene kitchenarrownomelblur
+        else:
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve 
         
         show jennifer062 at left with dissolve:
             xalign 0.3

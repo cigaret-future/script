@@ -167,6 +167,7 @@ label start:
     default tracybourreconv_done = False
 
     default stacymelanieconv_count = 0
+    default stacydate_activated = False
 
     default isabelleconv_count = 0
 
@@ -178,10 +179,12 @@ label start:
     default zoeyaxelconv_count = 0
     default zoeyconv_count = 0
     default zoeyasketfor_music = False
-    
+    default zoey_vestibul_asked = False
     default drink_count = 0
 
-
+    default sebastianconv_count = 0
+    default sebastianjen_date_started = False
+    default sebastianjen_date_done = False
     $ key = Item("key", "cupoftea.png")
 
     scene disclaimer with dissolve

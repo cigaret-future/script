@@ -1,5 +1,10 @@
 label drinking:
-    scene kitchenarrowflou
+    if stacydate_activated == True:
+        scene kitchenarrownomelblur
+    else:
+        scene kitchenarrow
+        scene kitchenarrowflou with dissolve
+    
     "I grab a beer and open it."
     "I take a few sips."
     "The taste is a bit bitter at first, but I get used to it quickly."

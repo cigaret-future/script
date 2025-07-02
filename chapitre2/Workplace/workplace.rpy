@@ -58,7 +58,8 @@ label workplace:
     "The day goes by slowly."
     jen "Okay, my shift is over."
     jen "I think you can leave now."
-    name "Okay, cool."
+    name "Okay est ce que je dois écrire mon nom quelque part ?"
+    jen ""
     "I leave the coffee shop with Jenny, and we part ways."
     $ money += 200
     show text "+200$" at Move((0.5, 0.6), (0.5, 0.5), 10.0)

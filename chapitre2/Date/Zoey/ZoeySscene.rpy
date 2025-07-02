@@ -1,70 +1,70 @@
 
 
 label zoeyscene:
-    scene test090
-    zoey "viens sur moi, je vais te montrer comment on baise"
-    "Zoey me prend par le bras et me fait monter sur le lit au dessus d'elle"
-    "Elle presse contre ses seins"
-    scene testt
-    name "attend t'est sûr?"
-    name "ta bite est super grosse quand meme"
-    zoey "je vais y aller doucement bebe"
-    zoey "tu vas passer un bon moment"
-    scene contreplongederic1
-    "elle pousse son gland contre mon anus, carressant gentiment, et faisant rentrer petit à petit le gland humide dans mon anus"
-    scene contreplongederic2
-    "elle masse l'entrée en faisant des petit vas et viens"
     
-    zoey "Ton petit cul a l'air tellement serré"
-    zoey "Je vais faire rentrer le bout"
+    zoey "come on me, I'll show you how we fuck"
+    "Zoey grabs me by the arm and pulls me onto the bed above her"
+    "She presses me against her breasts"
+    scene testt
+    name "wait, are you sure?"
+    name "your dick is really big though"
+    zoey "I'll go slow baby"
+    zoey "you're going to have a good time"
+    scene contreplongederic1
+    "she pushes her glans against my anus, gently caressing, and slowly easing the wet tip inside"
+    scene contreplongederic2
+    "she massages the entrance, making small back and forth movements"
+    
+    zoey "Your little ass looks so tight"
+    zoey "I'm going to put the tip in"
     name "oo...ok "
     scene contreplongederic3
-    "elle me fait descendre sur sa queue, ouvrant un peu plus mon cul"
-    "une brulure envahit mon cul, son gland est déja très gros"
-    "j'essaye de contrôler le mouvement avec mes jambes, mais ça me demande un effort énorme"
+    "she makes me go down on her cock, opening my ass a bit more"
+    "a burning sensation fills my ass, her glans is already very big"
+    "I try to control the movement with my legs, but it takes a huge effort"
     scene contreplongederic2
-    "Zoey essaye de me faire descendre sur son gland de plus en plus"
-    "faisant rentrer sa bite toujours un peu plus"
+    "Zoey tries to make me go down on her glans more and more"
+    "making her dick go in a little more each time"
     scene contreplongederic3
     name "ooh oohh..."
     scene ericacloseup
-    "Je suis obligé de me reposer sur ses bras, et de me laisser faire"
+    "I have to rest on her arms and let her do it"
     zoey "fuck, you are so sexy"
-    zoey "j'arrive pas à croire que je t'ai pas encore baisé"
-    zoey "dès que je t'ai vus j'ai eu envie de te prendre"
-    name "well va y doucement quand meme"
-    "Zoey me presse contre elle, et m'embrasse tout en continuant a remuer sa bite dans mon cul"
+    zoey "I can't believe I haven't fucked you yet"
+    zoey "as soon as I saw you I wanted to take you"
+    name "well go slow though"
+    "Zoey presses me against her and kisses me while still moving her dick in my ass"
     scene erickiss1 with dissolve
-    "Sa langue s'infiltre dans ma bouche et se saisit de la mienne"
+    "Her tongue slips into my mouth and grabs mine"
     scene erickiss2 with dissolve
-    "Elle semble vouloir me pénetrer par tout les moyens"
+    "She seems to want to penetrate me in every way"
     scene erickiss1 with dissolve
-    "Sa salive et son haleine se mélange à la mienne"
+    "Her saliva and breath mix with mine"
     
     scene contredeepderika1 with dissolve
-    "D'une main elle maitrise la pénetration de sa bite"
-    "Me faisant gémir de plaisir chaque fois qu'elle me fait descendre sur ses genoux"
+    "With one hand she controls the penetration of her dick"
+    "Making me moan with pleasure every time she makes me go down on her knees"
     scene contredeepderika2 with dissolve
-    "Faisant aller et venir mon cul"
+    "Moving my ass back and forth"
     scene contredeepderika1 with dissolve
-    "J'essaye de garder le contrôle sur mes mouvements, mais la position est trop dure à maintenir"
+    "I try to keep control of my movements, but the position is too hard to maintain"
     
     scene contredeepderika2 with dissolve
-    "Je suis obligé de me laisser faire, et de me concentrer sur ma respiration"
+    "I have to let her do it, and focus on my breathing"
     scene frontcowsideeric1 with dissolve
-    zoey "c'est ça, laisse toi faire"
+    zoey "that's it, let yourself go"
     scene frontcowsideeric2 with dissolve
-    zoey "Je vais élargir ton petit cul"
+    zoey "I'm going to stretch your little ass"
     scene frontcowsideeric1 with dissolve
 
     scene frontcowsideeric2 with dissolve
-    "Elle a totalement le contrôle sur moi"
+    "She has total control over me"
     scene frontcowsideeric3 with dissolve
     
     scene frontcowsideeric2 with dissolve
-    "Elle fait descendre de plus en plus sur ses genoux."
+    "She makes me go down more and more on her knees."
     name "aahhh"
-    name "please not to fast"
+    name "please not too fast"
     scene frontcowsideeric1 with dissolve
 
     scene frontcowsideeric2 with dissolve
@@ -75,19 +75,136 @@ label zoeyscene:
     scene frontcowsideeric1 with dissolve
 
     
-    "Sa bite dur comme de l'acier, rentre de plus en plus dans le cul"
-    "Je sens qu'elle est de plus en plus excitée"
+    "Her cock, hard as steel, goes deeper and deeper into my ass"
+    "I feel she's getting more and more excited"
     scene frontcowsideeric3 with dissolve
     scene frontcowsideeric1 with dissolve
-    "Pourtant elle reste assez douce et attentive à mes réactions"
+    "Yet she stays gentle and attentive to my reactions"
     scene contredeepderika1 with dissolve
-   
+    
     scene contredeepderic3 with dissolve
     
     scene contredeepderika1 with dissolve
-    "Je me sens en confiance"
+    "I feel safe"
     scene contredeepderic3 with dissolve
     ""
+    scene zoeytransitionpose with dissolve
+    zoey "Come here"
+    "Zoey pulls back to change position"
+
+    # ///////////Cow Front
+    scene firstcowfront2erika with dissolve
+    ""
+    scene firstcowfront4erika with dissolve
+    ""
+    scene firstcowfront2erika with dissolve
+    ""
+    scene firstcowfront1erika with dissolve
+    ""
+    scene firstcowfront3erika with dissolve
+    ""
+    scene firstcowfront1erika with dissolve
+    ""
+    scene firstcowfront2erika with dissolve
+    ""
+    scene firstcowfront1erika with dissolve
+    ""
+    scene firstcowfront2erika with dissolve
+    ""
+    scene firstcowfront1erika with dissolve
+    ""
+    scene firstcowfront3erika with dissolve
+    ""
+    scene firstcowfront4erika with dissolve
+    ""
+    scene firstcowfront3erika with dissolve
+    ""
+    scene firstcowfront4erika with dissolve
+    ""
+
+    # ///////////CowSide
+    scene cowsideerika1 with dissolve
+    ""
+    scene cowsideerika2 with dissolve
+    ""
+    scene cowsideerika1 with dissolve
+    ""
+    scene cowsideerika2 with dissolve
+    ""
+    scene cowsideerika1 with dissolve
+    ""
+    scene cowsideerika2 with dissolve
+    ""
+
+    # //////Side UP
+    scene cowupsideerika2 with dissolve
+    ""
+    scene cowupsideerika1 with dissolve
+    ""
+    scene cowupsideerika2 with dissolve
+    ""
+    scene cowupsideerika1 with dissolve
+    ""
+    scene cowupsideerika2 with dissolve
+    ""
+    scene cowupsideerika1 with dissolve
+    ""
+
+    # //accelerate
+    scene acceleratezoey3 with dissolve
+    ""
+    scene acceleratezoey4 with dissolve
+    ""
+    scene acceleratezoey1 with dissolve
+    ""
+    scene acceleratezoey2 with dissolve
+    ""
+    scene acceleratezoey3 with dissolve
+    ""
+    scene acceleratezoey4 with dissolve
+    ""
+    scene acceleratezoey1 with dissolve
+    ""
+    scene acceleratezoey2 with dissolve
+    ""
+    scene acceleratezoey3 with dissolve
+    ""
+    scene closeupzoey2 with dissolve
+    ""
+    scene closeupzoey with dissolve
+    ""
+    scene closeupzoey2 with dissolve
+    ""
+    scene closeupzoey with dissolve
+    ""
+    scene closeupzoey2 with dissolve
+    ""
+    scene closeupzoey with dissolve
+    ""
+    scene closeupzoey2 with dissolve
+    ""
+    scene closeupzoey with dissolve
+    ""
+    scene acceleratezoey4 with dissolve
+    ""
+    scene acceleratezoey1 with dissolve
+    ""
+    scene acceleratezoey2 with dissolve
+    ""
+    scene acceleratezoey3 with dissolve
+    ""
+    scene acceleratezoey4 with dissolve
+    ""
+    scene acceleratezoey1 with dissolve
+    ""
+    scene acceleratezoey2 with dissolve
+    ""
+    scene pausezoey with dissolve
+    ""
+    scene black with dissolve
+    ""
+
+    # //////Above angle
     scene abovebedangleeric082 with dissolve
     ""
     scene abovebedangleeric083 with dissolve
@@ -103,5 +220,107 @@ label zoeyscene:
     scene abovebedangleeric084 with dissolve
     ""
     scene abovebedangleeric085 with dissolve
+
+    # //////sideangleeric
+    scene sideangleeric082 with dissolve
+    ""
+    scene sideangleeric083 with dissolve
+    ""
+    scene sideangleeric084 with dissolve
+    ""
+    scene sideangleeric085 with dissolve
+    ""
+    scene sideangleeric082 with dissolve
+    ""
+    scene sideangleeric083 with dissolve
+    ""
+    scene sideangleeric084 with dissolve
+    ""
+    scene sideangleeric085 with dissolve
+    ""
+    # //////upleftangleeric
+    scene upleftangleeric2085 with dissolve
+    ""
+    scene upleftangleeric2084 with dissolve
+    ""
+    scene upleftangleeric2083 with dissolve
+    ""
+    scene upleftangleeric2082 with dissolve
+    ""
+    scene upleftangleeric085 with dissolve
+    ""
+    scene upleftangleeric084 with dissolve
+    ""
+    scene upleftangleeric083 with dissolve
+    ""
+    scene upleftangleeric082 with dissolve
+    ""
+
+    # //////fcum
+    scene fcum082 with dissolve
+    ""
+    scene fcum083 with dissolve
+    ""
+    scene fcum084 with dissolve
+    ""
+    scene fcum085 with dissolve
+    ""
+    scene fcum082 with dissolve
+    ""
+    scene fcum083 with dissolve
+    ""
+    scene fcum084 with dissolve
+    ""
+    scene fcum085 with dissolve
+    ""
+
+    # //finalZoey
+    scene finalzoey4 with dissolve
+    ""
+    scene finalzoey3 with dissolve
+    ""
+    scene finalzoey6 with dissolve
+    ""
+    scene finalzoey5 with dissolve
+    ""
+    scene finalzoey4 with dissolve
+    ""
+    scene finalzoey3 with dissolve
+    ""
+    scene finalzoey6 with dissolve
+    ""
+    scene finalzoey5 with dissolve
+    ""
+    scene finalzoey4 with dissolve
+    ""
+    scene finalzoey3 with dissolve
+    ""
+    scene finalzoey6 with dissolve
+    ""
+    scene finalzoey5 with dissolve
+    ""
+    scene finalzoey3 with dissolve
+    ""
+    scene finalzoey5 with dissolve
+    ""
+    scene finalzoey6 with dissolve
+    ""
+    scene finalzoey5 with dissolve
+    ""
+    scene finalcum with dissolve
+    ""  
+    scene finalcum2 with dissolve
+    ""
+    scene finalbjzoey1 with dissolve
+    ""
+    scene finalbjzoey2 with dissolve
+    ""
+    scene finalbjzoey3 with dissolve
+    ""
+    scene finalbjzoey4 with dissolve
+    ""
+    scene finalbjzoey5 with dissolve
+    ""
+    scene finalbjzoey6 with dissolve
     ""
     jump livingroom
