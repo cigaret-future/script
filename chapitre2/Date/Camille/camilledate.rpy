@@ -168,110 +168,440 @@ label camilleshopping:
 
 
 label camilleshokerdate:
-    "Je rentre dans l'appartement de Camille"
-    name "so est ce que tu passe .. "
+    "I enter Camille's apartment."
+    name "So, do you often..."
     scene earfound
-    "Soudain je m'arrête, mon regard se fixe sur le lit."
-    "Un collier et des oreilles de lapins sont posés sur le lit."
-    "Pendant quelque instants, je ne comprends pas ce que je vois."
-    "Puis Camille se glisse derrière moi"
+    "Suddenly I stop, my gaze fixed on the bed."
+    "A collar and bunny ears are lying on the bed."
+    "For a few moments, I don't understand what I'm seeing."
+    "Then Camille slips behind me."
     scene closecamille
-    cam "Tu aimes ce que tu vois?"
-    cam "Je pense que tu devrais les mettre"
-    name "Heu... je ne sais pas trop"
-    cam "Tu veux continuer à venir me voir?"
+    cam "Do you like what you see?"
+    cam "I think you should put them on."
+    name "Uh... I'm not sure."
+    cam "Do you want to keep coming to see me?"
     menu:
-        "Oui":
+        "Yes":
             jump camilleshokerdate2
-        "Non":
+        "no":
             jump camilleshokerdate3
     
     label camilleshokerdate3:
-        cam "Si tu ne comprends pas où est ta place, tu peux partir"
-        "Je quitte l'appartement de Camille, un peu déçu"
+        cam "If you don't understand your place, you can leave."
+        "I leave Camille's apartment, a bit disappointed."
         scene black
         jump map3
+
     label camilleshokerdate2:
-    name "yes..."
-    cam "Mets les, et deshabille toi"
-    "Je m'execute, mon cerveau semble s'être arréter de fonctionner"
-    "Mon corps a pris le contrôle, et je me retrouve à obéir à Camille sans réfléchir"
+        name "yes..."
+        cam "Put them on, and undress."
+        "I obey, my brain seems to have stopped working."
+        "My body takes control, and I find myself obeying Camille without thinking."
 
     scene black
-    "J'enfile les accessoires, je me sens totalement ridicule mais je ne peux pas faire marche arrière"
-    cam "Tiens mets cette culotte aussi"
+    "I put on the accessories, feeling totally ridiculous but unable to turn back."
+    cam "Here, put on these panties too."
     if gender == "male":
-        "Je mets la culotte, elle est très serrée et me compresse les couilles"
+        "I put on the panties, they're very tight and squeeze my balls."
     scene shoker
-    "Camille me regarde avec un sourire satisfait"
-    cam "Waouw, ça te vas bien"
-    cam "Tu es vraiment mignon comme ça"
-    "Je ne sais pas si je dois le prendre comme un compliment"
-    "Mais je ne peux pas m'empêcher d'être content que ça lui plaise"
-    name "So qu'est ce je fais maitenant?"
-    cam "Tu vas me servir de soumise pour aujourd'hui"
-    name "Heu... soumise?"
+    "Camille looks at me with a satisfied smile."
+    cam "Wow, that looks good on you."
+    cam "You're really cute like that."
+    "I'm not sure if I should take it as a compliment."
+    "But I can't help but feel happy that she likes it."
+    name "So what do I do now?"
+    cam "You're going to be my submissive for today."
+    name "Uh... submissive?"
 
     scene askingcamille
-    cam "Oui, tu vas faire ce que je te dis"
-    name "Et si je ne veux pas?"
-    cam "ahah, on sait tout les deux que c'est ce que tu veux"
-    cam "Bon je dois travailler un peu, va faire la vaisselle"
-    name "La vaisselle?"
-    cam "Oui, j'ai pas eu le temps de la faire hier soir, et il faut que je continue à bosser"
+    cam "Yes, you're going to do what I tell you."
+    name "And if I don't want to?"
+    cam "Haha, we both know that's what you want."
+    cam "Well, I need to work a bit, go do the dishes."
+    name "The dishes?"
+    cam "Yes, I didn't have time to do them last night, and I need to keep working."
     scene askingcamille2
-    cam "Allez! Au boulot!"
-    cam "Et oublie pas de nettoyer l'évier"
+    cam "Go on! Get to work! And don't forget to clean the sink."
     
     scene ericcleaning2
-    "J'attrape une éponge et me mets au travail"
-    "Les assiettes sont crades, elle a dut recevoir des gens ici hier soir"
-    cam "Frotte bien, ça a dut sécher entre temps"
-    name "Yes mistress"
-    "Je frotte les assiettes, je n'arrive pas à croire que je suis en train de faire ça"
-    "Je me sens vraiment bizarre"
-    "Comme si j'étais soudain devenu quelqu'un d'autre"
+    "I grab a sponge and get to work."
+    "The plates are dirty, she must have had people over last night."
+    cam "Scrub well, it must have dried by now."
+    name "Yes mistress."
+    "I scrub the plates, I can't believe I'm actually doing this."
+    "I feel really strange."
+    "As if I suddenly became someone else."
 
     scene camillefocus3
-    "Je fais du mieux que je peux, mais j'ai du mal à me concentrer"
-    "La présence de Camille derrière moi me perturbe"
+    "I do my best, but I have trouble concentrating."
+    "Camille's presence behind me is distracting."
     scene camillefocus4
-    "J'ai très envie qu'elle me prenne, mais je sais que je dois rester concentré sur la vaisselle"
+    "I really want her to take me, but I know I have to stay focused on the dishes."
     scene black
-    cam "Tu as fini?"
-    cam "Tu as bien nettoyer l'évier?"
+    cam "Are you done?"
+    cam "Did you clean the sink properly?"
     name "Yes"
-    cam "Good girl, maitenant viens ici"
-    cam "Mets toi à genoux"
+    cam "Good girl, now come here."
+    cam "Get on your knees."
 
     scene kneelingeric
-    cam "Je savais que tu serais une parfaite soumise "
-    cam "tu vas rester là, pendant que je travaille"
-    cam "Tu ne bouges pas, tu restes à genoux et tu attends que je te dise quoi faire"
-    name "Yes mistress"
-    cam "shhh, tais toi par contre, j'ai besoin de me concentrer"
-    "J'attend sagement à genoux"
-    "Toute mon attention et ma concentration est dirigé vers le fait d'obeir à Camille"
-    "Je repense à l'autre jour, lorsque que j'avais la tête enfouis entre ses jambes"
-    "Je me souviens de son odeur, de son goût, de la sensation de sa peau contre ma langue"
-    "Elle a dut sentir qu'elle m'avait rendue addict à elle"
-    "Je me demande si elle a prévu de me faire subir d'autres humiliations"
-    "De toute façon je suis prêt à tout pour revivre intime un moment avec elle"
-    "Enfin j'espère qu'elle ne me fera pas aller trop loin"
+    cam "I knew you would be a perfect submissive."
+    cam "You're going to stay there while I work."
+    cam "Don't move, stay on your knees and wait for me to tell you what to do."
+    name "Yes mistress."
+    cam "Shhh, be quiet, I need to concentrate."
+    "I wait patiently on my knees."
+    "All my attention and focus is on obeying Camille."
+    "I think back to the other day, when my head was buried between her legs."
+    "I remember her scent, her taste, the feeling of her skin against my tongue."
+    "She must have known she made me addicted to her."
+    "I wonder if she plans to make me go through more humiliations."
+    "Anyway, I'm ready to do anything to experience another intimate moment with her."
+    "Well, I just hope she won't make me go too far."
     scene black
-    "Je reste là, à genoux, pendant au moins 1 heure"
-    "Au bout d'un moment Camille se lève"
-    cam "Ok il faut que je sorte"
-    cam "Tu vas rester ici"
-    cam "Si tu est sages, je te baiserais en rentrant"
-    name "Tu reviens dans combien de temps?"
-    cam "Je ne sais pas, peut être 1 ou 2 heure, peut être plus"
-    cam "Tu peux prendre des trucs à manger, si tu veux"
-    cam "Mais ne salit rien, sinon..."
-    cam "Tu le regretteras"
-    cam "Et ne te rhabille surtout pas"
-    cam "Je veux te trouver prête à te faire baiser quand je rentres"
+    "I stay there, on my knees, for at least an hour."
+    "After a while, Camille gets up."
+    cam "Okay, I have to go out."
+    cam "You're going to stay here."
+    cam "If you're good, I'll fuck you when I get back."
+    name "How long will you be gone?"
+    cam "I don't know, maybe one or two hours, maybe more."
+    cam "You can grab something to eat if you want."
+    cam "But don't make a mess, or else..."
+    cam "You'll regret it."
+    cam "And don't you dare get dressed."
+    cam "I want to find you ready to get fucked when I come home"
+    
+    scene black
+    "I hear the door close behind Camille as she leaves."
+    "I am alone in her apartment, still wearing the ridiculous outfit she gave me."
+    "I look around, not sure what to do with myself."
+    "au début je reste assis sur le lit"
+    "Time passes slowly. I try not to think about how exposed I feel."
+    "Curiosity gets the better of me. I get up and discreetly explore Camille's apartment."
+    "I notice a photo hanging on the wall."
+    "It's a young man, naked, who seems to be sleeping on a couch."
+    "The photo isn't very good, but it looks like someone close to Camille."
+    "Maybe it's the friend she told me about, the one who became addicted to her."
+    "I wonder where he is now."
+    "I feel like I've taken his place."
+    "Am I going to become addicted to Camille too?"
+    "I'm not sure."
+    "In any case, I feel strangely excited by the situation."
+    "Je décide de faire une sieste en attendant Camille."
+    "Je m'allonge sur le lit et je fermes les yeux."
+    "I try to relax, but I can't stop thinking about Camille."
+    "I wonder what she's doing right now."
+    "Is she thinking about me too?"
+    "..."
+    "..."
+    "Soudain j'entends mon telephone qui sonne."
+    "C'est Camille."
+    
+    "After a few minutes, I hear footsteps in the hallway and quickly return to my place, hoping Camille didn't notice."
+
+
     name "Yes mistress"
     cam ""
-
+    scene frontfirst
+    ""
+    scene siderealeric1
+    ""
+    scene siderealeric2
+    ""
+    scene siderealeric1
+    ""
+    scene siderealeric2
+    ""
+    scene sidecloseuperic1
+    ""
+    scene sidecloseuperic2
+    ""
+    scene sidecloseuperic1
+    ""
+    scene sidecloseuperic2
+    ""
+    scene sidecloseuperic1
+    ""
+    scene closeup2eric1
+    ""
+    scene closeup2eric2
+    ""
+    scene closeup2eric1
+    ""
+    scene closeup2eric2
+    ""
+    scene sideuperic1
+    ""
+    scene sideuperic1t
+    ""
+    scene bjstartsideeric1
+    ""
+    scene bjstartsideeric2
+    ""
+    scene bjstartsideeric3
+    ""
+    scene bjstartsideeric2
+    ""
+    scene bjstartsideeric1
+    ""
+    scene bjstartsideeric2
+    ""
+    scene bjstartsideeric3
+    ""
+    scene bjstartsideeric2
+    ""
+    scene bjstartsideeric1
+    ""
+    scene sideuperic1
+    ""
+    scene sideuperic1t
+    ""
+    scene sideuperic3
+    ""
+    scene sideuperic2
+    ""
+    scene sideuperic3
+    ""
+    scene sideuperic1t
+    ""
+    scene sideuperic3
+    ""
+    scene sideuperic2
+    ""
+    scene zoomeric2
+    ""
+    scene zoomeric1
+    ""
+    scene zoomeric2
+    ""
+    scene zoomeric1
+    ""
+    scene zoomeric2
+    ""
+    scene zoomeric1
+    ""
+    scene sideuperic5
+    ""
+    scene sideuperic7
+    ""
+    scene sideuperic5
+    ""
+    scene sideuperic7
+    ""
+    scene sideuperic5
+    ""
+    scene sideuperic7
+    ""
+    scene closeupnew4
+    ""
+    scene closeupnew5
+    ""
+    scene closeupnew4
+    ""
+    scene closeupnew5
+    ""
+    scene closeupnew4
+    ""
+    scene closeupnew5
+    ""
+    scene closeupnew4
+    ""
+    scene closeupnew5
+    ""
+    
+    scene enderic2
+    ""
+    scene enderic3
+    ""
+    scene enderic2
+    ""
+    scene enderic3
+    ""
+    scene enderic1
+    ""
+    scene closeupnew6
+    ""
+    scene sscenestart
+    ""
+    scene sscenestart2
+    ""
+    scene sscenestart4
+    ""
+    scene sscenestart5
+    ""
+    scene sscenestart4
+    ""
+    scene sscenestart5
+    ""
+    scene sscenestart4
+    ""
+    scene sscenestart5
+    ""
+    scene test7
+    ""
+    scene test6
+    ""
+    scene testposeupside6
+    ""
+    scene testposeupside7
+    ""
+    scene testposeupside8
+    ""
+    scene testposeupside9
+    ""
+    scene testposeupside8
+    ""
+    scene testposeupside9
+    ""
+    scene testposeupside8
+    ""
+    scene testposeupside9
+    ""
+    scene closecamilleangle
+    ""
+    scene closecamilleangle2
+    ""
+    scene closecamilleangle
+    ""
+    scene closecamilleangle2
+    ""
+    scene closecamilleangle
+    ""
+    scene closecamilleangle2
+    ""
+    scene closecamilleangle
+    ""
+    scene closecamilleangle2
+    ""
+    scene camillescene2upcloseangle2
+    ""
+    scene camillescene2upcloseangle3
+    ""
+    scene camillescene2upcloseangle2
+    ""
+    scene camillescene2upcloseangle3
+    ""
+    scene camillescene2upcloseangle1
+    ""
+    scene camillescene2upcloseangle3
+    ""
+    scene camillescene2upcloseangle4
+    ""
+    scene camillescene2upcloseangle3
+    ""
+    scene camillescene2upcloseangle4
+    ""
+    scene camillescene2upcloseangle2
+    ""
+    scene camillescene2upcloseangle3
+    ""
+    scene camillescene2changingpose
+    ""
+    scene camillescene2pose2closeup3
+    ""
+    scene camillescene2pose2closeup1
+    ""
+    scene camillescene2pose2closeup2
+    ""
+    
+    scene camillescene2pose2v21
+    ""
+    scene camillescene2pose2v22
+    ""
+    scene camillescene2pose2v23
+    ""
+    scene camillescene2pose2v22b
+    ""
+    scene camillescene2pose2v21b
+    ""
+    scene camillescene2pose2v22b
+    ""
+    scene camillescene2pose2v23c
+    ""
+    scene camillescene2pose2v22
+    ""
+    scene camillescene2pose2v21b
+    ""
+    scene camillescene2pose2v22b
+    ""
+    scene camillescene2pose2v23
+    ""
+    scene camillescene2pose2angleback1
+    ""
+    scene camillescene2pose2angleback2
+    ""
+    scene camillescene2pose2angleback3
+    ""
+    scene camillescene2pose2angleback4
+    ""
+    scene camillescene2pose2angleback1
+    ""
+    scene camillescene2pose2angleback2
+    ""
+    scene camillescene2pose2angleback3
+    ""
+    scene camillescene2pose2angleback4
+    ""
+    scene camillescene2pose2angleback1
+    ""
+    scene camillescene2pose2angleback2
+    ""
+    scene camillescene2pose2v23c
+    ""
+    scene camillescene2pose2v21b
+    ""
+    scene camillescene2pose2v23
+    ""
+    scene camillescene2pose2v21b
+    ""
+    scene camillescene2pose2v23c
+    ""
+    scene camillescene2pose2v21b
+    ""
+    scene camillescene2pose2fast1
+    ""
+    scene camillescene2pose2fast2
+    ""
+    scene camillescene2pose2fast1
+    ""
+    scene camillescene2pose2fast2
+    ""
+    scene camillescene2pose2fast1
+    ""
+    scene camillescene2pose2fast2
+    ""
+    scene camillescene2pose2fast1
+    ""
+    scene camillescene2pose2fast2
+    ""
+    scene camillescene2pose2fast1
+    ""
+    scene camillescene2pose2fast2
+    ""
+    scene camillescene2pose2fast1
+    ""
+    scene camillescene2pose2fast2
+    ""
+    scene camillescene2pose2look
+    ""
+    scene camillescene2pose31
+    ""
+    scene camillescene2pose32
+    ""
+    scene camillescene2pose33
+    ""
+    scene camillescene2pose32
+    ""
+    scene camillescene2pose31
+    ""
+    scene camillescene2pose32
+    ""
+    scene camillescene2pose33
+    ""
+    scene camillescene2pose32
+    ""
+    scene camillescene2pose31
+    ""
     jump camilleshokerdate
+

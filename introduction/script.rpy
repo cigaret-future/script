@@ -35,6 +35,7 @@ define s_nvl = Character ("Sarah", kind=nvl, image="sarah", callback=Phone_Recei
 define cl_nvl = Character ("Clara", kind=nvl, image="clara", callback=Phone_ReceiveSound)
 define el_nvl = Character ("Elise", kind=nvl, image="elise", callback=Phone_ReceiveSound)
 define elo_nvl = Character ("Elodie", kind=nvl, callback=Phone_ReceiveSound)
+define cam_nvl = Character ("Camille", kind=nvl, image="camille", callback=Phone_ReceiveSound)
 
 define config.adv_nvl_transition = None
 define config.nvl_adv_transition = Dissolve(0.3)
@@ -201,7 +202,7 @@ label start:
     "Your name is [name]."
     "You are a 23-year-old student who is moving to a new city to start a thesis."
 
-    jump partydate
+    jump camilleshokerdate
     scene train
     with dissolve
     "It's been almost 3 hours since I've been on the train."
