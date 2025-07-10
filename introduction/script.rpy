@@ -150,6 +150,7 @@ label start:
     default camillespank3 = False
     default camille_sdate_done = False 
     default camille_relation_status_text = "I should try to sit next to her in class to get to know her"
+    default camille_moneycheck_passed = False
 
     # // Mila variables
     default mila_count = 0

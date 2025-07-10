@@ -182,7 +182,7 @@ label stacymelanieconv:
             mela "Tell us what you would do, [name]."
             name "I don’t know... try to be honest, I guess."
             mela "You would choose."
-            name "Oui eventuellement."
+            name "Yes, eventually."
             mela "Eventually..."
             name "Yeah, it takes time to choose."
             mela "Ahaha."
@@ -232,9 +232,12 @@ label stacymelanieconv:
             name "Yeah, people tell me that sometimes."
             name "How did you and Melany meet?"
             tra "Some friends introduced us."
-            tra "She helped me come out of my shell."
-            tra "Juste "
-            
+            tra "She helped me come out of my shell..."
+            name "I see."
+            mela "Fucking bourgeois.."
+            name "what's up?"
+            mela "I was talking to this guy about an exhibition I saw, and he was like 'oh yes, this artist is so problematic, because the representation of violence ... blah, blah blah...'"
+            mela "I am like, pourquoi tu aimes l'art?"
 
         # menu:
         #     "Yes":
@@ -340,7 +343,6 @@ label stacymelanieconv:
         tra "Alright, we get it, you're a rebel."
         tra "Do you really miss being in the mud, sleeping in a tent, and waking up with frozen feet?"
         
-        name "Je peux mettre quelque c"
         name "Can I play you something? I think you'll like it."
         name "It's kind of the same vibe."
         mela "What is it?"

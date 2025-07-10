@@ -166,6 +166,7 @@ label emmadirection :
     elif classdateemma_count == 5:
         jump classemmadate5
 label camilledirection:
+    
     if classdatecamille_count == 0:
         jump classcamilledate
     elif classdatecamille_count == 1:
@@ -178,8 +179,11 @@ label camilledirection:
         jump classcamilledate4
     elif classdatecamille_count == 5:
         jump classcamilledate5
-    elif classdatecamille_count == 6:
+    elif classdatecamille_count == 6 and camille_moneycheck_passed == False:
         jump classcamilledate6
+    elif classdatecamille_count == 6 and camille_moneycheck_passed == True:
+        jump classcamilledate7
+
 label classdatedirection : 
     if classdate_count ==2:
         jump classdate2
@@ -712,21 +716,45 @@ label classcamilledate6:
     cam "Unless you're a rich heir."
     menu:
         "I am":
-            name "I actually am, but I'm not interested in you, so..."
-            "Camille looks at my clothes."
-            show text "Not enough money."
-            pause 0.5
-            hide text with dissolve
-            show camille13 with dissolve
-            cam "Yeah, right."
-            
+            if money >= 2000:
+                name "I am not, but I do have money."
+                "Camille looks at me with a questioning expression."
+                cam "Good for you."
+                cam "Seriously, would you be willing to pay for...?"
+                
+                cam "You really would be ready for anything."
+                menu:
+                    "Yes":
+                        cam "Ahahah."
+                        name "What?"
+                        cam "Nothing. You are funny."
+                        cam "Maybe you're not as boring as I thought."
+                        name "Thanks i guess."
+                        "Camille remains silent for the rest of the class."
+                        "I don't dare restart the conversation for fear of saying something embarrassing."
+                        $ camille_relation_status_text == "I think she is interested in me... I should talk to her during class"
+                        $ camille_moneycheck_passed == True
+
+                    "Not everything.":
+                        cam "That's what I thought..."
+               
+
+            elif money =< 2000:
+                name "I actually am, but I'm not interested in you, so..."
+                "Camille looks at my clothes."
+                show text "Not enough money."
+                pause 0.5
+                hide text with dissolve
+                show camille13 with dissolve
+                cam "Yeah, right."
+                
         "I am not interested in you anyway":
             name "I don't know why you'd assume I'd be interested in sleeping with you."
             show camille13 with dissolve
             cam "Yeah, right."
             cam "I saw you looking at my boobs."
 
-    $ classdatecamille_count += 1
+   
     "The class passes by slowly."
     "After two hours of class, everyone leaves."
     "Finally."
@@ -734,7 +762,91 @@ label classcamilledate6:
     scene black with dissolve
     "I leave the classroom and head to the garden."
     jump gardenuni_start2
+label classcamilledate7:
+    scene smallclassroomblur with dissolve
+        
+    "I enter the classroom and sit next to Camille."
+    "I try my best to focus on the teacher's lecture."
+    show camille14 with dissolve
+    cam "Hey, do you want to do something after class?"
+    name "hm? Yeah, sure.."
+    name "I'm surprised you're asking me."
+    cam "We could go have a coffee at the campus pub."
+    name "Oh, great, I've never been there yet."
+    cam "I'll show you."
+    "The class goes on as usual."
+    "Once it's over, Camille gestures for me to follow her."
+    cam "Come on, let's get out of here."
+    "Camille leads me through the university hallways."
+    "We head down to the garden and walk along the buildings."
+    "Eventually, we arrive at a small building that looks like a student café."
+    cam "Go grab a seat, I'll be right back."
+    name "Okay."
+    "I sit at a table. The atmosphere is relaxed, with students chatting or working over their coffee."
+    "I wonder why I've never come here before."
+    "Camille revient avec deux cafés et s'installe en face de moi."
+    cam "Here, this is for you."
+    name "Thanks."
+    cam "So, do you like the place?"
+    name "Yeah, it's nice."
+    "Camille takes a sip of her coffee, looking a bit thoughtful."
+    name "But I don't really get why you invited me here."
+    name "You usually seem so distant, it caught me off guard."
+    cam "Yeah, well, sometimes I get these random urges to be nice."
+    cam "But I admit, it doesn't happen often."
+    cam "But let's just say I like people I can be a little mean to."
+    cam "And you seem to fit the profile."
+    name "I see."
+    name "I mean, if you say so.."
+    name "So you like me, we could say that?"
+    cam "Whoa, don't get carried away."
+    "Camille drinks her coffee."
+    name "So, you run a blog, right?"
+    cam "Yeah."
+    cam "We try to create content about fashion—interviews, discovery videos, articles on trends, sometimes designer spotlights."
+    name "That sounds cool. Do you do all that with your friends?"
+    cam "Yeah, we're a small team. Everyone has their own role."
+    name "What do you do?"
+    cam "I'm the boss, obviously."
+    name "Really? Wow."
+    cam "I handle the writing and a bit of social media. I'm kind of an influencer in my spare time."
+    cam "Gotta keep busy outside of class."
+    cam "It's not like we're going to find a job here. Unless you want to become an expert in intellectual procrastination."
+    name "So what kind of articles do you write?"
+    cam "I do reviews of different collections."
+    name "Oh, like critiques?"
+    cam "Exactly. I roast designers, but with style."
+    name "So you give your opinion on other people's work?"
+    cam "Pretty much, but don't think you can just be mean for no reason. It takes work."
+    cam "You have to put aside your biases and sometimes your feelings. Except when it comes to ugly shoes—then I can be ruthless."
+    name "Sounds serious."
+    cam "I try to do it well."
+    cam "And you, what do you do besides asking everyone else questions?"
+    name "Me? Nothing special. I go to class, work on my thesis, and try to survive."
+    cam "Ouai dans 2 ou 3 ans tu seras paumé si tu trouves pas quelque chose à faire à côté."
+    name "..."
+    name "Yeah, I know."
+    cam "Don't make that face. Like I said, if I ever need someone for a lingerie shoot, I'll let you know."
+    name "Well, maybe I'd be interested."
+    cam "Haha, seriously, you could find work easily."
+    cam "People are always looking for affordable models."
+    cam "Of course, when you're just starting out, it doesn't pay much."
+    cam "Not trying to put you on the market too fast, haha."
+    name "Well, I'll think about it."
+    cam "Sure."
+    "After a moment, she looks at her phone."
+    cam "I have to go. But this was nice. Let's do it again if you're not too clingy."
+    name "Hey, if you need me, I'm here."
+    "Camille gives a slight smile, grabs her bag, and slips away without another word."
+    name "Should I pay for the coffee?"
+    cam "No, it's ok, don't worry."
 
+    $ classdatecamille_count += 1
+    $ class_done = True
+    scene black with dissolve
+    
+    "I leave the café and head back to the garden."
+    jump gardenuni_start2
 
 
     
