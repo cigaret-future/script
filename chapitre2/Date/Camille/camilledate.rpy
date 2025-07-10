@@ -1,53 +1,53 @@
 label camillehomedate:
     scene camilleupdate10
-    cam "entres, fais comme chez toi"
-    "Je rentre dans l'appartement de Camille"
-    "Une odeur douce de shampoing flotte dans l'air"
-    "Je me demande si elle a pris une douche avant que je n'arrive"
-    "L'idée qu'elle se soit préparée pour moi me mets en confiance"
+    cam "Come in, make yourself at home."
+    "I enter Camille's apartment."
+    "A sweet scent of shampoo floats in the air."
+    "I wonder if she took a shower before I arrived."
+    "The idea that she got ready for me makes me feel confident."
     scene enteringeric
-    "Je ne sais pas trop à quoi m'attendre"
-    name "Ton appart est trop beau"
-    cam "Je sais, j'ai besoin d'être dans une ambiance agréable pour travailler"
-    name "ah tu travailles chez toi?"
-    "Camille rigole et me fait signe de m'asseoir sur une chaise"
+    "I'm not really sure what to expect."
+    name "Your apartment is so beautiful."
+    cam "I know, I need to be in a pleasant atmosphere to work."
+    name "Oh, you work from home?"
+    "Camille laughs and gestures for me to sit on a chair."
     
-    cam "oui, pour les cours, je suis étudiante avec toi, tu as oublié?"
-    name "ah oui, c'est vrai"
-    "Elle me fixe du regard"
-    cam "T'a l'air nerveux"
-    name "Je..."
-    cam "Tu veux une bière?"
-    name "Je veux bien merci"
-    name "J'ai pas l'habitude de ce genre de rendez-vous"
-    "Camille se lève et va chercher deux bières dans le frigo"
+    cam "Yes, for classes, I'm a student with you, did you forget?"
+    name "Oh right, that's true."
+    "She stares at me."
+    cam "You look nervous."
+    name "I..."
+    cam "Do you want a beer?"
+    name "I'd like that, thanks."
+    name "I'm not used to this kind of date."
+    "Camille gets up and grabs two beers from the fridge."
     scene camilletalkking2
-    cam "Tiens"
-    name "thanks"
-    cam "Qu'est ce que tu veux faire?"
-    name "Je sais pas trop, je pensais qu'on pourrait discuter un peu"
-    cam "Discuter?"
+    cam "Here you go."
+    name "Thanks."
+    cam "What do you want to do?"
+    name "I'm not sure, I thought we could talk a bit."
+    cam "Talk?"
     scene camilledrinking
-    name "Oui, je veux dire, apprendre à se connaître un peu"
-    cam "Ah, je pensais qu'on allait faire autre chose"
-    name "Ah bon?"
-    cam "ahahah t'es mignon"
+    name "Yeah, I mean, get to know each other a little."
+    cam "Ah, I thought we were going to do something else."
+    name "Oh really?"
+    cam "Ahaha, you're cute."
     scene camilletalkking
 
-    "J'essaye de parler de tout et de rien, je lui parle de mes études, de ma ville natale"
-    "Camille me regarde avec un sourire amusé"
-    "Elle me laisse parler en buvant sa bière de temps en temps"
+    "I try to talk about anything and everything, I tell her about my studies, my hometown."
+    "Camille looks at me with an amused smile."
+    "She lets me talk while sipping her beer from time to time."
     scene camilletalkking4
-    "Je n'arrive pas à ne pas jeter des coups d'oeil sur sa poitrine qui repose sur la table"
-    "Ses seins sont énormes, j'essaye de réprimer des images de moi en train de les sucer"
+    "I can't help but glance at her chest resting on the table."
+    "Her breasts are huge, I try to suppress images of myself sucking them."
     scene camillefocus
-    cam "Hey, est ce que ça te déranges si je t'envoie faire une course?"
-    name "Une course? Tu as besoin de quoi?"
-    cam "J'ai besoin de quelques trucs pour le repas de ce soir"
-    cam "Tiens, je te fais une liste"
-    name "je suis ton coursier maitenant?"
-    cam "Tu discutes vraiment mes demandes?"
-    name "Je, ... "
+    cam "Hey, do you mind if I send you on an errand?"
+    name "An errand? What do you need?"
+    cam "I need a few things for dinner tonight."
+    cam "Here, I'll make you a list."
+    name "So I'm your delivery boy now?"
+    cam "Are you really questioning my requests?"
+    name "I, ... "
     menu :
         "Je vais faire les courses":
             jump camilleshopping
@@ -60,69 +60,69 @@ label camillenotshopping:
         cam "mmh..."
         "Je me demande si elle est déçue"
         "J'espère que non"
-        cam ""           
+             
 label camilleshopping:
             scene camillelaugh2
-            
-            cam "J'aime mieux ça"
-            cam "Je t'envoie la liste sur ton telephone"
-            name "Alright" 
-            "J'imagines que ça fait partie de cette relation"
+
+            cam "I like that better."
+            cam "I'll send you the list on your phone."
+            name "Alright"
+            "I guess it's part of this relationship."
             scene black
-            "Je descends les escaliers et je sors de l'immeuble"
+            "I go down the stairs and leave the building."
             scene goingout2
-            "Je me dirige vers le supermarché le plus proche"
-            "je me demande ce que je dirais si je croise quelqu'un que je connais"
-            "'Je suis en train de faire les courses pour une futa qui me l'a demandé, et je ne sais pas trop pourquoi'"
-            "ou peut être que je sais bien pourquoi"
-            "Je n'arrive pas à savoir si c'est normal ou non"
+            "I head to the nearest supermarket."
+            "I wonder what I'd say if I ran into someone I know."
+            "'I'm running errands for a futa who asked me, and I'm not really sure why.'"
+            "Or maybe I do know why."
+            "I can't tell if this is normal or not."
             scene goshopping
-            "J'essaye de me concentrer sur la liste de courses."
-            "Je dois acheter des pâtes, de la sauce tomate, du fromage, du pain et du vin."
-            "Je prends les articles un par un"
-            "Peut être qu'elle va me demander de cuisiner"
-            "J'espère que non, sinon elle va être déçus"
-            "Soudain j'entends mon nom appelé par une voix familière"
+            "I try to focus on the shopping list."
+            "I need to buy pasta, tomato sauce, cheese, bread, and wine."
+            "I pick up the items one by one."
+            "Maybe she'll ask me to cook."
+            "I hope not, otherwise she'll be disappointed."
+            "Suddenly I hear my name called by a familiar voice."
             scene ericlinda
             lin "Hey, what's up?"
-            lin "Tu fais les courses ici?"
-            name "Heeeey... oui oui j'ai besoin de trucs spéciaux"
-            name "mon épicier a pas ce que je veux"
-            lin "Ah ok, je comprends"
-            lin "Qu'est ce que tu achètes?"
-            name "Oh des trucs pour un repas"
+            lin "Shopping here?"
+            name "Heeeey... yeah, yeah, I need some special stuff."
+            name "My usual store doesn't have what I want."
+            lin "Ah ok, I get it."
+            lin "What are you buying?"
+            name "Oh, just stuff for a meal."
             scene ericlinda3 with dissolve
-            lin "fais voir? hum, c'est pas très varié"
-            lin "Ils ont pas ça dans ton épicerie?"
-            "Pourquoi elle me demande ça?"
-            "J'essaye de trouver une excuse"
-            name "Non, ils sont en rupture de stock ahah"
+            lin "Let me see? Hm, that's not very varied."
+            lin "Don't they have that at your usual store?"
+            "Why is she asking me that?"
+            "I try to come up with an excuse."
+            name "No, they're out of stock ahah."
             scene ericlinda2 with dissolve
             lin "I see..."
-            "Linda me regarde avec un sourire amusé"
-            lin "bref, je te laisse, j'ai des trucs à faire"
-            lin "On se voit plus tard"
-            name "Ouais, à plus tard"
-            "Pourquoi j'ai l'impression qu'elle sait ce que je fais là?"
+            "Linda looks at me with an amused smile."
+            lin "Anyway, I'll leave you to it, I have things to do."
+            lin "See you later."
+            name "Yeah, see you."
+            "Why do I feel like she knows what I'm doing here?"
             scene walking out
-            "Je retourne à l'appartement de Camille avec les courses"
+            "I go back to Camille's apartment with the groceries."
             scene black
             ""
             scene entergingfromshop
-            cam "ah t'est là, tu as trouvé ce que j'ai demandé?"
-            name "yes yes..."
-            cam "good, va les ranger dans la cuisine"
+            cam "Ah, you're back, did you find what I asked for?"
+            name "Yes, yes..."
+            cam "Good, go put them away in the kitchen."
             scene ericputbagcounter
-            
-            cam "Tu as fait vite, je suis impressionnée"
-            cam "Tu peux ranger ça dans les placard du haut"
+
+            cam "You were quick, I'm impressed."
+            cam "You can put those in the upper cupboards."
 
             scene ericarangecourse
-            "Je m'execute, sans trop réflechir"
-            "Je ne sais pas trop ce que j'attend de la situation"
-            "mais j'aime bien être là et faire ce qu'elle me demande"
+            "I do as I'm told, without thinking too much."
+            "I'm not really sure what I expect from this situation."
+            "But I like being here and doing what she asks."
             scene camillesiting
-            "Camille va s'allonger sur son lit"
+            "Camille goes to lie down on her bed."
             scene erikaskingcamillesomething
             ""
             scene camillestaring
@@ -295,313 +295,727 @@ label camilleshokerdate:
     "Is she thinking about me too?"
     "..."
     "..."
-    "Soudain j'entends mon telephone qui sonne."
-    "C'est Camille."
-    
-    "After a few minutes, I hear footsteps in the hallway and quickly return to my place, hoping Camille didn't notice."
-
-
+    "Suddenly I hear my phone ringing."
+    "It's Camille."
+    cam_nvl "Hey, are you still at home?"
+    n_nvl "Yes"
+    cam_nvl "Okay, I'll be there in 10 minutes."
+    cam_nvl "Get ready."
+    "After a few minutes, I hear footsteps in the hallway."
+    "I sit on the bed, as if I hadn't moved since she left."
+    "Camille suddenly enters the apartment."
+    "She looks at her phone, pretending to ignore me."
+    "Then she turns to me with a satisfied smile."
+    cam "Have you been good?"
     name "Yes mistress"
-    cam ""
+    cam "Good"
+    cam "I'm glad to see you like this"
+    cam "you've really earned it"
+    cam "I'm going to fuck this ass"
     scene frontfirst
-    ""
-    scene siderealeric1
-    ""
-    scene siderealeric2
-    ""
-    scene siderealeric1
-    ""
-    scene siderealeric2
-    ""
-    scene sidecloseuperic1
-    ""
-    scene sidecloseuperic2
-    ""
-    scene sidecloseuperic1
-    ""
-    scene sidecloseuperic2
-    ""
-    scene sidecloseuperic1
-    ""
-    scene closeup2eric1
-    ""
-    scene closeup2eric2
-    ""
-    scene closeup2eric1
-    ""
-    scene closeup2eric2
-    ""
-    scene sideuperic1
-    ""
-    scene sideuperic1t
-    ""
-    scene bjstartsideeric1
-    ""
-    scene bjstartsideeric2
-    ""
-    scene bjstartsideeric3
-    ""
-    scene bjstartsideeric2
-    ""
-    scene bjstartsideeric1
-    ""
-    scene bjstartsideeric2
-    ""
-    scene bjstartsideeric3
-    ""
-    scene bjstartsideeric2
-    ""
-    scene bjstartsideeric1
-    ""
-    scene sideuperic1
-    ""
-    scene sideuperic1t
-    ""
-    scene sideuperic3
-    ""
-    scene sideuperic2
-    ""
-    scene sideuperic3
-    ""
-    scene sideuperic1t
-    ""
-    scene sideuperic3
-    ""
-    scene sideuperic2
-    ""
-    scene zoomeric2
-    ""
-    scene zoomeric1
-    ""
-    scene zoomeric2
-    ""
-    scene zoomeric1
-    ""
-    scene zoomeric2
-    ""
-    scene zoomeric1
-    ""
-    scene sideuperic5
-    ""
-    scene sideuperic7
-    ""
-    scene sideuperic5
-    ""
-    scene sideuperic7
-    ""
-    scene sideuperic5
-    ""
-    scene sideuperic7
-    ""
-    scene closeupnew4
-    ""
-    scene closeupnew5
-    ""
-    scene closeupnew4
-    ""
-    scene closeupnew5
-    ""
-    scene closeupnew4
-    ""
-    scene closeupnew5
-    ""
-    scene closeupnew4
-    ""
-    scene closeupnew5
-    ""
-    
-    scene enderic2
-    ""
-    scene enderic3
-    ""
-    scene enderic2
-    ""
-    scene enderic3
-    ""
-    scene enderic1
-    ""
-    scene closeupnew6
-    ""
-    scene sscenestart
-    ""
-    scene sscenestart2
-    ""
-    scene sscenestart4
-    ""
-    scene sscenestart5
-    ""
-    scene sscenestart4
-    ""
-    scene sscenestart5
-    ""
-    scene sscenestart4
-    ""
-    scene sscenestart5
-    ""
-    scene test7
-    ""
-    scene test6
-    ""
-    scene testposeupside6
-    ""
-    scene testposeupside7
-    ""
-    scene testposeupside8
-    ""
-    scene testposeupside9
-    ""
-    scene testposeupside8
-    ""
-    scene testposeupside9
-    ""
-    scene testposeupside8
-    ""
-    scene testposeupside9
-    ""
-    scene closecamilleangle
-    ""
-    scene closecamilleangle2
-    ""
-    scene closecamilleangle
-    ""
-    scene closecamilleangle2
-    ""
-    scene closecamilleangle
-    ""
-    scene closecamilleangle2
-    ""
-    scene closecamilleangle
-    ""
-    scene closecamilleangle2
-    ""
-    scene camillescene2upcloseangle2
-    ""
-    scene camillescene2upcloseangle3
-    ""
-    scene camillescene2upcloseangle2
-    ""
-    scene camillescene2upcloseangle3
-    ""
-    scene camillescene2upcloseangle1
-    ""
-    scene camillescene2upcloseangle3
-    ""
-    scene camillescene2upcloseangle4
-    ""
-    scene camillescene2upcloseangle3
-    ""
-    scene camillescene2upcloseangle4
-    ""
-    scene camillescene2upcloseangle2
-    ""
-    scene camillescene2upcloseangle3
-    ""
-    scene camillescene2changingpose
-    ""
-    scene camillescene2pose2closeup3
-    ""
-    scene camillescene2pose2closeup1
-    ""
-    scene camillescene2pose2closeup2
-    ""
-    
-    scene camillescene2pose2v21
-    ""
-    scene camillescene2pose2v22
-    ""
-    scene camillescene2pose2v23
-    ""
-    scene camillescene2pose2v22b
-    ""
-    scene camillescene2pose2v21b
-    ""
-    scene camillescene2pose2v22b
-    ""
-    scene camillescene2pose2v23c
-    ""
-    scene camillescene2pose2v22
-    ""
-    scene camillescene2pose2v21b
-    ""
-    scene camillescene2pose2v22b
-    ""
-    scene camillescene2pose2v23
-    ""
-    scene camillescene2pose2angleback1
-    ""
-    scene camillescene2pose2angleback2
-    ""
-    scene camillescene2pose2angleback3
-    ""
-    scene camillescene2pose2angleback4
-    ""
-    scene camillescene2pose2angleback1
-    ""
-    scene camillescene2pose2angleback2
-    ""
-    scene camillescene2pose2angleback3
-    ""
-    scene camillescene2pose2angleback4
-    ""
-    scene camillescene2pose2angleback1
-    ""
-    scene camillescene2pose2angleback2
-    ""
-    scene camillescene2pose2v23c
-    ""
-    scene camillescene2pose2v21b
-    ""
-    scene camillescene2pose2v23
-    ""
-    scene camillescene2pose2v21b
-    ""
-    scene camillescene2pose2v23c
-    ""
-    scene camillescene2pose2v21b
-    ""
-    scene camillescene2pose2fast1
-    ""
-    scene camillescene2pose2fast2
-    ""
-    scene camillescene2pose2fast1
-    ""
-    scene camillescene2pose2fast2
-    ""
-    scene camillescene2pose2fast1
-    ""
-    scene camillescene2pose2fast2
-    ""
-    scene camillescene2pose2fast1
-    ""
-    scene camillescene2pose2fast2
-    ""
-    scene camillescene2pose2fast1
-    ""
-    scene camillescene2pose2fast2
-    ""
-    scene camillescene2pose2fast1
-    ""
-    scene camillescene2pose2fast2
-    ""
-    scene camillescene2pose2look
-    ""
-    scene camillescene2pose31
-    ""
-    scene camillescene2pose32
-    ""
-    scene camillescene2pose33
-    ""
-    scene camillescene2pose32
-    ""
-    scene camillescene2pose31
-    ""
-    scene camillescene2pose32
-    ""
-    scene camillescene2pose33
-    ""
-    scene camillescene2pose32
-    ""
-    scene camillescene2pose31
-    ""
-    jump camilleshokerdate
+    "Camille quickly undresses and stands in front of me."
+    "Her huge cock is already hard."
+    cam "Is this what you wanted?"
+    name "hmhmm"
+    scene siderealeric1 with dissolve
+    cam "You've been very obedient"
+    scene siderealeric2 with dissolve
+    window hide
+    pause
 
+    scene siderealeric1 with dissolve
+    window hide
+    pause
+    scene siderealeric2 with dissolve
+    window hide
+    pause
+    scene sidecloseuperic1 with dissolve
+    "Camille's cock feels so heavy"
+    scene sidecloseuperic2 with dissolve
+    "With each thrust, I feel myself shrinking"
+    scene sidecloseuperic1 with dissolve
+    "The scent of her sweat and precum fills my nose"
+    scene sidecloseuperic2 with dissolve
+    window hide
+    pause
+    scene sidecloseuperic1 with dissolve
+    cam "You're so cute"
+    scene sidecloseuperic2 with dissolve
+    cam "My little bunny"
+    scene sidecloseuperic1 with dissolve
+    cam "Put it in your mouth"
+    scene closeup2eric1 with dissolve
+    cam "That's it"
+    scene closeup2eric2 with dissolve
+    cam "Your perfect little mouth"
+    scene closeup2eric1 with dissolve
+    cam "Taste me"
+    scene closeup2eric2 with dissolve
+    window hide
+    pause
+    scene closeup2eric1 with dissolve
+    window hide
+    pause
+    scene closeup2eric2 with dissolve
+    cam "You like that?"
+    scene sideuperic1 with dissolve
+    "Camille grabs my hair and thrusts her cock deeper"
+    "Her dick completely fills my mouth"
+    scene sideuperic1t with dissolve
+    cam "Let's stretch that pretty mouth of yours"
+    scene bjstartsideeric1 with dissolve
+    "Camille pushes deeper, making me gasp for air"
+    scene bjstartsideeric2 with dissolve
+    "With slow, deliberate movements, Camille fucks my face"
+    scene bjstartsideeric3 with dissolve
+    window hide
+    pause
+    scene bjstartsideeric2 with dissolve
+    window hide
+    pause
+    scene bjstartsideeric1 with dissolve
+    window hide
+    pause
+    scene bjstartsideeric2 with dissolve
+    window hide
+    pause
+    scene bjstartsideeric3 with dissolve
+    window hide
+    pause
+    scene bjstartsideeric2 with dissolve
+    cam "Good girl"
+    scene bjstartsideeric3 with dissolve
+    cam "Take it all"
+    scene bjstartsideeric2 with dissolve
+    window hide
+    pause
+    scene bjstartsideeric1 with dissolve
+    cam "You were made for this"
+    scene bjstartsideeric2 with dissolve
+    cam "My perfect little slut"
+    scene sideuperic1 with dissolve
+    cam "Taking my cock so well"
+    scene sideuperic1t with dissolve
+    "Camille's words cloud my mind"
+    scene sideuperic3 with dissolve
+    "I'm completely at her mercy"
+    scene sideuperic2 with dissolve
+    window hide
+    pause
+    scene sideuperic3 with dissolve
+    window hide
+    pause
+    scene sideuperic1t with dissolve
+    window hide
+    pause
+    scene sideuperic3 with dissolve
+    cam "Look at me"
+    scene sideuperic2 with dissolve
+    cam "You..."
+    scene zoomeric2 with dissolve
+    cam "are..."
+    scene zoomeric1 with dissolve
+    cam "my..."
+    scene zoomeric2 with dissolve
+    cam "perfect..."
+    scene zoomeric1 with dissolve
+    cam "pet..."
+    scene zoomeric2 with dissolve
+    "Camille's words consume me"
+    scene zoomeric1 with dissolve
+    "Molding me into exactly what she wants"
+    scene zoomeric2 with dissolve
+    window hide
+    pause
+    scene zoomeric1 with dissolve
+    window hide
+    pause
+    scene zoomeric2 with dissolve
+    window hide
+    pause
+    scene zoomeric1 with dissolve
+    cam "Fuck..."
+    scene sideuperic5 with dissolve  
+    "Camille grows impatient."  
+    scene sideuperic7 with dissolve  
+    window hide  
+    pause  
+    scene sideuperic5 with dissolve  
+    cam "Yes, baby, take it!"  
+    scene sideuperic7 with dissolve  
+    cam "Mmm!"  
+    scene sideuperic5 with dissolve  
+    cam "Take it all!"  
+    scene sideuperic7 with dissolve  
+    window hide  
+    pause  
+    scene sideuperic5 with dissolve  
+    window hide  
+    pause  
+    scene sideuperic7 with dissolve  
+    cam "You're such a slut..."  
+    scene sideuperic5 with dissolve  
+    cam "Suck this dick... yes..."  
+    scene sideuperic7 with dissolve  
+    cam "Good pet..."  
+    scene sideuperic7 with dissolve  
+    window hide  
+    pause  
+    scene sideuperic5 with dissolve  
+    window hide  
+    pause  
+    scene closeupnew4 with dissolve  
+    "I try my best to keep up without choking."  
+    scene closeupnew5 with dissolve  
+    "But Camille's cock is so big..."  
+    scene closeupnew4 with dissolve  
+    "I feel dizzy."  
+    scene closeupnew5 with dissolve  
+    cam "Ooh, yes..."  
+    scene closeupnew5 with dissolve  
+    cam "Keep sucking."  
+    scene closeupnew4 with dissolve  
+    window hide  
+    pause  
+    scene closeupnew5 with dissolve  
+    window hide  
+    pause  
+    scene closeupnew4 with dissolve  
+    window hide  
+    pause  
+    scene closeupnew5 with dissolve  
+    window hide  
+    pause  
+    scene enderic2 with dissolve  
+    cam "Fuck..."  
+    scene enderic3 with dissolve  
+    "I feel precum dripping down my throat, mixing with my saliva."  
+    scene enderic2 with dissolve  
+    "Camille's cock seems ready to burst."  
+    scene enderic3 with dissolve  
+    window hide  
+    pause  
+    scene enderic1 with dissolve  
+    cam "Fuck..."  
+    cam "You almost made me fill your mouth."  
+    cam "Maybe it would've been better for you."  
+    cam "Considering what's waiting for you next."  
+    scene closeupnew6 with dissolve  
+    cam "Get on the bed."  
+    scene sscenestart with dissolve
+    "Camille me pousses sur le lit"
+    scene sscenestart2 with dissolve
+    window hide
+    pause
+    scene sscenestart4 with dissolve
+    window hide
+    pause
+    scene sscenestart5 with dissolve
+    window hide
+    pause
+    scene sscenestart4 with dissolve
+    window hide
+    pause
+    scene sscenestart5 with dissolve
+    window hide
+    pause
+    scene sscenestart4 with dissolve
+    window hide
+    pause
+    scene sscenestart5 with dissolve
+    window hide
+    pause
+    scene test7 with dissolve
+    window hide
+    pause
+    scene test6 with dissolve
+    window hide
+    pause
+    scene camillescene2closeupcamilleface3 with dissolve
+    cam "You are gonna mine forever after that"
+    scene testposeupside6 with dissolve
+    "Camille pushes her penis into my ass"
+    "A wave of pleasure explodes in my lower belly."
+    scene testposeupside7 with dissolve
+    name "Gnnn.."
+    scene testposeupside8 with dissolve
+    cam "Fuck you are so tight.."
+    scene testposeupside9 with dissolve
+    "I feel her glans inside me, stretching me deliciously"
+    scene testposeupside8 with dissolve
+    cam "Don't worry, I'll be gentle."
+    scene testposeupside9 with dissolve
+    cam "For now."
+    scene testposeupside8 with dissolve
+    "Camille fucks my ass gently, each thrust sending shivers up my spine"
+    scene testposeupside9 with dissolve
+    "I let out small moans with each thrust, my body arching against hers"
+    scene closecamilleangle with dissolve
+    cam "That's it."
+    scene closecamilleangle2 with dissolve
+    cam "You're gonna love this"
+    scene closecamilleangle with dissolve
+    "My breath starts to quicken as she pushes her member inside me"
+    scene closecamilleangle2 with dissolve
+    "My fingers dig into the sheets as pleasure builds within me"
+    scene closecamilleangle with dissolve
+    cam "Just relax... "
+    scene closecamilleangle2 with dissolve
+    "I moan softly as she continues to move inside me, unable to hold back my sighs of pleasure."
+    pause
+    scene closecamilleangle with dissolve
+    window hide
+    pause
+    scene closecamilleangle2 with dissolve
+    window hide
+    pause
+    scene camillescene2closeupcamilleface3 with dissolve
+    cam "I see you're really enjoying yourself."
+    scene camillescene2closeupcamilleface4 with dissolve
+    window hide
+    pause
+    scene camillescene2closeupcamilleface5 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle2 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle3 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle2 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle3 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle1 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle3 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle4 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle3 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle4 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle2 with dissolve
+    window hide
+    pause
+    scene camillescene2upcloseangle3 with dissolve
+    window hide
+    pause
+    scene camillescene2changingpose with dissolve
+    window hide
+    pause
+    scene camillescene2pose2closeup3 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2closeup1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2closeup2 with dissolve
+    window hide
+    pause
+
+    scene camillescene2pose2v21 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v22b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v21b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v22b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v23c with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v21b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v22b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback3 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback4 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback3 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback4 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v23c with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v21b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v21b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v23c with dissolve
+    window hide
+    pause
+    scene camillescene2pose2v21b with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2look with dissolve
+    window hide
+    pause
+    scene camillescene2pose31 with dissolve
+    window hide
+    pause
+    scene camillescene2pose32 with dissolve
+    window hide
+    pause
+    scene camillescene2pose33 with dissolve
+    window hide
+    pause
+    scene camillescene2pose32 with dissolve
+    window hide
+    pause
+    scene camillescene2pose31 with dissolve
+    window hide
+    pause
+    scene camillescene2pose32 with dissolve
+    window hide
+    pause
+    scene camillescene2pose33 with dissolve
+    window hide
+
+
+    pause
+    scene camillescene2pose32 with dissolve
+    window hide
+    pause
+    scene camillescene2pose31 with dissolve
+    window hide
+    pause
+    # //////////////////////////////////////
+    scene camillescene2pose3angle23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose33 with dissolve
+    window hide
+    pause
+    scene camillescene2pose32 with dissolve
+    window hide
+    pause
+    scene camillescene2pose33 with dissolve
+    window hide
+    pause
+    scene camillescene2pose32 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle23 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle23 with dissolve
+    window hide
+    pause
+    scene camillescene2dompose4 with dissolve
+    "Camille takes control, dominating me completely."
+    scene camillescene2dompose1 with dissolve
+    "her hands gripping my hips tightly."
+    scene camillescene2dompose2 with dissolve
+    "She's pounding my ass like it's her personal stress reliever."
+    scene camillescene2dompose3 with dissolve
+    window hide
+    pause
+    scene camillescene2dompose2 with dissolve
+    window hide
+    pause
+    scene camillescene2dompose1 with dissolve
+    window hide
+    pause
+    scene camillescene2dompose4 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge2 with dissolve 
+    window hide
+    pause 
+    scene camillescene2domposeanlge22 with dissolve 
+    window hide
+    pause 
+    scene camillescene2domposeanlge2 with dissolve 
+    window hide
+    pause 
+    scene camillescene2domposeanlge22 with dissolve 
+    window hide
+    pause
+    scene camillescene2domposeanlge2 with dissolve 
+    window hide
+    pause
+    scene camillescene2domposeanlge22 with dissolve 
+    window hide
+    pause
+    scene camillescene2domposeangle50 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle51 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle52 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle53 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle50 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle51 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle52 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle53 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle50 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle51 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle52 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeangle53 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge32 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge33 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge32 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge33 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge32 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge33 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge32 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge33 with dissolve
+    window hide
+    pause
+    
+    scene camillescene2domposeanlge37 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge36 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge37 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge36 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge37 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge36 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge37 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge36 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge37 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge35 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge34 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge35 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge34 with dissolve
+    window hide
+    pause
+    scene camillescene2domposeanlge35 with dissolve
+    window hide
+    pause
+    scene camillescene2endpose with dissolve
+    "Camille finally slows down, her breathing heavy."
+    scene camillescene2endpose2 with dissolve
+    "She pulls out, leaving me panting and exhausted."
+    scene endblowjob4 with dissolve
+    window hide
+    pause
+    scene endblowjob1 with dissolve
+    window hide
+    pause
+    scene endblowjob2 with dissolve
+    window hide
+    pause
+    scene endblowjob3 with dissolve
+    window hide
+    pause
+    scene endblowjob2 with dissolve
+    window hide
+    pause
+    scene endblowjob3 with dissolve
+    window hide
+    pause
+    scene endblowjob2b with dissolve
+    window hide
+    pause
+    scene endblowjob1b with dissolve
+    window hide
+    pause
+    scene endblowjob2b with dissolve
+    window hide
+    pause
+    scene endblowjob1b with dissolve
+    window hide
+    pause
+    scene endblowjob4b with dissolve
+    window hide
+    pause
+    scene finalcamille with dissolve
+    window hide
+    pause
+    
