@@ -74,11 +74,20 @@ label sebastianconv:
         scene balconynobodyarrow
         scene balconynobodyarrowflou with dissolve
         show sebastian1 with dissolve
-
         seb "Yeah, as I was saying, you should really consider investing."
         seb "It's actually pretty accessible."
         seb "All you need is a computer and a bit of free time."
         seb "You can start small, and as you get the hang of it, you can put in a bit more."
         seb "You want to invest, right?"
         name "Not really, I don't have much money to invest."
+        seb "You can invest just a little, but still get good returns."
+        seb "The thing is, you just need to have the right sources."
+        name "I'll think about it."
+        seb "Yeah, you should."
+        seb "So, tu as quelqu'un en vus sinon?"
+        name "Non, pas vraiment."
+        seb "Moi faut que je trouve quelqu'un pour ce soir."
+        seb "ça fait trop longtemps."
+        
+
         jump balcony

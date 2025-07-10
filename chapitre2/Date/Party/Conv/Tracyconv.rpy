@@ -16,8 +16,7 @@ label tracydate:
     tra "Don't pretend."
     name "Won't Mélanie be upset that we're in the room together?"
     tra "Probably..."
-    tra "But like I said, we're not really together so it's fine."
-    tra "At least I think so."
+    tra "I never really know where I stand with her."
     name "Maybe we could just talk?"
     name "That way you don't ruin your plan."
     tra "Yeah..."
@@ -121,6 +120,8 @@ label tracydate2:
     "I find them in the room where we were before."
     "Tracy is sitting on the bed, Melanie is standing next to her."
     "Melanie has her pants down and is showing her dick to Tracy."
+    "I freeze for a second, unsure whether to leave or stay."
+    "My heart races. I didn’t expect... this."
     "Tracy is slowly sucking her."
    
     mela "Did you think you could escape me?"

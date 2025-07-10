@@ -14,8 +14,11 @@ label stacymelanieconv:
 
     label stacymelanie1:    
         $ stacymelanieconv_count =+ 1
-        scene kitchenarrow
-        scene kitchenarrowflou with dissolve 
+        if sebastianjen_date_started == True:
+            scene kitchenarrownojenblur
+        else: 
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve 
         show tracy2 with dissolve
         show tracy2 at right:
             xalign 0.8
@@ -54,76 +57,185 @@ label stacymelanieconv:
         jump kitchenparty 
         
         label stacymelanie2:
-        scene kitchenarrow
-        scene kitchenarrowflou with dissolve 
-        show tracy2 with dissolve
-        show tracy2 at right:
-            xalign 0.8
-        show designergirl15 with dissolve:
-            xalign 0.2
-            yalign 0.99
-           
-        mela "Hey, are you eavesdropping on us?"
-        name "Me? No, I mean, I was just kind of listening in a bit."
-        mela "Oh really? And you think it’s normal to listen in on two girls talking?"
-        name "Sorry, I didn’t mean to bother you."
-        show designgirl009 with dissolve:
-            xalign 0.2
-            yalign 0.99
-        hide designergirl15 with dissolve
-        mela "Relax, I’m just messing with you."
-        mela "Did you come here alone?"
-        name "I know Hugo and Zoey, but yeah, I came by myself."
-        name "I like meeting new people, getting to know them."
-        name "But I don’t really know anyone here, so I’m never sure how to start a conversation."
-        mela "So you just stand next to people and listen in?"
-        name "Yeah, well, I’m new here."
-        tra "Go easy on him, it’s not easy when you don’t know anyone."
-        tra "Besides, sometimes it’s nice to just listen."
-        tra "I do that a lot at the café."
-        mela "That sounds boring."
-        name "You don’t like listening?"
-        mela "I’d rather talk."
-        tra "Yeah, you’re definitely not the listening type."
-        
-        show designgirl007 with dissolve:
-            xalign 0.2
-            yalign 0.99
-        hide designgirl009 with dissolve
-        mela "I mean, I like listening to music, but not to people."
-        mela "You’re all so boring, wanting to just listen."
-        mela "It’s like those people who say:"
-        mela "'If you can sit in silence with someone, it means they’re the right person.'"
-        mela "No way, when I’m dating, I’m like: talk!"
-        show designer004 with dissolve:
-            xalign 0.2
-            yalign 0.99
-        hide designgirl007 with dissolve
-        mela "What’s the point otherwise?"
-        mela "We’re not just going to stare at each other in silence for hours."
-        show tracy3 with dissolve:
-            xalign 0.8
-        hide tracy2 with dissolve
-        tra "That’s actually oppressive."
-        show designgirl011 with dissolve:
-            xalign 0.2
-            yalign 0.99
-        hide designer004 with dissolve
-        tra "What if the person doesn’t feel like talking?"
-        tra "Maybe they’re just searching for the right words."
-        tra "We are not all equal when it comes to language."
-        mela "What?"
-        tra "It's scientifically proven nowadays."
-        show designgirl009 with dissolve:
-            xalign 0.2
-            yalign 0.99
-        hide designgirl011 with dissolve
-        mela "It's probably a theory made by people who had no conversation skills."
-        mela "Anyway, I’m going to grab a beer, do you want one?"
-        tra "Yeah, sure."
-        mela "Here you go"
-        
-        jump kitchenparty
+            if sebastianjen_date_started == True:
+                scene kitchenarrownojenblur
+            else: 
+                scene kitchenarrow
+                scene kitchenarrowflou with dissolve  
+            show tracy2 with dissolve
+            show tracy2 at right:
+                xalign 0.8
+            show designergirl15 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            $ stacymelanieconv_count =+ 1
+            mela "Hey, are you eavesdropping on us?"
+            name "Me? No, I mean, I was just kind of listening in a bit."
+            mela "Oh really? And you think it’s normal to listen in on two girls talking?"
+            name "Sorry, I didn’t mean to bother you."
+            show designgirl009 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            hide designergirl15 with dissolve
+            mela "Relax, I’m just messing with you."
+            mela "Did you come here alone?"
+            name "I know Hugo and Zoey, but yeah, I came by myself."
+            name "I like meeting new people, getting to know them."
+            name "But I don’t really know anyone here, so I’m never sure how to start a conversation."
+            mela "So you just stand next to people and listen in?"
+            name "Yeah, well, I’m new here."
+            tra "Go easy on him, it’s not easy when you don’t know anyone."
+            tra "Besides, sometimes it’s nice to just listen."
+            tra "I do that a lot at the café."
+            mela "That sounds boring."
+            name "You don’t like listening?"
+            mela "I’d rather talk."
+            tra "Yeah, you’re definitely not the listening type."
+            
+            show designgirl007 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            hide designgirl009 with dissolve
+            mela "I mean, I like listening to music, but not to people."
+            mela "You’re all so boring, wanting to just listen."
+            mela "It’s like those people who say:"
+            mela "'If you can sit in silence with someone, it means they’re the right person.'"
+            mela "No way, when I’m dating, I’m like: talk!"
+            show designer004 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            hide designgirl007 with dissolve
+            mela "What’s the point otherwise?"
+            mela "We’re not just going to stare at each other in silence for hours."
+            show tracy3 with dissolve:
+                xalign 0.8
+            hide tracy2 with dissolve
+            tra "That’s actually oppressive."
+            show designgirl011 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            hide designer004 with dissolve
+            tra "What if the person doesn’t feel like talking?"
+            tra "Maybe they’re just searching for the right words."
+            tra "We are not all equal when it comes to language."
+            mela "What?"
+            tra "It's scientifically proven nowadays."
+            show designgirl009 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            hide designgirl011 with dissolve
+            mela "It's probably a theory made by people who had no conversation skills."
+            mela "Anyway, I’m going to grab a beer, do you want one?"
+            tra "Yeah, sure."
+            mela "Here you go"
+
+        label stacymelanie3:
+            if sebastianjen_date_started == True:
+                scene kitchenarrownojenblur
+            else: 
+                scene kitchenarrow
+                scene kitchenarrowflou with dissolve 
+            show tracy2 with dissolve
+            show tracy2 at right:
+                xalign 0.8
+            show designergirl15 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            $ stacymelanieconv_count =+ 1
+            mela "You’re taking this way too seriously."
+            tracy "No, I’m sure she really felt something real."
+            mela "Oh, come on, not that again."
+            mela "Hey you, make yourself useful."
+            mela "Do you think polyamorous relationships can actually work?"
+            name "Uh, I guess... in theory, yeah."
+            mela "In theory, sure."
+            mela "But reality tends to be messier."
+            tracy "That’s not what I mean. What I’m really asking is: can you be in love with more than one person at once?"
+            mela "That’s the same thing."
+            tracy "No, it's not. Being in love and being in a relationship are two different things."
+            name "I think... yeah, you can love more than one person. But it’s never the same kind of love."
+            mela "How convenient."
+            tracy "I actually agree. Love shifts depending on the person—it’s not a fixed recipe."
+            mela "Sounds like something people say when they don’t want to pick a side."
+            tracy "Or when they finally stop pretending everything fits into neat little boxes."
+            mela "So now exclusivity is just a social myth?"
+            name "Yes, it's a choice we make, even though we could experiment something else."
+            tracy "Exactly. It’s not natural, it’s something people agree on."
+            tracy "We weren't born to be nourished by the love of just one person."
+            mela "Funny, coming from someone who pouts when they don’t get a goodnight text."
+            tracy "You're mean when you know you're wrong."
+            tracy "I never said I was free from all forms of relationships."
+            mela "Okay, but at some point, you have to choose. We live in this society, we can't just do whatever we want."
+            name "That’s... actually a good point."
+            tracy "Don’t support her in her need to stick to old-fashioned ideas."
+            mela "He knows I'm right."
+            mela "He's just being honest."
+            name "I admit, I'm sometimes skeptical about open relationships."
+            name "But as long as no one is forced into it, I don't see the problem."
+            mela "That's all I'm saying: I'm still waiting to see a happy polyamorous person."
+            tracy "I know plenty who are."
+            mela "Really? I’d love to meet them."
+            tracy "But if I introduce them to you, you’ll just try to dissect their lives to prove you’re right."
+            mela "Of course I will."
+            
+            mela "So back to the main question: if you were in love with two people, what would you do?"
+            mela "Tell us what you would do, [name]."
+            name "I don’t know... try to be honest, I guess."
+            mela "You would choose."
+            name "Oui eventuellement."
+            mela "Eventually..."
+            name "Yeah, it takes time to choose."
+            mela "Ahaha."
+            tracy "I'm not necessarily against making choices."
+            tracy "But sometimes, not choosing is also a choice."
+            mela "Whoa, shh, you're confusing us now."
+            mela "We were getting close to the revealed truth."
+            mela "From the mouth of [name]."
+            mela "[name] said, polyamorous people are just delaying the moment to decide."
+            name "No, I didn't say that..."
+            mela "Thanks for your honesty."
+            tracy "Let it go [name], she just wants to be right."
+            tracy "I understood your position and I accept it."
+            mela "You're so cute when you act all comprehensive."
+            "Melany moves closer to Tracy and whispers in her ear."
+            "Tracy blushes and laughs nervously."
+            jump kitchenparty
+
+        label stacymelanie4:
+            if sebastianjen_date_started == True:
+                scene kitchenarrownojenblur
+            else: 
+                scene kitchenarrow
+                scene kitchenarrowflou with dissolve
+            show tracy2 with dissolve
+            show tracy2 at right:
+                xalign 0.8
+            show designergirl15 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            $ stacymelanieconv_count =+ 1
+            "Melany walks away to talk to someone else."
+            tra "So, are you enjoying the party?"
+            name "It's okay."
+            tra "I see you going back and forth, you look like you're looking for someone."
+            name "Not really, I don't know many people here."
+            tra "You can stay with us if you want."
+            name "Thanks, I don't want to bother you."
+            tra "Don't worry."
+            tra "We don't mind."
+            tra "The more, the merrier."
+            tra "I think Melany likes you."
+            name "You think so?"
+            tra "Yes, of course."
+            tra "You'd know if it wasn't the case."
+            tra "You seem like a chill person."
+            name "Yeah, people tell me that sometimes."
+            name "How did you and Melany meet?"
+            tra "Some friends introduced us."
+            tra "She helped me come out of my shell."
+            tra "Juste "
+            
+
         # menu:
         #     "Yes":
         #         name "Yes, please."
