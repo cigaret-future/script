@@ -272,21 +272,57 @@ label camilleshopping:
             scene backrimeric39
         
             "The possessive tone in her voice makes me shiver against her skin."
+            "I feel like i want to stay here forever."
+            "Pleasuring her."
+            scene backrimeric40
+            cam "Oh wait, hold on a second..."
+            "Suddenly, I hear the notification sound from her phone."
+            scene backrimeric41
+            cam "Let me just check this real quick."
+            "Camille reaches for her phone while I continue, my tongue still working against her."
+            scene backrimeric42
+            cam "Mmm, keep going baby, don't stop."
+            "She holds the phone up, clearly recording our intimate moment."
+            scene backrimeric43
+            cam "Perfect angle... Amy is going to love this."
+            "The knowledge that she's filming makes my cheeks burn with embarrassment."
+            scene backrimeric44
+            cam "Look at the camera, show everyone how much you love this."
+            "I glance up, seeing my reflection in her phone screen."
+            scene backrimeric45
+            cam "That's it, such a good little performer."
+            "Her free hand guides my head as she continues recording."
+            scene backrimeric46
+            cam "Tell the camera what you're doing."
+            "I pull back slightly, breathless and flustered."
+            scene backrimeric47
+            name "I'm... I'm pleasuring you, mistress."
+            cam "And do you like it?"
+            scene backrimeric48
+            name "Yes, I love it."
+            cam "Good, now get back to work."
+            scene backrimeric49
+            "I resume my ministrations as she films, capturing every intimate detail."
+            "The red recording light feels like a spotlight on my submission."
+            scene backrimeric50
+            cam "This is going straight to Amy... she won't believe how eager you are."
+            "Her words make me work even harder, desperate to please her."
+            scene backrimeric51
+            "Suddenly, her phone buzzes with an incoming message."
+            cam "Oh shit, that's Amy calling me."
+            scene backrimeric52
+            cam "Don't you dare stop, I need to take this."
+            "She answers the call while keeping the camera pointed at me."
+            scene backrimeric53
+            cam "Hey Amy! Yeah, I'm filming right now..."
+            "I hear a muffled voice on the other end of the line."
+            scene backrimeric54
+            cam "No way, really? Right now?"
+            "Camille's expression changes to one of surprise and concern."
             scene backrimeric40
             "As she finally pulls away, I'm left gasping and dazed."
             "The taste of her lingers on my lips as I try to process what just happened."
             
-            cam "Come on, get to work."
-            "I hesitate for a second before pressing my tongue against her, earning a low chuckle from her."
-            scene backrimeric2
-            cam "Thats it, don't hold back"
-            "I give her puckered asshole a tender kiss"
-            scene backrimeric3
-            cam "I know you want this"
-            "My tongue traces slow circles" 
-
-
-
             
             scene ericleaving4
             ""
