@@ -1,10 +1,10 @@
 label camillehomedate:
     scene camilleupdate10
     cam "Come in, make yourself at home."
-    "I enter Camille's apartment."
-    "A sweet scent of shampoo floats in the air."
-    "I wonder if she took a shower before I arrived."
-    "The idea that she got ready for me makes me feel confident."
+    "I enter Camille’s apartment."
+    "A sweet shampoo scent lingers in the air."
+    "Did she shower before class?"
+    "Maybe she got ready for my visit."
     scene enteringeric
     "I'm not really sure what to expect."
     name "Your apartment is so beautiful."
@@ -45,21 +45,26 @@ label camillehomedate:
     name "An errand? What do you need?"
     cam "I need a few things for dinner tonight."
     cam "Here, I'll make you a list."
-    name "So I'm your delivery boy now?"
+    if gender == "male":
+        name "So I'm your delivery boy now?"
+    elif gender = "fem":
+        name "So I'm your delivery girl now?"
     cam "Are you really questioning my requests?"
     name "I, ... "
-    menu :
-        "Je vais faire les courses":
-            jump camilleshopping
+    name "Ok..."
+    jump camilleshopping
+#     menu :
+#         "Je vais faire les courses":
+#             jump camilleshopping
            
 
-        "Je préfère rester ici":
-            jump camillenotshopping
+#         "Je préfère rester ici":
+#             jump camillenotshopping
            
-label camillenotshopping:
-        cam "mmh..."
-        "Je me demande si elle est déçue"
-        "J'espère que non"
+# label camillenotshopping:
+#         cam "mmh..."
+#         "Je me demande si elle est déçue"
+#         "J'espère que non"
              
 label camilleshopping:
             scene camillelaugh2
@@ -124,25 +129,42 @@ label camilleshopping:
             scene camillesiting
             "Camille goes to lie down on her bed."
             scene erikaskingcamillesomething
-            ""
+            "Once I've put everything away, I go back to see Camille"
+            name "It's done.."
+            name "Everything's in its place"
+            name "Want me to do anything else?"
             scene camillestaring
-            ""
+            cam "Hmm?"
             scene ericstaring
-            ""
+            cam "You seem loyal"
+
             scene camillestaring3
-            ""
+            cam "But I kinda want to know if you really are."
+            cam "I'm talking about you with Amy right now."
+            cam "Come sit on the bed."
             scene ericsitting
-            ""
+            cam "She doesn't think you'd be willing to do anything for me."
+            cam "But I get the feeling you would."
+            cam "So I told her, I'll ask him to do something and you'll see."
             scene ericsitting2
-            cam "oui je vois ce que tu veux dire"
+            name "Ask me"
             scene lightingeric
-            "" 
+            "Camille gets up and turns on a lamp near the bed"
+            cam "Ahah, I think I'm gonna win my bet"
             scene undressingcamille
-            ""
+            cam "You look really submissive"
+            cam "It's pretty obvious"
+            cam "I told Amy you'd be willing to lick my ass."
             scene undressing2
-            ""
+            cam "Come here..."
+            scene black with dissolve
+            "Camille removes her pants, revealing her huge cock."
+            
+            "I lie down next to Camille and let her push my head between her cheeks."
+            
             scene backrimeric1
-            ""
+            cam "Come on, get to work."
+            "I "
             scene backrimeric2
             ""
             scene backrimeric3
@@ -288,8 +310,8 @@ label camilleshokerdate:
     "Am I going to become addicted to Camille too?"
     "I'm not sure."
     "In any case, I feel strangely excited by the situation."
-    "Je décide de faire une sieste en attendant Camille."
-    "Je m'allonge sur le lit et je fermes les yeux."
+    "I decide to take a nap while waiting for Camille."
+    "I lie down on the bed and close my eyes."
     "I try to relax, but I can't stop thinking about Camille."
     "I wonder what she's doing right now."
     "Is she thinking about me too?"

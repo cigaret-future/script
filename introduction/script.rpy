@@ -14,6 +14,8 @@ define bru = Character('Bruno', color="#457409")
 define jeni = Character('Jennifer', color="#ff7f7f")
 define axel = Character('Axel', color="#868484")
 define seb = Character('Sebastian', color="#ffffff")
+define amy = Character('Amy', color="#ff7f7f")
+
 init python:
 
     renpy.music.register_channel('coffee_ambiance', "music")
@@ -36,6 +38,8 @@ define cl_nvl = Character ("Clara", kind=nvl, image="clara", callback=Phone_Rece
 define el_nvl = Character ("Elise", kind=nvl, image="elise", callback=Phone_ReceiveSound)
 define elo_nvl = Character ("Elodie", kind=nvl, callback=Phone_ReceiveSound)
 define cam_nvl = Character ("Camille", kind=nvl, image="camille", callback=Phone_ReceiveSound)
+
+
 
 define config.adv_nvl_transition = None
 define config.nvl_adv_transition = Dissolve(0.3)
@@ -151,6 +155,10 @@ label start:
     default camille_sdate_done = False 
     default camille_relation_status_text = "I should try to sit next to her in class to get to know her"
     default camille_moneycheck_passed = False
+    default camille_coffeedate_activated = False
+    default camilletext1_done = False
+    default camilletext2_done = False
+
 
     # // Mila variables
     default mila_count = 0

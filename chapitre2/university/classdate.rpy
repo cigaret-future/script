@@ -55,6 +55,7 @@ label classdate1:
 
 
 # //DIRECTION
+# ////////////////////////
 label classboring:
     if classdate_count == 0:
         jump classdate0
@@ -183,7 +184,11 @@ label camilledirection:
         jump classcamilledate6
     elif classdatecamille_count == 6 and camille_moneycheck_passed == True:
         jump classcamilledate7
-
+    elif classdatecamille_count == 7:
+        jump classcamilledate8
+    elif classdatecamille_count == 8:
+        jump classcamilledate9
+    
 label classdatedirection : 
     if classdate_count ==2:
         jump classdate2
@@ -215,7 +220,7 @@ label classdatedirection :
 
 
 
-# //Camille 
+# //////////////////////////////Camille ///////////////////////////////////////
 label classcamilledate:
     scene smallclassroomblur with dissolve 
     "I enter the classroom and sit at a table."
@@ -721,7 +726,7 @@ label classcamilledate6:
                 "Camille looks at me with a questioning expression."
                 cam "Good for you."
                 cam "Seriously, would you be willing to pay for...?"
-                
+                "Camille seems to be thinking.."
                 cam "You really would be ready for anything."
                 menu:
                     "Yes":
@@ -794,15 +799,22 @@ label classcamilledate7:
     name "You usually seem so distant, it caught me off guard."
     cam "Yeah, well, sometimes I get these random urges to be nice."
     cam "But I admit, it doesn't happen often."
-    cam "But let's just say I like people I can be a little mean to."
+    name "I knew you had a good side"
+    cam "yeaah..."
+    cam "Let's just say I like people I can be a little mean to."
     cam "And you seem to fit the profile."
-    name "I see."
+    name "Oh..."
     name "I mean, if you say so.."
     name "So you like me, we could say that?"
     cam "Whoa, don't get carried away."
-    "Camille drinks her coffee."
+    cam "I just like to tease you."
+    "Camille takes another sip of her coffee, looking around the place."
     name "So, you run a blog, right?"
     cam "Yeah."
+    name "Tell me about it?"
+    cam "What, you want us to share our life stories?"
+    name "yeah why not."
+    cam "Okk.."
     cam "We try to create content about fashion—interviews, discovery videos, articles on trends, sometimes designer spotlights."
     name "That sounds cool. Do you do all that with your friends?"
     cam "Yeah, we're a small team. Everyone has their own role."
@@ -847,10 +859,87 @@ label classcamilledate7:
     
     "I leave the café and head back to the garden."
     jump gardenuni_start2
-
-
+label classcamilledate8:
+    scene smallclassroomblur with dissolve
+        
+    "I enter the classroom and sit next to Camille."
+    "I try my best to focus on the teacher's lecture."
     
-# Random
+    show camille07 with dissolve
+    cam "Hey, do you want to grab a coffee after class?"
+        menu: 
+            "I'd love to":
+                name "Really? With you?"
+                cam "Yeah, and my friend will be there too."
+                cam "She's one of my friend who works on the website with me."
+                name "Oh cool, I'd love to meet her."
+                name "Did you tell her about me?"
+                cam "What? Why would I have done that?"
+                cam "I mean, I don't know, maybe I did."
+                name "What did you tell her?"
+                cam "Nothing special."
+                cam "Just that you had a cute butt"
+                name "oh ok..."
+                cam "She's cool don't worry.."
+                "The class passes by slowly."
+                "After two hours of class, everyone leaves."
+                "Finally."
+                $ classdatecamille_count += 1
+                $ class_done = True
+                $ camille_coffeedate_activated = True
+                cam "Come on lets go."
+                scene black with dissolve
+                jump camilleuni_date
+
+                
+            "No, i need to study":
+                name "No, I need to study."
+                show camille13 with dissolve
+                cam "Wow, you're really taking this student thing seriously."
+                cam "I bet you iron your underwear too."
+                name "I just want to focus on class..."
+                cam "You're such a nerd."
+                cam "But hey, when you're done organizing your paperclips by size..."
+                cam "You know where to find me."
+                "Camille turns back to her work, occasionally glancing over with an amused smirk."
+                name "..."
+                "The class passes by slowly."
+                "After two hours of class, everyone leaves."
+                "Finally."
+                $ classdatecamille_count += 1
+                $ class_done = True
+                $ camille_coffeedate_activated = True
+                scene black with dissolve
+                "I leave the classroom and head to the garden."
+                jump gardenuni_start2
+label classcamilledate9: 
+    scene smallclassroomblur with dissolve
+        
+    "I enter the classroom and sit next to Camille."
+    "I try my best to focus on the teacher's lecture."
+    
+    show camille07 with dissolve
+    cam "whats up [Name]?"
+    name "Not much, just trying to survive this class."
+    cam "Hey, would you like to come to my place after class?"
+    name "Come to your place?"
+    name "Yeah awesome."
+    cam "I thought you might like it."
+    cam "We could you know... chill and stuff."
+    name "Chill and stuff?"
+    name "I like the sound of that."
+    "The class passes by slowly."
+    "After two hours of class, everyone leaves."
+    "Finally."
+    $ classdatecamille_count += 1
+    $ class_done = True
+    jump camillehomedate
+
+
+
+
+
+# //////////////////////////////Random////////////////////////
 label classdate2:
     scene smallclassroom
     "I enter the classroom and sit at a table."
@@ -1072,18 +1161,45 @@ label classdate6_1:
     jump gardenuni_start2
 
 label classdaterandom:
-    scene smallclassroom
-    "I enter the classroom and sit at a table."
-    "I try my best to focus on the teacher's lecture."
-     
-    $ classdate_count += 1
-    $ class_done = True
-    scene black with dissolve
-    "I leave the classroom and head to the garden."
-    jump gardenuni_start2
+        scene smallclassroom
+        "I enter the classroom and sit at a table."
+        "I try my best to focus on the teacher's lecture."
+        
+        # Random chance to get different events
+        $ random_event = renpy.random.randint(1,4)
+        
+        if random_event == 1:
+            show samuel
+            sam "This class is so boring..."
+            name "Yeah, I know what you mean."
+            sam "I'm only here because i need to ."
+            "Samuel spends the rest of class doodling in his notebook."
+            
+        elif random_event == 2:
+            "The person next to me falls asleep during the lecture."
+            "Their gentle snoring is actually kind of relaxing."
+            "I let them sleep through class."
+            
+        elif random_event == 3:
+            show estellewondering
+            est "Do you understand any of this?"
+            name "Sort of... want to compare notes after class?"
+            est "That would be great, thanks!"
+            "We exchange confused looks for the rest of the lecture."
+            
+        elif random_event == 4:
+            "A paper airplane soars across the classroom."
+            "The teacher pretends not to notice."
+            "College students will be college students..."
+
+        $ classdate_count += 1
+        $ class_done = True
+        scene black with dissolve
+        "I leave the classroom and head to the garden."
+        jump gardenuni_start2
 
 
-# Emma
+#////////////////////////////////// Emma///////////////////////////
 label classemmadate:
     scene smallclassroom
     "I enter the classroom and sit at a table."

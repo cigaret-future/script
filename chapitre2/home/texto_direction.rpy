@@ -17,7 +17,33 @@ label textdirection:
        
         
     elif day >= 0:
+        
+        label camilletext: 
+            if camille_sdate_done == True and camilletext1_done == False:
+                "A notification pops up on my phone."
+                cam_nvl "Your ass is really sweet"
+                n_nvl "It was something..."
+                n_nvl "I hope no one saw us"
+                cam_nvl "don't count on that"
+                cam_nvl "Anyway it was fun"
+                n_nvl "maybe we could do this again in a more intimate place"
+                pause 2.0
+                n_nvl "You there?"
+                pause 2.0
+                "..."
+                "Camille seems to have gone to bed."
+                $ camilletext1_done = True
+                nvl clear
 
+            elif classdatecamille_count == 8 and camilletext2_done == False:
+                "A notification pops up on my phone."
+                "Camille is sending me a picture"
+                cam_nvl "I think Amy likes you"
+                $ camilletext2_done = True
+                nvl clear
+
+        
+            
         if linda_4th_conv_done == True and linda_invitation_sent == False:
 
             "A notification pops up on my phone."
