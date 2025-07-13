@@ -1,21 +1,23 @@
 label camilleuni_date:
+    scene upview3 with dissolve
     "We enter the café, and Camille guides me to a table by the window."
     "She greets her friend and introduces me to her."
 
-    show camille normal at left
-    show amie_c unknown at right
+    scene camilldeunidate19 with dissolve
     cam "This is Amy"
     name "Nice to meet you"
     "Amy smiles warmly, her eyes sparkling with curiosity."
     amy "Nice to meet you too"
-    "Camille orders coffee for all of us."
+    scene camilldeunidate17 with dissolve
     "Amy and Camille dive into conversation about their blog and upcoming ideas."
     "They exchange the latest gossip, critiquing various influencers and debating current trends."
     "I listen quietly, enjoying the dynamic between them."
+    scene camilldeunidate18 with dissolve
     "They clearly know each other well, and I don't mind being an observer."
     "Though I can't help feeling a bit forgotten in their animated discussion."
     "I glance around the café, watching other customers come and go."
     "After a while, Amy turns to me with a friendly smile."
+    scene camilldeunidate14 with dissolve
     amy "How's your coffee?"
     name "It's really good, thanks."
     name "Sorry, I was trying to follow but there were too many names and brands I don't know."
@@ -23,6 +25,7 @@ label camilleuni_date:
     amy "ahah, no problem!"
     amy "We can talk about something else."
     amy "So, how did you two meet?"
+    scene camilldeunidate20 with dissolve
     "Camille seems amused by the question."
     cam "We met in class..."
     cam "He was sitting next to me, and I thought he looked like a nice guy."

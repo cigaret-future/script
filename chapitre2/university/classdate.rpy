@@ -782,14 +782,17 @@ label classcamilledate7:
     "The class goes on as usual."
     "Once it's over, Camille gestures for me to follow her."
     cam "Come on, let's get out of here."
+    scene black with dissolve
     "Camille leads me through the university hallways."
     "We head down to the garden and walk along the buildings."
+    scene upview3 with dissolve
     "Eventually, we arrive at a small building that looks like a student café."
     cam "Go grab a seat, I'll be right back."
     name "Okay."
     "I sit at a table. The atmosphere is relaxed, with students chatting or working over their coffee."
     "I wonder why I've never come here before."
-    "Camille revient avec deux cafés et s'installe en face de moi."
+    scene camilldeunidate7 with dissolve
+    "Camille comes back with two coffees and sits down across from me."
     cam "Here, this is for you."
     name "Thanks."
     cam "So, do you like the place?"
@@ -867,7 +870,7 @@ label classcamilledate8:
     
     show camille07 with dissolve
     cam "Hey, do you want to grab a coffee after class?"
-        menu: 
+    menu: 
             "I'd love to":
                 name "Really? With you?"
                 cam "Yeah, and my friend will be there too."

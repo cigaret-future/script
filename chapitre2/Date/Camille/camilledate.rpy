@@ -135,241 +135,466 @@ label camilleshopping:
             name "Want me to do anything else?"
             scene camillestaring
             cam "Hmm?"
+            cam "great, i am proud of you"
             scene ericstaring
-            cam "You seem loyal"
+            name "thanks"
+            scene camillestaring
+            cam "You're obedient."
+            cam "I like that"
 
             scene camillestaring3
+            
             cam "But I kinda want to know if you really are."
-            cam "I'm talking about you with Amy right now."
             cam "Come sit on the bed."
             scene ericsitting
+            cam "I'm talking about you with Amy right now."
             cam "She doesn't think you'd be willing to do anything for me."
-            cam "But I get the feeling you would."
-            cam "So I told her, I'll ask him to do something and you'll see."
+            cam "Would you?"
+            name "I don't know, i guess it depend"
+            cam "I get the feeling you would."
+            cam "So I told her, 'I'll ask him to do something and you'll see.'"
             scene ericsitting2
+            name "Ok what is it"
             name "Ask me"
             scene lightingeric
             "Camille gets up and turns on a lamp near the bed"
             cam "Ahah, I think I'm gonna win my bet"
-            scene undressingcamille
+            name "What?"
             cam "You look really submissive"
             cam "It's pretty obvious"
+            cam "So..."
+            scene black 
             cam "I told Amy you'd be willing to lick my ass."
-            scene undressing2
-            cam "Come here..."
-            scene black with dissolve
+            cam "She didn't believe me"
+            cam "And I mean to prove I'm right." 
+            scene undressingcamille
             "Camille removes her pants, revealing her huge cock."
+            cam "But we both know that's what you really want"
             
+            scene undressing2
+            cam "Now get down there.."
+            
+            scene black with dissolve
+            
+
             "I lie down next to Camille and let her push my head between her cheeks."
             
-            scene backrimeric4
+            scene ericcloseupas1 with dissolve
+            "I tentatively press my tongue against her entrance."
+            "I feel her body tense as I begin to lick her."
             cam "Yes, just like that,"
             cam "You dreamed of it don't you."
             "Cam smiles wickedly as she presses my face firmly against her rear"
-            scene ericanswering
+            scene ericcloseupas2 with dissolve
+            "I begin to explore with my tongue, tasting her intimately."
             cam "Like that ass clean baby."
             cam "ahah, Amy is gonna be so jealous"
-            scene ericleaving
-            cam "I have to film that."
-            cam "I want to see what your tongue looks like in my asshole"
-            "Camille pousse ma tête fermement d'avant en arrière."
+            scene ericcloseupas3 with dissolve
+            window hide
+            pause
+            scene ericcloseupas4 with dissolve
+            window hide
+            pause
+            scene ericcloseupas3 with dissolve
+            window hide
+            pause
+            scene backrimeric1 with dissolve
             
-            scene backrimeric1
-            cam "Good boy, now show me how much you want this."
-            scene backrimeric2
-            "I tentatively press my tongue against her entrance."
-            scene backrimeric3
+            cam "I need to film this, otherwise Amy won't believe me"
+            scene backrimeric2 with dissolve
+            cam "And it would be a shame not to capture this moment."
+            scene backrimeric1 with dissolve
+            cam "I hope you don't mind."
+            scene backrimeric3 with dissolve
+            name "mmh"
+            scene backrimeric4 with dissolve
+            if gender == "male":
+                cam "Good boy."
+            elif gender == "fem":
+                cam "Good girl."
+
+            scene rimangle2eric with dissolve
+            cam "now show me how much you want this."
+            scene rimangle2eric with dissolve
+            cam "ouh yes.."
+            scene rimangle1eric with dissolve
             cam "That's it, don't be shy."
-            scene backrimeric4
-            "I begin to explore with my tongue, tasting her intimately."
-            scene backrimeric5
-            cam "Mmm, you're learning fast."
-            scene backrimeric6
-            "I grow more confident, my tongue working in circles."
-            scene backrimeric7
-            cam "Yes, just like that baby."
-            scene backrimeric8
-            "She pushes back against my face, demanding more."
-            scene backrimeric9
-            "I lose myself in the rhythm, focused only on pleasing her."
-            scene backrimeric10
-            cam "You're such a good little pet."
-            scene backrimeric11
-            "My tongue delves deeper, earning soft moans from her."
-            scene backrimeric12
-            cam "I knew you'd be perfect for this."
-            scene backrimeric13
-            "I feel her body responding to my ministrations."
-            scene backrimeric14
-            cam "Don't stop, keep going."
-            scene backrimeric15
-            "I continue eagerly, completely under her spell."
-            scene backrimeric16
-            cam "You love this, don't you?"
-            scene backrimeric17
-            "I can only moan in response, my mouth busy with her."
-            scene backrimeric18
-            cam "Such a devoted little toy."
-            scene backrimeric19
-            "She grips my hair tighter, guiding my movements."
-            scene backrimeric20
-            cam "Perfect, absolutely perfect."
+            scene rimangle2eric with dissolve
+            "I feel completely lost in the moment, focused only on pleasing her."
+            scene rimangle1eric with dissolve
+            cam "You're such a natural at this."
+            "Her words send shivers through my body as I continue."
+            scene rimangle2eric with dissolve
+            cam "I can feel how much you want this."
+            "My tongue works eagerly, desperate to satisfy her every desire."
+            scene rimangle1eric with dissolve
+            cam "You're getting addicted to my taste, aren't you?"
+         
+            scene rimangle2eric with dissolve
+            cam "You love being my personal toy"
+            "I can only nod, my mouth too busy to respond."
+        
+            scene rimangle1eric with dissolve
+            cam "I think you were born for this position."
+           
+         
+            scene rimangle1eric with dissolve
+            window hide
+            pause
+            scene rimangle2eric with dissolve
+            window hide
+            pause
+            scene ericshoulderup1 with dissolve
             
-            scene backrimeric21
-            cam "You're such a perfect little toy for me."
-            "She adjusts her position, pushing my face deeper between her cheeks."
-            scene backrimeric22
-            "The musky scent of her skin fills my senses completely."
-            "I can taste the slight saltiness as my tongue works against her most intimate area."
-            scene backrimeric23
-            cam "That's it baby, show me how much you worship this ass."
-            "Her hand grips my hair tighter, controlling my movements with precision."
-            scene backrimeric24
-            "I lose myself in the rhythm, my tongue exploring every sensitive spot."
-            "The soft moans escaping her lips tell me I'm doing exactly what she wants."
-            scene backrimeric25
+            scene ericshoulderup2 with dissolve
+            cam "Mmm, that's it, just like that."
+            scene ericshoulderup3 with dissolve
+           
+            scene ericshoulderup4 with dissolve
+            cam "You're such a good little pet."
+            scene ericcloseupas1 with dissolve
             cam "You were born to serve me like this, weren't you?"
             "I can only whimper in response, my mouth completely occupied with pleasing her."
-            scene backrimeric26
-            "She rocks her hips back against my face, demanding more pressure."
-            "My jaw starts to ache, but I don't dare stop or slow down."
-            scene backrimeric27
-            cam "Look how eager you are... it's almost pathetic."
-            "Her words sting, but they only make me work harder to satisfy her."
-            scene backrimeric28
-            "I feel her body tensing above me, responding to my desperate ministrations."
-            "The power dynamic is clear - I exist solely for her pleasure right now."
-            scene backrimeric29
-            cam "Such a good little ass-licker... Amy's going to be so jealous."
-            "The mention of her friend filming this makes my cheeks burn with humiliation."
-            scene backrimeric30
-            "My tongue darts and swirls, trying to memorize every detail of her taste."
-            "She shifts slightly, opening herself more to my eager mouth."
-            scene backrimeric31
-            cam "You're getting addicted to this, aren't you?"
+            window hide
+            pause
+            scene ericcloseupas2 with dissolve
+            window hide
+            pause
+            scene ericcloseupas3 with dissolve
+            cam "Does it tastes good?"
+            cam "Yes?"
+            scene ericcloseupas4 with dissolve
+            cam "It feels like you enjoying this."
+            scene ericcloseupas2 with dissolve
             
-            scene backrimeric32
-            "I press my tongue flat against her, applying steady pressure."
-            "The intimate contact makes my head spin with a mixture of shame and arousal."
-            scene backrimeric33
-            cam "That's my perfect pet... showing me exactly where you belong."
-            "Her praise makes something warm bloom in my chest despite the degrading position."
-            scene backrimeric34
-            "I can feel her breathing becoming more labored."
-            "My technique is improving with each passing moment, guided by her subtle reactions."
-            scene backrimeric35
-            cam "You're going to be thinking about this taste for days."
-            
-            scene backrimeric36
-            "My tongue works in careful circles, alternating pressure and gentle teasing."
-            "The wet sounds of my efforts fill the otherwise quiet room."
-            scene backrimeric37
-            cam "Maybe i should post this on some site. We would make money"
-            "Her fingers stroke through my hair almost affectionately as I continue."
-            scene backrimeric38
-            "I feel completely consumed by the act of pleasing her."
-            "Nothing else exists except her body and my desperate need to satisfy her."
-            scene backrimeric39
-        
-            "The possessive tone in her voice makes me shiver against her skin."
-            "I feel like i want to stay here forever."
-            "Pleasuring her."
-            scene backrimeric40
-            cam "Oh wait, hold on a second..."
-            "Suddenly, I hear the notification sound from her phone."
-            scene backrimeric41
-            cam "Let me just check this real quick."
-            "Camille reaches for her phone while I continue, my tongue still working against her."
-            scene backrimeric42
-            cam "Mmm, keep going baby, don't stop."
-            "She holds the phone up, clearly recording our intimate moment."
-            scene backrimeric43
-            cam "Perfect angle... Amy is going to love this."
+            if gender == "male":
+                cam "What a nasty boy."
+            elif gender == "fem":
+                cam "What a nasty girl."
+            scene ericcloseupas3 with dissolve
+            window hide
+            pause
+
+            scene ericcamilelhappy with dissolve
+            cam "Mmm, you're learning fast."
+            scene ericcamilelhappy2 with dissolve
+            cam "You're getting better at this every second."
+            scene ericcamilelhappy with dissolve
+            cam "Such a quick learner."
+            scene ericcamilelhappy2 with dissolve
+            window hide 
+            pause
+            scene ericcamilelhappy with dissolve
+            cam "wow look at you"
+            scene ericcamilelhappy2 with dissolve
+            cam "You're so eager to please me."
+            scene ericcamilelhappy with dissolve
+            cam "I could get used to having you around."
+            scene ericcamilelhappy2 with dissolve
+            cam "When i need my ass clean"
+            scene backrimeric4 with dissolve
+            "I lost track of time as i like her ass."
+            scene backrimeric3 with dissolve
+            "It feels like i could stay here forever"
+            scene backrimeric2 with dissolve
+            window hide
+            pause
+            scene backrimeric1 with dissolve
+            window hide
+            pause
+            scene backrimeric2 with dissolve
+            window hide
+            pause
+            scene ericnextlevel1 with dissolve
+            cam "Thats it, go up a little bit"
+            "Camille guides me higher, directing my mouth to the base of her balls."
+            scene ericnextlevel2 with dissolve
+            "I feel her body getting tense as i continue exploring her skin"
+            pause
+            scene ericnextlevel1 with dissolve
+            cam "Amy is going to love this."
             "The knowledge that she's filming makes my cheeks burn with embarrassment."
-            scene backrimeric44
-            cam "Look at the camera, show everyone how much you love this."
-            "I glance up, seeing my reflection in her phone screen."
-            scene backrimeric45
-            cam "That's it, such a good little performer."
-            "Her free hand guides my head as she continues recording."
-            scene backrimeric46
-            cam "Tell the camera what you're doing."
-            "I pull back slightly, breathless and flustered."
-            scene backrimeric47
-            name "I'm... I'm pleasuring you, mistress."
-            cam "And do you like it?"
-            scene backrimeric48
-            name "Yes, I love it."
-            cam "Good, now get back to work."
-            scene backrimeric49
-            "I resume my ministrations as she films, capturing every intimate detail."
-            "The red recording light feels like a spotlight on my submission."
-            scene backrimeric50
-            cam "This is going straight to Amy... she won't believe how eager you are."
-            "Her words make me work even harder, desperate to please her."
-            scene backrimeric51
-            "Suddenly, her phone buzzes with an incoming message."
-            cam "Oh shit, that's Amy calling me."
-            scene backrimeric52
-            cam "Don't you dare stop, I need to take this."
-            "She answers the call while keeping the camera pointed at me."
-            scene backrimeric53
-            cam "Hey Amy! Yeah, I'm filming right now..."
-            "I hear a muffled voice on the other end of the line."
-            scene backrimeric54
+            scene ericnextlevel2 with dissolve
+            "My tongue works with increasing confidence and desperation."
+            scene ericnextlevel1 with dissolve
+            "The taste and scent become more intense."
+            scene ericcalling1 with dissolve
+            window hide 
+            pause
+            scene ericcalling2 with dissolve
+            window hide 
+            pause
+            scene ericcalling1 with dissolve
+            cam "Damn, I don't think I can hold back much longer."
+            scene ericcalling1 with dissolve
+            cam "This is so sexy"
+            scene ericcalling2 with dissolve
+            window hide 
+            pause
+            scene ericcalling1 with dissolve
+            window hide 
+            pause
+            scene ericcalling2 with dissolve
+            window hide 
+            pause
+            scene ericcalling1 with dissolve
+            "I feel her body tensing, her breathing becoming more ragged."
+            scene ericcalling2 with dissolve
+            
+            cam "This mouth is begging to be fucked."
+
+
+            scene ericcalling3
+            "Soudain son téléphone se mets à sonner"
+            cam "Oh, hold on a second..."
+            scene ericanswering
             cam "No way, really? Right now?"
             "Camille's expression changes to one of surprise and concern."
-            scene backrimeric40
-            "As she finally pulls away, I'm left gasping and dazed."
-            "The taste of her lingers on my lips as I try to process what just happened."
+            cam "Dude, i can't believe this is happening right now."
+            cam "I am in the middle of something here."
+            cam "Yeah... fuck."
+            cam "ok..."
+            "Camille gets out of bed"
+            scene ericleaving with dissolve
+            "She starts talking about having to meet someone important for the blog"
+            cam "Seriously?"
+            scene ericleaving4 with dissolve
+            "Her voice becomes slightly agitated as she continues the conversation."
+            cam "I told you I was busy today... No, I can come don't worry."
+            "I hear muffled arguing from the other end of the line."
+            cam "Fine, fine... But this better be worth it."
+            
+            "As she talks on the phone, I feel a wave of disappointment wash over me."
+            "Her huge dick sways in front of me. I can smell her musky scent."
+            scene ericstaringcamilled with dissolve
+            "It makes my mouth water uncontrollably, and I have to resist the urge to lean forward."
+            "I stay frozen, watching helplessly as her massive member moves with each gesture she makes."
+            "The taste of her is still fresh on my tongue, making me crave more."
+            "Every second feels like an eternity as I wait for her attention to return to me."
+            "My body aches with need, desperate to continue what we started."
+            "She finally hangs up and turns to me"
+            scene ericcamillesakingleave with dissolve
+            cam "We have a meeting with an important designer"
+            cam "I can't miss this"
+            cam "We'll continue later"
+            name "Wait, you're leaving me here like this?"
+            scene ericcamillesakingleave with dissolve
+            cam "Don't look at me like that."
+            cam "Business is business."
+            name "But what about... what we were doing?"
+            cam "What about it?"
+            cam "Don't be too needy."
+            cam "I'll take care of you later."
+            cam "Come on, move, I need to hurry."
+            "I get up from the bed, still in shock from what just happened."
+
+            scene ericleavecamille with dissolve
+            
+            "The door closes with a final click, leaving me alone and aching."
+            "I'm left behind her door, still tasting her, wondering what I've gotten myself into."
+            "I realize I'm already more invested in this than I want to admit."
+            jump map3
+
+            # cam "Apparently they have some 'concerns' about my content."
+            # "She rolls her eyes while still on the phone."
+            # cam "Yeah, I know it's last minute... Look, I'll be there in an hour."
+            # cam "Just give me time to get ready, okay?"
+            # "Camille hangs up and looks down at me with obvious frustration."
+            # cam "Sorry babe, duty calls."
+            # cam "Some corporate suits want to lecture me about 'brand image' or whatever."
+            # cam "We'll have to continue this later."
+            # "She starts getting dressed, clearly annoyed by the interruption."
+            # cam "You can stay here if you want, or..."
+            # cam "Actually, you should probably go. I might be gone for hours."
+            # scene backrimeric40
+            # "As she finally pulls away, I'm left gasping and dazed."
+            # "The taste of her lingers on my lips as I try to process what just happened."
+            
+            # "I grow more confident, my tongue working in circles."
+            # scene backrimeric7
+            # cam "Yes, just like that baby."
+            # scene backrimeric8
+            # "She pushes back against my face, demanding more."
+            # scene backrimeric9
+            # "I lose myself in the rhythm, focused only on pleasing her."
+            # scene backrimeric10
+            # cam "You're such a good little pet."
+            # scene backrimeric11
+            # "My tongue delves deeper, earning soft moans from her."
+            # scene backrimeric12
+            # cam "I knew you'd be perfect for this."
+            # scene backrimeric13
+            # "I feel her body responding to my ministrations."
+            # scene backrimeric14
+            # cam "Don't stop, keep going."
+            # scene backrimeric15
+            # "I continue eagerly, completely under her spell."
+            # scene backrimeric16
+            # cam "You love this, don't you?"
+            # scene backrimeric17
+            # "I can only moan in response, my mouth busy with her."
+            # scene backrimeric18
+            # cam "Such a devoted little toy."
+            # scene backrimeric19
+            # "She grips my hair tighter, guiding my movements."
+            # scene backrimeric20
+            # cam "Perfect, absolutely perfect."
+            
+            # scene backrimeric21
+            # cam "You're such a perfect little toy for me."
+            # "She adjusts her position, pushing my face deeper between her cheeks."
+            # scene backrimeric22
+            # "The musky scent of her skin fills my senses completely."
+            # "I can taste the slight saltiness as my tongue works against her ass"
+            # scene backrimeric23
+            # cam "That's it baby, show me how much you worship this ass."
+            # "Her hand grips my hair tighter, controlling my head movement"
+            # scene backrimeric24
+            # "I lose myself in the rhythm, my tongue exploring every sensitive spot."
+            # "The soft moans escaping her lips tell me I'm doing exactly what she wants."
+            # scene backrimeric25
+            # cam "You were born to serve me like this, weren't you?"
+            # "I can only whimper in response, my mouth completely occupied with pleasing her."
+            # scene backrimeric26
+            # "She rocks her hips back against my face, demanding more pressure."
+            # "My jaw starts to ache, but I don't dare stop or slow down."
+            # scene backrimeric27
+            # cam "Look how eager you are... it's almost pathetic."
+            # "Her words sting, but they only make me work harder to satisfy her."
+            # scene backrimeric28
+            # "I feel her body tensing above me, responding to my desperate ministrations."
+            # "The power dynamic is clear - I exist solely for her pleasure right now."
+            # scene backrimeric29
+            # cam "Such a good little ass-licker... Amy's going to be so jealous."
+            # "The mention of her friend filming this makes my cheeks burn with humiliation."
+            # scene backrimeric30
+            # "My tongue darts and swirls, trying to memorize every detail of her taste."
+            # "She shifts slightly, opening herself more to my eager mouth."
+            # scene backrimeric31
+            # cam "You're getting addicted to this, aren't you?"
+            
+            # scene backrimeric32
+            # "I press my tongue flat against her, applying steady pressure."
+            # "The intimate contact makes my head spin with a mixture of shame and arousal."
+            # scene backrimeric33
+            # cam "That's my perfect pet... showing me exactly where you belong."
+            # "Her praise makes something warm bloom in my chest despite the degrading position."
+            # scene backrimeric34
+            # "I can feel her breathing becoming more labored."
+            # "My technique is improving with each passing moment, guided by her subtle reactions."
+            # scene backrimeric35
+            # cam "You're going to be thinking about this taste for days."
+            
+            # scene backrimeric36
+            # "My tongue works in careful circles, alternating pressure and gentle teasing."
+            # "The wet sounds of my efforts fill the otherwise quiet room."
+            # scene backrimeric37
+            # cam "Maybe i should post this on some site. We would make money"
+            # "Her fingers stroke through my hair almost affectionately as I continue."
+            # scene backrimeric38
+            # "I feel completely consumed by the act of pleasing her."
+            # "Nothing else exists except her body and my desperate need to satisfy her."
+            # scene backrimeric39
+        
+            # "The possessive tone in her voice makes me shiver against her skin."
+            # "I feel like i want to stay here forever."
+            # "Pleasuring her."
+            # scene backrimeric40
+            # cam "Oh wait, hold on a second..."
+            # "Suddenly, I hear the notification sound from her phone."
+            # scene backrimeric41
+            # cam "Let me just check this real quick."
+            # "Camille reaches for her phone while I continue, my tongue still working against her."
+            # cam "keep going baby, don't stop."
+            # scene ericanswering
+            
+            # "She holds the phone up, clearly recording our intimate moment."
+            # scene backrimeric43
+            
+            # scene backrimeric44
+            # cam "Look at the camera, show everyone how much you love this."
+            # "I glance up, seeing my reflection in her phone screen."
+            # scene backrimeric45
+            # cam "That's it, such a good little performer."
+            # "Her free hand guides my head as she continues recording."
+            # scene backrimeric46
+            # cam "Tell the camera what you're doing."
+            # "I pull back slightly, breathless and flustered."
+            # scene backrimeric47
+            # name "I'm... I'm pleasuring you, mistress."
+            # cam "And do you like it?"
+            # scene backrimeric48
+            # name "Yes, I love it."
+            # cam "Good, now get back to work."
+            # scene backrimeric49
+            # "I resume my ministrations as she films, capturing every intimate detail."
+            # "The red recording light feels like a spotlight on my submission."
+            # scene backrimeric50
+            # cam "This is going straight to Amy... she won't believe how eager you are."
+            # "Her words make me work even harder, desperate to please her."
+            # scene backrimeric51
+            # "Suddenly, her phone buzzes with an incoming message."
+            # cam "Oh shit, that's Amy calling me."
+            # scene backrimeric52
+            # cam "Don't you dare stop, I need to take this."
+            # "She answers the call while keeping the camera pointed at me."
+            # scene backrimeric53
+            # cam "Hey Amy! Yeah, I'm filming right now..."
+            # "I hear a muffled voice on the other end of the line."
+            # scene backrimeric54
+            # cam "No way, really? Right now?"
+            # "Camille's expression changes to one of surprise and concern."
+            # scene backrimeric40
+            # "As she finally pulls away, I'm left gasping and dazed."
+            # "The taste of her lingers on my lips as I try to process what just happened."
             
             
-            scene ericleaving4
-            ""
-            scene ericstaringcamilled
-            ""
-            scene ericcamillesakingleave
-            ""
-            scene ericleavecamille
-            ""
-            jump camilleshokerdate
+            # scene ericleaving4
+            # ""
+            # scene ericstaringcamilled
+            # ""
+            # scene ericcamillesakingleave
+            # ""
+            # scene ericleavecamille
+            # ""
+            # jump camilleshokerdate
 
 
 
 
             
-            scene backrimeric1
-            cam "Come on, get to work."
-            "Je "
+            # scene backrimeric1
+            # cam "Come on, get to work."
+            # "Je "
 
            
 
-            Scene: backrimeric2
-           
+            #     # Scene: backrimeric2
+            
 
-            Scene: backrimeric3
-            She grips my hair, guiding me with a firm hand.
+            #     # Scene: backrimeric3
+            #     # She grips my hair, guiding me with a firm hand.
 
-            Scene: backrimeric4
-            I lose myself in the rhythm, her quiet moans urging me on.
+            #     # Scene: backrimeric4
+            #     # I lose myself in the rhythm, her quiet moans urging me on.
 
-            Scene: ericanswering
-            Eric (muffled) "You taste so good..."
+            #     # Scene: ericanswering
+            #     # Eric (muffled) "You taste so good..."
 
-            Scene: ericleaving
-            Reluctantly, I pull back, catching my breath.
+            #     # Scene: ericleaving
+            #     # Reluctantly, I pull back, catching my breath.
 
-            Scene: ericleaving4
-            Camille smirks down at me, clearly satisfied.
+            #     # Scene: ericleaving4
+            #     # Camille smirks down at me, clearly satisfied.
 
-            Scene: ericstaringcamilled
-            Our eyes lock—hers amused, mine still dazed.
+            #     # Scene: ericstaringcamilled
+            #     # Our eyes lock—hers amused, mine still dazed.
 
-            Scene: ericcamillesakingleave
-            Eric "I should... probably go."
+            #     # Scene: ericcamillesakingleave
+            #     # Eric "I should... probably go."
 
-            Scene: ericleavecamille
-            Cam "Mhm. See you later, lab rat."
+            #     # Scene: ericleavecamille
+            #     # Cam "Mhm. See you later, lab rat."
 
 
 
