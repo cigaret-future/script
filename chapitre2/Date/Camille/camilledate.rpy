@@ -393,23 +393,32 @@ label camilleshopping:
             "The door closes with a final click, leaving me alone and aching."
             "I'm left behind her door, still tasting her, wondering what I've gotten myself into."
             "I realize I'm already more invested in this than I want to admit."
+            $ camille_shomedate_done = True
+            $ classdatecamille_count += 1
             jump map3
 
-            # cam "Apparently they have some 'concerns' about my content."
-            # "She rolls her eyes while still on the phone."
-            # cam "Yeah, I know it's last minute... Look, I'll be there in an hour."
-            # cam "Just give me time to get ready, okay?"
-            # "Camille hangs up and looks down at me with obvious frustration."
-            # cam "Sorry babe, duty calls."
-            # cam "Some corporate suits want to lecture me about 'brand image' or whatever."
-            # cam "We'll have to continue this later."
-            # "She starts getting dressed, clearly annoyed by the interruption."
-            # cam "You can stay here if you want, or..."
-            # cam "Actually, you should probably go. I might be gone for hours."
-            # scene backrimeric40
-            # "As she finally pulls away, I'm left gasping and dazed."
-            # "The taste of her lingers on my lips as I try to process what just happened."
             
+
+            # cam "I've been thinking about our little... arrangement."
+            # name "What do you mean?"
+            # cam "Well, you've proven yourself quite... capable."
+            # cam "And obedient."
+            # cam "I think it's time we make this more... official."
+            # name "Official?"
+            # cam "I want you to be mine. Completely."
+            # cam "No more games, no more uncertainty."
+            # cam "Just you, serving me, whenever I need you."
+
+
+
+
+
+
+
+
+        
+
+                    
             # "I grow more confident, my tongue working in circles."
             # scene backrimeric7
             # cam "Yes, just like that baby."
@@ -609,6 +618,22 @@ label camilleshopping:
 
 
 label camilleshokerdate:
+    "The class passes by slowly"
+    "But i can't stop thinking about what's is coming next."
+    "After class, we walk out of the university, my mind racing with anticipation."
+    scene black
+    "We walk through the busy streets toward her apartment."
+    "I try to act normal, but my heart is racing with anticipation."
+    "What does Camille have planned for me this time?"
+    scene walkingstreet
+    
+    "Camille walks confidently beside me, occasionally glancing my way with that knowing smile."
+    "I can't help but steal glances at her"
+   
+    "We reach the entrance to her building."
+    scene black
+    "Camille pulls out her keys, and open the door"
+
     "I enter Camille's apartment."
     name "So, do you often..."
     scene earfound

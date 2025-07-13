@@ -41,7 +41,7 @@ label textdirection:
                 cam_nvl "I think Amy likes you"
                 $ camilletext2_done = True
                 nvl clear
-
+            
         
             
         if linda_4th_conv_done == True and linda_invitation_sent == False:
