@@ -393,23 +393,32 @@ label camilleshopping:
             "The door closes with a final click, leaving me alone and aching."
             "I'm left behind her door, still tasting her, wondering what I've gotten myself into."
             "I realize I'm already more invested in this than I want to admit."
+            $ camille_shomedate_done = True
+            $ classdatecamille_count += 1
             jump map3
 
-            # cam "Apparently they have some 'concerns' about my content."
-            # "She rolls her eyes while still on the phone."
-            # cam "Yeah, I know it's last minute... Look, I'll be there in an hour."
-            # cam "Just give me time to get ready, okay?"
-            # "Camille hangs up and looks down at me with obvious frustration."
-            # cam "Sorry babe, duty calls."
-            # cam "Some corporate suits want to lecture me about 'brand image' or whatever."
-            # cam "We'll have to continue this later."
-            # "She starts getting dressed, clearly annoyed by the interruption."
-            # cam "You can stay here if you want, or..."
-            # cam "Actually, you should probably go. I might be gone for hours."
-            # scene backrimeric40
-            # "As she finally pulls away, I'm left gasping and dazed."
-            # "The taste of her lingers on my lips as I try to process what just happened."
             
+
+            # cam "I've been thinking about our little... arrangement."
+            # name "What do you mean?"
+            # cam "Well, you've proven yourself quite... capable."
+            # cam "And obedient."
+            # cam "I think it's time we make this more... official."
+            # name "Official?"
+            # cam "I want you to be mine. Completely."
+            # cam "No more games, no more uncertainty."
+            # cam "Just you, serving me, whenever I need you."
+
+
+
+
+
+
+
+
+        
+
+                    
             # "I grow more confident, my tongue working in circles."
             # scene backrimeric7
             # cam "Yes, just like that baby."
@@ -609,6 +618,22 @@ label camilleshopping:
 
 
 label camilleshokerdate:
+    "The class passes by slowly"
+    "But i can't stop thinking about what's is coming next."
+    "After class, we walk out of the university, my mind racing with anticipation."
+    scene black
+    "We walk through the busy streets toward her apartment."
+    "I try to act normal, but my heart is racing with anticipation."
+    "What does Camille have planned for me this time?"
+    scene walkingstreet
+    
+    "Camille walks confidently beside me, occasionally glancing my way with that knowing smile."
+    "I can't help but steal glances at her"
+   
+    "We reach the entrance to her building."
+    scene black
+    "Camille pulls out her keys, and open the door"
+
     "I enter Camille's apartment."
     name "So, do you often..."
     scene earfound
@@ -944,34 +969,37 @@ label camilleshokerdate:
     scene closeupnew6 with dissolve  
     cam "Get on the bed."  
     scene sscenestart with dissolve
-    "Camille me pousses sur le lit"
+    "Camille pushes me onto the bed"
+    cam "I'm going to make you feel good."  
     scene sscenestart2 with dissolve
-    window hide
-    pause
+    "Camille positions herself above me, her eyes burning with desire."
+    cam "Are you ready for this?"
+    name "Yes..."
+    
     scene sscenestart4 with dissolve
-    window hide
-    pause
+    "She teases me with gentle touches, building anticipation."
+    
     scene sscenestart5 with dissolve
-    window hide
-    pause
+    "I can feel the heat radiating from her body."
+    
     scene sscenestart4 with dissolve
-    window hide
-    pause
+    cam "You want this so badly, don't you?"
+    
     scene sscenestart5 with dissolve
-    window hide
-    pause
+    name "Please..."
+    
     scene sscenestart4 with dissolve
-    window hide
-    pause
+    "She continues her slow, deliberate movements."
+    
     scene sscenestart5 with dissolve
-    window hide
-    pause
+    cam "Such a good pet..."
+    
     scene test7 with dissolve
-    window hide
-    pause
+    "The anticipation becomes almost unbearable."
+    
     scene test6 with dissolve
-    window hide
-    pause
+    "I'm completely at her mercy."
+    
     scene camillescene2closeupcamilleface3 with dissolve
     cam "You are gonna mine forever after that"
     scene testposeupside6 with dissolve
@@ -1013,38 +1041,31 @@ label camilleshokerdate:
     scene camillescene2closeupcamilleface3 with dissolve
     cam "I see you're really enjoying yourself."
     scene camillescene2closeupcamilleface4 with dissolve
-    window hide
-    pause
+    cam "You feel so good..."
     scene camillescene2closeupcamilleface5 with dissolve
-    window hide
-    pause
+    cam "So tight around me"
+    scene camillescene2upcloseangle2 with dissolve
+    "Her pace begins to increase"
+    scene camillescene2upcloseangle3 with dissolve
+    "Each thrust deeper than the last"
     scene camillescene2upcloseangle2 with dissolve
     window hide
     pause
     scene camillescene2upcloseangle3 with dissolve
-    window hide
-    pause
-    scene camillescene2upcloseangle2 with dissolve
-    window hide
-    pause
-    scene camillescene2upcloseangle3 with dissolve
-    window hide
-    pause
+    
+    name "Mmm... Camille..."
     scene camillescene2upcloseangle1 with dissolve
-    window hide
-    pause
+    cam "That's it, say my name"
     scene camillescene2upcloseangle3 with dissolve
     window hide
     pause
     scene camillescene2upcloseangle4 with dissolve
-    window hide
-    pause
+    "The intensity builds between us"
     scene camillescene2upcloseangle3 with dissolve
     window hide
     pause
     scene camillescene2upcloseangle4 with dissolve
-    window hide
-    pause
+    cam "You're perfect for me"
     scene camillescene2upcloseangle2 with dissolve
     window hide
     pause
@@ -1052,42 +1073,34 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2changingpose with dissolve
-    window hide
-    pause
+    "Camille shifts position"
     scene camillescene2pose2closeup3 with dissolve
-    window hide
-    pause
+    cam "Let's try something different"
     scene camillescene2pose2closeup1 with dissolve
-    window hide
-    pause
+    "She adjusts her angle"
     scene camillescene2pose2closeup2 with dissolve
-    window hide
-    pause
+    "Finding the perfect rhythm"
 
     scene camillescene2pose2v21 with dissolve
     window hide
     pause
     scene camillescene2pose2v22 with dissolve
-    window hide
-    pause
+    cam "This feels incredible"
     scene camillescene2pose2v23 with dissolve
     window hide
     pause
     scene camillescene2pose2v22b with dissolve
-    window hide
-    pause
+    "My body responds to her every movement"
     scene camillescene2pose2v21b with dissolve
     window hide
     pause
     scene camillescene2pose2v22b with dissolve
-    window hide
-    pause
+    name "Don't stop..."
     scene camillescene2pose2v23c with dissolve
     window hide
     pause
     scene camillescene2pose2v22 with dissolve
-    window hide
-    pause
+    cam "I won't, baby"
     scene camillescene2pose2v21b with dissolve
     window hide
     pause
@@ -1095,11 +1108,19 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2pose2v23 with dissolve
+    "The pleasure intensifies"
+    scene camillescene2pose2angleback1 with dissolve
+    cam "Look at how well you take me"
+    scene camillescene2pose2angleback2 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2angleback3 with dissolve
+    "Every thrust sends waves through my body"
+    scene camillescene2pose2angleback4 with dissolve
     window hide
     pause
     scene camillescene2pose2angleback1 with dissolve
-    window hide
-    pause
+    cam "You're mine now"
     scene camillescene2pose2angleback2 with dissolve
     window hide
     pause
@@ -1107,20 +1128,7 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2pose2angleback4 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2angleback1 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2angleback2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2angleback3 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2angleback4 with dissolve
-    window hide
-    pause
+    name "Yes... yours..."
     scene camillescene2pose2angleback1 with dissolve
     window hide
     pause
@@ -1128,14 +1136,12 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2pose2v23c with dissolve
-    window hide
-    pause
+    "The rhythm becomes more urgent"
     scene camillescene2pose2v21b with dissolve
     window hide
     pause
     scene camillescene2pose2v23 with dissolve
-    window hide
-    pause
+    cam "Getting close, aren't you?"
     scene camillescene2pose2v21b with dissolve
     window hide
     pause
@@ -1143,8 +1149,21 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2pose2v21b with dissolve
+    "I can barely think straight"
+    scene camillescene2pose2fast1 with dissolve
+    "Camille picks up the pace"
+    scene camillescene2pose2fast2 with dissolve
+    cam "Faster now"
+    scene camillescene2pose2fast1 with dissolve
     window hide
     pause
+    scene camillescene2pose2fast2 with dissolve
+    "The intensity overwhelms me"
+    scene camillescene2pose2fast1 with dissolve
+    window hide
+    pause
+    scene camillescene2pose2fast2 with dissolve
+    cam "Almost there"
     scene camillescene2pose2fast1 with dissolve
     window hide
     pause
@@ -1154,6 +1173,7 @@ label camilleshokerdate:
     scene camillescene2pose2fast1 with dissolve
     window hide
     pause
+    name "I can't... this is too much"
     scene camillescene2pose2fast2 with dissolve
     window hide
     pause
@@ -1161,59 +1181,53 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2pose2fast2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2fast1 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2fast2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2fast1 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2fast2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2fast1 with dissolve
-    window hide
-    pause
-    scene camillescene2pose2fast2 with dissolve
-    window hide
-    pause
+    cam "Hold on just a little more"
     scene camillescene2pose2look with dissolve
+    "Our eyes meet in the heat of the moment"
+    scene camillescene2pose31 with dissolve
+    "Another position change"
+    scene camillescene2pose32 with dissolve
+    cam "One more for me"
+    scene camillescene2pose33 with dissolve
     window hide
     pause
+    scene camillescene2pose32 with dissolve
+    "This new angle hits perfectly"
     scene camillescene2pose31 with dissolve
     window hide
     pause
     scene camillescene2pose32 with dissolve
-    window hide
-    pause
+    name "Oh god..."
     scene camillescene2pose33 with dissolve
     window hide
     pause
     scene camillescene2pose32 with dissolve
-    window hide
-    pause
+    cam "That's it, let go"
     scene camillescene2pose31 with dissolve
     window hide
     pause
-    scene camillescene2pose32 with dissolve
+    scene camillescene2pose3angle23 with dissolve
+    "The final moments approach"
+    scene camillescene2pose3angle2 with dissolve
     window hide
     pause
-    scene camillescene2pose33 with dissolve
-    window hide
-
-
-    pause
-    scene camillescene2pose32 with dissolve
+    scene camillescene2pose3angle22 with dissolve
+    cam "Come for me"
+    scene camillescene2pose3angle2 with dissolve
     window hide
     pause
-    scene camillescene2pose31 with dissolve
+    scene camillescene2pose3angle23 with dissolve
+    "I'm completely lost in the sensation"
+    scene camillescene2pose3angle23 with dissolve
     window hide
     pause
-    # //////////////////////////////////////
+    scene camillescene2pose3angle2 with dissolve
+    name "Camille!"
+    scene camillescene2pose3angle22 with dissolve
+    window hide
+    pause
+    scene camillescene2pose3angle2 with dissolve
+    cam "Yes, that's my good pet"
     scene camillescene2pose3angle23 with dissolve
     window hide
     pause
@@ -1221,47 +1235,22 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2pose3angle22 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle23 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle23 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle22 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle23 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle2 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle22 with dissolve
-    window hide
-    pause
+    "The climax builds to its peak"
     scene camillescene2pose33 with dissolve
     window hide
     pause
     scene camillescene2pose32 with dissolve
-    window hide
-    pause
+    "Waves of pleasure crash over me"
     scene camillescene2pose33 with dissolve
     window hide
     pause
     scene camillescene2pose32 with dissolve
+    cam "Perfect..."
+    scene camillescene2pose3angle22 with dissolve
     window hide
     pause
+    scene camillescene2pose3angle23 with dissolve
+    "The intensity finally begins to fade"
     scene camillescene2pose3angle22 with dissolve
     window hide
     pause
@@ -1269,16 +1258,10 @@ label camilleshokerdate:
     window hide
     pause
     scene camillescene2pose3angle22 with dissolve
-    window hide
-    pause
+    "We're both breathing heavily now"
     scene camillescene2pose3angle23 with dissolve
     window hide
     pause
-    scene camillescene2pose3angle22 with dissolve
-    window hide
-    pause
-    scene camillescene2pose3angle23 with dissolve
-    window hide
     pause
     scene camillescene2dompose4 with dissolve
     "Camille takes control, dominating me completely."

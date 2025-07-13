@@ -937,6 +937,45 @@ label classcamilledate9:
     $ classdatecamille_count += 1
     $ class_done = True
     jump camillehomedate
+label classcamilledate10:
+    scene smallclassroomblur with dissolve
+        
+    "I enter the classroom and sit next to Camille."
+    "I try my best to focus on the teacher's lecture."
+    show camille07 with dissolve
+    name "Hello!"
+    cam "Look who's here."
+    cam "My little pet"
+    cam "Are you having a good day?"
+    name "I... yes, I think so."
+    cam "I knew you'd show up quickly"
+    name "I mean it was fun, i have to admit."
+    name "How did your meeting go?"
+    cam "Great, the guy is interested in what we're doing"
+    cam "It was more about networking than real professional collaboration."
+    cam "But he's someone important."
+    cam "I know how to make myself desirable in these situations"
+    name "I bet."
+    cam "It's really important to know how to leave your mark in people's minds."
+    cam "So they don't forget you."
+    cam "Especially in this industry."
+    name "I'm glad it went well."
+    cam "Yeah.."
+    cam "Speaking of leaving your mark.."
+    cam "Do you want to come to my place after class?"
+    cam "I'm in the mood to be served."
+    menu:
+        "Yes, I want to":
+            cam "Perfect."
+            jump camilleshokerdate
+
+            
+        "No, I need some time":
+            cam "Hmm, that's... unfortunate."
+            cam "I thought you understood where this was leading to."
+            cam "Well, when you're ready to stop playing games, let me know."
+    
+
 
 
 

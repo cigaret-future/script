@@ -158,6 +158,7 @@ label start:
     default camille_coffeedate_activated = False
     default camilletext1_done = False
     default camilletext2_done = False
+    default camille_shomedate_done = False
 
 
     # // Mila variables
