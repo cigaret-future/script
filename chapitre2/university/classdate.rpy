@@ -974,7 +974,35 @@ label classcamilledate10:
             cam "Hmm, that's... unfortunate."
             cam "I thought you understood where this was leading to."
             cam "Well, when you're ready to stop playing games, let me know."
-    
+label classcamilledate11:
+    scene smallclassroomblur with dissolve
+        
+    "I enter the classroom and sit next to Camille."
+    "I try my best to focus on the teacher's lecture."
+    show camille07 with dissolve
+    name "Hey..."
+    cam "You back for more?"
+    name "I guess."
+    cam "Je supposes que tu est prêt à être totalement à moi."
+    cam "Je suppose que tu as compris que tu devais êtr etotalement à moi."
+    cam ""
+    name "I think i need that."
+    "..."
+    "Les rendez vous s'enchaînent"
+    "petit à petit je suis de plus en plus souvent chez elle. "
+    "La servant de plus en plus."
+    "J'ai l'impression d'être de plus en plus dépendant d'elle."
+    "Je ne sais pas is c'est une bonne chose ou pas."
+    "Mais je me sens bien avec elle."
+    "J'ai l'impression de lui appartenir."
+    "Je finis par être chez elle presque tous les jours."
+    "Je suis devenu son esclave."
+    "Je délaisse progressivement mes études, pour être à son service."
+    "Elle me trouve un travail comme modèle de lingerie."
+    "Je suis payé pour poser en sous-vêtements pour des marques de lingerie."
+    "Ce n'est pas grand chose, mais être avec Camille me remplit complétement."
+    "C'est une voie comme une autre."
+
 
 
 
