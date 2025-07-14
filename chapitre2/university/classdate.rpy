@@ -838,7 +838,7 @@ label classcamilledate7:
     cam "I try to do it well."
     cam "And you, what do you do besides asking everyone else questions?"
     name "Me? Nothing special. I go to class, work on my thesis, and try to survive."
-    cam "Ouai dans 2 ou 3 ans tu seras paumé si tu trouves pas quelque chose à faire à côté."
+    cam "Yeah, in 2 or 3 years you'll be lost if you don't find something to do on the side."
     name "..."
     name "Yeah, I know."
     cam "Don't make that face. Like I said, if I ever need someone for a lingerie shoot, I'll let you know."
@@ -922,7 +922,7 @@ label classcamilledate9:
     "I try my best to focus on the teacher's lecture."
     
     show camille07 with dissolve
-    cam "whats up [Name]?"
+    cam "whats up [name]?"
     name "Not much, just trying to survive this class."
     cam "Hey, would you like to come to my place after class?"
     name "Come to your place?"

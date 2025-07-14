@@ -212,7 +212,12 @@ label start:
     "Your name is [name]."
     "You are a 23-year-old student who is moving to a new city to start a thesis."
 
-    jump camilleshokerdate
+    
+   
+    
+    jump classcamilledate10
+
+
     scene train
     with dissolve
     "It's been almost 3 hours since I've been on the train."
