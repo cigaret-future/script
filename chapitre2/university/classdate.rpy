@@ -974,8 +974,35 @@ label classcamilledate10:
             cam "Hmm, that's... unfortunate."
             cam "I thought you understood where this was leading to."
             cam "Well, when you're ready to stop playing games, let me know."
+label classcamilledate11:
+    scene smallclassroomblur with dissolve
+        
+    "I enter the classroom and sit next to Camille."
+    "I try my best to focus on the teacher's lecture."
+    show camille07 with dissolve
+    name "Hey..."
+    cam "You back for more?"
+    name "I guess."
+    cam "I suppose you're ready to be completely mine."
+    cam "I suppose you've understood that you need to be totally mine."
+    cam ""
+    name "I think I need that."
+    "..."
+    "The dates follow one after another"
+    "Little by little, I spend more and more time at her place."
+    "Serving her more and more."
+    "I feel like I'm becoming increasingly dependent on her."
+    "I don't know if it's a good thing or not."
+    "But I feel good with her."
+    "I feel like I belong to her."
+    "I end up being at her place almost every day."
+    "I've become her slave."
+    "I gradually neglect my studies to be at her service."
+    "She finds me a job as a lingerie model."
+    "I get paid to pose in underwear for lingerie brands."
+    "It's not much, but being with Camille fulfills me completely."
+    "It's one path among others."
     
-
 
 
 
