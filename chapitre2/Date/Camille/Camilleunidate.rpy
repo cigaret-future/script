@@ -72,6 +72,7 @@ label camilleuni_date:
     "Time flies by while we're just chatting about random things."
     "Then Amy checks her phone and her eyes go wide."
     amy "Oh shit, I totally lost track of time."
+    scene amyleave
     amy "I gotta meet my study group in like twenty minutes."
     "She starts grabbing her stuff."
     amy "This was fun!"
@@ -79,6 +80,7 @@ label camilleuni_date:
     name "Yeah, for sure. It was cool meeting you."
     cam "I'll hit you up later, Amy."
     "Amy waves and rushes out of the café."
+    scene amyleave2
     "Now it's just me and Camille at the table."
     cam "She totally liked you, I could tell."
     "Camille grins and takes another sip of her coffee."

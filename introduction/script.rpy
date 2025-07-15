@@ -215,7 +215,7 @@ label start:
     
    
     
-    jump classcamilledate10
+    jump camilleuni_date
 
 
     scene train
