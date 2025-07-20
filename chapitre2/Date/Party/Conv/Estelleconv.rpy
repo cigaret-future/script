@@ -15,7 +15,17 @@ label estelleconv :
             jump estelleconv1
         elif estellepartyconv_count == 1:
             jump estelleconv2
-        
+        else:
+            scene livingroomarrow
+            scene livingroomarrowflou with dissolve
+            show estherparty with dissolve
+            est "You seem like you want to get in some trouble"
+            name "why do you say that?"
+            est "I see you going back and forth throughout the party."
+            est "You are looking for something i can tell."
+            name "Maybe i am."
+            jump livingroom
+
     label estelleconvbourre:
         label estelleconvbourre1:
             scene livingroomarrow

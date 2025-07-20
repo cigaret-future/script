@@ -3,6 +3,7 @@ label textdirection:
         
     if day == 0:
         "a notification pops up on my phone"
+        pause 1.0
         h_nvl "Hey, do you think you could send me the history notes when I'm not there, just in case?"
         n_nvl "Sure, just let me know when you need them."
         h_nvl "Okay."
@@ -38,12 +39,25 @@ label textdirection:
             elif classdatecamille_count == 8 and camilletext2_done == False:
                 "A notification pops up on my phone."
                 "Camille is sending me a picture"
+                cam_nvl "{image=avaconv.png}"
                 cam_nvl "I think Amy likes you"
                 $ camilletext2_done = True
                 nvl clear
-            
-        
-            
+
+        label zoeytext:
+            if zoeyconv_count == 1:
+                "A notification pops up on my phone."
+                z_nvl "Helloo! :)"
+                z_nvl "J'espère que ça te dérange pas que Hugo m'a donné ton numéro."
+                n_nvl "No, not at all."
+                z_nvl "Cool!"
+                z_nvl "So how was your mythology class?"
+                n_nvl "It was nice!"
+                z_nvl "Did you talked about Dionysus?"
+                z_nvl "Just wanted to check in on you."
+                n_nvl "Thanks, I appreciate it."
+                nvl clear
+
         if linda_4th_conv_done == True and linda_invitation_sent == False:
 
             "A notification pops up on my phone."

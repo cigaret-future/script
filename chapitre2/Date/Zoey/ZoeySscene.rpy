@@ -56,22 +56,27 @@ label zoeyscene:
     scene frontcowsideeric2 with dissolve
     zoey "I'm going to stretch your little ass"
     scene frontcowsideeric1 with dissolve
-
+    window hide
+    pause
     scene frontcowsideeric2 with dissolve
     "She has total control over me"
     scene frontcowsideeric3 with dissolve
-    
+    window hide
+    pause
     scene frontcowsideeric2 with dissolve
     "She makes me go down more and more on her knees."
     name "aahhh"
     name "please not too fast"
     scene frontcowsideeric1 with dissolve
-
+    window hide
+    pause
     scene frontcowsideeric2 with dissolve
     zoey "shhh, you are so good"
     scene frontcowsideeric3 with dissolve
     zoey "It's gonna be ok"
     scene frontcowsideeric2 with dissolve
+    window hide
+    pause
     scene frontcowsideeric1 with dissolve
 
     
@@ -81,246 +86,370 @@ label zoeyscene:
     scene frontcowsideeric1 with dissolve
     "Yet she stays gentle and attentive to my reactions"
     scene contredeepderika1 with dissolve
-    
+    window hide
+    pause
     scene contredeepderic3 with dissolve
-    
+    window hide
+    pause
     scene contredeepderika1 with dissolve
     "I feel safe"
     scene contredeepderic3 with dissolve
-    ""
+    window hide
+    pause
     scene zoeytransitionpose with dissolve
     zoey "Come here"
     "Zoey pulls back to change position"
 
     # ///////////Cow Front
     scene firstcowfront2erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront4erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront2erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront1erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront3erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront1erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront2erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront1erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront2erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront1erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront3erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront4erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront3erika with dissolve
-    ""
+    window hide
+    pause
     scene firstcowfront4erika with dissolve
-    ""
+    window hide
+    pause
 
     # ///////////CowSide
     scene cowsideerika1 with dissolve
-    ""
+    window hide
+    pause
     scene cowsideerika2 with dissolve
-    ""
+    window hide
+    pause
     scene cowsideerika1 with dissolve
-    ""
+    window hide
+    pause
     scene cowsideerika2 with dissolve
-    ""
+    window hide
+    pause
     scene cowsideerika1 with dissolve
-    ""
+    window hide
+    pause
     scene cowsideerika2 with dissolve
-    ""
+    window hide
+    pause
 
     # //////Side UP
     scene cowupsideerika2 with dissolve
-    ""
+    window hide
+    pause
     scene cowupsideerika1 with dissolve
-    ""
+    window hide
+    pause
     scene cowupsideerika2 with dissolve
-    ""
+    window hide
+    pause
     scene cowupsideerika1 with dissolve
-    ""
+    window hide
+    pause
     scene cowupsideerika2 with dissolve
-    ""
+    window hide
+    pause
     scene cowupsideerika1 with dissolve
-    ""
+    window hide
+    pause
 
     # //accelerate
     scene acceleratezoey3 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey4 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey1 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey2 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey3 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey4 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey1 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey2 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey3 with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey2 with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey2 with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey2 with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey2 with dissolve
-    ""
+    window hide
+    pause
     scene closeupzoey with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey4 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey1 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey2 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey3 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey4 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey1 with dissolve
-    ""
+    window hide
+    pause
     scene acceleratezoey2 with dissolve
-    ""
+    window hide
+    pause
     scene pausezoey with dissolve
-    ""
+    window hide
+    pause
     scene black with dissolve
-    ""
+    window hide
+    pause
 
     # //////Above angle
     scene abovebedangleeric082 with dissolve
-    ""
+    window hide
+    pause
     scene abovebedangleeric083 with dissolve
-    ""
+    window hide
+    pause
     scene abovebedangleeric084 with dissolve
-    ""
+    window hide
+    pause
     scene abovebedangleeric085 with dissolve
-    ""
+    window hide
+    pause
     scene abovebedangleeric082 with dissolve
-    ""
+    window hide
+    pause
     scene abovebedangleeric083 with dissolve
-    ""
+    window hide
+    pause
     scene abovebedangleeric084 with dissolve
-    ""
+    window hide
+    pause
     scene abovebedangleeric085 with dissolve
+    window hide
+    pause
 
     # //////sideangleeric
     scene sideangleeric082 with dissolve
-    ""
+    window hide
+    pause
     scene sideangleeric083 with dissolve
-    ""
+    window hide
+    pause
     scene sideangleeric084 with dissolve
-    ""
+    window hide
+    pause
     scene sideangleeric085 with dissolve
-    ""
+    window hide
+    pause
     scene sideangleeric082 with dissolve
-    ""
+    window hide
+    pause
     scene sideangleeric083 with dissolve
-    ""
+    window hide
+    pause
     scene sideangleeric084 with dissolve
-    ""
+    window hide
+    pause
     scene sideangleeric085 with dissolve
-    ""
+    window hide
+    pause
     # //////upleftangleeric
     scene upleftangleeric2085 with dissolve
-    ""
+    window hide
+    pause
     scene upleftangleeric2084 with dissolve
-    ""
+    window hide
+    pause
     scene upleftangleeric2083 with dissolve
-    ""
+    window hide
+    pause
     scene upleftangleeric2082 with dissolve
-    ""
+    window hide
+    pause
     scene upleftangleeric085 with dissolve
-    ""
+    window hide
+    pause
     scene upleftangleeric084 with dissolve
-    ""
+    window hide
+    pause
     scene upleftangleeric083 with dissolve
-    ""
+    window hide
+    pause
     scene upleftangleeric082 with dissolve
-    ""
+    window hide
+    pause
 
     # //////fcum
     scene fcum082 with dissolve
-    ""
+    window hide
+    pause
     scene fcum083 with dissolve
-    ""
+    window hide
+    pause
     scene fcum084 with dissolve
-    ""
+    window hide
+    pause
     scene fcum085 with dissolve
-    ""
+    window hide
+    pause
     scene fcum082 with dissolve
-    ""
+    window hide
+    pause
     scene fcum083 with dissolve
-    ""
+    window hide
+    pause
     scene fcum084 with dissolve
-    ""
+    window hide
+    pause
     scene fcum085 with dissolve
-    ""
+    window hide
+    pause
 
     # //finalZoey
     scene finalzoey4 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey3 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey6 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey5 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey4 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey3 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey6 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey5 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey4 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey3 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey6 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey5 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey3 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey5 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey6 with dissolve
-    ""
+    window hide
+    pause
     scene finalzoey5 with dissolve
-    ""
+    window hide
+    pause
     scene finalcum with dissolve
-    ""  
+    window hide
+    pause  
     scene finalcum2 with dissolve
-    ""
+    window hide
+    pause
     scene finalbjzoey1 with dissolve
-    ""
+    window hide
+    pause
     scene finalbjzoey2 with dissolve
-    ""
+    window hide
+    pause
     scene finalbjzoey3 with dissolve
-    ""
+    window hide
+    pause
     scene finalbjzoey4 with dissolve
-    ""
+    window hide
+    pause
     scene finalbjzoey5 with dissolve
-    ""
+    window hide
+    pause
     scene finalbjzoey6 with dissolve
-    ""
+    window hide
+    pause
+    $ zoey_date_done = True
+    if stacydate_activated == True:
+        $ stacydate_activated = False
+        $ stacydate_over = True
+    zoey "Don't take too long, or people might worry."
+    scene black
+    "I get dressed slowly, a bit dazed by what just happened."
+    "My ass hurts."
+    "I have trouble standing up..."
+    "I take a few minutes to regain my composure..."
+    "After a few minutes, I go out into the hallway."
+
     jump livingroom

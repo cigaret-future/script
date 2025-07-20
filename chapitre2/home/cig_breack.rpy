@@ -33,7 +33,7 @@ label cigarettebreak:
     $ sarah_pissed = True
     "I turn off the music and go back to the balcony. I hear the sound of a window closing."
     $ cig_break_count += 1
-    "I smoke for a few more minutes, trying to relax. After a few minutes i toss it, and go to the bathroom"
+    "I smoke for a few more minutes, trying to relax. After a few minutes I toss it, and go to the bathroom"
 
     jump gotobed
 

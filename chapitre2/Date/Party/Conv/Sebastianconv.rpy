@@ -3,7 +3,8 @@ label sebastianconv:
         jump sebastianconv1
     elif sebastianconv_count == 1:
         jump sebastianconv2
-
+    elif sebastianconv_count >= 2:
+        jump sebastianconv3
     label sebastianconv1:
         scene balconynobodyarrow
         scene balconynobodyarrowflou with dissolve
@@ -12,9 +13,9 @@ label sebastianconv:
         name "Hey there..."
         seb "How's it going?"
         name "I'm good, just exploring around a bit."
-        if player_gender == "male":
+        if gender == "male":
             seb "Nice, you seem like a pretty chill guy."
-        elif player_gender == "fem":
+        elif gender == "fem":
             seb "Nice, you seem like a pretty chill girl."
         
         seb "It's good to see."
@@ -84,10 +85,18 @@ label sebastianconv:
         seb "The thing is, you just need to have the right sources."
         name "I'll think about it."
         seb "Yeah, you should."
-        seb "So, tu as quelqu'un en vus sinon?"
-        name "Non, pas vraiment."
-        seb "Moi faut que je trouve quelqu'un pour ce soir."
-        seb "ça fait trop longtemps."
-        
+        seb "So, do you have someone in mind?"
+        name "No, not really."
+        seb "I need to find someone for tonight."
+        seb "It's been too long."
+        seb "..."
+        name "cool.."
+        name "I hope you find someone."
+        seb "Hey tell you what.. if you need any tips on how to approach someone, just let me know."
+        name "alright.."
+        $ sebastianconv_count += 1
+    
 
         jump balcony
+
+    label sebastianconv3:

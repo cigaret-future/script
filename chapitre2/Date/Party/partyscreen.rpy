@@ -53,7 +53,7 @@ screen livingroomscreen:
                 hotspot (22, 1077, 435, 355) action Jump ('upstairs')
 
 label kitchenparty:
-    if stacydate_activated == True:
+    if stacydate_activated == True or tracymelaniedate_done == True:
         show screen kitchenpartynomelscreen
         call screen kitchenpartynomelscreen
 
@@ -147,7 +147,7 @@ screen upstairspartyscreen:
             hover "party/corridorscreenarrowhover.png"
             hotspot (62, 1117, 411, 317) action Jump("livingroom")
             hotspot (520, 236, 331, 720) action Jump("toiletparty")
-            hotspot (1602, 115, 373, 1127) action Jump("partybathroom")
+            hotspot (1580, 18, 408, 1273) action Jump("partybathroom")
             
 screen upstairspartystactyscreen:
     frame:
@@ -156,7 +156,7 @@ screen upstairspartystactyscreen:
             hover "party/corridorscreenarrowtracyhover.png"
             hotspot (62, 1117, 411, 317) action Jump("livingroom")
             hotspot (520, 236, 331, 720) action Jump("toiletparty")
-            hotspot (1602, 115, 373, 1127) action Jump("partybathroom")
+            hotspot (1580, 18, 408, 1273) action Jump("partybathroom")
             hotspot (540, 945, 293, 174) action Jump("tracydate2")
 
 

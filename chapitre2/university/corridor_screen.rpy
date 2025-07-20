@@ -33,9 +33,9 @@ screen corridor_emma:
 screen corridor_zoey:
     frame:
         imagemap:
-            ground "université/corridorzoeyphone.png"
-            hover "université/corridorzoeyphone.png"
-            hotspot (1429, 519, 187, 548) action Jump("partydate")
+            ground "université/zoeycorridor.png"
+            hover "université/zoeycorridorhover.png"
+            hotspot (1429, 519, 187, 548) action Jump("zoeydate")
             hotspot (1929, 307, 604, 1077) action Jump("gardenuni_start2")
             
 

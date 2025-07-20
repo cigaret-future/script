@@ -23,6 +23,28 @@ label BarmaidSarah:
             hide barmaidpissed with dissolve
             ""
             jump cafedirection 
+        "I'm looking for a job." if jobaskedlaura_done == False:
+            name "Hey, I just arrived and I'm a bit short on money."
+            name "I'd like to work alongside my studies."
+            name "Do you need someone extra here?"
+            
+            lau "Good for you, but we don't need any staff at the moment."
+            name "Damn, I would have loved to work here."
+            name "It seems chill."
+            lau "What, you think I just sit around doing nothing?"
+            name "No, no, I didn't mean that."
+            lau "That's what you said."
+            lau "Anyway, we don't need anyone here, but I can ask my boss."
+            lau "She owns several bars and is probably looking for people."
+            name "Oh really? That would be great."
+            lau "Yeah, 'great,' as you say..."
+            lau "I can give her your number."
+            name "Yes, that works."
+            name "Thank you so much!"
+            lau "You're welcome."
+            lau "She'll contact you soon."
+            $ jobaskedlaura_done = True
+            jump cafedirection
 
 label Barmaid3:
     scene slep
@@ -141,8 +163,8 @@ label Barmaid2:
                 lau "Don't do anything stupid, alright? I'm watching you."
                 hide barmaidpissed with dissolve
                 jump cafedirection
-            "I'm looking for a job.":
-                if jobaskedlaura_done == False:
+            "I'm looking for a job." if jobaskedlaura_done == False:
+                
                     name "Hey, I just arrived and I'm a bit short on money."
                     name "I'd like to work alongside my studies."
                     name "Do you need someone extra here?"
@@ -164,10 +186,7 @@ label Barmaid2:
                     lau "She'll contact you soon."
                     $ jobaskedlaura_done = True
                     jump cafedirection
-                elif jobaskedlaura_done == True:
-                    lau "I already told you, we don't need anyone here."
-                    lau "My boss will contact you soon"
-                    jump cafedirection
+               
     else:
         if elise_cafe == True and elise_cafe_conv_done == False:
             scene cafeelisefinal

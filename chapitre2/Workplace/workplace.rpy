@@ -5,6 +5,7 @@ label workplace:
     "I try to spot the boss, but I don't see her."
     "I should ask at the counter if she's here."
     "I approach the counter."
+    scene upviewblur with dissolve
     show jenny with dissolve
     "test"
     jen "Hey there."
@@ -42,15 +43,17 @@ label workplace:
     elo "Here, put this on."
     name "Here?"
     elo "No, come to the storage room."
+    scene changing2
     "She takes me to a room at the back of the café."
     "She shows me a room with boxes and clothes."
+    "I put on the uniform and leave the room."
     elo "Great, it suits you very well."
     name "Cool."
-    scene upview with dissolve
+    scene upviewblur with dissolve
     "I head to the counter and start watching Jenny work."
-    show jenny with dissolve
-    jen "Take notes."
+    
     "After a few hours, I start to get the hang of it."
+    show jenny with dissolve
     jen "Do you want me to show you how to make a coffee?"
     name "Okay..."
     jen "Look, you just put the coffee here,"

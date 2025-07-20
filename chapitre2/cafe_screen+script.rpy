@@ -39,7 +39,7 @@ label cafedirection:
         show screen cafescreen_raverout
         call screen cafescreen_raverout
 
-    elif day >= 4 and sarahcafe_conv1_done == False or day >= 4 and day_not_over == True:
+    elif day >= 4 and sarahcafe_conv1_done == False and day % 3 == 0  or day >= 4 and day_not_over == True and day % 3 == 0 :
         show screen cafescreen_sarah
         call screen cafescreen_sarah
     elif elise_cafe == True and elise_cafe_conv_done == False:

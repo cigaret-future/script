@@ -35,31 +35,34 @@ screen journalopen:
                 color "#2b0606"
                 font "fonts/Poppins-Regular.ttf"
                 bold True
-                
-                # Increase the bottom padding
+            
             if classdateemma_count >= 1: 
                 textbutton "Emma":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Show("emma_window")]
-            
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("emma_window")]
+
             if sarah_count >= 1 or sarah_relation_exist == True:
                 if elise_sdate_done == True: 
                     textbutton "Elise":
-                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Show("sarah_window")]
+                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("sarah_window")]
                 else:
                     textbutton "Sarah":
-                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Show("sarah_window")]
+                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("sarah_window")]
+
             if linda_1st_conv_done == True:
                 textbutton "Linda":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Show("linda_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("linda_window")]
 
             if classdatecamille_count >= 1:
                 textbutton "Camille":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Show("camille_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("camille_window")]
 
             if raver_first_conv_done == True:
                 textbutton "Chloe":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Show("chloe_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("chloe_window")]
 
+            if zoeyconv_count >= 1:
+                textbutton "Zoey":
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("zoey_window")]
 
  
 

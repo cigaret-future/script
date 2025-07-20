@@ -1,6 +1,9 @@
 label drinking:
-    if stacydate_activated == True:
+    if stacydate_activated == True or tracymelaniedate_done == True:
         scene kitchenarrownomelblur
+    elif sebastianjen_date_started == True:
+        scene kitchenarrownojenblur
+    
     else:
         scene kitchenarrow
         scene kitchenarrowflou with dissolve

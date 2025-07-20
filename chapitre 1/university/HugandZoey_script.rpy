@@ -85,7 +85,7 @@ label HugandZoeyStart:
         hide zoeypose03
         show zoeypose01 at right:
             xalign 0.7
-        zoey "Talking about fun, give me your phone number. If there's a party, I'll let you know."
+        hug "Talking about fun, give me your phone number. If there's a party, I'll let you know."
 
         name "Oh, ok, thanks. That's nice of you."
 
@@ -94,7 +94,7 @@ label HugandZoeyStart:
         hide zoeypose01
         show zoeypose11 at right:
             xalign 0.7
-        "Zoey winks at me. That was weird."
+        "Zoey winks at me."
 
         name "Okay. Let's stay in touch."
 

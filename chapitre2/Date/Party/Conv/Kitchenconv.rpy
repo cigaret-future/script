@@ -1,19 +1,25 @@
 label stacymelanieconv:
+    
     if drink_count >= 5 and stacybourreconv_done == False:
         jump stacyconvbourre1
     elif drink_count >= 5 and stacybourreconv_done == True:
         jump stacyconvbourre2
-
-    elif zoeyasketfor_music == True:
+    elif stacydate_over == True:
+        jump stacymelanie5
+    elif zoeyasketfor_music == True and music_changed == False:
         jump stacyaskformusic
     elif stacymelanieconv_count == 0:
         jump stacymelanie1
     elif stacymelanieconv_count == 1:
         jump stacymelanie2
+    elif stacymelanieconv_count == 2:
+        jump stacymelanie3
+    elif stacymelanieconv_count == 3:
+        jump stacymelanie4
 
 
     label stacymelanie1:    
-        $ stacymelanieconv_count =+ 1
+       
         if sebastianjen_date_started == True:
             scene kitchenarrownojenblur
         else: 
@@ -25,7 +31,7 @@ label stacymelanieconv:
         show designergirl15 with dissolve:
             xalign 0.2
             yalign 0.99
-        
+        $ stacymelanieconv_count += 1
         "I walk up to two girls deep in conversation."
         tra "Crazy, I never thought a student could have an apartment here."
         tra "This isn’t really the kind of neighborhood where you run into students, right?"
@@ -56,7 +62,7 @@ label stacymelanieconv:
         hide designer4 with dissolve
         jump kitchenparty 
         
-        label stacymelanie2:
+    label stacymelanie2:
             if sebastianjen_date_started == True:
                 scene kitchenarrownojenblur
             else: 
@@ -68,7 +74,7 @@ label stacymelanieconv:
             show designergirl15 with dissolve:
                 xalign 0.2
                 yalign 0.99
-            $ stacymelanieconv_count =+ 1
+            $ stacymelanieconv_count += 1
             mela "Hey, are you eavesdropping on us?"
             name "Me? No, I mean, I was just kind of listening in a bit."
             mela "Oh really? And you think it’s normal to listen in on two girls talking?"
@@ -128,78 +134,80 @@ label stacymelanieconv:
             mela "Anyway, I’m going to grab a beer, do you want one?"
             tra "Yeah, sure."
             mela "Here you go"
-
-        label stacymelanie3:
-            if sebastianjen_date_started == True:
-                scene kitchenarrownojenblur
-            else: 
-                scene kitchenarrow
-                scene kitchenarrowflou with dissolve 
-            show tracy2 with dissolve
-            show tracy2 at right:
-                xalign 0.8
-            show designergirl15 with dissolve:
-                xalign 0.2
-                yalign 0.99
-            $ stacymelanieconv_count =+ 1
-            mela "You’re taking this way too seriously."
-            tracy "No, I’m sure she really felt something real."
-            mela "Oh, come on, not that again."
-            mela "Hey you, make yourself useful."
-            mela "Do you think polyamorous relationships can actually work?"
-            name "Uh, I guess... in theory, yeah."
-            mela "In theory, sure."
-            mela "But reality tends to be messier."
-            tracy "That’s not what I mean. What I’m really asking is: can you be in love with more than one person at once?"
-            mela "That’s the same thing."
-            tracy "No, it's not. Being in love and being in a relationship are two different things."
-            name "I think... yeah, you can love more than one person. But it’s never the same kind of love."
-            mela "How convenient."
-            tracy "I actually agree. Love shifts depending on the person—it’s not a fixed recipe."
-            mela "Sounds like something people say when they don’t want to pick a side."
-            tracy "Or when they finally stop pretending everything fits into neat little boxes."
-            mela "So now exclusivity is just a social myth?"
-            name "Yes, it's a choice we make, even though we could experiment something else."
-            tracy "Exactly. It’s not natural, it’s something people agree on."
-            tracy "We weren't born to be nourished by the love of just one person."
-            mela "Funny, coming from someone who pouts when they don’t get a goodnight text."
-            tracy "You're mean when you know you're wrong."
-            tracy "I never said I was free from all forms of relationships."
-            mela "Okay, but at some point, you have to choose. We live in this society, we can't just do whatever we want."
-            name "That’s... actually a good point."
-            tracy "Don’t support her in her need to stick to old-fashioned ideas."
-            mela "He knows I'm right."
-            mela "He's just being honest."
-            name "I admit, I'm sometimes skeptical about open relationships."
-            name "But as long as no one is forced into it, I don't see the problem."
-            mela "That's all I'm saying: I'm still waiting to see a happy polyamorous person."
-            tracy "I know plenty who are."
-            mela "Really? I’d love to meet them."
-            tracy "But if I introduce them to you, you’ll just try to dissect their lives to prove you’re right."
-            mela "Of course I will."
-            
-            mela "So back to the main question: if you were in love with two people, what would you do?"
-            mela "Tell us what you would do, [name]."
-            name "I don’t know... try to be honest, I guess."
-            mela "You would choose."
-            name "Yes, eventually."
-            mela "Eventually..."
-            name "Yeah, it takes time to choose."
-            mela "Ahaha."
-            tracy "I'm not necessarily against making choices."
-            tracy "But sometimes, not choosing is also a choice."
-            mela "Whoa, shh, you're confusing us now."
-            mela "We were getting close to the revealed truth."
-            mela "From the mouth of [name]."
-            mela "[name] said, polyamorous people are just delaying the moment to decide."
-            name "No, I didn't say that..."
-            mela "Thanks for your honesty."
-            tracy "Let it go [name], she just wants to be right."
-            tracy "I understood your position and I accept it."
-            mela "You're so cute when you act all comprehensive."
-            "Melany moves closer to Tracy and whispers in her ear."
-            "Tracy blushes and laughs nervously."
             jump kitchenparty
+
+    label stacymelanie3:
+        if sebastianjen_date_started == True:
+            scene kitchenarrownojenblur
+        else: 
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve 
+        show tracy2 with dissolve
+        show tracy2 at right:
+            xalign 0.8
+        show designergirl15 with dissolve:
+            xalign 0.2
+            yalign 0.99
+        $ stacymelanieconv_count += 1
+        mela "You’re taking this way too seriously."
+        tra "No, I’m sure she really felt something real."
+        mela "Oh, come on, not that again."
+        mela "Hey you, make yourself useful."
+        mela "Do you think polyamorous relationships can actually work?"
+        name "Uh, I guess... in theory, yeah."
+        mela "In theory, sure."
+        mela "But reality tends to be messier."
+        tra "That’s not what I mean. What I’m really asking is: can you be in love with more than one person at once?"
+        mela "That’s the same thing."
+        tra "No, it's not. Being in love and being in a relationship are two different things."
+        name "I think... yeah, you can love more than one person. But it’s never the same kind of love."
+        mela "How convenient."
+        tra "I actually agree. Love shifts depending on the person—it’s not a fixed recipe."
+        mela "Sounds like something people say when they don’t want to pick a side."
+        tra "Or when they finally stop pretending everything fits into neat little boxes."
+        mela "So now exclusivity is just a social myth?"
+        name "Yes, it's a choice we make, even though we could experiment something else."
+        tra "Exactly. It’s not natural, it’s something people agree on."
+        tra "We weren't born to be nourished by the love of just one person."
+        mela "Funny, coming from someone who pouts when they don’t get a goodnight text."
+        tra "You're mean when you know you're wrong."
+        tra "I never said I was free from all forms of relationships."
+        mela "Okay, but at some point, you have to choose. We live in this society, we can't just do whatever we want."
+        name "That’s... actually a good point."
+        tra "Don’t support her in her need to stick to old-fashioned ideas."
+        mela "He knows I'm right."
+        mela "He's just being honest."
+        name "I admit, I'm sometimes skeptical about open relationships."
+        name "But as long as no one is forced into it, I don't see the problem."
+        mela "That's all I'm saying: I'm still waiting to see a happy polyamorous person."
+        tra "I know plenty who are."
+        mela "Really? I’d love to meet them."
+        tra "But if I introduce them to you, you’ll just try to dissect their lives to prove you’re right."
+        mela "Of course I will."
+        
+        mela "So back to the main question: if you were in love with two people, what would you do?"
+        mela "Tell us what you would do, [name]."
+        name "I don’t know... try to be honest, I guess."
+        mela "You would choose."
+        name "Yes, eventually."
+        mela "Eventually..."
+        name "Yeah, it takes time to choose."
+        mela "Ahaha."
+        tra "I'm not necessarily against making choices."
+        tra "But sometimes, not choosing is also a choice."
+        mela "Whoa, shh, you're confusing us now."
+        mela "We were getting close to the revealed truth."
+        mela "From the mouth of [name]."
+        mela "[name] said, polyamorous people are just delaying the moment to decide."
+        name "No, I didn't say that..."
+        mela "Thanks for your honesty."
+        tra "Let it go [name], she just wants to be right."
+        tra "I understood your position and I accept it."
+        mela "You're so cute when you act all comprehensive."
+        "Melany moves closer to Tracy and whispers in her ear."
+        "Tracy blushes and laughs nervously."
+        
+        jump kitchenparty
 
         label stacymelanie4:
             if sebastianjen_date_started == True:
@@ -207,38 +215,87 @@ label stacymelanieconv:
             else: 
                 scene kitchenarrow
                 scene kitchenarrowflou with dissolve
+                show tracy2 with dissolve
+                show tracy2 at right:
+                    xalign 0.8
+                show designergirl15 with dissolve:
+                    xalign 0.2
+                    yalign 0.99
+                $ stacymelanieconv_count += 1
+                "Melany walks away to talk to someone else."
+                tra "So, are you enjoying the party?"
+                name "It's okay."
+                tra "I see you going back and forth, you look like you're looking for someone."
+                name "Not really, I don't know many people here."
+                tra "You can stay with us if you want."
+                name "Thanks, I don't want to bother you."
+                tra "Don't worry."
+                tra "We don't mind."
+                tra "The more, the merrier."
+                tra "I think Melany likes you."
+                name "You think so?"
+                tra "Yes, of course."
+                tra "You'd know if it wasn't the case."
+                tra "You seem like a chill person."
+                name "Yeah, people tell me that sometimes."
+                name "How did you and Melany meet?"
+                tra "Some friends introduced us."
+                tra "She helped me come out of my shell..."
+                name "I see."
+                mela "Fucking bourgeois.."
+                name "what's up?"
+                mela "I was talking to this guy about an exhibition I saw, and he was like 'oh yes, this artist is so problematic, because the representation of violence ... blah, blah blah...'"
+                mela "I'm like, why do you like art if you are going to be so judgmental?"
+                tra "Actually, having a relationship with art means taking a position about it."
+                tra "It's inevitable."
+                tra "But it goes further than 'I like it or I don't like it.'"
+                mela "yeah whatever, I just want to enjoy the art without having to think about it."
+                tra "But you can't enjoy without thinking about it."
+                mela "omg shut up, drink something."
+                tra "I don't want to drink."
+                tra "Don't you want to do something else than drinking."
+                mela "What do you want to do?"
+                tra "I don't know, something out of the ordinary."
+                mela "OMG you are going to depress me, I can feel it."
+                mela "I'll leave you two talking about art."
+                "Melanie walks away and goes to the living room."
+                tra "She's really weird."
+                name "It's ok... I feel like I should leave you two."
+                tra "No! Don't worry."
+                tra "I enjoy your presence."
+                name "I enjoy yours too."
+                tra "It's a bit lousy here don't you think?"
+                tra "Do you want to go somewhere else?"
+                name "Like where?"
+                tra "I don't know, maybe we can go upstairs?"
+                name "Oh ok why not."
+                jump tracyupstairnoisabelle
+
+        label stacymelanie5:
+        if sebastianjen_date_started == True:
+                scene kitchenarrownojenblur
+        else: 
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve
             show tracy2 with dissolve
             show tracy2 at right:
                 xalign 0.8
             show designergirl15 with dissolve:
                 xalign 0.2
                 yalign 0.99
-            $ stacymelanieconv_count =+ 1
-            "Melany walks away to talk to someone else."
-            tra "So, are you enjoying the party?"
-            name "It's okay."
-            tra "I see you going back and forth, you look like you're looking for someone."
-            name "Not really, I don't know many people here."
-            tra "You can stay with us if you want."
-            name "Thanks, I don't want to bother you."
-            tra "Don't worry."
-            tra "We don't mind."
-            tra "The more, the merrier."
-            tra "I think Melany likes you."
-            name "You think so?"
-            tra "Yes, of course."
-            tra "You'd know if it wasn't the case."
-            tra "You seem like a chill person."
-            name "Yeah, people tell me that sometimes."
-            name "How did you and Melany meet?"
-            tra "Some friends introduced us."
-            tra "She helped me come out of my shell..."
-            name "I see."
-            mela "Fucking bourgeois.."
-            name "what's up?"
-            mela "I was talking to this guy about an exhibition I saw, and he was like 'oh yes, this artist is so problematic, because the representation of violence ... blah, blah blah...'"
-            mela "I am like, pourquoi tu aimes l'art?"
-
+        mela "Hey what's up?"
+        name "I was just wondering around."
+        mela "You are exploring huh?"
+        mela "Be careful not to venture too far."
+        mela "I think we should go Tracy.."
+        tra "Yeah.."
+        mela "See you"
+        name "Oh ok.. bye"
+        tra "Bye"
+        "Tracy gives me one last look and leaves with Melanie"
+        "What the fuck was that?"
+        $ tracymelaniedate_done = True
+        jump kitchenparty
         # menu:
         #     "Yes":
         #         name "Yes, please."
@@ -318,8 +375,12 @@ label stacymelanieconv:
 
         # jump kitchenparty
 
+   
+
+
+
     label stacyaskformusic:
-        if stacydate_activated == True:
+        if sebastianjen_date_started == True:
             scene kitchenarrownomelblur
         else:
             scene kitchenarrow
@@ -331,7 +392,7 @@ label stacymelanieconv:
             xalign 0.2
             yalign 0.99
         name "Hey, was it one of you who put your music on the speakers?"
-        tra "Uh, no?"
+       
         mela "Yeah, why do you ask?"
         mela "Do you want to change it?"
         name "No, it's really cool. I just wanted to know who the artist was."
@@ -350,11 +411,12 @@ label stacymelanieconv:
         mela "Okay..."
         name "You'll see, you're going to love it."
         "Why do I always get myself into trouble like this?"
+        $ music_changed = True
         jump kitchenparty
 
     label stacyconvbourre:
         label stacyconvbourre1:
-            if stacydate_activated == True:
+            if sebastianjen_date_started == True:
                 scene kitchenarrownomelblur
             else:
                 scene kitchenarrow
@@ -395,7 +457,7 @@ label stacymelanieconv:
     # /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     label trioaskformusic:
-        if stacydate_activated == True:
+        if stacydate_activated == True or tracymelaniedate_done == True:
                 scene kitchenarrownomelblur
         else:
                 scene kitchenarrow
@@ -410,16 +472,33 @@ label stacymelanieconv:
         show elodie063 at right with dissolve:
             xalign 0.7
             zoom 0.98
+        if tracymelaniedate_done == True or stacydate_activated == True:
+            name "Hey, was it one of you who put your music on the speakers?"
+        
+            elo "Yeah, we finally got control of the music."
+            bru "It was playing some weird stuff before."
+            name "Can I play you something? I think you'll like it."
+            name "It's kind of the same vibe."
+            jeni "What is it?"
+            name "It's in my playlist, I found it recently. Can you disconnect your phone?"
+            elo "Sure, let's hear it."
+            name "You'll see, you're going to love it."
+            "Why do I always get myself into trouble like this?"
+            $ music_changed = True
+            $ trio_musicasked = True
+            jump kitchenparty
 
-        name "Hey, was it one of you who put your music on the speakers?"
-        jeni "Uh, no?"
-        elo "Nah it's not us."
-        bru "I like the vibe, though."
-        $ trio_musicasked = True
-        jump kitchenparty
+        else:
+            
+            name "Hey, was it one of you who put your music on the speakers?"
+            jeni "Uh, no?"
+            elo "Nah it's not us."
+            bru "I like the vibe, though."
+            $ trio_musicasked = True
+            jump kitchenparty
 
 label trioconv:
-    if trio_musicasked == True and trio_musicasked == False:
+    if zoeyasketfor_music == True and trio_musicasked == False:
         jump trioaskformusic
     elif drink_count >= 5 and drink_count <= 10:
         jump trioconvbourre1
@@ -429,7 +508,8 @@ label trioconv:
         jump trioconv1
     elif trioconv_count == 1:
         jump trioconv2
-
+    elif trioconv_count == 2:
+        jump trioconv3
 
 
 
@@ -439,7 +519,7 @@ label trioconv:
 
 
     label trioconvbourre1:
-        if stacydate_activated == True:
+        if stacydate_activated == True or tracymelaniedate_done == True:
             scene kitchenarrownomelblur
         else:
             scene kitchenarrow
@@ -453,14 +533,97 @@ label trioconv:
             zoom 1.02
         show elodie063 at right with dissolve:
             xalign 0.7
-            zoom 0.98
-        "I approach the group of friends."
+        if trioconv_count == 0:
+            
+            name "Hey, you three! I just wanted to say... this party is amazing!"
+            jeni "Yeah, it’s pretty cool."
+            bru "You look like you’re having a good time."
+            name "I am! I’m just... enjoying the vibe, you know?"
+            name "I feel like I can finally let loose and be myself!"
+            elo "That’s great to hear."
+            jeni "Just don’t overdo it, okay?"
+            bru "Yeah, we don’t want you ending up in a corner talking to the fridge."
+            name "No way! I’m here to have fun!"
+            $ trioconv_count += 1
+            jump kitchenparty
+        else:
+            name "Heeyyy, you three! I've been thinking... You're either my guardian angels or accomplices in my descent into hell. And I love it!"
+
+            show elodie065 at right with dissolve:
+                xalign 0.7
+                zoom 0.98
+            hide elodie063 with dissolve
+
+            elo "Wow, you didn't waste any time, did you."
+
+            bru "Yeah, he clearly skipped the 'moderation' phase."
+
+            name "Moderation is for people who are afraid of... of blurry but fun memories!"
+
+            show jennifer064 at left with dissolve:
+                xalign 0.3
+                zoom 0.94
+            hide jennifer062 with dissolve
+
+            jeni "You're off to a good start then."
+            
+            name "Listen, Jennifer. I have a theory. Exes are like cheap vodka... it hurts at first, but then you forget."
         
+            elo "Where did that come from?"
+            
+            show bruno062 at center with dissolve:
+                xalign 0.5
+                zoom 1.02
+            hide bruno061 with dissolve
+
+            bru "That's the best bullshit I've heard all night."
+
+        
+            elo "Bruno, don't encourage him! Are you sure you don't need a glass of water?"
+
+            name "Water? I am not a fish."
+
+            jeni "Jen I think we just found your drinking buddy."
+
+            bru "Cheers to that, then. Just... don't puke on my shoes."
+
+            name "Cross my heart... "
+
+            bru "Alright, ok. Maybe we'll find you a couch before you end up kissing a lamppost."
+            name "A couch? No way! I want to dance! I want to feel the music in my bones!"
+            name "This kitchen has the best acoustics! I can hear the music echoing in my soul!"
+            elo "You should eat something.."
+            
+            jump kitchenparty
+
+
+
+                
+                # elo "You look a bit pale"
+                # name "I am ok.. I just ate "
+                # bru "Dude, you're swaying a little."
+                # name "No, no... I'm perfectly... perfectly stable."
+                # jeni "Maybe sit down for a minute?"
+                # name "Sitting is for quitters! I'm having the best time ever!"
+                # name "Did you know... did you know that this kitchen has AMAZING acoustics?"
+                # "I start speaking louder than necessary."
+                # name "Everything echoes! ECHO! ECHO!"
+                # elo "Okay, maybe lower your voice a bit..."
+                # name "But I love you guys! You're like... the best people I've met tonight!"
+                # name "Actually, you're the best people I've met in my ENTIRE LIFE!"
+                # bru "Alright, that's definitely the alcohol talking."
+                # name "No way! I'm just... I'm just being honest for once!"
+                # name "Usually I'm all... all nervous and stuff, but now I feel FREE!"
+                # jeni "Maybe we should get you some water?"
+                # name "Water? I am not a fish! I want to dance!"
+                # name "Why isn't anyone dancing? This music is INCREDIBLE!"
+                # "I start moving awkwardly to the beat."
+      
 
 
     label trioconv1:
 
-        if stacydate_activated == True:
+        if stacydate_activated == True or tracymelaniedate_done == True:
             scene kitchenarrownomelblur
         else:
             scene kitchenarrow
@@ -550,17 +713,164 @@ label trioconv:
 
         "They keep talking while drinking."
         "I can try to keep wandering around and talking to people."
+        $ trioconv_count += 1
         jump kitchenparty
 
     label trioconv2:
         scene kitchenarrowflou
-        
-        show jennifer062 at left with dissolve:
+        if stacydate_activated == True or tracymelaniedate_done == True:
+            scene kitchenarrownomelblur
+        else:
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve
+
+        "I walk back to the trio, who are now deeper into their drinks."
+
+        elo "You're back"
+        name "How's everyone doing?"
+
+        show jennifer064 at left with dissolve:
             xalign 0.3
             zoom 0.94
-        show bruno061 at center with dissolve:
+        hide jennifer062 with dissolve
+
+        jeni "Better! I think the alcohol is helping."
+        bru "She's been practicing her pickup lines on us."
+        jeni "They're not pickup lines! They're conversation starters."
+        elo "She asked me if I believe in love at first sight, or if she should walk by again."
+
+        show bruno062 at center with dissolve:
             xalign 0.5
             zoom 1.02
-        show elodie063 at right with dissolve:
+        hide bruno061 with dissolve
+
+        
+        name "That's... actually not bad."
+        jeni "See? Thank you!"
+        elo "Don't encourage her."
+
+        show elodie065 at right with dissolve:
             xalign 0.7
             zoom 0.98
+        hide elodie063 with dissolve
+
+        jeni "So [name], have you spotted anyone interesting tonight?"
+        name "I'm still figuring everyone out. What about you guys?"
+        bru "Bruno's been eyeing someone all night but won't admit it."
+        bru "I have not."
+        jeni "You totally have! The boy with the short hair in the balcony."
+        bru "Can we not do this right now?"
+        elo "We're just saying, maybe you should go talk to him instead of hiding in the kitchen."
+        name "Maybe he want to observe first."
+        bru "Exactly! Finally, someone who gets it."
+        jeni "But you can't observe forever. At some point you have to take action."
+        elo "Jennifer's right. The worst that can happen is they say no."
+        bru "Or they laugh at you. Or ignore you completely."
+        name "True, but then at least you know where you stand."
+        jeni "Exactly! And you can move on."
+
+        $ trioconv_count += 1
+        jump kitchenparty
+        
+    label trioconv3:
+        if stacydate_activated == True or tracymelaniedate_done == True:
+            scene kitchenarrownomelblur
+        else:
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve
+
+        show jennifer064 at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        show bruno062 at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        show elodie065 at right with dissolve:
+            xalign 0.7
+            zoom 0.98
+
+
+        jeni "You know what? I'm tired of being single."
+        jeni "Like, really tired. I see couples everywhere and I'm just... here."
+        elo "Jennifer..."
+        jeni "No, I'm serious! I want someone to text goodnight to. Someone who gets excited to see me."
+        bru "You'll find someone."
+        jeni "When though? I've been saying that for months."
+        jeni "I keep going on these awful dates, and nothing ever clicks."
+        name "Maybe you're trying too hard?"
+        jeni "Maybe. But I don't want to end up alone, you know?"
+        jeni "I see my friends in relationships, posting cute photos, planning trips together..."
+        jeni "And I'm just... swiping through dating apps every night."
+        elo "The right person will come along."
+        jeni "But what if they don't? What if I'm just meant to be the friend who's always single?"
+        bru "Don't think like that."
+        jeni "I can't help it! Sometimes I wonder if there's something wrong with me."
+        jeni "Like, why does everyone else make it look so easy?"
+        name "Dating isn't easy for anyone."
+        jeni "Maybe, but some people seem to find their person without even trying."
+        jeni "I'm out here putting myself out there, going to parties like this..."
+        jeni "Hoping maybe tonight will be different."
+        elo "Well, you never know. Maybe tonight will be."
+        jeni "You think? I mean, there are some cute people here..."
+        jeni "Maybe I should be more direct. Just walk up to someone and see what happens."
+        bru "That takes guts."
+        jeni "I have liquid courage now."
+        name "Just be yourself."
+        jeni "Yeah... maybe that's enough."
+
+        $ trioconv_count += 1
+        jump kitchenparty
+    
+    label trioconv4:
+        if stacydate_activated == True or tracymelaniedate_done == True:
+            scene kitchenarrownomelblur
+        else:
+            scene kitchenarrow
+            scene kitchenarrowflou with dissolve 
+        
+        show jennifer064 at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        show bruno062 at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        show elodie065 at right with dissolve:
+            xalign 0.7
+            zoom 0.98
+
+        name "Hey guys, how are you holding up?"
+        jeni "I'm still feeling a bit anxious about the whole dating thing."
+        name "You know what? I'm pretty confident you're going to find someone tonight, Jennifer."
+        elo "Oh really? What makes you so sure?"
+        name "Well, I've been talking to people around here, and everyone seems genuinely interested in meeting new people and having a good time."
+        name "The vibe is really relaxed and open, you know?"
+        bru "Wait, seriously? People actually told you they're looking to meet someone?"
+        name "Yeah, absolutely. There's definitely that energy in the air."
+        jeni "Really? Who did you talk to?"
+        name "Actually, there was this guy I met earlier on the balcony."
+        name "We got to chatting, and he mentioned he's hoping to connect with someone tonight too."
+        jeni "Wait, which guy? Can you point him out?"
+        name "He should still be out there. Tall, short dark hair, wearing a blue shirt."
+        jeni "Oh my god, I think I know who you mean! He's really cute."
+        elo "Him? Really? I thought he looked kind of boring from here."
+        jeni "Are you kidding? He has such a nice smile."
+        name "I actually think you two might really hit it off. You seem to have similar personalities."
+        jeni "You really think so?"
+        name "Definitely. He seemed like a genuine, down-to-earth guy."
+        jeni "Hmm..."
+        jeni "Can you do me a huge favor?"
+        name "What kind of favor?"
+        jeni "Could you maybe go talk to him for me? Just to break the ice a little?"
+        name "You want me to be your wingman?"
+        jeni "Yes! You could just casually mention that I think he seems interesting and that I'd love to chat with him."
+        name "I mean... I guess I could do that."
+        bru "That's actually not a bad strategy."
+        
+        name "Alright, if you really want me to..."
+        jeni "Yes! Please!"
+        name "Okay, I'll go see what I can do."
+        $ trioconv_count += 1
+        jump kitchenparty
+        
+   
+

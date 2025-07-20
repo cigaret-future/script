@@ -14,8 +14,9 @@ define bru = Character('Bruno', color="#457409")
 define jeni = Character('Jennifer', color="#ff7f7f")
 define axel = Character('Axel', color="#868484")
 define seb = Character('Sebastian', color="#ffffff")
-define amy = Character('Amy', color="#ff7f7f")
-
+define av = Character('Ava', color="#ff7f7f")
+define emi = Character('Emily', color="#ff7f7f")
+define sab = Character('Sabrina', color="#ff7f7f")
 init python:
 
     renpy.music.register_channel('coffee_ambiance', "music")
@@ -38,7 +39,7 @@ define cl_nvl = Character ("Clara", kind=nvl, image="clara", callback=Phone_Rece
 define el_nvl = Character ("Elise", kind=nvl, image="elise", callback=Phone_ReceiveSound)
 define elo_nvl = Character ("Elodie", kind=nvl, callback=Phone_ReceiveSound)
 define cam_nvl = Character ("Camille", kind=nvl, image="camille", callback=Phone_ReceiveSound)
-
+define av_nvl = Character ("Ava", kind=nvl, image="ava", callback=Phone_ReceiveSound)
 
 
 define config.adv_nvl_transition = None
@@ -61,142 +62,161 @@ init:
 
 
 label start:
-    define money = 2000
-    define groceries = 2
+    label variables:
+        define money = 2000
+        define groceries = 2
 
-    $ player_inventory = []
-    $ laura_repeat = False
-    default classe = False
-    default day = 0
-    default gender = "male"
-    default rentdue_meet_count = 0
-    default quickbed = False
+        $ player_inventory = []
+        $ laura_repeat = False
+        default classe = False
+        default day = 0
+        default gender = "male"
+        default rentdue_meet_count = 0
+        default quickbed = False
 
-    # //Linda variables
-    default linda_1st_conv_done = False
-    default linda_4th_conv_done = False
-    default linda_2nd_conv_done = False
-    default linda_conv_done = False
-    default linda_invitation_sent = False
-    default linda_relation_status_text = "Linda seems to enjoy hanging out at the university library, I should find her there"
+        # //Linda variables
+        default linda_1st_conv_done = False
+        default linda_4th_conv_done = False
+        default linda_2nd_conv_done = False
+        default linda_conv_done = False
+        default linda_invitation_sent = False
+        default linda_relation_status_text = "Linda seems to enjoy hanging out at the university library, I should find her there"
 
-    # //Sarah variables
-    default sarah_tvdate_done = False
-    default sarah_homedate_done = False
-    default sarahcafe_conv1_done = False
-    default sarah_conv_done = False
-    default sarah_pissed = False
-    default sarah_relation_exist = False
-    default sarah_pissedconv_done = False
-    default sacha_sarah_date_done = False
-    default sarah_count = 0
-    default day_until_new_date = 0
-    default sarah_cafe = False
-    default sarahcafe_conv2_done = False
-    default sarahtexto_count = 0
-    default sarah_sdate_done = False
-    default sarah_sagain_done = False
-    default sarahsproposalrefused = False
-    default sarah_relation_status_text = "I hope to meet Sarah more often in the corridor in the coming days" 
+        # //Sarah variables
+        default sarah_tvdate_done = False
+        default sarah_homedate_done = False
+        default sarahcafe_conv1_done = False
+        default sarah_conv_done = False
+        default sarah_pissed = False
+        default sarah_relation_exist = False
+        default sarah_pissedconv_done = False
+        default sacha_sarah_date_done = False
+        default sarah_count = 0
+        default day_until_new_date = 0
+        default sarah_cafe = False
+        default sarahcafe_conv2_done = False
+        default sarahtexto_count = 0
+        default sarah_sdate_done = False
+        default sarah_sagain_done = False
+        default sarahsproposalrefused = False
+        default sarah_relation_status_text = "I hope to meet Sarah more often in the corridor in the coming days" 
 
-    # //Sacha variables
-    default laura_count = 0
-    default sacha_count = 0
-    default sacha_conv_done = False
-    
-    # //Other variables
-    default cig_break_count = 0
-    default class_done = False
-    default day_not_over = False
-    default classdate_count = 0
-   
+        # //Sacha variables
+        default laura_count = 0
+        default sacha_count = 0
+        default sacha_conv_done = False
+        
+        # //Other variables
+        default cig_break_count = 0
+        default class_done = False
+        default day_not_over = False
+        default classdate_count = 0
 
-#    //Barmaid variables
-    default jobaskedlaura_done = False
-
-
-    # //Emma variables
-    default emma_date_started = False
-    default classdateemma_count = 0
-    default textoemma_send = False
-    default emma_date_done = False
-    default emma_relation_status_text = "I should try to sit next to her in class to get to know her"
-
-    # // Raver variables
-    default raver_date_done = False
-    default raver_not_over = False
-    default raver_first_conv_done = False
-    default raver_text_done = False
-    default chloe_relation_status_text = "I should send her a text tonight to see if she's free"
-
-    # //Elise variables
-    default elise_cafe = False
-    default elise_cafe_conv_done = False
-    default sarah_elise_cafe = False
-    default sarah_elise_cafedate_done = False
-    default elise_sdate_done = False
-    default elise_sagain_done = False
-    default elise_relation_status_text = "               "
-
-    # // Lisa variables
-    default lisa_count = 0
-    default lisa_conv_done = False
-
-    # // Boss variables
-    $ boss_conv_done = False
-    $ boss_textconv_done = False
-
-    # // Camille variables
-    default classdatecamille_count = 0
-    default camillelove_count = 0
-    default camillespank = False
-    default camillespank2 = False
-    default camillespank3 = False
-    default camille_sdate_done = False 
-    default camille_relation_status_text = "I should try to sit next to her in class to get to know her"
-    default camille_moneycheck_passed = False
-    default camille_coffeedate_activated = False
-    default camilletext1_done = False
-    default camilletext2_done = False
-    default camille_shomedate_done = False
+        # //Barmaid variables
+        
+        default jobaskedlaura_done = False
 
 
-    # // Mila variables
-    default mila_count = 0
-    default mila_conv_done = False
+        # //Emma variables
+        default emma_date_started = False
+        default classdateemma_count = 0
+        default textoemma_send = False
+        default emma_date_done = False
+        default emma_relation_status_text = "I should try to sit next to her in class to get to know her"
 
-    # // Estelle variables
-    default estelle_spankconv_done = False 
-    default estelle_firstconv_done = False
-    default estelle_emmaconv_done = False
+        # // Raver variables
+        default raver_date_done = False
+        default raver_not_over = False
+        default raver_first_conv_done = False
+        default raver_text_done = False
+        default chloe_relation_status_text = "I should send her a text tonight to see if she's free"
 
-    # //Party variables
-    
+        # //Elise variables
+        default elise_cafe = False
+        default elise_cafe_conv_done = False
+        default sarah_elise_cafe = False
+        default sarah_elise_cafedate_done = False
+        default elise_sdate_done = False
+        default elise_sagain_done = False
+        default elise_relation_status_text = "               "
 
-    default stacybourreconv_done = False
-    default estellebourreconv_done = False
-    default tracybourreconv_done = False
+        # // Lisa variables
+        default lisa_count = 0
+        default lisa_conv_done = False
 
-    default stacymelanieconv_count = 0
-    default stacydate_activated = False
+        # // Boss variables
+        $ boss_conv_done = False
+        $ boss_textconv_done = False
 
-    default isabelleconv_count = 0
+        # // Camille variables
+        default classdatecamille_count = 0
+        default camillelove_count = 0
+        default camillespank = False
+        default camillespank2 = False
+        default camillespank3 = False
+        default camille_sdate_done = False 
+        default camille_relation_status_text = "I should try to sit next to her in class to get to know her"
+        default camille_moneycheck_passed = False
+        default camille_coffeedate_activated = False
+        default camilletext1_done = False
+        default camilletext2_done = False
+        default camille_shomedate_done = False
 
-    default estellepartyconv_count = 0
 
-    default trioconv_count = 0
-    default trio_musicasked = False
+        # // Mila variables
+        default mila_count = 0
+        default mila_conv_done = False
 
-    default zoeyaxelconv_count = 0
-    default zoeyconv_count = 0
-    default zoeyasketfor_music = False
-    default zoey_vestibul_asked = False
-    default drink_count = 0
+        # // Estelle variables
+        default estelle_spankconv_done = False 
+        default estelle_firstconv_done = False
+        default estelle_emmaconv_done = False
 
-    default sebastianconv_count = 0
-    default sebastianjen_date_started = False
-    default sebastianjen_date_done = False
-    $ key = Item("key", "cupoftea.png")
+        # //Party variables
+        
+
+        default stacybourreconv_done = False
+        default estellebourreconv_done = False
+        default tracybourreconv_done = False
+
+        default stacymelanieconv_count = 0
+        default stacydate_activated = False
+        default stacy_peak_count = 0
+        default stacydate_over = False
+        default tracymelaniedate_done = False
+        default tracy_musicasked = False
+
+        default isabelleconv_count = 0
+        default isabelle_balconyparty_done = False
+        default isabelle_date_done = False
+        default toiletemilie_done = False
+        default bathroomsabrina_done = False
+        default isabelledanse_done = False
+        default isabelle_proposal_refused = False
+        default estellepartyconv_count = 0
+        default sabrinaconv_done = False
+        default trioconv_count = 0
+        default trio_musicasked = False
+        default isabelle_fantasme_told = True
+
+        default zoeyaxelconv_count = 0
+        default zoeyconv_count = 0
+        default zoeyasketfor_music = False
+        default zoey_vestibul_asked = False
+        default zoey_warn_done = False
+        default drink_count = 0
+        default music_changed = False
+        default zoey_date_done = False
+
+        default sebastianconv_count = 0
+        default sebastianjen_date_started = False
+        default sebastianjen_date_done = False
+       
+    #    ///////////////Zoey variables
+        default zoeydate_count = 0
+        default zoeytexto_count = 0
+        default zoey_relation_status_text = "I should try to see if Zoey hangs in the university corridor"
+
 
     scene disclaimer with dissolve
     pause
@@ -211,13 +231,8 @@ label start:
         $ name = "Jess"
     "Your name is [name]."
     "You are a 23-year-old student who is moving to a new city to start a thesis."
-
-    
    
-    
-    jump camilleuni_date
-
-
+    jump partydate
     scene train
     with dissolve
     "It's been almost 3 hours since I've been on the train."

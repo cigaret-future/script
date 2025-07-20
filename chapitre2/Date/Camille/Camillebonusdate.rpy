@@ -1,580 +1,16 @@
-label camillehomedate:
-    scene black 
-    "We leave the university together, walking through the busy streets."
-    
-    "My heart beats faster with each step we take."
-    "I steal glances at her, wondering what she has planned for today."
-
-    "We arrive at her apartment building and she pulls out her keys."
-    scene camilleupdate10
-    cam "Come in, make yourself at home."
-    "I enter Camille’s apartment."
-    "A sweet shampoo scent lingers in the air."
-    "Did she shower before class?"
-    "Maybe she got ready for my visit."
-    scene enteringeric
-    "I'm not really sure what to expect."
-    name "Your apartment is so beautiful."
-    cam "I know, I need to be in a pleasant atmosphere to work."
-    name "Oh, you work from home?"
-    "Camille laughs and gestures for me to sit on a chair."
-    
-    cam "Yes, for classes, I'm a student with you, did you forget?"
-    name "Oh right, that's true."
-    "She stares at me."
-    cam "You look nervous."
-    name "I..."
-    cam "Do you want a beer?"
-    name "I'd like that, thanks."
-    name "I'm not used to this kind of date."
-    "Camille gets up and grabs two beers from the fridge."
-    scene camilletalkking2
-    cam "Here you go."
-    name "Thanks."
-    cam "What do you want to do?"
-    name "I'm not sure, I thought we could talk a bit."
-    cam "Talk?"
-    scene camilledrinking
-    name "Yeah, I mean, get to know each other a little."
-    cam "Ah, I thought we were going to do something else."
-    name "Oh really?"
-    cam "Ahaha, you're cute."
-    scene camilletalkking
-
-    "I try to talk about anything and everything, I tell her about my studies, my hometown."
-    "Camille looks at me with an amused smile."
-    "She lets me talk while sipping her beer from time to time."
-    scene camilletalkking4
-    "I can't help but glance at her chest resting on the table."
-    "Her breasts are huge, I try to suppress images of myself sucking them."
-    scene camillefocus
-    cam "Hey, do you mind if I send you on an errand?"
-    name "An errand? What do you need?"
-    cam "I need a few things for dinner tonight."
-    cam "Here, I'll make you a list."
-    if gender == "male":
-        name "So I'm your delivery boy now?"
-    elif gender == "fem":
-        name "So I'm your delivery girl now?"
-    cam "Are you really questioning my requests?"
-    name "I, ... "
-    name "Ok..."
-    jump camilleshopping
-
-label camilleshopping:
-            scene camillelaugh2
-
-            cam "I like that better."
-            cam "I'll send you the list on your phone."
-            name "Alright"
-            "I guess it's part of this relationship."
-            scene black
-            "I go down the stairs and leave the building."
-            scene goingout2
-            "I head to the nearest supermarket."
-            "I wonder what I'd say if I ran into someone I know."
-            "'I'm running errands for a futa who asked me, and I'm not really sure why.'"
-            "Or maybe I do know why."
-            "I can't tell if this is normal or not."
-            scene goshopping
-            "I try to focus on the shopping list."
-            "I need to buy pasta, tomato sauce, cheese, bread, and wine."
-            "I pick up the items one by one."
-            "Maybe she'll ask me to cook."
-            "I hope not, otherwise she'll be disappointed."
-            "Suddenly I hear my name called by a familiar voice."
-            scene ericlinda
-            lin "Hey, what's up?"
-            lin "Shopping here?"
-            name "Heeeey... yeah, yeah, I need some special stuff."
-            name "My usual store doesn't have what I want."
-            lin "Ah ok, I get it."
-            lin "What are you buying?"
-            name "Oh, just stuff for a meal."
-            scene ericlinda3 with dissolve
-            lin "Let me see? Hm, that's not very varied."
-            lin "Don't they have that at your usual store?"
-            "Why is she asking me that?"
-            "I try to come up with an excuse."
-            name "No, they're out of stock ahah."
-            scene ericlinda2 with dissolve
-            lin "I see..."
-            "Linda looks at me with an amused smile."
-            lin "Anyway, I'll leave you to it, I have things to do."
-            lin "See you later."
-            name "Yeah, see you."
-            "Why do I feel like she knows what I'm doing here?"
-            scene walking out
-            "I go back to Camille's apartment with the groceries."
-            scene black
-            ""
-            scene entergingfromshop
-            cam "Ah, you're back, did you find what I asked for?"
-            name "Yes, yes..."
-            cam "Good, go put them away in the kitchen."
-            scene ericputbagcounter
-
-            cam "You were quick, I'm impressed."
-            cam "You can put those in the upper cupboards."
-
-            scene ericarangecourse
-            "I do as I'm told, without thinking too much."
-            "I'm not really sure what I expect from this situation."
-            "But I like being here and doing what she asks."
-            scene camillesiting
-            "Camille goes to lie down on her bed."
-            scene erikaskingcamillesomething
-            "Once I've put everything away, I go back to see Camille"
-            name "It's done.."
-            name "Everything's in its place"
-            name "Want me to do anything else?"
-            scene camillestaring
-            cam "Hmm?"
-            cam "great, I am proud of you"
-            scene ericstaring
-            name "thanks"
-            scene camillestaring
-            cam "You're obedient."
-            cam "I like that"
-
-            scene camillestaring3
-            
-            cam "But I kinda want to know if you really are."
-            cam "Come sit on the bed."
-            scene ericsitting
-            cam "I'm talking about you with Amy right now."
-            cam "She doesn't think you'd be willing to do anything for me."
-            cam "Would you?"
-            name "I don't know, i guess it depend"
-            cam "I get the feeling you would."
-            cam "So I told her, 'I'll ask him to do something and you'll see.'"
-            scene ericsitting2
-            name "Ok what is it"
-            name "Ask me"
-            scene lightingeric
-            "Camille gets up and turns on a lamp near the bed"
-            cam "Ahah, I think I'm gonna win my bet"
-            name "What?"
-            cam "You look really submissive"
-            cam "It's pretty obvious"
-            cam "So..."
-            scene black 
-            cam "I told Amy you'd be willing to lick my ass."
-            cam "She didn't believe me"
-            cam "And I mean to prove I'm right." 
-            scene undressingcamille
-            "Camille removes her pants, revealing her huge cock."
-            cam "But we both know that's what you really want"
-            
-            scene undressing2
-            cam "Now get down there.."
-            
-            scene black with dissolve
-            
-
-            "I lie down next to Camille and let her push my head between her cheeks."
-            
-            scene ericcloseupas1 with dissolve
-            "I tentatively press my tongue against her entrance."
-            "I feel her body tense as I begin to lick her."
-            cam "Yes, just like that,"
-            cam "You dreamed of it don't you."
-            "Cam smiles wickedly as she presses my face firmly against her rear"
-            scene ericcloseupas2 with dissolve
-            "I begin to explore with my tongue, tasting her intimately."
-            cam "Like that ass clean baby."
-            cam "ahah, Amy is gonna be so jealous"
-            scene ericcloseupas3 with dissolve
-            window hide
-            pause
-            scene ericcloseupas4 with dissolve
-            window hide
-            pause
-            scene ericcloseupas3 with dissolve
-            window hide
-            pause
-            scene backrimeric1 with dissolve
-            
-            cam "I need to film this, otherwise Amy won't believe me"
-            scene backrimeric2 with dissolve
-            cam "And it would be a shame not to capture this moment."
-            scene backrimeric1 with dissolve
-            cam "I hope you don't mind."
-            scene backrimeric3 with dissolve
-            name "mmh"
-            scene backrimeric4 with dissolve
-            if gender == "male":
-                cam "Good boy."
-            elif gender == "fem":
-                cam "Good girl."
-
-            scene rimangle2eric with dissolve
-            cam "now show me how much you want this."
-            scene rimangle2eric with dissolve
-            cam "ouh yes.."
-            scene rimangle1eric with dissolve
-            cam "That's it, don't be shy."
-            scene rimangle2eric with dissolve
-            "I feel completely lost in the moment, focused only on pleasing her."
-            scene rimangle1eric with dissolve
-            cam "You're such a natural at this."
-            "Her words send shivers through my body as I continue."
-            scene rimangle2eric with dissolve
-            cam "I can feel how much you want this."
-            "My tongue works eagerly, desperate to satisfy her every desire."
-            scene rimangle1eric with dissolve
-            cam "You're getting addicted to my taste, aren't you?"
-         
-            scene rimangle2eric with dissolve
-            cam "You love being my personal toy"
-            "I can only nod, my mouth too busy to respond."
-        
-            scene rimangle1eric with dissolve
-            cam "I think you were born for this position."
-           
-         
-            scene rimangle1eric with dissolve
-            window hide
-            pause
-            scene rimangle2eric with dissolve
-            window hide
-            pause
-            scene ericshoulderup1 with dissolve
-            
-            scene ericshoulderup2 with dissolve
-            cam "Mmm, that's it, just like that."
-            scene ericshoulderup3 with dissolve
-           
-            scene ericshoulderup4 with dissolve
-            cam "You're such a good little pet."
-            scene ericcloseupas1 with dissolve
-            cam "You were born to serve me like this, weren't you?"
-            "I can only whimper in response, my mouth completely occupied with pleasing her."
-            window hide
-            pause
-            scene ericcloseupas2 with dissolve
-            window hide
-            pause
-            scene ericcloseupas3 with dissolve
-            cam "Does it tastes good?"
-            cam "Yes?"
-            scene ericcloseupas4 with dissolve
-            cam "It feels like you enjoying this."
-            scene ericcloseupas2 with dissolve
-            
-            if gender == "male":
-                cam "What a nasty boy."
-            elif gender == "fem":
-                cam "What a nasty girl."
-            scene ericcloseupas3 with dissolve
-            window hide
-            pause
-
-            scene ericcamilelhappy with dissolve
-            cam "Mmm, you're learning fast."
-            scene ericcamilelhappy2 with dissolve
-            cam "You're getting better at this every second."
-            scene ericcamilelhappy with dissolve
-            cam "Such a quick learner."
-            scene ericcamilelhappy2 with dissolve
-            window hide 
-            pause
-            scene ericcamilelhappy with dissolve
-            cam "wow look at you"
-            scene ericcamilelhappy2 with dissolve
-            cam "You're so eager to please me."
-            scene ericcamilelhappy with dissolve
-            cam "I could get used to having you around."
-            scene ericcamilelhappy2 with dissolve
-            cam "When I need my ass clean"
-            scene backrimeric4 with dissolve
-            "I lost track of time as I like her ass."
-            scene backrimeric3 with dissolve
-            "It feels like I could stay here forever"
-            scene backrimeric2 with dissolve
-            window hide
-            pause
-            scene backrimeric1 with dissolve
-            window hide
-            pause
-            scene backrimeric2 with dissolve
-            window hide
-            pause
-            scene ericnextlevel1 with dissolve
-            cam "Thats it, go up a little bit"
-            "Camille guides me higher, directing my mouth to the base of her balls."
-            scene ericnextlevel2 with dissolve
-            "I feel her body getting tense as I continue exploring her skin"
-            pause
-            scene ericnextlevel1 with dissolve
-            cam "Amy is going to love this."
-            "The knowledge that she's filming makes my cheeks burn with embarrassment."
-            scene ericnextlevel2 with dissolve
-            "My tongue works with increasing confidence and desperation."
-            scene ericnextlevel1 with dissolve
-            "The taste and scent become more intense."
-            scene ericcalling1 with dissolve
-            window hide 
-            pause
-            scene ericcalling2 with dissolve
-            window hide 
-            pause
-            scene ericcalling1 with dissolve
-            cam "Damn, I don't think I can hold back much longer."
-            scene ericcalling1 with dissolve
-            cam "This is so sexy"
-            scene ericcalling2 with dissolve
-            window hide 
-            pause
-            scene ericcalling1 with dissolve
-            window hide 
-            pause
-            scene ericcalling2 with dissolve
-            window hide 
-            pause
-            scene ericcalling1 with dissolve
-            "I feel her body tensing, her breathing becoming more ragged."
-            scene ericcalling2 with dissolve
-            
-            cam "This mouth is begging to be fucked."
-
-
-            scene ericcalling3
-            "Soudain son téléphone se mets à sonner"
-            cam "Oh, hold on a second..."
-            scene ericanswering
-            cam "No way, really? Right now?"
-            "Camille's expression changes to one of surprise and concern."
-            cam "Dude, I can't believe this is happening right now."
-            cam "I am in the middle of something here."
-            cam "Yeah... fuck."
-            cam "ok..."
-            "Camille gets out of bed"
-            scene ericleaving with dissolve
-            "She starts talking about having to meet someone important for the blog"
-            cam "Seriously?"
-            scene ericleaving4 with dissolve
-            "Her voice becomes slightly agitated as she continues the conversation."
-            cam "I told you I was busy today... No, I can come don't worry."
-            "I hear muffled arguing from the other end of the line."
-            cam "Fine, fine... But this better be worth it."
-            
-            "As she talks on the phone, I feel a wave of disappointment wash over me."
-            "Her huge dick sways in front of me. I can smell her musky scent."
-            scene ericstaringcamilled with dissolve
-            "It makes my mouth water uncontrollably, and I have to resist the urge to lean forward."
-            "I stay frozen, watching helplessly as her massive member moves with each gesture she makes."
-            "The taste of her is still fresh on my tongue, making me crave more."
-            "Every second feels like an eternity as I wait for her attention to return to me."
-            "My body aches with need, desperate to continue what we started."
-            "She finally hangs up and turns to me"
-            scene ericcamillesakingleave with dissolve
-            cam "We have a meeting with an important designer"
-            cam "I can't miss this"
-            cam "We'll continue later"
-            name "Wait, you're leaving me here like this?"
-            scene ericcamillesakingleave with dissolve
-            cam "Don't look at me like that."
-            cam "Business is business."
-            name "But what about... what we were doing?"
-            cam "What about it?"
-            cam "Don't be too needy."
-            cam "I'll take care of you later."
-            cam "Come on, move, I need to hurry."
-            "I get up from the bed, still in shock from what just happened."
-
-            scene ericleavecamille with dissolve
-            
-            "The door closes with a final click, leaving me alone and aching."
-            "I'm left behind her door, still tasting her, wondering what I've gotten myself into."
-            "I realize I'm already more invested in this than I want to admit."
-            $ camille_shomedate_done = True
-            
-            jump map3
-
-            
-
-
-
-
-label camilleshokerdate:
-    "The class passes by slowly"
-    "But I can't stop thinking about what's is coming next."
-    "After class, we walk out of the university, my mind racing with anticipation."
-    scene streetwalkercicamille
-    "We walk through the busy streets toward her apartment."
-    "I try to act normal, but my heart is racing with anticipation."
-    "What does Camille have planned for me this time?"
-    
-    
-    "Camille walks confidently beside me, occasionally glancing my way with that knowing smile."
-    "I can't help but steal glances at her"
-   
-    "We reach the entrance to her building."
-    scene black
-    "Camille pulls out her keys, and open the door"
-
-    "I enter Camille's apartment."
-    name "So, do you often..."
-    scene earfound
-    "Suddenly I stop, my gaze fixed on the bed."
-    "A collar and bunny ears are lying on the bed."
-    "For a few moments, I don't understand what I'm seeing."
-    "Then Camille slips behind me."
-    scene closecamille
-    cam "Do you like what you see?"
-    cam "I think you should put them on."
-    name "Uh... I'm not sure."
-    cam "Do you want to keep coming to see me?"
-    menu:
-        "Yes":
-            jump camilleshokerdate2
-        "no":
-            jump camilleshokerdate3
-    
-    label camilleshokerdate3:
-        cam "If you don't understand your place, you can leave."
-        "I leave Camille's apartment, a bit disappointed."
-        scene black
-        jump map3
-
-    label camilleshokerdate2:
-        name "yes..."
-        cam "Put them on, and undress."
-        "I obey, my brain seems to have stopped working."
-        "My body takes control, and I find myself obeying Camille without thinking."
-
-    scene black
-    "I put on the accessories, feeling totally ridiculous but unable to turn back."
-    cam "Here, put on these panties too."
-    if gender == "male":
-        "I put on the panties, they're very tight and squeeze my balls."
-    scene shoker
-    "Camille looks at me with a satisfied smile."
-    cam "Wow, that looks good on you."
-    cam "You're really cute like that."
-    "I'm not sure if I should take it as a compliment."
-    "But I can't help but feel happy that she likes it."
-    name "So what do I do now?"
-    cam "You're going to be my submissive for today."
-    name "Uh... submissive?"
-
-    scene askingcamille
-    cam "Yes, you're going to do what I tell you."
-    name "And if I don't want to?"
-    cam "Haha, we both know that's what you want."
-    cam "Well, I need to work a bit, go do the dishes."
-    name "The dishes?"
-    cam "Yes, I didn't have time to do them last night, and I need to keep working."
-    scene askingcamille2
-    cam "Go on! Get to work! And don't forget to clean the sink."
-    
-    scene ericcleaning2
-    "I grab a sponge and get to work."
-    "The plates are dirty, she must have had people over last night."
-    cam "Scrub well, it must have dried by now."
-    name "Yes mistress."
-    "I scrub the plates, I can't believe I'm actually doing this."
-    "I feel really strange."
-    "As if I suddenly became someone else."
-
-    scene camillefocus3
-    "I do my best, but I have trouble concentrating."
-    "Camille's presence behind me is distracting."
-    scene camillefocus4
-    "I really want her to take me, but I know I have to stay focused on the dishes."
-    scene black
-    cam "Are you done?"
-    cam "Did you clean the sink properly?"
-    name "Yes"
-    cam "Good girl, now come here."
-    cam "Get on your knees."
-
-    scene kneelingeric
-    cam "I knew you would be a perfect submissive."
-    cam "You're going to stay there while I work."
-    cam "Don't move, stay on your knees and wait for me to tell you what to do."
-    name "Yes mistress."
-    cam "Shhh, be quiet, I need to concentrate."
-    "I wait patiently on my knees."
-    "All my attention and focus is on obeying Camille."
-    "I think back to the other day, when my head was buried between her legs."
-    "I remember her scent, her taste, the feeling of her skin against my tongue."
-    "She must have known she made me addicted to her."
-    "I wonder if she plans to make me go through more humiliations."
-    "Anyway, I'm ready to do anything to experience another intimate moment with her."
-    "Well, I just hope she won't make me go too far."
-    scene black
-    "I stay there, on my knees, for at least an hour."
-    "After a while, Camille gets up."
-    cam "Okay, I have to go out."
-    cam "You're going to stay here."
-    cam "If you're good, I'll fuck you when I get back."
-    name "How long will you be gone?"
-    cam "I don't know, maybe one or two hours, maybe more."
-    cam "You can grab something to eat if you want."
-    cam "But don't make a mess, or else..."
-    cam "You'll regret it."
-    cam "And don't you dare get dressed."
-    cam "I want to find you ready to get fucked when I come home"
-    
-    scene ericwaiting
-    "I hear the door close behind Camille as she leaves."
-    "I am alone in her apartment, still wearing the ridiculous outfit she gave me."
-    "I look around, not sure what to do with myself."
-    "At first I stay sitting on the bed"
-    "Time passes slowly. I try not to think about how exposed I feel."
-    "Curiosity gets the better of me. I get up and discreetly explore Camille's apartment."
-    "I notice a photo hanging on the wall."
-    scene boypic
-    "It's a young man, naked, who seems to be sleeping on a couch."
-    "The photo isn't very good, but it looks like someone close to Camille."
-    "Maybe it's the friend she told me about, the one who became addicted to her."
-    "I wonder where he is now."
-    "I feel like I've taken his place."
-    "Am I going to become addicted to Camille too?"
-    "I'm not sure."
-    "In any case, I feel strangely excited by the situation."
-    "I decide to take a nap while waiting for Camille."
-    scene ericsleepingcamille
-    "I lie down on the bed and close my eyes."
-    "I try to relax, but I can't stop thinking about Camille."
-    "I wonder what she's doing right now."
-    "Is she thinking about me too?"
-    "..."
-    "..."
-    "Suddenly I hear my phone ringing."
-    "It's Camille."
-    cam_nvl "Hey, are you still at home?"
-    n_nvl "Yes"
-    cam_nvl "Okay, I'll be there in 10 minutes."
-    cam_nvl "Get ready."
-    "After a few minutes, I hear footsteps in the hallway."
-    "I sit on the bed, as if I hadn't moved since she left."
-    "Camille suddenly enters the apartment."
-    scene camilleback
-    
+label camillebonusdate:
+    scene black with dissolve
     cam "Have you been good?"
     name "Yes mistress"
     cam "Good"
-    cam "I'm glad to see you like this"
-    cam "you've really earned it"
-    cam "I'm going to fuck this ass"
-    scene black
-    window hide
-    pause
-    "Camille quickly undresses and stands in front of me."
-    scene frontfirst
-    
-    "Her huge cock is already hard."
-    cam "Is this what you wanted?"
-    name "hmhmm"
+    cam "I have a surprise for you."
+  
+
     scene siderealeric1 with dissolve
     cam "You've been very obedient"
     scene siderealeric2 with dissolve
     window hide
     pause
-
     scene siderealeric1 with dissolve
     window hide
     pause
@@ -1204,7 +640,7 @@ label camilleshokerdate:
     "Her grip on my neck tightens as she loses control"
     "I feel our sweat mixing"
     "Her warm breath washes over me"
-    "Making feel i am inside of her mouth."
+    "Making feel I am inside of her mouth."
     "The intensity of her movements becomes almost desperate"
     window hide
     pause
@@ -1325,7 +761,7 @@ label camilleshokerdate:
     scene camillescene2endpose2 with dissolve
     "She pulls out, leaving me panting and exhausted."
     cam "Fuck.."
-    cam "Come, i want you to take some in your mouth."
+    cam "Come, I want you to take some in your mouth."
     scene endblowjob4 with dissolve
     "She straightens up"
     "Instinctively, my head is drawn toward her dick."
@@ -1363,7 +799,7 @@ label camilleshokerdate:
     scene endblowjob4b with dissolve
     "I pull back, breathing heavily, completely spent"
     cam "You exceeded my expectations today"
-    cam "I think i am gonna keep you as my pet for a while"
+    cam "I think I am gonna keep you as my pet for a while"
     window hide
     pause
     scene finalcamille with dissolve
@@ -1381,7 +817,39 @@ label camilleshokerdate:
     cam "Good. You're learning your place quickly."
     cam "You can go now"
     name "Yes mistress"
-    $ classdatecamille_count += 1
     
-    jump map3
+    scene black
+    window hide
+    pause 3
     
+
+
+
+    scene ericservingcoffeecam
+    "The dates follow one after another"
+    
+    "Little by little, I spend more and more time at her place."
+    "Serving her more and more."
+    "I feel like I'm becoming increasingly dependent on her."
+    "I don't know if it's a good thing or not."
+    scene camalone2
+    "But I feel good with her."
+    "I feel like I belong to her."
+    "I end up being at her place almost every day."
+    "I've become her slave."
+    scene camalone5
+    "I gradually neglect my studies to be at her service."
+    "She finds me a job as a lingerie model."
+    "I get paid to pose in underwear for lingerie brands."
+    scene camilleendscene1
+    "It's not much, but being with Camille fulfills me completely."
+    
+    scene camilleendscene3
+    "It's one path among others."
+    scene black
+    pause 1
+    scene endscreen
+    window hide
+    pause 2
+    
+

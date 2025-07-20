@@ -405,7 +405,7 @@ label raver_date_1:
         scene deepthroatbis005 with dissolve
         pause
         scene deepthroatbis003 with dissolve
-        ros "oh fuck, i am gonna cum"
+        ros "oh fuck, I am gonna cum"
         scene deepthroatbis005 with dissolve
         pause
         scene deepthroatbis003 with dissolve

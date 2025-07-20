@@ -12,7 +12,7 @@ label gardenuni_start:
         menu:
             "Go to the classroom":
                 jump class1sttime
-
+            
             "Go to the library":
                 if classe == True and linda_1st_conv_done == False:
                     show screen uniscreen
@@ -61,6 +61,12 @@ label gardenuni_start:
                 call screen minicarte2
 
 label class1sttime: 
+    menu:
+        "skip the intro":
+            jump introskip
+        "continue":
+            pass
+
     scene unistairs
     "I climb the stairs to the first floor."
     "Many students are walking around the corridors."
@@ -130,3 +136,10 @@ label class1sttime:
     
     $ classe = True
     jump gardenuni_start
+
+
+    label introskip:
+        $ marion_1st_conv_done = True
+        $ linda_1st_conv_done = True
+        $ classe = True
+        jump map2

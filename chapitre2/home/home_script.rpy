@@ -11,12 +11,12 @@ label backhome:
 label newdaystart:
     if groceries <= 0:
         show closetempty
-        "I have nothing to eat, maybe i should go buy some groceries."
+        "I have nothing to eat, maybe I should go buy some groceries."
         show screen homescreen4
         call screen homescreen4
     else: 
         scene beforebedphone
-        "I eat dinner then i lay on my bed. Doomscrolling for an hour or two."
+        "I eat dinner then I lay on my bed. Doomscrolling for an hour or two."
         
         jump textdirection
 
@@ -51,7 +51,7 @@ label gotobedKate:
             scene black with dissolve
             pause
             scene home00 with dissolve
-            "The next day, i wake up with a bitter taste in my mouth and a bit of a headache."
+            "The next day, I wake up with a bitter taste in my mouth and a bit of a headache."
             if day % 7 == 0:
                 jump rentdue
             show screen homescreen4
@@ -88,7 +88,7 @@ label gotobed:
             if day >= 4 and sarah_count >= 1 and sarahcafe_conv1_done == False:
                 $ sarah_relation_status_text = "I should go for a walk to the cafe, just to clear my mind"
             if sarahcafe_conv1_done == True and sacha_sarah_date_done == False:
-                $ sarah_relation_status_text = "Maybe I'll see Sarah tonight while i hang out"
+                $ sarah_relation_status_text = "Maybe I'll see Sarah tonight while I hang out"
             if day_until_new_date : 
                 $ day_until_new_date -= 1
             if sarah_homedate_done == True:
@@ -109,7 +109,7 @@ label gotobed:
             scene black with dissolve
             pause
             scene home00 with dissolve
-            "The next day, i wake up feeling refreshed."
+            "The next day, I wake up feeling refreshed."
             if day % 7 == 0:
                 jump rentdue
             elif jobaskedlaura_done == True and boss_textconv_done == False:
@@ -144,7 +144,7 @@ label cantsleep2:
     #     call screen homescreen4
         if groceries == 0:
             scene home00
-            "I have nothing to eat, i should go buy some groceries."
+            "I have nothing to eat, I should go buy some groceries."
             show screen homescreen4
             call screen homescreen4
 label map4: 

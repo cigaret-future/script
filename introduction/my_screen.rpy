@@ -101,5 +101,5 @@ label back :
     call screen homescreen3
 label nothing: 
     show map1
-    "i have everything i need"
-    jump map2  
+    "I have everything I need"
+    jump map2
