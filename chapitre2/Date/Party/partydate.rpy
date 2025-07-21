@@ -40,9 +40,10 @@ label zoeypartyend:
     show zoeysmile with dissolve
     hide zoeysurprise with dissolve
     "she whispers in my ear"  
-    zoey "Probably because you were too busy greedily taking my cock earlier~"  
-    zoey "Nope, you’re definitely staying with me tonight."  
-    "je la laisse me racompagner."
+    zoey "Probably because you were too busy greedily taking my cock earlier.."  
+    zoey "Nope, you’re definitely coming with me."
+    jump zoeycominghomeafterparty 
+    
     
 
 label isabelleend:
@@ -55,19 +56,60 @@ label isabelleend:
 
     name "I'll be fine, really..."
     isa "Look at you, you can barely stand upright."
-    isa "Plus it's getting really late and the streets aren't safe."
+    isa "Plus it's really late and the streets aren't safe."
 
     isa "Come on, let get you home."
     name "Are you sure? I don't want to be a bother..."
 
     isa "Don't be silly, it's no trouble at all."
     isa "I would be an asshole not to help you."
-    scene black
+    scene leavingpartywithisa
     "Isabelle takes me by the arm and leads me down the stairs to the street."
     "We walk slowly through the quiet streets, Isabelle's arm wrapped around me for support."
     "The cool night air feels refreshing after the stuffy atmosphere of the party."
     "Our footsteps echo softly on the empty sidewalk."
+    scene isabelleerichome
+    "After walking through the streets for a while, we finally arrive at my place."
+    isa "Here we are."
+    name "Thanks for walking me home, Isabelle."
+    isa "No problem.."
+    isa "It was fun tonight, I hope you had a good time."
+    name "Yeah, it was great."
+    isa "Good night, see you around."
+    name "Good night, Isabelle."
     scene black
+    scene sleeping3e with dissolve
+    "I lay on my bed and fall asleep instantly" 
+    
+    $ class_done = False
+    $ groceries -= 1
+    $ sarah_conv_done = False
+    $ lisa_conv_done = False
+    $ sacha_conv_done = False
+    $ mila_conv_done = False
+    $ linda_conv_done = False
+    $ elise_sagain_done = False
+    if emma_date_started:
+        $ emma_date_done = True
+    $ day_not_over = False
+    $ raver_not_over = False
+    $ day += 1
+    if day_until_new_date : 
+        $ day_until_new_date -= 1
+    if sarah_homedate_done == True:
+        $ elise_cafe = True
+    if sarah_tvdate_done == True:
+        $ sarah_cafe = True
+    if sarahcafe_conv2_done == True:
+        $ sarah_elise_cafe = True
+    scene black with dissolve
+    pause
+    scene home00 with dissolve
+    "The next day, I wake up a headache"
+    if day % 7 == 0:
+        jump rentdue
+    show screen homescreen4
+    call screen homescreen4
 
 
 label isabellezoeyend:
@@ -108,56 +150,61 @@ label isabellezoeyend:
     isa "See you later then."
     name "Bye Isabelle."
     zoey "Yeah, see you later."
-    scene black with dissolve
-    "Zoey takes my arm and leads me out of the apartment, her grip firm but gentle."
-    scene leavingpartywithzoey with dissolve
-    "As we step into the cool night air, I feel a mix of gratitude and confusion."
-    "We walk slowly through the quiet streets, Zoey's arm wrapped around me for support."
-    "The cool night air feels refreshing after the stuffy atmosphere of the party."
-    "Our footsteps echo softly on the empty sidewalk."
-    scene black with dissolve
-    "After walking through the streets for a while, we finally arrive at my place."
-    "Zoey climbs the stairs with me and helps me into the apartment."
-    "I sit heavily on the bed, exhausted."
-    scene zoeyerichome
-    zoey "There you go, home sweet home."
-    zoey "It was a fun night"
-    zoey "I hope we'll do it again sometime."
-    name "Yeah me too."
-    zoey "Je te laisse te reposer."
-    zoey "On se voit plus tard."
-    name "alright."
-    zoey "good night babe"
-    name "good night.."
-    scene sleeping3e with dissolve
-    "I lay on my bed and fall asleep instantly" 
-    
-    $ class_done = False
-    $ groceries -= 1
-    $ sarah_conv_done = False
-    $ lisa_conv_done = False
-    $ sacha_conv_done = False
-    $ mila_conv_done = False
-    $ linda_conv_done = False
-    $ elise_sagain_done = False
-    if emma_date_started:
-        $ emma_date_done = True
-    $ day_not_over = False
-    $ raver_not_over = False
-    $ day += 1
-    if day_until_new_date : 
-        $ day_until_new_date -= 1
-    if sarah_homedate_done == True:
-        $ elise_cafe = True
-    if sarah_tvdate_done == True:
-        $ sarah_cafe = True
-    if sarahcafe_conv2_done == True:
-        $ sarah_elise_cafe = True
-    scene black with dissolve
-    pause
-    scene home00 with dissolve
-    "The next day, I wake up a headache"
-    if day % 7 == 0:
-        jump rentdue
-    show screen homescreen4
-    call screen homescreen4
+    jump zoeycominghomeafterparty
+
+
+
+    label zoeycominghomeafterparty:
+        scene black with dissolve
+        "Zoey takes my arm and leads me out of the apartment, her grip firm but gentle."
+        scene leavingpartywithzoey with dissolve
+        "As we step into the cool night air, I feel a mix of gratitude and confusion."
+        "We walk slowly through the quiet streets, Zoey's arm wrapped around me for support."
+        "The cool night air feels refreshing after the stuffy atmosphere of the party."
+        "Our footsteps echo softly on the empty sidewalk."
+        scene black with dissolve
+        "After walking through the streets for a while, we finally arrive at my place."
+        "Zoey climbs the stairs with me and helps me into the apartment."
+        "I sit heavily on the bed, exhausted."
+        scene zoeyerichome
+        zoey "There you go, home sweet home."
+        zoey "It was a fun night"
+        zoey "I hope we'll do it again sometime."
+        name "Yeah me too."
+        zoey "I'll let you rest."
+        zoey "See you later."
+        name "alright."
+        zoey "good night babe"
+        name "good night.."
+        scene sleeping3e with dissolve
+        "I lay on my bed and fall asleep instantly" 
+        
+        $ class_done = False
+        $ groceries -= 1
+        $ sarah_conv_done = False
+        $ lisa_conv_done = False
+        $ sacha_conv_done = False
+        $ mila_conv_done = False
+        $ linda_conv_done = False
+        $ elise_sagain_done = False
+        if emma_date_started:
+            $ emma_date_done = True
+        $ day_not_over = False
+        $ raver_not_over = False
+        $ day += 1
+        if day_until_new_date : 
+            $ day_until_new_date -= 1
+        if sarah_homedate_done == True:
+            $ elise_cafe = True
+        if sarah_tvdate_done == True:
+            $ sarah_cafe = True
+        if sarahcafe_conv2_done == True:
+            $ sarah_elise_cafe = True
+        scene black with dissolve
+        pause
+        scene home00 with dissolve
+        "The next day, I wake up a headache"
+        if day % 7 == 0:
+            jump rentdue
+        show screen homescreen4
+        call screen homescreen4

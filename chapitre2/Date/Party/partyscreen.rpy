@@ -53,7 +53,14 @@ screen livingroomscreen:
                 hotspot (22, 1077, 435, 355) action Jump ('upstairs')
 
 label kitchenparty:
-    if stacydate_activated == True or tracymelaniedate_done == True:
+    if (stacydate_activated == True or tracymelaniedate_done == True) and (sebastianjen_date_started == True or sebastianjen_date_done == True):
+        show screen kitchenpartynobody
+        call screen kitchenpartynobody
+        
+    elif sebastianjen_date_started == True:
+        show screen kitchenpartynojenscreen
+        call screen kitchenpartynojenscreen
+    elif stacydate_activated == True or tracymelaniedate_done == True:
         show screen kitchenpartynomelscreen
         call screen kitchenpartynomelscreen
 
@@ -104,6 +111,28 @@ screen kitchenpartynojenscreen:
                 hotspot (1190, 676, 244, 224) action Jump("drinking")
                 hotspot (23, 1143, 418, 270) action Jump("balcony")
 
+
+
+screen kitchenpartynobody:
+    frame:
+        if drink_count >= 5:
+            imagemap:
+                ground "party/kitchenarrownobodyblur.png"
+                hover "party/kitchenarrownobodyblurhover.png"
+                hotspot (1445, 193, 213, 434) action Jump("vestibule")
+                
+                hotspot (1836, 412, 387, 578) action Jump("trioconv")
+                hotspot (23, 1143, 418, 270) action Jump("balcony")
+                hotspot (1190, 676, 244, 224) action Jump("drinking")
+        else:
+            imagemap:
+                ground "party/kitchenarrownobody.png"
+                hover "party/kitchenarrownobodyhover.png"
+                hotspot (1445, 193, 213, 434) action Jump("vestibule")
+                
+                hotspot (1836, 412, 387, 578) action Jump("trioconv")
+                hotspot (23, 1143, 418, 270) action Jump("balcony")
+                hotspot (1190, 676, 244, 224) action Jump("drinking")
 
 
 

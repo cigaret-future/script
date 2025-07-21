@@ -209,6 +209,7 @@ label tracydate2:
 
 
     label tracypeak1:
+        scene corridorscreenfloutracy
         "I think Tracy and Melanie are in the bedroom."
         scene doorclosestacy2
     

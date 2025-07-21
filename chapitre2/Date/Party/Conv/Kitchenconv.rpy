@@ -20,7 +20,7 @@ label stacymelanieconv:
 
     label stacymelanie1:    
        
-        if sebastianjen_date_started == True:
+        if sebastianjen_date_started == True or sebastianjen_date_done == True:
             scene kitchenarrownojenblur
         else: 
             scene kitchenarrow
@@ -63,7 +63,7 @@ label stacymelanieconv:
         jump kitchenparty 
         
     label stacymelanie2:
-            if sebastianjen_date_started == True:
+            if sebastianjen_date_started == True or sebastianjen_date_done == True:
                 scene kitchenarrownojenblur
             else: 
                 scene kitchenarrow
@@ -137,7 +137,7 @@ label stacymelanieconv:
             jump kitchenparty
 
     label stacymelanie3:
-        if sebastianjen_date_started == True:
+        if sebastianjen_date_started == True or sebastianjen_date_done == True:
             scene kitchenarrownojenblur
         else: 
             scene kitchenarrow
@@ -210,170 +210,99 @@ label stacymelanieconv:
         jump kitchenparty
 
         label stacymelanie4:
-            if sebastianjen_date_started == True:
+            if sebastianjen_date_started == True or sebastianjen_date_done == True:
                 scene kitchenarrownojenblur
             else: 
                 scene kitchenarrow
                 scene kitchenarrowflou with dissolve
-                show tracy2 with dissolve
-                show tracy2 at right:
-                    xalign 0.8
-                show designergirl15 with dissolve:
-                    xalign 0.2
-                    yalign 0.99
-                $ stacymelanieconv_count += 1
-                "Melany walks away to talk to someone else."
-                tra "So, are you enjoying the party?"
-                name "It's okay."
-                tra "I see you going back and forth, you look like you're looking for someone."
-                name "Not really, I don't know many people here."
-                tra "You can stay with us if you want."
-                name "Thanks, I don't want to bother you."
-                tra "Don't worry."
-                tra "We don't mind."
-                tra "The more, the merrier."
-                tra "I think Melany likes you."
-                name "You think so?"
-                tra "Yes, of course."
-                tra "You'd know if it wasn't the case."
-                tra "You seem like a chill person."
-                name "Yeah, people tell me that sometimes."
-                name "How did you and Melany meet?"
-                tra "Some friends introduced us."
-                tra "She helped me come out of my shell..."
-                name "I see."
-                mela "Fucking bourgeois.."
-                name "what's up?"
-                mela "I was talking to this guy about an exhibition I saw, and he was like 'oh yes, this artist is so problematic, because the representation of violence ... blah, blah blah...'"
-                mela "I'm like, why do you like art if you are going to be so judgmental?"
-                tra "Actually, having a relationship with art means taking a position about it."
-                tra "It's inevitable."
-                tra "But it goes further than 'I like it or I don't like it.'"
-                mela "yeah whatever, I just want to enjoy the art without having to think about it."
-                tra "But you can't enjoy without thinking about it."
-                mela "omg shut up, drink something."
-                tra "I don't want to drink."
-                tra "Don't you want to do something else than drinking."
-                mela "What do you want to do?"
-                tra "I don't know, something out of the ordinary."
-                mela "OMG you are going to depress me, I can feel it."
-                mela "I'll leave you two talking about art."
-                "Melanie walks away and goes to the living room."
-                tra "She's really weird."
-                name "It's ok... I feel like I should leave you two."
-                tra "No! Don't worry."
-                tra "I enjoy your presence."
-                name "I enjoy yours too."
-                tra "It's a bit lousy here don't you think?"
-                tra "Do you want to go somewhere else?"
-                name "Like where?"
-                tra "I don't know, maybe we can go upstairs?"
-                name "Oh ok why not."
-                jump tracyupstairnoisabelle
-
-        label stacymelanie5:
-        if sebastianjen_date_started == True:
-                scene kitchenarrownojenblur
-        else: 
-            scene kitchenarrow
-            scene kitchenarrowflou with dissolve
             show tracy2 with dissolve
             show tracy2 at right:
                 xalign 0.8
             show designergirl15 with dissolve:
                 xalign 0.2
                 yalign 0.99
-        mela "Hey what's up?"
-        name "I was just wondering around."
-        mela "You are exploring huh?"
-        mela "Be careful not to venture too far."
-        mela "I think we should go Tracy.."
-        tra "Yeah.."
-        mela "See you"
-        name "Oh ok.. bye"
-        tra "Bye"
-        "Tracy gives me one last look and leaves with Melanie"
-        "What the fuck was that?"
-        $ tracymelaniedate_done = True
+            $ stacymelanieconv_count += 1
+            "Melany walks away to talk to someone else."
+            hide designergirl15 with dissolve
+            tra "So, are you enjoying the party?"
+            name "It's okay."
+            tra "I see you going back and forth, you look like you're looking for someone."
+            name "Not really, I don't know many people here."
+            tra "You can stay with us if you want."
+            name "Thanks, I don't want to bother you."
+            tra "Don't worry."
+            tra "We don't mind."
+            tra "The more, the merrier."
+            tra "I think Melany likes you."
+            name "You think so?"
+            tra "Yes, of course."
+            tra "You'd know if it wasn't the case."
+            tra "You seem like a chill person."
+            name "Yeah, people tell me that sometimes."
+            name "How did you and Melany meet?"
+            tra "Some friends introduced us."
+            tra "She helped me come out of my shell..."
+            name "I see."
+            show designergirl15 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            mela "Fucking bourgeois.."
+            name "what's up?"
+            mela "I was talking to this guy about an exhibition I saw.."
+            mela "and he was like 'oh yes, this artist is so problematic, because the representation of violence ... blah, blah blah...'"
+            mela "I'm like, why do you like art if you are going to be so judgmental?"
+            tra "Actually, having a relationship with art means taking a position about it."
+            tra "It's inevitable."
+            tra "But it goes further than 'I like it or I don't like it.'"
+            mela "yeah whatever, I just want to enjoy the art without having to think about it."
+            tra "But you can't enjoy without thinking about it."
+            mela "omg shut up, drink something."
+            tra "I don't want to drink."
+            tra "Don't you want to do something else than drinking."
+            mela "What do you want to do?"
+            tra "I don't know, something out of the ordinary."
+            mela "OMG you are going to depress me, I can feel it."
+            mela "I'll leave you two talking about art."
+            hide designergirl15 with dissolve
+               
+            "Melanie walks away and goes to the living room."
+            tra "She's really weird."
+            name "It's ok... I feel like I should leave you two."
+            tra "No! Don't worry."
+            tra "I enjoy your presence."
+            name "I enjoy yours too."
+            tra "It's a bit lousy here don't you think?"
+            tra "Do you want to go somewhere else?"
+            name "Like where?"
+            tra "I don't know, maybe we can go upstairs?"
+            name "Oh ok why not."
+            jump tracyupstairnoisabelle
+
+        label stacymelanie5:
+            if sebastianjen_date_started == True or sebastianjen_date_done == True:
+                    scene kitchenarrownojenblur
+            else: 
+                scene kitchenarrow
+                scene kitchenarrowflou with dissolve
+            show tracy2 with dissolve
+            show tracy2 at right:
+                xalign 0.8
+            show designergirl15 with dissolve:
+                xalign 0.2
+                yalign 0.99
+            mela "Hey what's up?"
+            name "I was just wondering around."
+            mela "You are exploring huh?"
+            mela "Be careful not to venture too far."
+            mela "I think we should go Tracy.."
+            tra "Yeah.."
+            mela "See you"
+            name "Oh ok.. bye"
+            tra "Bye"
+            "Tracy gives me one last look and leaves with Melanie"
+            "What the fuck was that?"
+            $ tracymelaniedate_done = True
         jump kitchenparty
-        # menu:
-        #     "Yes":
-        #         name "Yes, please."
-        #         mela "Okay, I’ll be right back."
-        #         show designgirl010 with dissolve:
-        #             xalign 0.2
-        #             yalign 0.99
-        #         hide designgirl009 with dissolve
-        #     "No":
-        #         name "No, thanks."
-        #         mela "as you want"
-        #         show designgirl010 with dissolve:
-        #             xalign 0.2
-        #             yalign 0.99
-        #         hide designgirl009 with dissolve
-        # show designgirl010 with dissolve:
-        #     xalign 0.2
-        #     yalign 0.99
-        # hide designgirl011 with dissolve
-        # mela "Speaking of talking, t'a pas l'air d'être un grand parleur toi non plus."
-        # name "qui ça moi?"
-        
-
-
-        # tra "You’re gonna call me that forever now?"
-        # mela "I mean, if the shoe fits."
-        # tra "You don't even know me."
-        # mela "I know enough."
-        # tra "No. You know the version of me you made up in your head."
-        # mela "Defensive much?"
-        # tra "Maybe. Maybe because... maybe because I don't like what you think of me."
-
-        # show designgirl011 with dissolve:
-        #     xalign 0.2
-        #     yalign 0.99
-        # hide designgirl010 with dissolve
-
-        # mela "Then show me I'm wrong."
-
-        # "I step closer. There's a tension now, heavy and real."
-
-        # tra "Maybe I will."
-        # tra "But maybe you’ll have to stop judging first."
-
-        # "Mela tilts her head, studying me like I’m a riddle she’s not sure she wants to solve."
-
-        # show mela_blush at left with dissolve:
-        #     xalign 0.2
-        # hide designgirl011 with dissolve
-
-        # mela "Maybe... I like judging you."
-        # mela "It's fun watching you get all serious."
-
-        # tra "And maybe I like it when you look at me like that."
-
-        # "Mela's smile falters for a second. A crack. She catches it fast, but I saw it."
-
-        # show tracy5 at right with dissolve:
-        #     xalign 0.8
-        # hide tracy3 with dissolve
-
-        # mela "Careful, Tra."
-        # mela "You’re dangerously close to being interesting."
-
-        # tra "Good. Because you’re dangerously close to being wrong about me."
-
-        # "A beat. A slow, electric silence."
-
-        # mela "We'll see."
-
-        # "I sit next to her. Close enough to touch, but I don't. Not yet."
-
-        # tra "Yeah. We will."
-
-        # "Neither of us says anything more. The night folds around us, thick and humming."
-
-
-        # jump kitchenparty
 
    
 
@@ -504,13 +433,22 @@ label trioconv:
         jump trioconvbourre1
     elif drink_count >= 10:
         jump trioconvbourre2
+    
+
     elif trioconv_count == 0:
         jump trioconv1
     elif trioconv_count == 1:
         jump trioconv2
-    elif trioconv_count == 2:
+    elif trioconv_count == 2 and sebastian_open == False:
         jump trioconv3
+    
 
+    elif sebastian_open == True and sebastian_mission_started == False:
+        jump trioconv4
+    elif sebastian_mission_started:
+        jump trioconv5
+    else: 
+        jump trioconv3
 
 
 
@@ -709,6 +647,7 @@ label trioconv:
             "No thanks":
                 name "I’m fine, thanks."
                 bru "As you wish."
+
         bru "I hope people will want to dance at some point, I don’t want to have to make conversation all evening."
 
         "They keep talking while drinking."
@@ -723,6 +662,16 @@ label trioconv:
         else:
             scene kitchenarrow
             scene kitchenarrowflou with dissolve
+        show jennifer062 at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        show bruno061 at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        show elodie063 at right with dissolve:
+            xalign 0.7
+            zoom 0.98
+            
 
         "I walk back to the trio, who are now deeper into their drinks."
 
@@ -737,17 +686,15 @@ label trioconv:
         jeni "Better! I think the alcohol is helping."
         bru "She's been practicing her pickup lines on us."
         jeni "They're not pickup lines! They're conversation starters."
-        elo "She asked me if I believe in love at first sight, or if she should walk by again."
+        name "Like what?"
+        elo "' Do you believe in love at first sight, or if she should walk by again.'"
 
-        show bruno062 at center with dissolve:
-            xalign 0.5
-            zoom 1.02
-        hide bruno061 with dissolve
-
+        
         
         name "That's... actually not bad."
         jeni "See? Thank you!"
-        elo "Don't encourage her."
+
+        elo "That's the least authentic thing you could tell someone"
 
         show elodie065 at right with dissolve:
             xalign 0.7
@@ -758,7 +705,7 @@ label trioconv:
         name "I'm still figuring everyone out. What about you guys?"
         bru "Bruno's been eyeing someone all night but won't admit it."
         bru "I have not."
-        jeni "You totally have! The boy with the short hair in the balcony."
+        jeni "You totally have! The boy with the short hair in the livingroom."
         bru "Can we not do this right now?"
         elo "We're just saying, maybe you should go talk to him instead of hiding in the kitchen."
         name "Maybe he want to observe first."
@@ -779,13 +726,13 @@ label trioconv:
             scene kitchenarrow
             scene kitchenarrowflou with dissolve
 
-        show jennifer064 at left with dissolve:
+        show jennifer065 at left with dissolve:
             xalign 0.3
             zoom 0.94
         show bruno062 at center with dissolve:
             xalign 0.5
             zoom 1.02
-        show elodie065 at right with dissolve:
+        show elodie063 at right with dissolve:
             xalign 0.7
             zoom 0.98
 
@@ -814,11 +761,10 @@ label trioconv:
         jeni "You think? I mean, there are some cute people here..."
         jeni "Maybe I should be more direct. Just walk up to someone and see what happens."
         bru "That takes guts."
-        jeni "I have liquid courage now."
         name "Just be yourself."
         jeni "Yeah... maybe that's enough."
 
-        $ trioconv_count += 1
+       
         jump kitchenparty
     
     label trioconv4:
@@ -851,6 +797,10 @@ label trioconv:
         name "We got to chatting, and he mentioned he's hoping to connect with someone tonight too."
         jeni "Wait, which guy? Can you point him out?"
         name "He should still be out there. Tall, short dark hair, wearing a blue shirt."
+        show jenasking at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        hide jennifer064 with dissolve
         jeni "Oh my god, I think I know who you mean! He's really cute."
         elo "Him? Really? I thought he looked kind of boring from here."
         jeni "Are you kidding? He has such a nice smile."
@@ -869,8 +819,71 @@ label trioconv:
         name "Alright, if you really want me to..."
         jeni "Yes! Please!"
         name "Okay, I'll go see what I can do."
+        $ sebastian_mission_started = True
         $ trioconv_count += 1
         jump kitchenparty
         
-   
+label trioconv5:
+    if stacydate_activated == True or tracymelaniedate_done == True:
+            scene kitchenarrownomelblur
+    else:
+        scene kitchenarrow
+        scene kitchenarrowflou with dissolve 
+    
+    show jenangst at left with dissolve:
+        xalign 0.3
+        zoom 0.94
+    show bruno062 at center with dissolve:
+        xalign 0.5
+        zoom 1.02
+    show elodie065 at right with dissolve:
+        xalign 0.7
+        zoom 0.98
+    jeni "So what did he said?"
+    if sebastian_asked_done == False:
+        name "wait i didn't asked him yet."
+        jeni "what are you wanting for??"
+        jeni "Come on, I'll owe you one..."
+        show brunolaugh at center with dissolve:
+            xalign 0.5
+            zoom 1.02
+        hide bruno062 with dissolve
+        bru "How are you going to thank him?"
+        jeni "I don't know, i'll... i'll give him a hug?"
+        hide brunolaugh with dissolve
+        hide jenangst with dissolve
+        hide elodie065 with dissolve
+        jump kitchenparty
+    elif sebastian_asked_done == True:
+        name "He said he was interested, he'll wait for you in the livingroom."
+        show jenasking at left with dissolve:
+            xalign 0.3
+            zoom 0.94
+        hide jenangst with dissolve
+        jeni "Really?"
+        name "yep"
+        elo "see we told you'd find someone."
+        bru "You go jen!"
+        jeni "Thanks guys!!"
+        jeni "i'll go meet him."
+        hide jenasking with dissolve
+        elo "I am not sure this guy is the right one for her."
+        bru "I don't know, he seems nice."
+        bru "Well at least he is good looking."
+        elo "Come on, let's move from here, we're not going to stay here all night."
+        
+        hide bruno062 with dissolve
+       
+        hide elodie065 with dissolve
+        "I feel like I did a good deed."
+        "Well, I think so."
+        "Maybe it was a bit too easy."
+        "I hope it works out for her."
+        scene black with dissolve
+        $ renpy.pause(2.0, hard = True)
+        $ sebastianjen_date_started = True
+        jump vestibule
+        
+
+
 

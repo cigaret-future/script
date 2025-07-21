@@ -336,6 +336,8 @@ label isabelleconv:
         hug "I think he lives across the street, look."
         isa "Are you spying on people now?"
         "Isabelle joins Hugo."
+        scene balconyparty2flou with dissolve
+        show tracy3 with dissolve
         "Tracy comes closer to me"
         tra "Do you know Isabelle?"
         name "No, we just met."

@@ -110,17 +110,155 @@ label partybathroom:
 
 
     label sebjendate:
-        scene jenniferseb
-        seb "Fuck my cock feels so nice in your mouth"
-        scene jenniferseb2
-        seb "Take it"
-        scene jenniferseb3
-        seb "Yes..."
-        scene jenniferseb4
-        jen "Mmmhgh"
-        jump upstairs
-
-
+        if jenpeak_count == 0: 
+            scene jenniferseb
+            seb "Fuck my cock feels so nice in your mouth"
+            scene jenniferseb2
+            seb "Take it"
+            scene jenniferseb3
+            seb "Yes..."
+            scene jenniferseb4
+            jen "Mmmhgh"
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            $ jenpeak_count += 1
+            jump upstairs
+        elif jenpeak_count == 1:
+            scene jenniferseb
+            seb "Fuck my cock feels so nice in your mouth"
+            scene jenniferseb2
+            seb "Take it"
+            scene jenniferseb3
+            seb "Yes..."
+            scene jenniferseb4
+            jen "Mmmhgh"
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            $ jenpeak_count += 1
+            jump upstairs
+        elif jenpeak_count == 2:
+            scene jenniferseb
+            seb "Fuck my cock feels so nice in your mouth"
+            scene jenniferseb2
+            seb "Take it"
+            scene jenniferseb3
+            seb "Yes..."
+            scene jenniferseb4
+            jen "Mmmhgh"
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            $ jenpeak_count += 1
+            jump upstairs
+        elif jenpeak_count == 3:
+            scene jenniferseb
+            seb "Fuckk i am gonna cum..."
+            scene jenniferseb2
+            window hide
+            pause
+            scene jenniferseb3
+            seb "Yes..."
+            scene jenniferseb4
+            jen "Mmmhgh"
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            scene jenniferseb
+            window hide 
+            pause
+            scene jenniferseb2
+            window hide 
+            pause
+            scene jenniferseb3
+            window hide 
+            pause
+            scene jenniferseb4
+            window hide 
+            pause
+            $ jenpeak_count += 1
+            jump upstairs
+        elif jenpeak_count == 4:
+            scene jennifersebend
+            jeni "Oops.."
+            jeni "Hey..."
+            "Jennifer walks past me"
+            $ jenpeak_count += 1
+            $ sebastianjen_date_done = True
+            jump upstairs
 
     label emiliescene:
         

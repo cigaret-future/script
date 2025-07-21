@@ -213,6 +213,18 @@ label axzoeyconv2:
     zoey "Yeah, yeah, I saw right through your game."
     zoey "Trying to gaslight me."
     zoey "So, don't you want to dance a bit instead of talking nonsense?"
+    if (sebastianjen_date_done == True or sebastianjen_date_started) and (tracymelaniedate_done == True or tracymelaniedate_done_started):
+        
+        axel "I don't know who put on the music, I think it's a girl, but I don't know her name."
+        zoey "I am going to ask her to disconnect"
+        zoey "So we can dance a bit."
+        zoey "I think I saw her in the entrance"
+        zoey "I'll go see."
+        "Zoey leaves and gives me a little slap on the butt."
+        $ zoeyaxelconv_count += 1
+        $ music_changed = True
+        jump livingroom
+
     axel "I don't know who put on the music, I think it's a girl, but I don't know her name."
     zoey "Don't you want to go ask her, [name]?"
     zoey "So we can dance a bit."
@@ -234,7 +246,7 @@ label axzoeyconv3:
         zoey "Come on, chop chop"
         jump livingroom
         
-
+    
     scene livingroomarrowflou
     show zoeyparty at Position(xalign=0.65, yalign=0.99) with dissolve
     show axel1 at Position(xalign=0.35, yalign=0.99) with dissolve
@@ -248,14 +260,24 @@ label axzoeyconv3:
         name "i don't know what you are talking about.."
         zoey "Sure... play innocent."
         zoey "Anyway.."
-        zoey "Did you found the girl?"
-        name "Yes, I found her."
-        name "She told me she disconnected."
-        $ zoey_warn_done = True
+        if (sebastianjen_date_done == True or sebastianjen_date_started) and (tracymelaniedate_done == True or tracymelaniedate_done_started):
+            zoey "I found the girl"
+            zoey "She said she disconnected."
+            $ zoey_warn_done = True
+        else:
+            zoey "Did you found the girl?"
+            name "Yes, I found her."
+            name "She told me she disconnected."
+            $ zoey_warn_done = True
+       
         
     else:
-        name "Alright, I found the girl."
-        name "She told me she disconnected."
+        if (sebastianjen_date_done == True or sebastianjen_date_started) and (tracymelaniedate_done == True or tracymelaniedate_done_started):
+            zoey "I found the girl"
+            zoey "She said she disconnected."
+        else:
+                name "Alright, I found the girl."
+                name "She told me she disconnected."
     axel "Yeah, her music really wasn't great."
     axel "I mean who listen to Modulär these days"
     zoey "We're going to change that."

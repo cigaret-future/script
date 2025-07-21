@@ -198,6 +198,7 @@ label start:
         default trioconv_count = 0
         default trio_musicasked = False
         default isabelle_fantasme_told = True
+        
 
         default zoeyaxelconv_count = 0
         default zoeyconv_count = 0
@@ -211,7 +212,11 @@ label start:
         default sebastianconv_count = 0
         default sebastianjen_date_started = False
         default sebastianjen_date_done = False
-       
+        default sebastian_asked_done = False
+        default jenpeak_count = 0
+        default sebastian_mission_started = False
+        default sebastian_open = False
+        
     #    ///////////////Zoey variables
         default zoeydate_count = 0
         default zoeytexto_count = 0
