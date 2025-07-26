@@ -340,7 +340,9 @@ label camilleshopping:
 
 
             scene ericcalling3
-            "Soudain son téléphone se mets à sonner"
+            "Suddenly, her phone starts ringing."
+
+
             cam "Oh, hold on a second..."
             scene ericanswering
             cam "No way, really? Right now?"
@@ -350,7 +352,7 @@ label camilleshopping:
             cam "Yeah... fuck."
             cam "ok..."
             "Camille gets out of bed"
-            scene ericleaving with dissolve
+            scene ericleavingcam with dissolve
             "She starts talking about having to meet someone important for the blog"
             cam "Seriously?"
             scene ericleaving4 with dissolve

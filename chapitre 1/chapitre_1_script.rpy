@@ -82,7 +82,7 @@ label barmaid1:
 
     "I find an empty table and sit down."
     "She doesn't seem very enthusiastic about her job, but she seems friendly."
-    "The café is filled with young people, likely students."
+    "The coffeeshop is filled with young people, likely students."
     "I'm excited to be a student myself. The holidays have been refreshing;"
     "I hope this year turns out great."
 
@@ -122,7 +122,7 @@ label barmaid1:
 
     lau "Sure."
 
-    lau "If you've bought something, feel free to hang out in the café."
+    lau "If you've bought something, feel free to hang out in the coffee shop."
 
     hide barmaidsmug
 

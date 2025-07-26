@@ -18,6 +18,8 @@ label drinking:
     "The taste is a bit bitter at first, but I get used to it quickly."
     "I start to feel a little more relaxed."
     "I take a few more sips while watching people chat around me."
+    if drink_count >= 10:
+        jump endpartydrink10
     show text "Your mind blurs slightly." at Move((0.5, 0.6), (0.5, 0.5), 10.0)
     pause 5.0
     hide text with dissolve

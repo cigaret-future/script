@@ -142,4 +142,5 @@ label class1sttime:
         $ marion_1st_conv_done = True
         $ linda_1st_conv_done = True
         $ classe = True
+        $ zoey_first_conv_done = True
         jump map2

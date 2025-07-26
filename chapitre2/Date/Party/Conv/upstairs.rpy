@@ -494,7 +494,7 @@ label partybathroom:
         scene finalburst1
         window hide
         pause
-        scene finaleric
+        scene finalemilieeric
         emi "That was amazing..."
         emi "Fuck, i hope no one is waiting.."
         emi "I should probably get going."

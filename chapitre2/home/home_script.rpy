@@ -14,6 +14,9 @@ label newdaystart:
         "I have nothing to eat, maybe I should go buy some groceries."
         show screen homescreen4
         call screen homescreen4
+    elif party_started == True:
+        jump partydate
+        
     else: 
         scene beforebedphone
         "I eat dinner then I lay on my bed. Doomscrolling for an hour or two."
@@ -34,6 +37,7 @@ label gotobedKate:
             $ sacha_conv_done = False
             $ mila_conv_done = False
             $ linda_conv_done = False
+            $ corridorconv_done = False
             $ elise_sagain_done = False
             if emma_date_started:
                 $ emma_date_done = True
@@ -71,9 +75,11 @@ label gotobed:
             $ sarah_conv_done = False
             $ lisa_conv_done = False
             $ sacha_conv_done = False
+            $ corridorconv_done = False
             $ mila_conv_done = False
             $ linda_conv_done = False
             $ elise_sagain_done = False
+            $ workday_done = False
 
             # //////////////////////Emma variables////////////
             if emma_date_started:
@@ -99,20 +105,20 @@ label gotobed:
                 $ sarah_elise_cafe = True
             
             # /////////quick bed direction///////////
-            if quickbed == True:
+            if quickbed == True and quickbed_disabled == False:
                 pause 1.0
                 scene black 
                 $ quickbed = False
                 jump map3
             #  /////////////////////////////////
-            
+            $ quickbed_disabled = False
             scene black with dissolve
             pause
             scene home00 with dissolve
             "The next day, I wake up feeling refreshed."
             if day % 7 == 0:
                 jump rentdue
-            elif jobaskedlaura_done == True and boss_textconv_done == False:
+            elif (jobaskedlaura_done == True and boss_textconv_done == False) or work_count == 1:
                 jump bosstexting
             show screen homescreen4
            

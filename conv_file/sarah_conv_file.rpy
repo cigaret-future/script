@@ -32,7 +32,7 @@ label sarahdatecafe2:
     scene hisacha
     sac "Hey, everyone."
     sac "Sorry to interrupt you."
-    sac "I saw you in the café."
+    sac "I saw you in the coffee shop."
     sar "Hey, aren't you working today?"
     sac "Normally, yes, but I think I'm going to change jobs."
     name "Why?"
@@ -63,7 +63,7 @@ label sarahdatecafe2:
     name "Sure, why not?"
     sar "I'm staying here. Have fun, guys."
     scene black
-    "We leave the café with Sacha."
+    "We leave the coffee shop with Sacha."
 
     scene walkingsacha
     "As we walk, Sacha tells me about his job at the thrift store."
@@ -143,7 +143,7 @@ label sarahdatecafe2:
             name "I think I'll head back home."
             sac "Alright, see you later then."
             name "See you."
-            $ sarah_relation_status_text = "I should hang out to the café"
+            $ sarah_relation_status_text = "I should hang out to the coffee shop"
             $ sarahcafe_conv2_done = True
             $ sarah_cafe = False
             $ sarah_conv_done = True
@@ -197,15 +197,15 @@ label sarahelisecafe:
             elise "Perfect, let's go."
             sar "See you guys."
             scene black
-            "We leave the café with Elise and head toward her place."
+            "We leave the coffee shop with Elise and head toward her place."
             jump elisedate
         "I'd rather stay here":
             scene black
             "Elise leaves after a while."
-            "Sarah and I stay at the café."
+            "Sarah and I stay at the coffee shop."
             "Then Sarah goes back to work."
             name "I'll go with you. I'm heading back anyway."
-            "I leave the café with Sarah."
+            "I leave the coffee shop with Sarah."
             
             scene walkingstreetsaraheric
             sar "Don't you think Elise would make a good manager?"

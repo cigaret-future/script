@@ -48,13 +48,23 @@ label linda2:
 
     hide lindapose17
     show lindahapp
-    lin "We can go to a café. It'll be more comfortable, and we can drink something better than machine coffee."
+    lin "We can go to a coffee shop. It'll be more comfortable, and we can drink something better than machine coffee."
 
     name "I'm in."
 
     lin "Lets roll!"
 
     hide lindahapp
+    if gender == "fem" and characterdesign_done == False:
+        scene characterdesign2
+        window hide
+        pause
+        menu:
+            "continue":
+                pass
+            "Don't show me that message again":
+                $ characterdesign_done = True
+                pass
     scene streetcar2
     "We leave the university and head to the street. Linda leads me to the northern part of the city, towards the business district."
 

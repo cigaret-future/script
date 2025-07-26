@@ -1,6 +1,6 @@
 label camilleuni_date:
     scene upview3 with dissolve
-    "We enter the café, and Camille guides me to a table by the window."
+    "We enter the coffee shop, and Camille guides me to a table by the window."
     "She greets her friend and introduces me to her."
 
     scene camilldeunidate19 with dissolve
@@ -15,7 +15,7 @@ label camilleuni_date:
     scene camilldeunidate18 with dissolve
     "They clearly know each other well, and I don't mind being an observer."
     "Though I can't help feeling a bit forgotten in their animated discussion."
-    "I glance around the café, watching other customers come and go."
+    "I glance around the coffee shop, watching other customers come and go."
     "After a while, Amy turns to me with a friendly smile."
     scene camilldeunidate14 with dissolve
     av "How's your coffee?"
@@ -66,7 +66,7 @@ label camilleuni_date:
     av "The people I like to study are usually those in the fashion world."
     av "I swear it's really fascinating to watch."
     cam "I bet there are plenty of people we meet who would love to become your lab animals."
-    "Camille and Amy continue to joke about psychology and fashion, their laughter filling the café."
+    "Camille and Amy continue to joke about psychology and fashion, their laughter filling the coffee shop."
     "The vibe gets way more chill as we keep talking."
     "Amy starts asking me about stuff I do outside school."
     "Time flies by while we're just chatting about random things."
@@ -79,14 +79,14 @@ label camilleuni_date:
     av "We should totally do this again."
     name "Yeah, for sure. It was cool meeting you."
     cam "I'll hit you up later, Amy."
-    "Amy waves and rushes out of the café."
+    "Amy waves and rushes out of the coffee shop."
     scene amyleave2
     "Now it's just me and Camille at the table."
     cam "She totally liked you, I could tell."
     "Camille grins and takes another sip of her coffee."
     cam "Wanna head back?"
     name "Yeah, let's go."
-    "We finish up and head out of the café."
+    "We finish up and head out of the coffee shop."
     cam "It was cool hanging out."
     cam "We should do this again sometime."
     name "Yeah, definitely."

@@ -567,7 +567,7 @@ label sarahdate4:
         "Though my ass has been irreversibly expanded, I slumber undisturbed." 
     elif gender == "fem":
         "Though my pussy has been irreversibly expanded, I slumber undisturbed." 
-    $ sarah_relation_status_text = "You can ask your new date to meet you by going to the café and buying a coffee."
+    $ sarah_relation_status_text = "You can ask your new date to meet you by going to the coffee shop and buying a coffee."
     "In my sleep, I envision Sarah's gigantic mouth engulfing my entire body before swallowing me whole."
     "As morning breaks, Sarah slips out, probably heading to work."
     "Leaving me alone in her apartment."

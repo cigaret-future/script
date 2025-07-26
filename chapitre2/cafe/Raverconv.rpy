@@ -130,7 +130,7 @@ label raverconv:
         rav "Thanks for the coffee"
     name "No problem."
     name "Be safe."
-    "She leaves the café, staggering."
+    "She leaves the coffee shop, staggering."
     $ raver_first_conv_done = True
     $ raver_not_over = True
 

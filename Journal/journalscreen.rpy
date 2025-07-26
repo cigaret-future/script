@@ -23,7 +23,7 @@ screen journalopen:
             hover "croixhover.png"
             xalign 0.92
             yalign 0.07
-            action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Jump("gobacktomap")]
+            action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Jump("gobacktomap")]
 
         
         vbox:
@@ -36,33 +36,40 @@ screen journalopen:
                 font "fonts/Poppins-Regular.ttf"
                 bold True
             
+
+            
+           
+            textbutton "Work":
+                action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("work_window")]
+
+
             if classdateemma_count >= 1: 
                 textbutton "Emma":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("emma_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("emma_window")]
 
             if sarah_count >= 1 or sarah_relation_exist == True:
                 if elise_sdate_done == True: 
                     textbutton "Elise":
-                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("sarah_window")]
+                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("sarah_window")]
                 else:
                     textbutton "Sarah":
-                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("sarah_window")]
+                        action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("sarah_window")]
 
             if linda_1st_conv_done == True:
                 textbutton "Linda":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("linda_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("linda_window")]
 
             if classdatecamille_count >= 1:
                 textbutton "Camille":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("camille_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window") Show("camille_window")]
 
             if raver_first_conv_done == True:
                 textbutton "Chloe":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("chloe_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("chloe_window")]
 
-            if zoeyconv_count >= 1:
+            if zoey_first_conv_done == True:
                 textbutton "Zoey":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Show("zoey_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("zoey_window")]
 
  
 
@@ -170,9 +177,44 @@ screen chloe_window:
                 xalign 0.5
            
 
+screen zoey_window:
+    frame:
+        background None
+        xysize (500, 600)
+        xalign 0.7
+        yalign 0.5
+        vbox:
+            text "Zoey":
+                size 40
+                color "#2b0606"
+                font "fonts/Poppins-Regular.ttf"
+                bold True
+                
+            text zoey_relation_status_text:
+                size 30
+                color "#2b0606"
+                font "fonts/Poppins-Regular.ttf"
+                xalign 0.5
 
 
-
+screen work_window:
+    frame:
+        background None
+        xysize (500, 600)
+        xalign 0.7
+        yalign 0.5
+        vbox:
+            text "Work":
+                size 40
+                color "#2b0606"
+                font "fonts/Poppins-Regular.ttf"
+                bold True
+                
+            text work_status_text:
+                size 30
+                color "#2b0606"
+                font "fonts/Poppins-Regular.ttf"
+                xalign 0.5
 
 
 

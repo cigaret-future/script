@@ -100,7 +100,7 @@ label HugandZoeyStart:
 
         name "Oh, by the way, do you know where Mrs. Gillsberg's office is?"
         hug "Yeah, it's on the 6th floor. It's an office with a large window."
-
+        $ zoey_first_conv_done = True
         name "Thanks, see you."
 
         jump marion_1st_meet

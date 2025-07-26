@@ -151,5 +151,5 @@ label sarahdate3:
     sar "See you later."
     $ sarah_conv_done = True
     $ sarah_tvdate_done = True
-    $ sarah_relation_status_text = "I should hang out to the café"
+    $ sarah_relation_status_text = "I should hang out to the coffee shop"
     jump map3

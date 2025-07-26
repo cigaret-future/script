@@ -14,7 +14,7 @@ label linda3:
 
     
 
-    "We're heading to the same café as yesterday. Along the way, Linda shares some anecdotes about her professors."
+    "We're heading to the same coffee shop as yesterday. Along the way, Linda shares some anecdotes about her professors."
 
     lin "That's why this professor is so respected by the students. He doesn't follow any guidelines."
 
@@ -103,7 +103,7 @@ label linda3:
     
 
     "She gives me a tender look."
-    "While we’re talking, I suddenly see hug and zoey walk into the café."
+    "While we’re talking, I suddenly see hug and zoey walk into the coffee shop."
 
     scene lindadate5
     hug "Man, those videos about slaughterhouses are intense, have you seen them? I'm going to boycott that meat brand. I can't take it anymore."

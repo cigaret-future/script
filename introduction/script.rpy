@@ -5,6 +5,7 @@ define mil = Character('Mila', color="#66668f")
 define lis = Character('Lisa', color="#ff7f7f")
 define oli = Character('Olivia', color="#0d695d")
 define elo = Character('Elodie', color="#03312a")
+define elod = Character('Elodie', color="#067bdb")
 define est = Character('Estelle', color="#8b5ac2ff")
 define jen = Character('Jenny', color="#190b3fff")
 define isa = Character('Isabelle', color="#ff7f7f")
@@ -40,7 +41,7 @@ define el_nvl = Character ("Elise", kind=nvl, image="elise", callback=Phone_Rece
 define elo_nvl = Character ("Elodie", kind=nvl, callback=Phone_ReceiveSound)
 define cam_nvl = Character ("Camille", kind=nvl, image="camille", callback=Phone_ReceiveSound)
 define av_nvl = Character ("Ava", kind=nvl, image="ava", callback=Phone_ReceiveSound)
-
+define z_nvl = Character ("Zoey", kind=nvl, image="zoey", callback=Phone_ReceiveSound)
 
 define config.adv_nvl_transition = None
 define config.nvl_adv_transition = Dissolve(0.3)
@@ -73,7 +74,8 @@ label start:
         default gender = "male"
         default rentdue_meet_count = 0
         default quickbed = False
-
+        default characterdesign_done = False
+        
         # //Linda variables
         default linda_1st_conv_done = False
         default linda_4th_conv_done = False
@@ -111,7 +113,9 @@ label start:
         default class_done = False
         default day_not_over = False
         default classdate_count = 0
-
+        default corridorconv_done = False
+        default quickbed_disabled = False
+        default work_status_text = "I should ask for work in the coffee shop near my place"
         # //Barmaid variables
         
         default jobaskedlaura_done = False
@@ -145,8 +149,10 @@ label start:
         default lisa_conv_done = False
 
         # // Boss variables
-        $ boss_conv_done = False
-        $ boss_textconv_done = False
+        default boss_conv_done = False
+        default boss_textconv_done = False
+        default workday_done = False
+        default work_count = 0
 
         # // Camille variables
         default classdatecamille_count = 0
@@ -162,6 +168,8 @@ label start:
         default camilletext2_done = False
         default camille_shomedate_done = False
 
+        # Marion variables
+        default marion_conv_count = 0
 
         # // Mila variables
         default mila_count = 0
@@ -171,55 +179,62 @@ label start:
         default estelle_spankconv_done = False 
         default estelle_firstconv_done = False
         default estelle_emmaconv_done = False
+        
 
         # //Party variables
         
+        label partyvariables:
+            default stacybourreconv_done = False
+            default estellebourreconv_done = False
+            default estellebourreconv2_done = False
+            default tracybourreconv_done = False
+            default estellepuke_done = False
 
-        default stacybourreconv_done = False
-        default estellebourreconv_done = False
-        default tracybourreconv_done = False
+            default stacymelanieconv_count = 0
+            default stacydate_activated = False
+            default stacy_peak_count = 0
+            default stacydate_over = False
+            default tracymelaniedate_done = False
+            default tracy_musicasked = False
 
-        default stacymelanieconv_count = 0
-        default stacydate_activated = False
-        default stacy_peak_count = 0
-        default stacydate_over = False
-        default tracymelaniedate_done = False
-        default tracy_musicasked = False
+            default isabelleconv_count = 0
+            default isabelle_balconyparty_done = False
+            default isabelle_date_done = False
+            default toiletemilie_done = False
+            default bathroomsabrina_done = False
+            default isabelledanse_done = False
+            default isabelle_proposal_refused = False
+            default estellepartyconv_count = 0
+            default sabrinaconv_done = False
+            default trioconv_count = 0
+            default trio_musicasked = False
+            default isabelle_fantasme_told = True
+            
 
-        default isabelleconv_count = 0
-        default isabelle_balconyparty_done = False
-        default isabelle_date_done = False
-        default toiletemilie_done = False
-        default bathroomsabrina_done = False
-        default isabelledanse_done = False
-        default isabelle_proposal_refused = False
-        default estellepartyconv_count = 0
-        default sabrinaconv_done = False
-        default trioconv_count = 0
-        default trio_musicasked = False
-        default isabelle_fantasme_told = True
-        
+            default zoeyaxelconv_count = 0
+            default zoeyconv_count = 0
+            default zoeyasketfor_music = False
+            default zoey_vestibul_asked = False
+            default zoey_warn_done = False
+            default drink_count = 0
+            default music_changed = False
+            default zoey_date_done = False
 
-        default zoeyaxelconv_count = 0
-        default zoeyconv_count = 0
-        default zoeyasketfor_music = False
-        default zoey_vestibul_asked = False
-        default zoey_warn_done = False
-        default drink_count = 0
-        default music_changed = False
-        default zoey_date_done = False
+            default sebastianconv_count = 0
+            default sebastianjen_date_started = False
+            default sebastianjen_date_done = False
+            default sebastian_asked_done = False
+            default jenpeak_count = 0
+            default sebastian_mission_started = False
+            default sebastian_open = False
 
-        default sebastianconv_count = 0
-        default sebastianjen_date_started = False
-        default sebastianjen_date_done = False
-        default sebastian_asked_done = False
-        default jenpeak_count = 0
-        default sebastian_mission_started = False
-        default sebastian_open = False
-        
+            default Jenny_end_done = False
+
     #    ///////////////Zoey variables
+        default zoey_first_conv_done = False
         default zoeydate_count = 0
         default zoeytexto_count = 0
+        default party_started = False
         default zoey_relation_status_text = "I should try to see if Zoey hangs in the university corridor"
 
 
@@ -237,7 +252,7 @@ label start:
     "Your name is [name]."
     "You are a 23-year-old student who is moving to a new city to start a thesis."
    
-    jump partydate
+
     scene train
     with dissolve
     "It's been almost 3 hours since I've been on the train."
@@ -336,6 +351,15 @@ label start:
         pause 2.0
         window hide
         pause
+        
+        menu:
+            "Ok":
+                pass
+
+            "Got it":
+                pass
+        
+        
     show screen homescreen3
 
     call screen homescreen3

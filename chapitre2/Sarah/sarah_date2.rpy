@@ -32,6 +32,16 @@ label afternoon_party:
     name "Sounds fun. Give me a minute, I'm coming."
 
     sar "Great, see you there."
+    if gender == "fem" and characterdesign_done == False:
+        scene characterdesign2
+        window hide
+        pause
+        menu:
+            "continue":
+                pass
+            "Don't show me that message again":
+                $ characterdesign_done = True
+                pass
     scene climbing2
 
     "The door is open, letting a cat out."

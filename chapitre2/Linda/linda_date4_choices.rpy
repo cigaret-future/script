@@ -414,39 +414,3 @@ label lindakiss:
 # 
 
 # 
-
-# 
-
-# lin « just lick them until they are clean »
-
-# je continue de lui lécher les pieds pendant 5 min. Puis Linda finit par fermer son ordinateur. Sans un mot elle retire son pied de ma bouche. 
-
-# lin « I have to go to the bathroom. »
-
-# lin « eww my feet are all wet now » 
-# lin « you really are something »
-# Je la regarde sortir. Je suppose qu’on a finit. Ne sachant pas trop sais pas trop quoi faire, je m’assois sur une chaise, pour checker mon téléphone.
-# Après quelque minutes Linda revient
-
-# lin « Mh c’est bon tu est rassasié? »
-# Elle dit d’un ton malicieux.
-
-# name « it was cool » je murmure
-
-# lin « You did well, je suis fière de toi »
-# lin « je savais que tu était un foot freak »
-
-# name « shut up! »
-
-# lin « I am just teasing you, Come on. Break Time is over. Lets work a bit more. 
-
-# We sit back at her desk and travaille jusqu’à la fin de l’après midi. 
-
-#     # name « j’essaye de ne pas trop y penser »
-
-
-#     # lin « Tu devrais t’y faire, plutôt qu’essayer de l’ignorer »
-
-#     # J’essaye de garder ma concentration alors qu’elle presse ses orteils sur mon front. L’odeur est intoxicating. Comment je me suis retrouvé dans cette position. Je sens que je perd le contrôle sur la situation. 
-
-#     # lin « j’espère que l’odeur ne te dérange pas trop »

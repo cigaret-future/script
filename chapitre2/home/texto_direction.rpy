@@ -43,21 +43,31 @@ label textdirection:
                 cam_nvl "I think Amy likes you"
                 $ camilletext2_done = True
                 nvl clear
-
+        
         label zoeytext:
-            if zoeyconv_count == 1:
+            if zoeydate_count == 1 and zoeytexto_count == 0:
                 "A notification pops up on my phone."
                 z_nvl "Helloo! :)"
-                z_nvl "J'espère que ça te dérange pas que Hugo m'a donné ton numéro."
-                n_nvl "No, not at all."
-                z_nvl "Cool!"
+                z_nvl "Hope you don’t mind that Hugo gave me your number!"
+                n_nvl "No, it's cool."
+                z_nvl "awesome!"
                 z_nvl "So how was your mythology class?"
                 n_nvl "It was nice!"
                 z_nvl "Did you talked about Dionysus?"
+                n_nvl "Not particularly no..."
                 z_nvl "Just wanted to check in on you."
-                n_nvl "Thanks, I appreciate it."
+                z_nvl "Sleep well!"
+                $ zoeytexto_count += 1
                 nvl clear
-
+            elif zoeydate_count == 2 and zoeytexto_count == 1:
+                "A notification pops up on my phone."
+                z_nvl "Hey, I was wondering if you'd be interested in coming to a party"
+                z_nvl "With Hugo and me."
+                n_nvl "Yeah sure, sounds fun!"
+                z_nvl "Cool, I'll text you the details later."
+                z_nvl "Sleep well!"
+                $ zoeytexto_count += 1
+                nvl clear
         if linda_4th_conv_done == True and linda_invitation_sent == False:
 
             "A notification pops up on my phone."
@@ -183,13 +193,26 @@ label endofday_choice:
 
 label bosstexting:
     scene home00
-    "a notification pops up on my phone"
-    elo_nvl "Hello, my name is Elodie, one of my employees told me you were looking for a job."
-    n_nvl "Yes, that's me."
-    
-    elo_nvl "If you're interested, I'll send you the address of a café."
-    elo_nvl "I'll be waiting for you there."
-    n_nvl "Very well, thank you very much."
-    $ boss_textconv_done = True
+    if work_count == 0:
+        "a notification pops up on my phone"
+        elo_nvl "Hello, my name is Elodie, one of my employees told me you were looking for a job."
+        n_nvl "Yes, that's me."
+        
+        elo_nvl "If you're interested, I'll send you the address of a coffee shop."
+        elo_nvl "I'll be waiting for you there."
+        n_nvl "Very well, thank you very much."
+        $ boss_textconv_done = True
+        nvl clear
+    elif work_count == 1:
+        "a notification pops up on my phone"
+        elo_nvl "Hello, so do you enjoy working with us?"
+        n_nvl "Yes, it's nice."
+        elo_nvl "I told Jenny to keep an eye on you."
+        elo_nvl "She is in charge of your formation"
+        elo_nvl "If you have any questions, don't hesitate to ask her."
+        n_nvl "Ok great!"
+        elo_nvl "Have a good day!"
+        $ boss_textconv_done = True
+        nvl clear
     show screen homescreen4
     call screen homescreen4  

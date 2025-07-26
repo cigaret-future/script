@@ -1010,7 +1010,7 @@ label isabelleconv:
         name "This is soooo awkward."
         name "I can't.."
         show isabellelaugh3 with dissolve
-        hide isabelleneutral3 with dissolve
+        hide isabelleneutral2 with dissolve
         isa "Come on, we don't actually expect you to dance with her."
         hug "Plus this music really sucks..."
         hug "Makes it even more awkward..."

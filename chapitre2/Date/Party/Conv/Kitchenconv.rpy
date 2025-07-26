@@ -92,7 +92,7 @@ label stacymelanieconv:
             name "Yeah, well, I’m new here."
             tra "Go easy on him, it’s not easy when you don’t know anyone."
             tra "Besides, sometimes it’s nice to just listen."
-            tra "I do that a lot at the café."
+            tra "I do that a lot at the coffee shop."
             mela "That sounds boring."
             name "You don’t like listening?"
             mela "I’d rather talk."
@@ -429,10 +429,8 @@ label stacymelanieconv:
 label trioconv:
     if zoeyasketfor_music == True and trio_musicasked == False:
         jump trioaskformusic
-    elif drink_count >= 5 and drink_count <= 10:
+    elif drink_count >= 5 :
         jump trioconvbourre1
-    elif drink_count >= 10:
-        jump trioconvbourre2
     
 
     elif trioconv_count == 0:

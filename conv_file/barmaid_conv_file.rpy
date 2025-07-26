@@ -48,7 +48,7 @@ label BarmaidSarah:
 
 label Barmaid3:
     scene slep
-    name "Hello? Is the café closed?"
+    name "Hello? Is the coffee shop closed?"
     
     lau "rrrrrh..."
 
@@ -136,12 +136,12 @@ label Barmaid2:
                 menu: 
                     "Elise" if elise_sdate_done == True and elise_sagain_done == False:
                         "Maybe I should text Elise."
-                        n_nvl "Hey, I'm at the café, can I come to your place?"
+                        n_nvl "Hey, I'm at the coffee shop, can I come to your place?"
                         el_nvl "Sure, come over."
                         el_nvl "I was wondering when you'd ask."
                         nvl clear
                         scene black
-                        "I leave the café and head toward Elise's place." 
+                        "I leave the coffee shop and head toward Elise's place." 
                         jump elise_sdate
                     "Sarah" if sarah_sdate_done == True and sarah_sagain_done == False:
                         "Maybe I should text Sarah."
@@ -184,6 +184,7 @@ label Barmaid2:
                     name "Thank you so much!"
                     lau "You're welcome."
                     lau "She'll contact you soon."
+                    $ quickbed_disabled = True
                     $ jobaskedlaura_done = True
                     jump cafedirection
                
@@ -240,7 +241,7 @@ label Barmaid2:
 
     "I take a seat at an empty table."
     "She doesn't seem too thrilled to be working here. But she seems nice." 
-    "There are several young people in the café, probably students or young professionals." 
+    "There are several young people in the coffee shop, probably students or young professionals." 
     "I'm excited to be a young professional too. These holidays have refreshed me;" 
     "I hope this year goes well."
  
@@ -282,7 +283,7 @@ label Barmaid2:
 
     lau "Sure."
 
-    lau "If you've bought something, feel free to hang out in the café."
+    lau "If you've bought something, feel free to hang out in the coffee shop."
 
     hide barmaidsmug
 

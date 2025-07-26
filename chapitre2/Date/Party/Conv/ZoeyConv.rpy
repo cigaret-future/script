@@ -1,13 +1,10 @@
 label zoeyconv_direction:
     if zoey_date_done == True:
         jump axzoeyconv4
-    elif drink_count > 10: 
-        "I walk over to Zoey and Axel, my vision blurring."
-        scene black
-        "Someone bumps into me and I fall to the ground."
+   
     elif zoey_vestibul_asked == True:
         scene livingroomarrowflou
-        show zoeyparty with dissolve
+        show zoeyparty2 with dissolve
         zoey "So... [name]"
         zoey "tell me you're not bored!"
         zoey "Come upstairs with me."
@@ -36,8 +33,9 @@ label zoeyconv_direction:
 label zoeyconv:
    
     scene livingroomarrowflou
-    show zoeyparty with dissolve
+   
     if isabelle_date_done == True and zoey_warn_done == False:
+        show zoeysuspicious with dissolve
         name "Hey Zoey"
         zoey "Hey I was looking to catch you"
         zoey "I saw you going back and forth"
@@ -50,7 +48,9 @@ label zoeyconv:
         zoey "sure... play innocent"
         zoey "anyway"
         $ zoey_warn_done = True
+        hide zoeysuspicious with dissolve
     else:
+        show zoeyparty
         name "Hey Zoey"
         zoey "Hey, are you ready for the party?"
     zoey "I was afraid you wouldn't come."
@@ -62,7 +62,9 @@ label zoeyconv:
     pause 5.0
     hide text with dissolve
     
-    
+    show zoeysmile4 with dissolve
+    hide zoeyparty with dissolve
+   
     zoey "You know, I'm really glad you came tonight."
     name "Yeah, me too. I wasn't sure what to expect."
     zoey "I had to do some convincing to get the girl who owns this place to let us throw the party."
@@ -75,8 +77,8 @@ label zoeyconv:
     zoey "Want me to introduce you to Axel? You two would get along great."
     name "Sure, that sounds perfect."
     zoey "Hey Axel, come over here!"
+    hide zoeysmile4 with dissolve
     hide zoeyparty with dissolve
-    
     show axel1 with dissolve
     "Zoey moves away and goes to talk to someone sitting on the couch."
     axel "What's up?"
@@ -106,7 +108,7 @@ label zoeyconv:
     axel "Without them, the rest of us would be hermits."
     name "Cheers!"
     hide axel1 with dissolve
-    show zoeyparty at Position(xalign=0.65, yalign=0.99) with dissolve
+    show zoeysmile5 at Position(xalign=0.65, yalign=0.99) with dissolve
     show axel1 at Position(xalign=0.35, yalign=0.99) with dissolve
     zoey "Are you talking about me?"
     axel "Yes, we were talking about you Zoey."
@@ -134,8 +136,9 @@ label zoeyconv:
 
 label axzoeyconv2:
     scene livingroomarrowflou
-    show zoeyparty at Position(xalign=0.65, yalign=0.99) with dissolve
+   
     if isabelle_date_done == True and zoey_warn_done == False:
+        show zoeysuspicious at Position(xalign=0.65, yalign=0.99) with dissolve
         zoey "Hey I saw you going back and forth."
         zoey "What were you doing?"
         name "Me nothing?"
@@ -148,13 +151,15 @@ label axzoeyconv2:
         zoey "Do you want me to get you a beer?"
         name "Sure, thanks Zoey."
         zoey "Don't move."
+        hide zoeysuspicious with dissolve
         $ zoey_warn_done = True
-    else: 
+    else:
+        show zoeyparty2
         zoey "Hey [name], your glass is empty, right?"
         zoey "Do you want me to get you a beer?"
         name "Sure, thanks Zoey."
         zoey "Don't move."
-    hide zoeyparty with dissolve
+    hide zoeyparty2 with dissolve
     "Zoey heads to the kitchen, calling out to a few people on the way."
     show axel1 at Position(xalign=0.35, yalign=0.99) with dissolve
     axel "Zoey really seems to like you, [name]."
@@ -239,7 +244,7 @@ label axzoeyconv2:
 
 label axzoeyconv3:
     scene livingroomarrowflou
-    show zoeyparty at Position(xalign=0.65, yalign=0.99) with dissolve
+    show zoeysuspicious at Position(xalign=0.65, yalign=0.99) with dissolve
     if music_changed == False:
         zoey "Did you found the girl?"
         name "No, not yet"
@@ -248,7 +253,7 @@ label axzoeyconv3:
         
     
     scene livingroomarrowflou
-    show zoeyparty at Position(xalign=0.65, yalign=0.99) with dissolve
+    show zoeysuspicious at Position(xalign=0.65, yalign=0.99) with dissolve
     show axel1 at Position(xalign=0.35, yalign=0.99) with dissolve
     if isabelle_date_done == True and zoey_warn_done == False:
         zoey "Hey I saw you going back and forth."
@@ -404,7 +409,7 @@ label axzoeyconv3:
 
 label axzoeyconv4:
     scene livingroomarrowflou
-    show zoeyparty with dissolve
+    show zoeyparty2 with dissolve
     "As I approach Zoey and Axel..."
     "Zoey immediately approaches me."
     "She takes me by the waist."
@@ -426,6 +431,7 @@ label kitchenzoeyconv:
         $ zoey_vestibul_asked = True
         scene vestibulearrowflou
         "As I leave the kitchen, I bump into Zoey waiting for me."
+        show zoeycloseproposing with dissolve
         zoey "Hey [name], I was looking for you."
         zoey "Feels like you're always keeping an eye on me."
         zoey "Maybe I should do the same."
@@ -435,11 +441,19 @@ label kitchenzoeyconv:
         zoey "Ugh, I can't keep a straight face."
         zoey "You're just too cute."
         zoey "I just want to..."
+        hide zoeycloseproposing with dissolve
+        show hugolaughsorry2 at left with dissolve:
+            align (0.3, 0.99)
+        show zoeytalkhugo at right with dissolve:
+            align (0.7, 0.99)
         hug "Hey, what's up, guys?"
         hug "Who picked this music?"
         zoey "No idea, why?"
         hug "It's so basic."
         zoey "Hey, screw you."
+        show hugolookingtowardthelivingroom at right with dissolve:
+            align (0.3, 0.99)
+        hide hugolaughsorry2 with dissolve
         hug "Wait, was it you?"
         zoey "I just wanted to dance, and everyone loved my playlist."
         zoey "I set the mood."
@@ -451,18 +465,32 @@ label kitchenzoeyconv:
         zoey "Yeah, yeah, you looked like you were having fun dancing earlier."
         "Zoey gives me a playful slap on the butt."
         name "I was just trying not to hurt your feelings."
+        show zoeysurpriseparty with dissolve:
+            align (0.7, 0.99)
+        hide zoeytalkhugo with dissolve
         zoey "Oh, you little brat."
+        
+        zoey "You're going to pay for that."
         hug "See, you really do have terrible taste."
         hug "Alright, I'm going to see if I can find someone who knows if there's a projector here."
+        show zoeyaskwhy with dissolve:
+            align (0.7, 0.99)
+        hide zoeysurpriseparty with dissolve
+        zoey "A projector? What for?"
+        hug "To watch a movie."
         zoey "You seriously want to watch a movie?"
+
         zoey "Don't even think about setting up in the bedroom."
         hug "Hey, leave me alone, it wasn't my idea."
-        hug "I'll go ask Stephanie."
-
+        hug "I'll go ask Stephany."
+        hide hugolookingtowardthelivingroom with dissolve
 
         name "Is he really going to watch a movie?"
         zoey "He's all over the place, that guy."
         name "He seems pretty funny."
+        "Zoey comes closer to me again.."
+        hide zoeyaskwhy with dissolve
+        show zoeycloseproposing with dissolve
         zoey "I'm funny too, you know."
         zoey "Hey, do you want to come upstairs with me?"
         name "Upstairs?"
@@ -587,14 +615,14 @@ label zoeysscene:
         name "feels so good..."
         zoey "I know."
         scene black with dissolve
-        zoey "Let's get confortable."
-        "Zoey se déshabille complètement et jette ses vêtement sur un siège"
-        "Je l'imite, un peu appréhensif"
-        name "Et si quelqu'un nous surprends?"
+        zoey "Let's get comfortable."
+        "Zoey undresses completely and throws her clothes on a chair"
+        "I imitate her, a little apprehensive"
+        name "What if someone catches us?"
         zoey "Don't worry, i am gonna lock the door."
         zoey "Unless it turns you on.."
         name "No lock it please.."
-        "Zoey ferme le verrou et s'approche de moi."
+        "Zoey locks the door and approaches me."
         zoey "Come on, suck me a little more. Then I'll take your ass."
         scene bjzoeyv2
         zoey "That's it.."
@@ -623,22 +651,35 @@ label zoeysscene:
         scene bjzoeyv2
         window hide
         pause
-        zoey "Tu veux savoir ce que j'ai prévu pour toi ?"
-        name "Uh, yeah, I guess."
-        name "What is it?"
-        zoey "Just a little something I like to do when I'm in the mood."
-       
-        zoey "I like to have a little fun with my friends."
-        zoey "And I think you're going to like it too."
-        "Zoey walks over to the bed and sits down, looking at me with a playful smile."
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv23
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv2
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv23
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv2
+        window hide
+        pause
+        zoey "Come on, let's get started."
         zoey "Come here, [name]."
-        "I walk over to her, feeling a mix of excitement and nervousness."
+
+    
         zoey "Don't be shy, I promise you'll like it."
-        "Zoey pats the bed next to her, inviting me to sit down."
-        name "Okay, I'm here."
-        zoey "Good."
-        zoey "Now, I want you to relax and enjoy the moment."  
-       
 
 
 

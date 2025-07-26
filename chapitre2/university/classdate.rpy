@@ -64,6 +64,16 @@ label classboring:
         jump classdate1   
     # //Camille Spank
     elif camillelove_count ==2 and camillespank == False:
+        if gender == "fem" and characterdesign_done == False:
+            scene characterdesign2
+            window hide
+            pause
+            menu:
+                "continue":
+                    pass
+                "Don't show me that message again":
+                    $ characterdesign_done = True
+                    pass
         scene camilleclassarriving
         "I walk down the corridor towards my class"
         scene spank
@@ -88,6 +98,16 @@ label classboring:
             "Sit with Camille":
                 jump camilledirection
     elif camillelove_count ==3 and camillespank2 == False:
+        if gender == "fem" and characterdesign_done == False:
+            scene characterdesign2
+            window hide
+            pause
+            menu:
+                "continue":
+                    pass
+                "Don't show me that message again":
+                    $ characterdesign_done = True
+                    pass
         scene spank with dissolve
         "As I enter the classroom, I feel a swift movement behind me"
         "It's probably Camille"
@@ -112,6 +132,16 @@ label classboring:
             "Sit with Camille":
                 jump camilledirection
     elif camillelove_count >=3 and camillespank3 == False:
+        if gender == "fem" and characterdesign_done == False:
+            scene characterdesign2
+            window hide
+            pause
+            menu:
+                "continue":
+                    pass
+                "Don't show me that message again":
+                    $ characterdesign_done = True
+                    pass
         scene spank with dissolve
         "As i enter the classroom, i feel a swift movement behind me"
         "It's probably Camille"
@@ -525,7 +555,16 @@ label camillelovescene:
         name "Yes."
     "Camille seems to enjoy making me uncomfortable."
     "She leans back on her chair."
-
+    if gender == "fem" and characterdesign_done == False:
+        scene characterdesign2
+        window hide
+        pause
+        menu:
+            "continue":
+                pass
+            "Don't show me that message again":
+                $ characterdesign_done = True
+                pass
     scene camilleapproaching
     cam "And how was the sex?"
     name "It was ok."
@@ -801,7 +840,7 @@ label classcamilledate7:
     "Camille leads me through the university hallways."
     "We head down to the garden and walk along the buildings."
     scene upview3 with dissolve
-    "Eventually, we arrive at a small building that looks like a student café."
+    "Eventually, we arrive at a small building that looks like a student coffee shop."
     cam "Go grab a seat, I'll be right back."
     name "Okay."
     "I sit at a table. The atmosphere is relaxed, with students chatting or working over their coffee."
@@ -886,7 +925,7 @@ label classcamilledate7:
     $ class_done = True
     scene black with dissolve
     
-    "I leave the café and head back to the garden."
+    "I leave the coffee shop and head back to the garden."
     jump gardenuni_start2
 label classcamilledate8:
     scene smallclassroomblur with dissolve
@@ -1142,18 +1181,26 @@ label classdate4:
 
     est "Hey there."
     name "Hi."
-    est "Can I sit here?"
-    name "Yes, go ahead. It's free."
-    est "Thanks."
-    est "What's your name?"
-    name "I'm [name]. You?"
-    est "Estelle."
-    est "I love this class."
-    est "The professor is kinda charming."
-    name "Yes... why not?"
-    est "I think I'm going to ask him to be my thesis advisor."
-    name "Cool."
-    hide estellesmile with dissolve
+    if estellepuke_done == True:
+        est "You were pretty drunk last time."
+        est "Fortunately I was there"
+        name "Yeah..."
+        name "I thought about it, and I'm not sure giving me that much milk was necessary"
+        est "I was just helping.."
+        name "..."
+    else:
+        est "Can I sit here?"
+        name "Yes, go ahead. It's free."
+        est "Thanks."
+        est "What's your name?"
+        name "I'm [name]. You?"
+        est "Estelle."
+        est "I love this class."
+        est "The professor is kinda charming."
+        name "Yes... why not?"
+        est "I think I'm going to ask him to be my thesis advisor."
+        name "Cool."
+        hide estellesmile with dissolve
     "The class passes by slowly."
     "After two hours of class, everyone leaves."
     "Finally."

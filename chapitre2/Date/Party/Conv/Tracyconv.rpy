@@ -16,7 +16,7 @@ label tracydate:
     name "Haha, I don't know."
     name "I don't know what we're supposed to do in this kind of situation."
     tra "Don't pretend."
-    name "Won't Mélanie be upset that we're in the room together?"
+    name "Won't Melanie be upset that we're in the room together?"
     tra "Probably..."
     tra "I never really know where I stand with her."
     name "Maybe we could just talk?"

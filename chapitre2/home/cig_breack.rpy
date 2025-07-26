@@ -8,7 +8,7 @@ label cigarettebreak:
     "I put on some music to relax. The air is cool and the night is calm. I can see the lights of the city from my balcony."
     "I have a descent view from here."
     scene smoking005
-    "The sounds from the café below enliven the street. I smoke my cigarette mechanically while listening to the music."
+    "The sounds from the coffee shop below enliven the street. I smoke my cigarette mechanically while listening to the music."
     ""
     ""
     ""
@@ -47,7 +47,7 @@ label cigbreak1:
     "The air is cool and the night is calm. I can see the lights of the city from my balcony."
     "I have a descent view from here."
     scene smoking005
-    "The sounds from the café below enliven the street. I smoke my cigarette mechanically."
+    "The sounds from the coffee shop below enliven the street. I smoke my cigarette mechanically."
     "I don't have much to do, maybe something will come up later"
     $ cig_break_count += 1
     jump gotobed
