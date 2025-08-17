@@ -3,6 +3,6 @@ label classdirection:
     if class_done == False:
         jump classboring
     elif class_done == True:
-        "I already had classes."
+        "I already had classes today."
         jump gardenuni_start2
    

@@ -67,7 +67,7 @@ label lindakiss:
 
     ana "And I'm always down for making new friends."
     ana "I am going to prepare myself to see my boyfriend."
-    ana ""
+   
 
     name "Ok, see you."
     "I answer casually, trying to hide my embarrassment."
@@ -361,7 +361,7 @@ label lindakiss:
 
         ana "And I'm always down for making new friends."
         ana "I am going to prepare myself to see my boyfriend."
-        ana ""
+       
 
         name "Ok, see you."
         "I answer casually, trying to hide my embarrassment."

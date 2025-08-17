@@ -61,7 +61,7 @@ screen journalopen:
 
             if classdatecamille_count >= 1:
                 textbutton "Camille":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window") Show("camille_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("camille_window")]
 
             if raver_first_conv_done == True:
                 textbutton "Chloe":
@@ -91,6 +91,9 @@ screen camille_window:
                 size 30
                 color "#2b0606"
                 font "fonts/Poppins-Regular.ttf"
+                xalign 0.5
+            image "camillebiofinal.png":
+                size (300, 200)
                 xalign 0.5
               
 screen emma_window:
@@ -130,7 +133,7 @@ screen linda_window:
                 color "#2b0606"
                 font "fonts/Poppins-Regular.ttf"
                 xalign 0.5
-            
+           
 screen sarah_window: 
     frame:
         background None

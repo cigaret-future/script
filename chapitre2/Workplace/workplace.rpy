@@ -10,25 +10,28 @@ label workplace:
             jump workplace4
         elif work_count >= 4:
             jump workplace5
+        
     else: 
         "You already worked today, you should go home."
         jump map3
 
     label workplace1:
+        stop music
+        play background workambiance volume 1 loop
         scene upview
         $ work_count += 1
-        "I arrive at a coffee shop, people are lining up to order, and baristas are busy behind the counter."
+        "I arrive at the coffee shop; people are lining up to order, and baristas are busy behind the counter."
         "It's a slightly different atmosphere from the coffee shop near my house, but it doesn't seem too bad."
         "I try to spot the boss, but I don't see her."
         "I should ask at the counter if she's here."
         "I approach the counter."
         scene upviewblur with dissolve
         show jenny with dissolve
-       
+        play sound hijenny volume 1 noloop
         jen "Hey there."
         name "Hi, I'm looking for the boss."
         jen "That's me, I'm Jenny."
-        name "Oh, okay, nice to meet you. I am [name]."
+        name "Oh, okay, nice to meet you. I'm [name]."
       
         show jenny3 with dissolve
         hide jenny with dissolve
@@ -47,7 +50,7 @@ label workplace:
         "After a few minutes, the boss comes out of a room in the back and approaches me, staring at me."
         show bossview
         elod "Hey, are you the new recruit?"
-        name "Hello, I'm ready to work. When do I start?"
+        name "Hi, I'm [name]. I'm ready to work, when do I start?"
         elod "Perfect, you can start right now if you want."
         elod "That way, you can see if it suits you."
         name "Don't I need to sign a contract first?"
@@ -61,12 +64,15 @@ label workplace:
         name "Here?"
         elod "No, come to the storage room."
         scene changing2
+        stop background fadeout 0.5
+
         "She takes me to a room at the back of the coffee shop."
         "She shows me a room with boxes and clothes."
         "I put on the uniform and leave the room."
         elod "Great, it suits you very well."
         name "Cool."
         scene upviewblur with dissolve
+        play background workambiance volume 1 loop
         "I head to the counter and start watching Jenny work."
         
         "After a few hours, I start to get the hang of it."
@@ -85,15 +91,19 @@ label workplace:
         $ workday_done = True
         show text "+200$" at Move((0.5, 0.6), (0.5, 0.5), 10.0)
         hide text with dissolve
+        
         jump map3
 
     label workplace2:
+        stop music
+        play background workambiance volume 1 loop
         scene upview
         $ work_count += 1
         $ workday_done = True
         "Second day at the coffee shop."
         "The place feels more familiar now."
         show jenny with dissolve
+        play sound backagainjenny volume 1 noloop
         jen "Back again, [name]."
         name "Yeah, ready for today."
         show jenny3 with dissolve 
@@ -130,10 +140,10 @@ label workplace:
         jen "Yeah, it’s weirdly technical for something people chug on their commute."
         hide jennyamusedlookstraight with dissolve
 
-        "I give it a try. The milk comes out uneven, my pour’s a mess, and I nearly burn my hand."
+        "I give it a try. The milk comes out uneven, my pours are a mess, and I nearly burn my hand."
 
         "Jenny sighs but adjusts my grip without making a big deal about it."
-
+        play sound jennysigh volume 2 noloop 
         "I spend most of the shift practicing. Steam, pour, repeat."
 
         "By closing, I can pull a decent shot and my latte only looks *slightly* like a chemistry experiment gone wrong."
@@ -152,8 +162,9 @@ label workplace:
         scene coffeworkempty with dissolve
         "As the day winds down, I help with the closing routine and head out."
         show jenny2 with dissolve
-        jen "Alright you were pretty useless today.. but you tried."
+        jen "Alright you were pretty useless today.. but hey, at least you tried."
         name "Hey, aren’t you supposed to be training me?"
+        play sound iamtrainingyoujenny volume 2 noloop
         jen "I am training you."
         jen "You just don't pay attention"
         name "I am paying attention!"
@@ -168,22 +179,25 @@ label workplace:
         jump map3
 
     label workplace3:
+        play background homeambianceneutral volume 1 loop
         scene coffeworkempty
         $ work_count += 1
         $ workday_done = True
         "I walk into the coffeeshop, Jenny isn’t at the counter."
         "She must be in the restroom, probably."
         scene corridor with dissolve
+        play sound dooropening
         "I open the locker room door."
         scene jennychanging1 with dissolve
         "Jenny’s there, in the middle of changing."
-        "Her bottoms are lowered, and I catch a glimpse of her sex pressed against her panties."
+        "Her bottoms are lowered, and I catch a glimpse of her dick, pressed against her panties."
         scene jennychanging2 with dissolve
         jen "Hey [name], sorry, I won’t be long."
         "I quickly look away, feeling a bit embarrassed."
         scene corridor with dissolve
         "Jenny finishes changing and steps out of the locker room."
         show jenny3 with dissolve
+        play sound neverseenjenny volume 2 noloop
         jen "Don’t make that face. Never seen a futa before?"
         name "No, it’s just... unexpected."
         "Third day. The routine is becoming clearer."
@@ -226,26 +240,26 @@ label workplace:
 
     label workplace4:
             scene coffeworkempty  
-            $ work_count += 1  
+            
             $ workday_done = True  
             "Fourth day at the coffee shop."  
             "Today seems quieter than usual."  
 
             show jenny with dissolve  
             jen "Morning, [name]. Looks like it's going to be a slow one today."
-            jen "It's only you and me.."
-            name "That's fine by me. Maybe I can practicing my latte art."  
+            jen "It's only you and me..."
+            name "That's fine by me. Maybe I can practice my latte art."  
             show jennyannoyed with dissolve
             hide jenny with dissolve
              
-            jen "You don't have to try to be the perfect employee"  
+            jen "You don't have to try to be the perfect employee!"  
 
             name "What do you mean?"  
 
             show jenny3 with dissolve  
             hide jennyannoyed with dissolve  
 
-            jen "I mean, look around. We have like no customers total."  
+            jen "I mean, look around. We have like, no customers."  
             jen "And you're over there polishing the espresso machine like it's going to cure cancer."  
 
             name "I just want to do a good job..."  
@@ -257,15 +271,15 @@ label workplace:
             show jennyflirty with dissolve
             hide jenny3 with dissolve
             jen "You know what? Since you're so eager to work..."  
-            jen "How about you organize those boxes under the counter?"  
+            jen "How about you organize the boxes under the counter?"  
             jen "They've been a mess for weeks."  
 
             name "Sure, no problem."  
 
-            jen "Of course it's no problem for you."  
+            jen "Of course, it's no problem for you."  
 
             scene jennyworking
-            "I crouch down and start pulling out the boxes from under the counter"
+            "I crouch down and start pulling out the boxes from under the counter."
             "They're filled with coffee supplies, napkins, and random coffee shop stuff."  
             "Some of them are pretty heavy."  
             jen "Make sure you stack them properly. Heavy ones at the bottom."  
@@ -278,11 +292,12 @@ label workplace:
             "As I shift a particularly bulky carton, I hear a soft rustle of fabric."  
             "A smell hits my nostrils, rich and musky."
             scene jennyworking2ericunder  
-            "I turn around and see her penis pulled out."  
+            "I turn around and see her penis sticking out."  
             scene jennyworking2ericunder3
             
-            jen "You’re… distracted, [name]."
-            "Her voice is low, teasing." 
+            jen "You’re... distracted, [name]."
+            "Her voice is low, teasing."
+            play sound somethingcatchingjenny2 volume 1 noloop 
             scene jennyworking2ericundercloseup
             jen "Something catching your eye?"
             scene jennyworking2ericundercloseup3 with dissolve
@@ -295,16 +310,32 @@ label workplace:
             "I step closer, hesitantly."
            
             jen "Come on, don’t you want to be really useful?"
-            jen "I’m sure it’s part of your contract to be nice to your colleagues."
+            jen "I’m sure it’s part of your contract to help your colleagues..."
+            menu:
+                "Suck her dick":
+                    pass
+                "Carry on as if nothing happened":
+                    scene coffeworkempty 
+                    "Customers start flooding in."
+                    "I work the counter while Jenny handles the more complex orders."
+                    "As the day winds down, I help with the closing routine and head out."
+                    $ money += 200  
+                    show text "+200$" at Move((0.5, 0.6), (0.5, 0.5), 10.0)  
+                    scene black with dissolve
+                    window hide
+                    pause
+                    jump map3
+
             "I take the risk and move even nearer."
             scene black
+            play sound bjisa2 volume 1 loop
             "Jenny grabs my head and presses my face against her cock."
             scene jennyangleup2
            
             "She guides her length into my mouth and begins rolling her hips against the counter."
             jen "Oh fuck..."
             scene jennyangleup1
-            
+            play music youlikethisjenny volume 1 noloop
             scene jennyangleup2 with dissolve
             $ renpy.pause(0.5, hard = True)
             scene jennyangleup3 with dissolve
@@ -335,7 +366,7 @@ label workplace:
             scene jennyfaceangle2 with dissolve
             jen "And call it on-the-job training."
             scene jennyfaceangle with dissolve
-            "I nod, my mouth still full"
+            "I nod, my mouth still full."
             scene jennyangleup2 with dissolve
             window hide
             pause
@@ -362,7 +393,7 @@ label workplace:
             pause
             jen "You do have a looot to learn..."
             scene black with dissolve
-            "She make me suck her dick for long minutes."  
+            "She makes me suck her dick for several long minutes."  
             "It feels like I’m still working, but my job has changed a bit..."  
 
             scene jennypose24 with dissolve  
@@ -375,7 +406,7 @@ label workplace:
             jen "It’s so warm and wet..."  
 
             scene jennypose25 with dissolve  
-            jen "Hey, if you suck me nicely, I’ll ask the boss for a raise..."  
+            jen "Hey, if you suck me nicely, I’ll ask the boss to give you a raise..."  
             scene jennypose24 with dissolve  
             jen "It’s not like you’re the first one to get ‘special training.’"  
             scene jennypose25 with dissolve
@@ -472,7 +503,7 @@ label workplace:
             pause
             scene black with dissolve
           
-            "After what feels like forever working his length with her mouth, Jenny grows restless..."
+            "After what feels like forever working her length with my mouth, Jenny grows restless..."
 
 
             scene jennypose22 with dissolve
@@ -526,7 +557,7 @@ label workplace:
             scene endfacejenny with dissolve
             jen "Oh fuuck.."
             scene endfacejenny3 with dissolve
-            jen "I am gonna unload in your mouth.. "
+            jen "I am gonna unload in your mouth..."
             scene endfacejenny with dissolve
             window hide 
             pause
@@ -534,8 +565,8 @@ label workplace:
             window hide 
             pause
             scene jennypose34 with dissolve
-            jen "Yeah, just like that.."
-            jen "Gag on it.."
+            jen "Yeah, just like that..."
+            jen "Gag on it..."
             scene jennypose32 with dissolve
             window hide 
             pause
@@ -564,7 +595,7 @@ label workplace:
             window hide 
             pause
             scene endfacejenny3 with dissolve
-            jen "I am close.."
+            jen "I am close..."
             scene endfacejenny with dissolve
             window hide 
             pause
@@ -578,8 +609,10 @@ label workplace:
             window hide 
             pause
             scene endfacejenny4 with dissolve
-            jen "Yeeees.."
+            jen "Yeeees..."
             jen "Fuck..."
+            stop sound
+            play sound slurpswallow volume 1
             window hide 
             pause
             scene black with dissolve
@@ -587,78 +620,75 @@ label workplace:
             pause
             scene endshotjenny with dissolve
             jen "..."
-            jen "That was... so good.."
+            jen "That was... so good..."
             jen "I think you'll enjoy working here."
             
             scene coffeworkempty
             "Customers begin trickling in."
             "I wipe my mouth, careful not to stain my shirt."
-
             
             show jenny2 with dissolve
-            jen "Come on let's get to work!"
+            jen "Come on, let's get to work!"
             scene upview with fade
             "The day goes by normally..."
-            "...except I keep tasting Jenny's cum in my mouth all afternoon."
+            "...except I have the taste of Jenny's cum in my mouth all afternoon."
             scene black with fade
             window hide
             pause
             scene coffeworkempty
             show jennyflirty with dissolve
             jen "You seemed... motivated today."
-            jen "Hope you liked the taste of my dick."
-            jen "Because I’m nowhere near done with you."
-            jen "Later."
+            jen "I hope you liked the taste of my dick..."
+            jen "...because I’m nowhere near done with you."
+            jen "Later [name]."
 
-
+            $ work_count += 1  
             $ money += 200  
             show text "+200$" at Move((0.5, 0.6), (0.5, 0.5), 10.0)  
             hide text with dissolve  
             jump map3  
 
-
-
-
-
+    
     label workplace5:
+        stop music
+        play background workambiance volume 1 loop
         $ workday_done = True
         scene upview
         "Another day at the coffee shop."
         "By now, the routine has become second nature."
         
+        
         show jenny with dissolve
         jen "Morning, [name]. Ready for another shift?"
         name "Yeah, let's do this."
+        
         
         scene upviewblur with dissolve
         hide jenny with dissolve
         
         "The day starts with the usual morning rush."
         "Regulars come in, order their usual drinks, and head off to work."
-        
-        
-        "The hours pass smoothly."
-        "I handle orders, make drinks, and chat with customers."
-        "Nothing particularly eventful happens, but that's not necessarily a bad thing."
-        
-        "The afternoon brings its usual steady flow of customers."
-        "Students with laptops, business meetings, people just wanting a break."
-        "As the day winds down, I help with the closing routine and head out."
-        "But Jenny blocks the door with her arm"
-        show jenny3 with dissolve
-        jen "Oh no no no. where do you think you're going, rookie?"
-        name "My shift's over! Checklist's done."
-        show jenny2 with dissolve
-        hide jenny3 with dissolve
-        jen "Mmh, forgot one item... my equipment needs polishing."
-        "Jenny lock the door and guids me toward the counter"
-        hide jenny2 with dissolve
-        scene black with fade
+        "At one point, the customer flow slows down, and the day becomes quieter."
+        "I notice Jenny looking at me with a smirk."
+        "She leans against the counter, arms crossed, watching me with a playful glint in her eyes."
+        jen "I think there are boxes to organize [name]..."
+        scene black with dissolve
+        play sound bjisa2 volume 1 loop
+        scene jennypublic with dissolve
         window hide
         pause
-
-        scene jennyangleup1
-        
+        scene jennypublic2 with dissolve
+        window hide
+        pause
+        scene jennypublic with dissolve
+        window hide
+        pause
+        scene jennypublic2 with dissolve
+        window hide
+        pause
+        scene jennyangleup1 with dissolve
+        window hide
+        pause
         scene jennyangleup2 with dissolve
         $ renpy.pause(0.5, hard = True)
         scene jennyangleup3 with dissolve
@@ -685,11 +715,11 @@ label workplace:
         scene jennyfaceangle2 with dissolve
         jen "But since I’m here to train you,"
         scene jennyfaceangle with dissolve
-        jen "I guess we can take our time."
+        jen "I guess we can take our time,"
         scene jennyfaceangle2 with dissolve
         jen "And call it on-the-job training."
         scene jennyfaceangle with dissolve
-        "I nod, my mouth still full"
+        "I nod, my mouth still full."
         scene jennyangleup2 with dissolve
         window hide
         pause
@@ -716,7 +746,7 @@ label workplace:
         pause
         jen "You do have a looot to learn..."
         scene black with dissolve
-        "She made me suck her dick for long minutes."  
+        "She made me suck her dick for several long minutes."  
         "It feels like I’m still working, but my job has changed a bit..."  
 
         scene jennypose24 with dissolve  
@@ -729,7 +759,7 @@ label workplace:
         jen "It’s so warm and wet..."  
 
         scene jennypose25 with dissolve  
-        jen "Hey, if you suck me nicely, I’ll ask the boss for a raise..."  
+        jen "Hey, if you suck me nicely, I’ll ask the boss to give you a raise..."  
         scene jennypose24 with dissolve  
         jen "It’s not like you’re the first one to get ‘special training.’"  
         scene jennypose25 with dissolve
@@ -823,7 +853,7 @@ label workplace:
         pause
         scene black with dissolve
         
-        "After what feels like forever working his length with her mouth, Jenny grows restless..."
+        "After what feels like forever working her length with your mouth, Jenny grows restless..."
 
 
         scene jennypose22 with dissolve
@@ -942,14 +972,17 @@ label workplace:
         scene endshotjenny with dissolve
         jen "..."
         jen "That was... so good.."
-        jen "Here, I think you deserve a raise"
+        jen "Here, I think you deserve a raise!"
         "She tosses some cash on the table."
         $ money += 250
         $ workday_done = True
         show text "+250$" at Move((0.5, 0.6), (0.5, 0.5), 10.0)
         hide text with dissolve
         jen "See you later"
+        
         scene black with fade
         window hide
         pause
         jump map3
+
+          

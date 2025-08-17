@@ -1,18 +1,22 @@
 label drinking:
-    if stacydate_activated == True or tracymelaniedate_done == True and sebastianjen_date_started == True:
+    if (stacydate_activated == True or tracymelaniedate_done == True) and sebastianjen_date_started == True:
         scene kitchenarrownobodyblur
+        
     elif sebastianjen_date_started == True:
+        
         scene kitchenarrownojenblur
 
     elif stacydate_activated == True or tracymelaniedate_done == True:
         scene kitchenarrownomelblur
+        
     elif sebastianjen_date_started == True:
+        
         scene kitchenarrownojenblur
     
     else:
         scene kitchenarrow
         scene kitchenarrowflou with dissolve
-    
+    play sound drinkingbeer volume 1 noloop    
     "I grab a beer and open it."
     "I take a few sips."
     "The taste is a bit bitter at first, but I get used to it quickly."

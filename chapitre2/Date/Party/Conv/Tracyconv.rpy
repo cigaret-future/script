@@ -24,15 +24,15 @@ label tracydate:
     tra "Yeah..."
     tra "Soo... "
     name "Ask me a question?"
-    tra "Ok so"
-    tra "If you could "
+    tra "Ok so..."
+    tra "If you could..."
     tra "If you could travel anywhere in the world right now, where would you go and why?"
     name "Japan, I think."
-    tra "Come on, everyone wants to go to Japan"
+    tra "Come on, everyone wants to go to Japan!"
     tra "It's like the most popular destination right now."
     name "Why?"
     tra "Everyone wants to go to Japan."
-    name "Would you go?"
+    name "Where would you go?"
     tra "I don't know, maybe Colombia."
     name "Colombia? Why?"
     tra "It's a really beautiful country."
@@ -56,6 +56,7 @@ label tracydate:
     scene black
     "Tracy moves closer to me and kisses me."
     scene kissingtracyv2
+    play sound tracykiss volume 1 loop
     "We lie down on the bed, kissing."
     "Her lipstick is soft and sweet."
     "I feel her hands on my body, she caresses me gently."
@@ -70,7 +71,7 @@ label tracydate:
     "We eventually get up, a little embarrassed."
     "Tracy receives a message on her phone."
     "Melanie is asking where she is."
-
+    stop sound
     tra "It's Mel."
     "Tracy reads the message and smiles."
     tra "She wants to know where I am."
@@ -81,7 +82,8 @@ label tracydate:
     scene corridorscreenfloutracy
     "I'm a bit apprehensive about Melanie's reaction."
     "We get up and leave the room."
-    scene mainroommelanie
+    $ renpy.music.set_volume(1, delay=0.5, channel="background")  
+    scene mainroommelanie with dissolve
     "Downstairs, Tracy finds Melanie and tells her she was with me."
     "Melanie looks at us with a knowing smile."
     "She comes closer to me."
@@ -110,7 +112,8 @@ label tracydate:
   
 label tracyupstairnoisabelle:
     scene livingroomarrowflou
-    "We go back to the living room. People seem to have fun."
+    $ renpy.music.set_volume(0.2, delay=0.5, channel="background")
+    "We go back to the living room; everyone seems to be enjoying the party."
     tra "Come on lets go upstairs."
     tra "Maybe in the bedroom."
     scene tracyroom
@@ -134,7 +137,7 @@ label tracyupstairnoisabelle:
     name "You don't get to choose your kids."
     tra "That's true."
     tra "But you can choose your friends."
-    "We keep looking at the photo"
+    "We keep looking at the photo."
     name "So, are you dating Melanie?"
     tra "What? No, not at all..."
     name "It's just that you two seem close."
@@ -159,19 +162,25 @@ label tracyupstairnoisabelle:
     name "Haha, yeah, I get it, don't worry."
     "Suddenly Tracy turns to me and looks me straight in the eyes."
     "She moves closer to me and kisses me."
-    scene kisseric
+    play sound tracykiss volume 1 loop
+    scene kisstracy
     "I'm surprised, but I don't pull away."
     "I feel her soft lips against mine, and I let myself get carried away by the moment."
     "Tracy pulls back and looks at me, a shy smile on her lips."
-    scene kisseric2
+    scene kisstracy2
+    stop sound
     tra "Sorry, I just wanted to kiss you."
     name "Oh, uh, no problem."
     tra "It's the alcohol."
     tra "I'm not usually like this."
     name "What do you mean, not usually like this?"
-    tra "ahah, you know."
-    scene kisseric
+    tra "Ahah, you know."
+    scene kisstracy
+    play sound tracykiss volume 1 loop
     "Tracy kisses me again."
+    window hide
+    $ renpy.pause(3.0, hard=True)
+    
     tra "I'm so drunk ahah"
     name "It's okay."
     "I don't mind."
@@ -179,6 +188,8 @@ label tracyupstairnoisabelle:
     "Like a pressure being released."
     "Suddenly, I really need to pee..."
     "Wtf..."
+    stop sound
+    scene kisstracy2
     name "Wait, I need to go to the toilet, can you wait for me here?"
     tra "Oh sure, go ahead."
     tra "Don't worry."
@@ -192,7 +203,6 @@ label tracyupstairnoisabelle:
     "It was a bit weird, but oh well."
     "She seems like a cool person."
     "I just hope it won't cause any drama with Melanie."
-    "Oh well."
     jump tracydate
 
 
@@ -213,7 +223,7 @@ label tracydate2:
         "I think Tracy and Melanie are in the bedroom."
         scene doorclosestacy2
     
-        "I hear them inside"
+        "I hear them inside."
         "I gently open the bedroom door."
         scene doorclosestacy
         ""
@@ -351,7 +361,7 @@ label tracydate2:
         $ stacydate_activated = False
         scene livingroomarrowandblur
         "I sit on the couch, not really knowing what to think about what just happened with Tracy."
-        "After a while I see them coming downstairs"
+        "After a while I see them coming downstairs."
         "Tracy looks at me with a sorry expression."
         $ stacydate_over = True
         jump livingroom

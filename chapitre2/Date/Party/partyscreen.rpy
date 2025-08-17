@@ -1,4 +1,5 @@
 label vestibule:
+    $ renpy.music.set_volume(1, delay=0.5, channel="background")
     if zoeyaxelconv_count >= 3 and  zoey_vestibul_asked == False:
         jump kitchenzoeyconv
     else: 
@@ -23,6 +24,7 @@ screen vestibulescreen:
                 hotspot (2212, 1062, 340, 308) action Jump("livingroom")
 
 label livingroom:
+    $ renpy.music.set_volume(1, delay=0.5, channel="background")
     if drink_count >= 5 and renpy.random.randint(1, 3) == 1:
         scene ericbourredanse
         "I can't help but dance a little."
@@ -53,6 +55,8 @@ screen livingroomscreen:
                 hotspot (22, 1077, 435, 355) action Jump ('upstairs')
 
 label kitchenparty:
+    stop music fadeout 0.5
+    $ renpy.music.set_volume(0.5, delay=0.5, channel="background")
     if (stacydate_activated == True or tracymelaniedate_done == True) and (sebastianjen_date_started == True or sebastianjen_date_done == True):
         show screen kitchenpartynobody
         call screen kitchenpartynobody
@@ -162,6 +166,7 @@ screen kitchenpartynomelscreen:
 
 
 label upstairs:
+    $ renpy.music.set_volume(0.5, delay=0.5, channel="background")
     if stacydate_activated == True:
         show screen upstairspartystactyscreen
         call screen upstairspartystactyscreen
@@ -192,6 +197,8 @@ screen upstairspartystactyscreen:
 
 
 label balcony:
+    $ renpy.music.set_volume(0.2, delay=0.5, channel="background")
+    play music skylineparty volume 2 loop
     if sebastianjen_date_started == True:
         scene balconynobodyblur
         "There is no one I could talk to on the balcony."

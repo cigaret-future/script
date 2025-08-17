@@ -1,4 +1,5 @@
 label sebastianconv:
+    
     if sebastianconv_count == 0:
         jump sebastianconv1
     elif sebastian_mission_started == True and sebastianconv_count == 1:
@@ -95,12 +96,12 @@ label sebastianconv:
         seb "I need to find someone for tonight."
         seb "It's been too long."
         seb "..."
-        name "cool.."
+        name "Cool.."
         name "I hope you find someone."
         seb "I saw plenty of hot girls inside."
         seb "It shouldn't be too hard."
-        name "Alright.. good luck then"
-        seb "Thanks, you too!"
+        name "Alright.. good luck then."
+        seb "Thanks!"
         $ sebastian_open = True
         jump balcony
 
@@ -116,7 +117,7 @@ label sebastianconv:
         name "I met this girl inside, and I think she might be interested in you."
         seb "Really? What makes you say that?"
         name "She kept asking about you when I mentioned I was talking to someone out here."
-        seb "Interesting... What's she like?"
+        seb "Interesting... what's she like?"
         name "She is the girl in the kitchen with the pink sweatshirt and the ponytail."
         seb "Oh, I think I know exactly who you mean."
         seb "I noticed her earlier."

@@ -16,11 +16,11 @@ label corridor_randomconv:
             name "Yes, it's going well!"
             mar "If you're having trouble focusing, you can always go to the library."
             mar "It's much better for concentration!"
-            mar "I'm telling you this because I'm actually going there myself to read something."
+            mar "I'm actually going there myself to read something, you can come with me if you like?"
             show marionneutral with dissolve
             hide marionneutral2 with dissolve
             mar "I can't get any work done in my office."
-            mar "It's too quiet ahah."
+            mar "It's just too quiet, I need the background noise."
             name "Thanks, I'll keep that in mind."
             
             mar "Alright, hang in there!"
@@ -86,6 +86,6 @@ label corridor_randomconv:
             show marioncrossingcorridor with dissolve
             
     label othercorridor_conv:
-            "but nothing comes up.."
+            "But nothing comes up.."
             "Maybe later."
             jump gardenuni_start2

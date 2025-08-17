@@ -145,7 +145,7 @@ label sarah1:
     sar "Hey, how's it going?"
     name "Hey, good, you?"
     sar "A bit tired, but we keep it rolling."
-    name "Yeah, I am tired too, all the studying."
+    name "Yeah, I am tired too, all the studying I'm doing."
     sar "Gotta keep it up, right?"
     name "Yeah, I guess so."
     sar "Well, see you around!"
@@ -166,7 +166,7 @@ label texto_stairs:
             nvl clear
             jump sarahdate3
         "I can't, I have stuff to do":
-            n_nvl "I'm sorry, I can't. I have stuff to do."
+            n_nvl "I'm really sorry, I can't. I have stuff to do."
             s_nvl "Oh, that's too bad. Maybe next time."
             $ day_until_new_date = 3
             nvl clear

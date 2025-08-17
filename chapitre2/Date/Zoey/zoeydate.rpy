@@ -24,24 +24,24 @@ label zoeydate:
         zoey "I was looking for you."
         name "Oh, really? Why?"
         zoey "I was just curious about you. That's all."
-        name "ok?"
-        zoey "I feel like i want to know you better."
+        name "Ok?"
+        zoey "I feel like I want to know you better."
         zoey "I mean, you seem like a nice person."
         zoey "Sometimes I get this kind of feeling with people."
         zoey "You give off good energy."
-        name "Thanks, you too."
-        name "You also give off energy ahah."
+        name "Thanks, I get that feeling with people too."
         zoey "Oh really?"
-        zoey "What kind of energy?"
-        name "Well... I don't know how to describe it."
+        name "Yeah, you give off a different sort of energy though."
+        zoey "Mmmm, what kind of energy?"
+        name "Well... I don't really know how to describe it."
         name "You are... tall?"
-        zoey "Ahahah, yeah I tend to look down on people."
-        zoey "I mean not like a bad way."
+        zoey "Ahahah, I know what you mean. I do tend to look down on people."
+        zoey "I mean not like a bad way, just like physically!"
         show zoeysurprise with dissolve
         hide zoeysmile with dissolve
         zoey "On the contrary, I feel like it gives me perspective."
         name "That's well put."
-        zoey "No really, I feel like I understand people from up there."
+        zoey "No really, I feel like I understand people from up here."
         zoey "It's like I can feel what they want."
         name "Like a god?"
         show zoeysmile with dissolve
@@ -59,10 +59,12 @@ label zoeydate:
         zoey "Yeah... well, you know... haha."
         show zoeydesire with dissolve
         hide zoeysmile with dissolve
+        "Zoey's hand moves down to her crotch, running her fingers and palm over her tight pants."
+        "She's eyeing me up..."
         zoey "He's a pretty ambiguous god."
-        zoey "He kind of transgresses gender norms."
+        zoey "He kind of transgresses gender norms. Most of the ancient Greek pantheon does."
         name "I didn't know that."
-        zoey "Yes you do, ahah"
+        zoey "I'm not sure that's true, now is it [name]?"
         "I blush a little."
 
         name "Anyway... I should get going."
@@ -70,23 +72,23 @@ label zoeydate:
         show zoeysmilecorridor2 with dissolve
         hide zoeydesire with dissolve
         zoey "Sure, I should probably get going too."
-        zoey "Oh by the way what's your name?"
-        name "I am [name] and you?"
+        zoey "Oh by the way, what is your name?"
+        name "I'm [name], and yours?"
         zoey "Zoey."
         zoey "I have your number, but I didn't know what name to put."
         name "You have my number?"
         zoey "Yeah Hugo gave it to me."
         if gender == "male":
-            zoey "I just wrote 'cut new guy'"
+            zoey "I just wrote 'cute new guy'."
         elif gender == "fem":
-            zoey "I just wrote 'cute new girl'"
-        name "ahah ok.. now you have the right name"
-        zoey "Yes I will change it"
+            zoey "I just wrote 'cute new girl'."
+        name "Ahah ok.. now you have the right name."
+        zoey "Yes, I will change it. Or maybe I won't?"
         name "See you later"
         zoey "Bye [name]."
         hide zoeysmilecorridor2 with dissolve
         "She gives me a playful wave and walks off."
-        "I feel a bit invaded by the fact that she knows my number."
+        "I feel a bit invaded by the fact that she knows my number already."
         "But she doesn't seems like a bad person."
         $  zoeydate_count += 1
         jump gardenuni_start2
@@ -119,12 +121,12 @@ label zoeydate:
         zoey "Well... choosing someone, or something, and really committing to it."
         zoey "Relationships, for example." 
         name "Oh, I see."
-        zoey "Don't get me wrong, I value my freedom..." 
+        zoey "Don't get me wrong, I value my independence..." 
         zoey "But I do wonder what it would be like to have someone special."
         zoey "Someone to share moments with." 
         name "That makes sense."
         zoey "Wht I'm trying to say is..." 
-        zoey "Maybe true freedom doesn't require being alone."
+        zoey "Maybe independence doesn't require being alone."
         name "Yeah but you're not necessarily alone."
         name "You can still grow, change..."
         zoey "Ah, I see, you're that type."
@@ -135,12 +137,12 @@ label zoeydate:
         zoey "Then you might surprise yourself." 
         name "Maybe..."
         name "But I don't think that will happen anytime soon."
-        name "I really enjoy being independent right now."
+        name "I really enjoy being free to do as I please, at least for now."
         name "Maybe when I'm older."
         zoey "It might happen sooner than you think."
         zoey "Who knows?"
         name "Yeah, who knows?"
-        name "well it was cool talking to you.. I'll try to enjoy my free time"
+        name "well it was cool talking to you.. I'll try to enjoy my free time."
         name "See you Zoey!"
         zoey "alright see you later [name]."
         $ zoeydate_count += 1
@@ -164,13 +166,15 @@ label zoeydate:
         zoey "Great!"
         show zoeydesire with dissolve
         hide zoeysmile with dissolve
+        "Again, Zoey's hand drops to her crotch, squeezing her prominent bulge ever so gently."
+        "Her dick must really be massive."
         zoey "By the way.."
         zoey "You are really cute in that outfit."
-        zoey "It really shows off your figure"
+        zoey "It really shows off your figure."
         name "Thanks.."
         show zoeykiss with dissolve
         hide zoeydesire with dissolve
-        zoey "see you tonight!"
+        zoey "See you tonight!"
         hide zoeykiss with dissolve
         "She gives me a playful wave and walks off."
         $ party_started = True
@@ -190,13 +194,15 @@ label zoeydate:
         name "Last night was..."
         zoey "Intense?"
         name "Yeah, something like that."
+        zoey "You certainly seemed to enjoy it. I did too."
         show zoeydesire with dissolve
+        "Zoey's hand fully grips her huge dick through her pants as she eyes me with what can only be described as hunger."
         hide zoeysmilecorridor2 with dissolve
         zoey "You know, I can see it in your eyes."
         zoey "That restless spirit you talked about before..."
         zoey "It's still there, but it's... focused now."
         name "Focused on what?"
-        zoey "You tell me."
+        zoey "You tell me honey."
         name "I... I can't stop thinking about you."
         name "About last night."
         zoey "Mmm, is that so?"
@@ -210,9 +216,10 @@ label zoeydate:
         name "I think I need you, Zoey."
         zoey "Need me? That's a strong word."
         name "I know, but... I can't help it."
+        name "I need your desire."
         show zoeysmile with dissolve
         hide zoeykiss with dissolve
-        zoey "Well i am not gonna make you wait"
+        zoey "Well, I am not gonna make you wait."
         zoey "Come on."
         name "Where are we going?"
         zoey "My place. We need to talk about this properly."
@@ -245,5 +252,3 @@ label zoeydate:
         $ renpy.pause(1, hard=True)
         scene endscreenzoey with dissolve
         $ renpy.pause(4, hard=True)
-        
-        

@@ -9,8 +9,8 @@ label elisedate:
     "A weird tension settles between us."
     "She finally breaks the silence."
     elise "So, what do you think of Sarah?"
-    name "Hm, she's nice."
-    name "I like her even though I don't know her that much."
+    name "She's nice."
+    name "I like her even though I don't know her that well."
     name "She has this kind of aura that makes you feel reassured."
     scene elisestreet2
     elise "Yeah..."
@@ -36,10 +36,10 @@ label elisedate:
 
     elise "I hope my roommate is not there."
     name "Oh, you have a roommate?"
-    elise "Yeah, but she's not here often."
+    elise "Yeah, but she's not often here."
     name "I won't stay long."
     elise "No, it's ok, don't worry."
-    name "Ok."
+    name "If you say so."
     scene entering
     "We enter her apartment."
     elise "Welcome to my place."
@@ -68,7 +68,6 @@ label elisedate:
     scene gogetbook
     "She goes to her room."
     "I have a weird feeling, but it's not unpleasant."
-    ""
     "I don't know if I am really interested in her books."
     "I hear her rummaging through her things."
     "She comes back with a few books in her arms."
@@ -90,7 +89,7 @@ label elisedate:
     clara "Oh right, the books..."
     clara "I don't think I've seen you before."
     name "Yeah, I am new here."
-    name "I am Sarah's neighbor."
+    name "I'm Elise's friend, we met through Sarah."
     clara "Oh right, I see."
     "Clara looks at the books."
     scene collocchatting
@@ -164,7 +163,7 @@ label elisedate:
     name "Oh."
     name "And you think you would be better, I suppose?"
     scene focuselise2 with dissolve
-    elise "Did you sleep together with Sarah?"
+    elise "Did you sleep with Sarah?"
     name "What? No?!"
     elise "That's what I thought."
     name "Why do you ask?"
@@ -275,9 +274,9 @@ label elisedate:
 
         name "Oh fuck!!!"
         name "Your dick..."
-        name "Is..."
-        name "So..."
-        name "Nice."
+        name "...is..."
+        name "...so..."
+        name "..nice!"
         elise "Shut up."
         elise "Just take it."
         elise "Mh."
@@ -287,14 +286,14 @@ label elisedate:
         "But Elise is fucking me so hard."
         "I can't help but moan."
         show colloclistening with dissolve
-        "Her roommate is probably hearing us."
+        "Her roommate can probably hear us."
         hide colloclistening with dissolve
         "But I am not sure I want Elise to slow down."
         elise "I'm going to ruin you for anyone else."
         elise "You won't be able to enjoy anything but my dick."
         elise "I'm gonna fill you up."
         "She starts moving again quickly, pumping in and out."
-        "The wet, slapping sounds of the intense fucking echo in the room along with my heavy breathing and cries of pleasure."
+        "The wet, slapping sounds of the intense fucking echo in the room, along with my heavy breathing and cries of pleasure."
         elise "Oh yeah."
         play sound spank volume 1
 
@@ -304,8 +303,8 @@ label elisedate:
             elise "You have been a naughty girl."
         elise "Trying to play innocent with me."
         elise "Trying to pretend you are..."
-        elise "Interested..."
-        elise "In my books..."
+        elise "..interested..."
+        elise "...in my books..."
         play sound spank volume 1
         elise "When you just want your hole to be filled."
         elise "Like a little whore."
@@ -369,14 +368,14 @@ label elisedate:
         elise "What do you want?"
         elise "Say it."
         menu:
-            "Please fuck me":
+            "Please fuck me.":
                 jump elise_fuck
             "About those books...":
                 jump elise_refuse
 
     label elise_refuse:
         scene black
-        play sound "music/doorhome"
+        play sound "audio/music/doorhome.mp3"
         ""
         "..."
         jump map3
@@ -400,9 +399,9 @@ label elisedate:
         hide black
         name "Oh fuck!!!"
         name "Your dick..."
-        name "Is..."
-        name "So..."
-        name "Nice."
+        name "...is..."
+        name "...so..."
+        name "...nice!"
         elise "Shut up."
         elise "Just take it."
         elise "Mh."
@@ -412,16 +411,16 @@ label elisedate:
         "But Elise is fucking me so hard."
         "I can't help but moan."
         show colloclistening with dissolve
-        "Her roommate is probably hearing us."
+        "Her roommate definitely hears us."
         hide colloclistening with dissolve
         "But I am not sure I want Elise to slow down."
         elise "I'm going to ruin you for anyone else."
-        name "Ooooh fuck."
-        name "I love you."
+        name "Ooooh fuck!"
+        name "I love your dick!"
         elise "You won't be able to enjoy anything but my dick."
-        elise "I'm gonna fill you up."
+        elise "I'm gonna fill you up, over and over again."
         "She starts moving again quickly, pumping in and out, chasing her climax."
-        "The wet, slapping sounds of the intense fucking echo in the room along with my heavy breathing and cries of pleasure."
+        "The wet, slapping sounds of the intense fucking echo in the room, along with my heavy breathing and cries of pleasure."
 
         "She fucks me like an animal."
 
@@ -459,8 +458,8 @@ label elisedate:
 label elisesachadate:
     scene cafeelisesachaeric11
     "We arrive at the place"
-    sac "It's here"
-    sac "I see Elise, she is on the corner"
+    sac "It's here."
+    sac "I see Elise, she is on the corner."
     sac "Go ahead, I'll order."
     name "Get me a long coffee."
     sac "Got it."
@@ -468,7 +467,7 @@ label elisesachadate:
         "I see a familiar face."
         "It's Camille."
         name "Hey! What are..."
-        play sound "audio/music/spank.mp3" volume 1.0
+        play sound "audio/music/sscene/spank.mp3" volume 1.0
         # "Camille passes by me and slaps me on the ass."
     
     scene cafeelisesachaeric14 with dissolve
@@ -477,7 +476,7 @@ label elisesachadate:
     if camillelove_count >= 3:
         elise "I saw that girl slap your ass."
         elise "what was that?"
-        name "Nevermind, she's someone from my class, she likes to tease me."
+        name "Never mind, she's someone from my class, she likes to tease me."
         elise "Looks like you're really enjoying college!"
     scene talkingsachaericelise with dissolve
     "Sacha is telling Elise about his problems at work."
@@ -509,7 +508,6 @@ label elisesachadate:
 
     scene cafeconv2cut16 with dissolve
     "As we continue talking, her foot keeps brushing against my leg."
-    "It’s..."
     "Her cold toes touch my skin."
     "I feel a small knot in my stomach."
 
@@ -554,22 +552,22 @@ label elisesachadate:
     scene cafeconv2cut14 with dissolve
     sac "You’ll get used to it."
     scene black with dissolve
-    "We continue to talk for a while until"
-    "Our conversation blends with that of the other people in the bar"
-    "I am having a good time."
+    "We continue to talk for a while."
+    "Our conversation blends with that of the other people in the bar."
+    "The conversation is lively and unforced; I'm having a good time."
     scene standingupsachaelise
     sac "Well, I’m heading out."
-    name "Me too"
-    elise "alright i follow you guys"
-    sac "I'm inviting you"
-    name "Thanks"
+    name "Me too."
+    elise "Alright, I'll follow you guys."
+    sac "I'm inviting you to."
+    name "Thanks."
     scene goinghomesachaeliseout
-    elise "hey, you forgot your book"
-    name "oh thanks"
-    name "thanks for the coffee Sacha"
-    sac "No problem, see you soon"
-    name "see you"
-    $ sarah_relation_status_text = "I should hang out to the coffee shop"
+    elise "Hey, don't forget your book!"
+    name "Oh thanks!"
+    name "Thanks for the coffee Sacha."
+    sac "No problem, see you soon."
+    name "See you."
+    $ sarah_relation_status_text = "I should hang out to the coffee shop."
     $ sarahcafe_conv2_done = True
     $ sarah_cafe = False
     $ sarah_conv_done = True

@@ -22,7 +22,7 @@ label rentdue1:
     olia "Great, that's just great. I don't know if someone told you, but I live just next to your building, and I like to stop by and check in on my tenants."
     name "I don't think I have any issue with that."
     scene rentasking2
-    olia "And I take this opportunity to come and collect the rent..."
+    olia "So I've taken this opportunity to come and collect my rent..."
     name "Oh."
     olia "Yeah, I started doing that after a bad experience with a tenant I had."
     olia "I hope that's not an issue for you."
@@ -42,8 +42,7 @@ label rentdue1:
         show text "-700$" at Move((0.5, 0.6), (0.5, 0.5), 2.0) 
         hide text with dissolve
     $ rentdue_meet_count += 1
-    show screen homescreen4
-    call screen homescreen4
+    jump homeambiance
 
     label rentdue2: 
         scene home00
@@ -56,8 +55,8 @@ label rentdue1:
         elif gender == "fem":
             olia "Hello, Mrs. Smith."
         name "Hi..."
-        olia "I hope I am not waking you up."
-        name "Nooo, I was getting ready to go."
+        olia "I hope I did not waking you up."
+        name "No, I was getting ready to go out anyway."
         olia "Great, so about the rent..."
         if money < 700:
             name "I am not sure I will be able to pay the rent this week."
@@ -80,5 +79,4 @@ label rentdue1:
             hide text with dissolve 
             hide text with dissolve
             
-            show screen homescreen4
-            call screen homescreen4
+            jump homeambiance

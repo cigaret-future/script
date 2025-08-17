@@ -5,50 +5,50 @@ define sam = Character("Samuel", color="#04f8f8")
 
 label classdate0:
     scene smallclassroom
-    "I enter the classroom and sit at a table"
-    "I try my best to focus on the teacher's lecture"
+    "I enter the classroom and sit at a table."
+    "I try my best to focus on the teacher's lecture."
     show emma00
-    emm "hey, do you have a pencil?"
-    name "yeah sure"
+    emm "Hey, do you have a pencil?"
+    name "Yeah, sure"
     emm "Thanks!"
     $ classdate_count += 1
-    "The class passes by slowly"
-    "After two hours of class, everyone leaves,"
-    "Finally"
+    "The class passes by slowly."
+    "After two hours of class, everyone leaves."
+    "Finally."
     $ class_done = True
     scene black with dissolve
-    "I leave the classroom and head to the garden"
+    "I leave the classroom and head to the garden."
     jump gardenuni_start2
 label classdate1:
     scene smallclassroom
-    "I enter the classroom and sit at a table"
-    "I try my best to focus on the teacher's lecture"
+    "I enter the classroom and sit at a table."
+    "I try my best to focus on the teacher's lecture."
     show camille00 
     cam "have you seen the architecture of the campus?"
 
-    name "hm yes, its pretty nice"
+    name "Hm? Oh yes, its quite pleasing."
     $ classdate_count += 1
-    cam "it's so old-fashioned."
+    cam "It's so old-fashioned."
 
-    cam "look at the tables, they’re made of poor quality wood."
+    cam "And look at the tables, they’re made of such poor quality wood."
 
-    name "ok?"
+    name "Uhhh, ok?"
 
-    cam "why did i come here?"
+    cam "why did I come here?"
 
-    name "isn't it weird to judge a school by the quality of the table?"
+    name "Isn't it weird to judge a school by the quality of a table?"
 
-    cam "You don't know, everything lie in the details"
+    cam "You don't know that everything lies in the details?"
 
     name "I see..."
 
     hide camille
     "The class passes by slowly"
-    "After two hours of class, everyone leaves,"
-    "Finally"
+    "After two hours of class, everyone leaves."
+    "Finally."
     $ class_done = True
     scene black with dissolve
-    "I leave the classroom and head to the garden"
+    "I leave the classroom and head to the garden."
 
     jump gardenuni_start2
 
@@ -57,6 +57,7 @@ label classdate1:
 # //DIRECTION
 # ////////////////////////
 label classboring:
+    play background soundclass volume 3 loop
     if classdate_count == 0:
         jump classdate0
     elif classdate_count ==1:
@@ -64,28 +65,31 @@ label classboring:
         jump classdate1   
     # //Camille Spank
     elif camillelove_count ==2 and camillespank == False:
+        scene black
+        window hide
+        pause
         if gender == "fem" and characterdesign_done == False:
             scene characterdesign2
             window hide
             pause
             menu:
-                "continue":
+                "Continue":
                     pass
                 "Don't show me that message again":
                     $ characterdesign_done = True
                     pass
         scene camilleclassarriving
-        "I walk down the corridor towards my class"
+        "I walk down the corridor towards my class."
         scene spank
-        "People are entering, I arrived just in time"
+        "People are entering, I arrived just in time."
         scene spank2
-        play sound "audio/music/spank.mp3" volume 1.0
+        play sound "audio/music/sscene/spank.mp3" volume 1.0
         "I'm about to enter the classroom when suddenly, I feel a sharp slap on my butt."
         "I turn around and see Camille smiling at me."
         "I'm so shocked that I don't say anything."
         "She walks past me without saying a word and goes to sit down."
         "A few people saw the scene, which increases my embarrassment."
-        "I enter the classroom trying to hide my discomfort."
+        "I enter the classroom, trying to hide my discomfort."
         
         $ camillespank = True
         scene smallclassroom
@@ -103,25 +107,25 @@ label classboring:
             window hide
             pause
             menu:
-                "continue":
+                "Continue":
                     pass
                 "Don't show me that message again":
                     $ characterdesign_done = True
                     pass
         scene spank with dissolve
-        "As I enter the classroom, I feel a swift movement behind me"
-        "It's probably Camille"
+        "As I enter the classroom, I feel a swift movement behind me."
+        "It's probably Camille."
         menu: 
-            "let her spank me":
+            "Let her spank me":
                 scene spank
-                play sound "audio/music/spank.mp3" volume 1.0
+                play sound "audio/music/sscene/spank.mp3" volume 1.0
                 "I feel a sharp slap on my butt."
                 scene spank4
-                "I hear some laugh behind me"
+                "I hear some laughter behind me."
                 $ camillespank2 = True
                 $ camillelove_count += 1
-            "avoid her spank":
-                "I hurry myself into the class before Camille can reach my ass"
+            "Avoid her spank":
+                "I hurry into the class before Camille can reach my ass."
         scene smallclassroom
         menu: 
             "Sit with Emma":
@@ -137,25 +141,25 @@ label classboring:
             window hide
             pause
             menu:
-                "continue":
+                "Continue":
                     pass
                 "Don't show me that message again":
                     $ characterdesign_done = True
                     pass
         scene spank with dissolve
-        "As i enter the classroom, i feel a swift movement behind me"
-        "It's probably Camille"
+        "As I enter the classroom, I feel a swift movement behind me."
+        "It's probably Camille."
         menu: 
-            "let her spank me":
+            "Let her spank me":
                 scene spank2
-                play sound "audio/music/spank.mp3" volume 1.0
+                play sound "audio/music/sscene/spank.mp3" volume 1.0
                 "I feel a sharp slap on my butt."
                 
                 "I hear some laugh behind me"
                 $ camillespank3 = True
                 $ camillelove_count += 1
-            "avoid her spank":
-                "I hurry myself into the class before Camille can reach my ass"
+            "Avoid her spank":
+                "I hurry into the class before Camille can reach my ass."
                 
         scene smallclassroom
         menu: 
@@ -383,7 +387,7 @@ label classcamilledate2:
     cam "We're trying to make it big."
     name "What's it about?"
     cam "It's a blog about fashion."
-    name "Cool."
+    name "That's neat."
     cam "Yeah, we have some sponsors that work with us. It's pretty cool."
     "I should find a job too."
     "The class passes by slowly."
@@ -428,18 +432,18 @@ label classcamilledate3:
             name "I need to find a way to make money too."
             show camille08 with dissolve
             hide camille14 with dissolve
-            cam "If I have plans for lingerie shoots, I'll call you." 
+            cam "If I have plans for underwear shoots, I'll call you." 
             cam "Ahah."
             show camille11 with dissolve
             hide camille08 with dissolve
             cam "With that cute ass of yours, you could make a few bucks."
             menu:
-                "Why not":
+                "Why not?":
                     name "Well, I am open to anything."
                     cam "That's the spirit."
                     cam "Willing to go all in to succeed."
                     "Camille chuckles softly."
-                "I am not like that":
+                "I am not into that":
                     name "I would prefer a real job."
                     cam "It is a real job, actually."
             
@@ -524,9 +528,9 @@ label classcamilledate5:
     show camille07 with dissolve
     cam "Ok, I've finished my article."
     cam "Man... I am so tired."
-    cam "I shouldn't multitask too much."
+    cam "I shouldn't multitask so much."
     cam "What are you up to?"
-    cam "Still writing your notes like the perfect student."
+    cam "Still writing your notes like the perfect little student."
     cam "Don't you want to take a break from being boring?"
     name "Fuck you..."
     if camillelove_count >= 3:
@@ -541,7 +545,7 @@ label camillelovescene:
     show camillesmiling with dissolve
     hide camille11 with dissolve
     cam "Hey, you never told me if you already had sex."
-    name "I’m not even going to respond."
+    name "I’m not even going to respond to that."
     cam "Yeah, cause you haven't."
     cam "I can tell."
     name "Actually, I have."
@@ -560,7 +564,7 @@ label camillelovescene:
         window hide
         pause
         menu:
-            "continue":
+            "Continue":
                 pass
             "Don't show me that message again":
                 $ characterdesign_done = True
@@ -568,11 +572,11 @@ label camillelovescene:
     scene camilleapproaching
     cam "And how was the sex?"
     name "It was ok."
-    cam "You don't seem convinced."
+    cam "It doesn't sound like it!"
     cam "Are you still together?"
-    name "Not really, I mean since I moved from my town, we won't see each other, so..."
+    name "Not really; since I moved from my hometown I haven't seen her, so... "
     cam "She could come here and visit you."
-    name "Yeah, it's expensive."
+    name "Yeah, it's an expensive trip to make regularly though."
     cam "Yeah..."
     cam "Maybe you're glad you left."
     cam "Breaking free from the norm gives you space to uncover your true tastes."
@@ -583,10 +587,12 @@ label camillelovescene:
     name "Who?"
     if gender == "male":
         cam "The boy I knew from high school."
+        cam "He was convinced he liked being dominant with girls."
+        cam "And with me, he was less cocky."
     elif gender == "fem":
         cam "The girl I knew from high school."
-    cam "He was convinced he liked being dominant with girls."
-    cam "And with me, he was less cocky."
+        cam "She was convinced she liked being dominant with girls."
+        cam "And with me, she was less cocky."
     "Camille reaches for my pants."
     menu:
         "Advance my chair":
@@ -606,27 +612,45 @@ label camillelovescene:
         "Let her touch me":                    
             scene camillereaching with dissolve
             cam "Oh yeah, cause I don't know if I told you."
-            cam "He was the one getting pounded."
+            if gender == "male":
+                cam "He was the one getting pounded."
+            elif gender == "fem":
+                cam "She was the one getting pounded."
             cam "It was so hot, like pam pam pam."
             scene camillepant1 with dissolve
-            cam "He was moaning like a dog."
+            if gender == "male":
+                cam "He was moaning like a bitch."
+            elif gender == "fem":
+                cam "She was moaning like a bitch."
             cam "It makes you horny, doesn't it?"
             cam "You wished to be as lucky as my friend."
             scene camillepant2 with dissolve
             cam "I saw it the other day."
-            cam "I am sure you touched yourself thinking you were him."
+            if gender == "male":
+                cam "I am sure you touched yourself thinking you were him."
+            elif gender == "fem":
+                cam "I am sure you touched yourself thinking you were her."
             scene camilleericfinger6 with dissolve
             cam "Let me show you how it was."
             scene camilleericfinger9 with dissolve
             cam "I mean, it was so hot."
             scene camilleericfinger6 with dissolve
-            cam "He was like, 'pleaaase, fuck me, fuck me, fuck me.'"
-            scene camilleericfinger9 with dissolve
-            cam "I kinda feel sorry for him, since he had a girlfriend."
-            scene camilleericfinger6 with dissolve
-            cam "I don't know how he is going to do now."
-            scene camilleericfinger9 with dissolve
-            cam "He will probably ask me to fuck him again."
+            if gender == "male":
+                cam "He was like, 'pleaaase, fuck me, fuck me, fuck me.'"
+                scene camilleericfinger9 with dissolve
+                cam "I kinda feel sorry for him, since he had a girlfriend."
+                scene camilleericfinger6 with dissolve
+                cam "I don't know what he is going to do now."
+                scene camilleericfinger9 with dissolve
+                cam "He will probably ask me to fuck him again."
+            elif gender == "fem":
+                cam "She was like, 'pleaaase, fuck me, fuck me, fuck me.'"
+                scene camilleericfinger9 with dissolve
+                cam "I kinda feel sorry for her, since she had a boyfriend."
+                scene camilleericfinger6 with dissolve
+                cam "I don't know what she is going to do now."
+                scene camilleericfinger9 with dissolve
+                cam "She will probably ask me to fuck her again."
             scene camilleericfinger6 with dissolve
             cam "And I am not sure I will."
             scene camilleericfinger9 with dissolve
@@ -643,9 +667,9 @@ label camillelovescene:
             cam "Like that."
             scene camilleericfinger22 with dissolve 
             cam "Oh, your ass is begging for it, I can tell."
-            cam "He wants to be widened."
+            cam "It wants to be widened."
             scene camilleericfinger23 with dissolve 
-            cam "Maybe he hopes that I fuck him."
+            cam "Maybe it hopes that I'll fuck it."
             scene camilleericfinger22 with dissolve
             cam "I am not sure if you deserve it, though."
             scene camilleericfinger23 with dissolve 
@@ -659,9 +683,9 @@ label camillelovescene:
             scene camilleericfinger17 with dissolve
             cam "What a little slut."
             scene camilleericfinger18 with dissolve
-            cam "Letting me finger him in class."
+            cam "Letting me finger you in class."
             scene camilleericfinger17 with dissolve
-            cam "Pretending he wants to study."
+            cam "Pretending you wants to study."
             scene camilleericfinger18 with dissolve
             cam "And secretly dreaming of being pounded."
             scene hotcamilleeric with dissolve
@@ -768,7 +792,7 @@ label classcamilledate6:
 
     menu:
         "I am":
-            if money >= 2000:
+            if money >= 1000:
                 name "I do have money."
                 "Camille looks at me with a questioning expression."
                 cam "Good for you."
@@ -779,37 +803,39 @@ label classcamilledate6:
                 cam "You really would be ready for anything."
                 menu:
                     "Yes":
-                        cam "Ahahah."
+                        cam "Ahahah!"
                         name "What?"
-                        cam "Nothing. You are funny."
+                        cam "Nothing. You are funny [name]."
                         show camille05 with dissolve
                         hide camilleneutral with dissolve
                         cam "Maybe you're not as boring as I thought."
-                        name "Thanks i guess."
+                        name "Thanks, I guess..."
                         hide camille05 with dissolve
                         "Camille remains silent for the rest of the class."
                         "I don't dare restart the conversation for fear of saying something embarrassing."
-                        $ camille_relation_status_text == "I think she is interested in me... I should talk to her during class"
+                        $ camille_relation_status_text = "I think she is interested in me... I should talk to her during class"
                         $ camille_moneycheck_passed = True
 
                     "Not everything.":
                         cam "That's what I thought..."
                
 
-            elif money =< 2000:
+            elif money <= 1000:
                 name "I actually am, but I'm not interested in you, so..."
                 "Camille looks at my clothes."
-                show text "Not enough money."
+                show text "Not enough money. (1000$ minimum.)" with dissolve
                 pause 0.5
                 hide text with dissolve
                 show camille13 with dissolve
+                hide camilleneutral2 with dissolve
+                $ camille_relation_status_text = "I should earn some money ($1000) before talking to Camille again."
                 cam "Yeah, right."
                 
         "I am not interested in you anyway":
             name "I don't know why you'd assume I'd be interested in sleeping with you."
             show camille13 with dissolve
             cam "Yeah, right."
-            cam "I saw you looking at my boobs."
+            cam "I saw you looking at my boobs..."
 
    
     "The class passes by slowly."
@@ -826,7 +852,7 @@ label classcamilledate7:
     "I try my best to focus on the teacher's lecture."
     show camille06 with dissolve
     cam "Hey, do you want to do something after class?"
-    name "hm? Yeah, sure.."
+    name "Hm? Yeah, sure.."
     name "I'm surprised you're asking me."
     show camilleneutral2 with dissolve
     hide camille06 with dissolve
@@ -840,6 +866,7 @@ label classcamilledate7:
     "Camille leads me through the university hallways."
     "We head down to the garden and walk along the buildings."
     scene upview3 with dissolve
+    play background universitycoffeeshop volume 1 loop
     "Eventually, we arrive at a small building that looks like a student coffee shop."
     cam "Go grab a seat, I'll be right back."
     name "Okay."
@@ -854,20 +881,21 @@ label classcamilledate7:
     cam "So, do you like the place?"
     name "Yeah, it's nice."
     scene camilldeunidate8c with dissolve
+    play sound drinkcoffee volume 2 noloop 
     "Camille takes a sip of her coffee, looking a bit thoughtful."
     name "But I don't really get why you invited me here."
     name "You usually seem so distant, it caught me off guard."
     cam "Yeah, well, sometimes I get these random urges to be nice."
     cam "But I admit, it doesn't happen often."
-    name "I knew you had a good side"
+    name "I knew you had a good side."
     scene camilldeunidate7 with dissolve
-    cam "yeaah..."
-    cam "Let's just say I like people I can be a little mean to."
-    cam "And you seem to fit the profile."
+    cam "Yeaah..."
+    cam "Let's just say I only bully people that I like, and even then only a little bit."
+    cam "And you seem to enjoy it..."
     name "Oh..."
     name "..."
     name "I mean, if you say so.."
-    name "So you like me, we could say that?"
+    name "So you like me, can we say that?"
     scene camilldeunidate8 with dissolve
     cam "Whoa, don't get carried away."
     cam "I just like to tease you."
@@ -877,10 +905,10 @@ label classcamilledate7:
     cam "Yeah."
     name "Tell me about it?"
     cam "What, you want us to share our life stories?"
-    name "yeah why not."
-    cam "Okk.."
+    name "Yeah, why not."
+    cam "Ok..."
     scene camilldeunidate7 with dissolve
-    cam "We try to create content about fashion—interviews, discovery videos, articles on trends, sometimes designer spotlights."
+    cam "We try to create content about fashion interviews, discovery videos, articles on trends, sometimes designer spotlights."
     name "That sounds cool. Do you do all that with your friends?"
     cam "Yeah, we're a small team. Everyone has their own role."
     name "What do you do?"
@@ -894,18 +922,19 @@ label classcamilledate7:
     name "Oh, like critiques?"
     cam "Exactly. I roast designers, but with style."
     name "So you give your opinion on other people's work?"
+    play sound drinkcoffee volume 2 noloop 
     scene camilldeunidate5 with dissolve
-    cam "Pretty much, but don't think you can just be mean for no reason. It takes work."
-    cam "You have to put aside your biases and sometimes your feelings. Except when it comes to ugly shoes—then I can be ruthless."
+    cam "Pretty much, but don't think you can just be mean for no reason. It takes work to present criticism without cruelty."
+    cam "You have to put aside your biases and sometimes your feelings. Except when it comes to ugly shoes — then I can be absolutely ruthless."
     name "Sounds serious."
-    cam "I try to do it well."
+    cam "I try my best, nothing else will do."
     scene camilldeunidate8c with dissolve
-    cam "And you, what do you do besides asking everyone else questions?"
+    cam "And you, what do you do? Besides asking everyone else question, apparently?"
     name "Me? Nothing special. I go to class, work on my thesis, and try to survive."
     cam "Yeah, in 2 or 3 years you'll be lost if you don't find something to do on the side."
     name "..."
     name "Yeah, I know."
-    cam "Don't make that face. Like I said, if I ever need someone for a lingerie shoot, I'll let you know."
+    cam "Don't make that face. Like I said, if I ever need someone for a underwear shoot, I'll let you know."
     name "Well, maybe I'd be interested."
     cam "You could find work easily."
     cam "People are always looking for affordable models."
@@ -919,7 +948,7 @@ label classcamilledate7:
     "Camille gives a slight smile nad grabs her bag."
     name "Should I pay for the coffee?"
     cam "No, it's ok, don't worry."
-
+    stop background fadeout 0.5
 
     $ classdatecamille_count += 1
     $ class_done = True
@@ -939,7 +968,7 @@ label classcamilledate8:
             "I'd love to":
                 show camillesmiling with dissolve
                 hide camille07 with dissolve
-                name "oh like last time, it would be awesome"
+                name "Oh like last time? That would be great."
                 
                 cam "Yeah, and my friend will be there too."
                 cam "She works on the website with me."
@@ -949,21 +978,21 @@ label classcamilledate8:
                 cam "I mean, I don't know, maybe I did."
                 name "What did you tell her?"
                 cam "Nothing special."
-                cam "Just that you had a cute butt"
-                name "oh ok..."
-                cam "She's cool don't worry.."
+                cam "Just that you had a cute butt..."
+                name "Uhhhhh...."
+                cam "She's cool, don't worry.."
                 "The class passes by slowly."
                 "After two hours of class, everyone leaves."
                 "Finally."
                 $ classdatecamille_count += 1
                 $ class_done = True
                 $ camille_coffeedate_activated = True
-                cam "Come on lets go."
+                cam "Come on, let's go."
                 scene black with dissolve
                 jump camilleuni_date
 
                 
-            "No, i need to study":
+            "No, I need to study":
                 name "No, I need to study."
                 show camille13 with dissolve
                 cam "Wow, you're really taking this student thing seriously."
@@ -994,7 +1023,7 @@ label classcamilledate9:
     name "Not much, just trying to survive this class."
     cam "Hey, would you like to come to my place after class?"
     name "Come to your place?"
-    name "Yeah awesome."
+    name "Yeah, awesome."
     cam "I thought you might like it."
 
     show camille05 with dissolve
@@ -1005,7 +1034,7 @@ label classcamilledate9:
     "The class passes by slowly."
     "After two hours of class, everyone leaves."
     "Finally."
-    $ classdatecamille_count += 1
+    
     $ class_done = True
     jump camillehomedate
 label classcamilledate10:
@@ -1016,18 +1045,18 @@ label classcamilledate10:
     show camille11 with dissolve
     name "Hello!"
     cam "Look who's here."
-    cam "My little pet"
+    cam "My little pet."
     cam "Are you having a good day?"
     name "I... yes, I think so."
-    cam "I knew you'd show up quickly"
-    name "I mean it was fun, i have to admit."
+    cam "I knew you'd show up, can't stay away huh?"
+    name "I mean it was fun, I have to admit."
     name "How did your meeting go?"
     show camillesmiling with dissolve
     hide camille11 with dissolve
-    cam "Great, the guy is interested in what we're doing"
+    cam "Great, our contact is interested in what we're doing."
     cam "It was more about networking than real professional collaboration."
-    cam "But he's someone important."
-    cam "I know how to make myself desirable in these situations"
+    cam "But he's someone important in the fashion world, so I had to impress him."
+    cam "I know how to make myself desirable in these situations."
     name "I bet."
     cam "It's really important to know how to leave your mark in people's minds."
     cam "So they don't forget you."
@@ -1071,7 +1100,7 @@ label classcamilledate11:
     name "I guess."
     cam "I suppose you're ready to be completely mine."
     name "What do you mean?"
-    cam "I mean, you know, you could stay at my place more"
+    cam "I mean, you know, you could stay at my place more."
     cam "I could take care of you."
     show camilleneutral1 with dissolve
     hide camilleneutral2 with dissolve
@@ -1091,7 +1120,7 @@ label classcamilledate11:
 
         "No, I am not ready for that":
             cam "Hmm, that's... unfortunate."
-            cam "But i understand."
+            cam "But I understand."
 
             cam "Well, when you're ready to stop playing games, let me know."
             "The class passes by slowly."
@@ -1182,10 +1211,10 @@ label classdate4:
     est "Hey there."
     name "Hi."
     if estellepuke_done == True:
-        est "You were pretty drunk last time."
-        est "Fortunately I was there"
+        est "Are you any worse for wear? Last time we saw each other you were very drunk."
+        est "Fortunately I was there."
         name "Yeah..."
-        name "I thought about it, and I'm not sure giving me that much milk was necessary"
+        name "I thought about it, and I'm not sure giving me that much milk was necessary."
         est "I was just helping.."
         name "..."
     else:
@@ -1296,7 +1325,7 @@ label classdate6:
     est "Did she cum in your mouth?"
     name "Why would you want to know that?"
     est "I don't know."
-    est "It's just... to get to know you better, i guess.."
+    est "It's just... to get to know you better, I guess..."
 
     "The class drags on slowly."
     "After two hours, everyone finally leaves."
@@ -1349,7 +1378,7 @@ label classdaterandom:
             show samuel
             sam "This class is so boring..."
             name "Yeah, I know what you mean."
-            sam "I'm only here because I need to ."
+            sam "I'm only here because I need to be."
             "Samuel spends the rest of class doodling in his notebook."
             
         elif random_event == 2:
@@ -1501,9 +1530,9 @@ label classemmadate3:
 
     name "I just check my phone till I black out."
     name "And you?"
-    emm "I think of you and give myself a treat."
-    name "Oh."
-    emm "I am joking, don't make that face."
+    emm "I think of you, give myself a treat, and then sleep like a baby."
+    name "Oh. Uhhh..."
+    emm "Relax I'm joking! Don't make that face."
     "Is she though?"
     "The class passes by slowly."
     "After two hours, everyone leaves."
@@ -1564,7 +1593,7 @@ label classemmadate4:
     emm "It doesn't mean I am not listening. It's just a friendly gesture to make you feel comfortable."
     name "Is it supposed to make me feel comfortable?"
     scene handsexy05 with dissolve
-    emm "Try removing it if it bothers you."
+    emm "Try removing it, if it bothers you."
     name "I'm not going to do that, you'll resist and it will be even more embarrassing."
     name "I'll just wait for you to remove it."
     scene handsexy04 with dissolve
@@ -1582,7 +1611,7 @@ label classemmadate4:
     emm "Have you ever had a girlfriend?"
     name "Mh, I do have a girlfriend actually..."
     emm "You've never had a real girlfriend."
-    emm "I mean someone who understands your cravings and knows just how to make you moan."
+    emm "I mean someone who understands your cravings, and knows just how to make you moan."
     emm "Aren't you curious to know what it feels like?"
     name "... I guess..."
     emm "I knew it."

@@ -2,7 +2,7 @@ label partydate:
     
         scene black with dissolve
         "I eat dinner thinking about the party ahead."
-        z_nvl "Hey I have sent you the address"
+        z_nvl "Hey, I have sent you the address"
         z_nvl "See you there!"
         nvl clear
         scene black with dissolve
@@ -12,26 +12,32 @@ label partydate:
         "I grab my phone and wallet, then head out the door."
         scene ericgoingout with dissolve
         pause 0.5
-        "the night is warm and the streets are lively."
+        "The night is warm and the streets are lively."
         scene entryparty with dissolve
+        play background partyambiance volume 2 loop
+        $ renpy.music.set_volume(0.1, delay=0, channel="background")
         "After a short walk through the city streets, I arrive at the party location."
         "The music is already pumping from inside, and I can see people entering the building."
         scene black with dissolve
         "I take a deep breath and ring the doorbell."
         scene entry4 with dissolve
+        $ renpy.music.set_volume(0.5, delay=1.0, channel="background")
+
         "The door opens and I'm greeted by the warm glow of lights and the sound of laughter."
         "I step inside and am immediately hit by the energy of the party."
         "People are chatting, dancing, and having a good time all around me."
         "I look around to see if I can spot any familiar faces."
+        $ renpy.music.set_volume(1, delay=1.0, channel="background")
         show screen vestibulescreen
         call screen vestibulescreen
 
 label partyending:
         scene black with dissolve
         $ party_started = False
+        $ renpy.music.set_volume(0.2, delay=0.5, channel="background")
         "The party is coming to an end..."
-        "Everyone is starting to leave little by little."
-        "A few people who are too drunk have fallen asleep on the couch."
+        "Everyone is starting to depart, until only a few remain."
+        "Some who are too drunk to leave have fallen asleep on the couch."
         "I should go."
         scene endpartydoor with dissolve
         "I walk towards the door, but I hear a voice behind me."
@@ -58,9 +64,11 @@ label zoeypartyend:
         zoey "You look like you’re about to collapse any second now." 
         show zoeysmile with dissolve
         hide zoeysurprise with dissolve
-        "she whispers in my ear"  
-        zoey "Probably because you were too busy greedily taking my cock earlier.."  
+        "She whispers in my ear"  
+        zoey "Probably because you were too busy taking my cock earlier..."  
+        zoey "...like a greedy slut."
         zoey "Nope, you’re definitely coming with me."
+        stop background fadeout 0.5
         jump zoeycominghomeafterparty 
     
     
@@ -68,20 +76,21 @@ label zoeypartyend:
 label isabelleend:
         scene endpartydoor with dissolve
         show isav21 with dissolve 
-        "As I start to leave, Isabelle catches up with me at the door."
+        "As I turn to leave, Isabelle catches up with me at the door."
 
-        isa"Hey, wait up!"
+        isa "Hey, wait up!"
         isa "You're not seriously thinking of walking home alone this late, are you?"
 
         name "I'll be fine, really..."
         isa "Look at you, you can barely stand upright."
-        isa "Plus it's really late and the streets aren't safe."
+        isa "Plus it's really late and the streets aren't safe at this time."
 
         isa "Come on, let get you home."
         name "Are you sure? I don't want to be a bother..."
 
         isa "Don't be silly, it's no trouble at all."
-        isa "I would be an asshole not to help you."
+        isa "I would be an asshole not to help you out."
+        stop background fadeout 0.5
         scene leavingpartywithisa
         "Isabelle takes me by the arm and leads me down the stairs to the street."
         "We walk slowly through the quiet streets, Isabelle's arm wrapped around me for support."
@@ -97,38 +106,10 @@ label isabelleend:
         isa "Good night, see you around."
         name "Good night, Isabelle."
         scene black
-        scene sleeping3e with dissolve
-        "I lay on my bed and fall asleep instantly" 
-        
-        $ class_done = False
-        $ groceries -= 1
-        $ sarah_conv_done = False
-        $ lisa_conv_done = False
-        $ sacha_conv_done = False
-        $ mila_conv_done = False
-        $ linda_conv_done = False
-        $ elise_sagain_done = False
-        if emma_date_started:
-                $ emma_date_done = True
-        $ day_not_over = False
-        $ raver_not_over = False
-        $ day += 1
-        if day_until_new_date : 
-                $ day_until_new_date -= 1
-        if sarah_homedate_done == True:
-                $ elise_cafe = True
-        if sarah_tvdate_done == True:
-                $ sarah_cafe = True
-        if sarahcafe_conv2_done == True:
-                $ sarah_elise_cafe = True
-        scene black with dissolve
+        window hide
         pause
-        scene home00 with dissolve
-        "The next day, I wake up a headache"
-        if day % 7 == 0:
-                jump rentdue
-        show screen homescreen4
-        call screen homescreen4
+        jump justbed
+       
 
 
 label isabellezoeyend:
@@ -150,25 +131,37 @@ label isabellezoeyend:
         show isalookright at Position(xalign=0.8, yalign=0.99) with dissolve
         hide isav21 with dissolve
         "The two girls exchange a look over my head."
-
-        zoey "I'll take him home."
-        isa "Actually, we were about to leave together."
-        show zoeyangry at Position(xalign=0.8, yalign=0.99) with dissolve
-        hide zoeylookingleft with dissolve
-        zoey "Back off.. I am the one who brought him here, so I will take him back."
-        zoey "I know him better, and I care about his well-being."
-        isa "I know him too, Zoey."
-        zoey "Just because he sucked your dick in the toilet doesn't mean you know him.."
-        "I blush a little, people around start looking at us.."
-        zoey "You should just let me handle this."
+        if gender == "male":
+                zoey "I'll take him home."
+                isa "Actually, we were about to leave together."
+                show zoeyangry at Position(xalign=0.8, yalign=0.99) with dissolve
+                hide zoeylookingleft with dissolve
+                zoey "I am the one who brought him here, so I will take him back."
+                zoey "I know him better, and I care about his well-being."
+                isa "I know him too, Zoey."
+                zoey "Just because he sucked your dick in the toilet doesn't mean you know him..."
+                "I blush a little as people around start looking at us..."
+                zoey "You should just let me handle this."
+        else:
+                zoey "I'll take her home."
+                isa "Actually, we were about to leave together."
+                show zoeyangry at Position(xalign=0.8, yalign=0.99) with dissolve
+                hide zoeylookingleft with dissolve
+                zoey "I am the one who brought her here, so I will take her back."
+                zoey "I know her better, and I care about her well-being."
+                isa "I know her too, Zoey."
+                zoey "Just because she sucked your dick in the toilet doesn't mean you know him..."
+                "I blush a little as people around start looking at us..."
+                zoey "You should just let me handle this."
         hide isalookright with dissolve
         show isalookleft at Position(xalign=0.8, yalign=0.99) with dissolve
         
-        isa "Yeah whatever.. I am not gonna make a drama about this"
+        isa "Yeah whatever... I am not gonna make a drama about this"
         "Isabelle rolls her eyes, clearly annoyed by Zoey's assertiveness."
         isa "See you later then."
         name "Bye Isabelle."
         zoey "Yeah, see you later."
+        stop background fadeout 0.5
         jump zoeycominghomeafterparty
 
 
@@ -176,64 +169,67 @@ label isabellezoeyend:
 label zoeycominghomeafterparty:
         scene black with dissolve
         "Zoey takes my arm and leads me out of the apartment, her grip firm but gentle."
-        
+        play music skylineparty volume 2
         scene leavingpartywithzoey with dissolve
         "As we step into the cool night air, I feel a mix of gratitude and confusion."
         if isabelle_date_done == True:
                 "The fact that she knows I went down on Isabelle makes me a bit nervous."
-        "But she seems convinced that I belong to her."
+                "But she seems convinced that I belong to her."
         "We walk slowly through the quiet streets, Zoey's arm wrapped around me for support."
         "The cool night air feels refreshing after the stuffy atmosphere of the party."
         "Our footsteps echo softly on the empty sidewalk."
         scene black with dissolve
         "After walking through the streets for a while, we finally arrive at my place."
+        stop music
         "Zoey climbs the stairs with me and helps me into the apartment."
         "I sit heavily on the bed, exhausted."
         scene zoeyerichome
         zoey "There you go, home sweet home."
-        zoey "It was a fun night"
+        zoey "It was a fun night."
         zoey "I hope we'll do it again sometime."
         name "Yeah me too."
         zoey "I'll let you rest."
         zoey "See you later."
-        name "alright."
-        zoey "good night babe"
-        name "good night.."
-        scene sleeping3e with dissolve
-        "I lay on my bed and fall asleep instantly" 
+        name "Alright."
+        zoey "Goodnight babe"
+        name "Goodnight.."
+        jump justbed
+        # scene sleeping3e with dissolve
+        # "I lay on my bed and fall asleep instantly." 
         
-        $ class_done = False
-        $ groceries -= 1
-        $ sarah_conv_done = False
-        $ lisa_conv_done = False
-        $ sacha_conv_done = False
-        $ mila_conv_done = False
-        $ linda_conv_done = False
-        $ elise_sagain_done = False
-        if emma_date_started:
-                $ emma_date_done = True
-        $ day_not_over = False
-        $ raver_not_over = False
-        $ day += 1
-        if day_until_new_date : 
-                $ day_until_new_date -= 1
-        if sarah_homedate_done == True:
-                $ elise_cafe = True
-        if sarah_tvdate_done == True:
-                $ sarah_cafe = True
-        if sarahcafe_conv2_done == True:
-                $ sarah_elise_cafe = True
-        scene black with dissolve
-        pause
-        scene home00 with dissolve
-        "The next day, I wake up a headache"
-        if day % 7 == 0:
-                jump rentdue
-        show screen homescreen4
-        call screen homescreen4
+        # $ class_done = False
+        # $ groceries -= 1
+        # $ sarah_conv_done = False
+        # $ lisa_conv_done = False
+        # $ sacha_conv_done = False
+        # $ mila_conv_done = False
+        # $ linda_conv_done = False
+        # $ elise_sagain_done = False
+        # if emma_date_started:
+        #         $ emma_date_done = True
+        # $ day_not_over = False
+        # $ raver_not_over = False
+        # $ day += 1
+        # if day_until_new_date : 
+        #         $ day_until_new_date -= 1
+        # if sarah_homedate_done == True:
+        #         $ elise_cafe = True
+        # if sarah_tvdate_done == True:
+        #         $ sarah_cafe = True
+        # if sarahcafe_conv2_done == True:
+        #         $ sarah_elise_cafe = True
+        # scene black with dissolve
+        # pause
+        # scene home00 with dissolve
+        
+        # if day % 7 == 0:
+        #         jump rentdue
+        # show screen homescreen4
+        # call screen homescreen4
 
 
 label endpartydrink10:
+        stop background fadeout 0.5
         scene black with dissolve
         "Suddenly everything becomes blurry..."
         "I feel myself losing consciousness as the alcohol takes over."
@@ -267,18 +263,14 @@ label endpartydrink10:
         jeni "I couldn't just leave you there, so I brought you here."
         name "Oh ok... thanks.."
         
-       
-        
         jeni "I just wanted to make sure you were ok."
-        
-    
         
         name "Thank you. That's really kind of you."
         
         jeni "I... I hope you don't mind. I know we don't know each other that well."
         jeni "But I saw you struggling so I thought I could help."
         name "I really appreciate it."
-        "It seems a bit strange to me that Zoey or Hugo didn't help me..."
+        "It seems a bit strange to me that Zoey or Hugo didn't help..."
 
         jeni "How are you feeling?"
         name "A bit better, I think."
@@ -286,11 +278,11 @@ label endpartydrink10:
         jeni "Oh, are you sure?"
         name "Yeaah.."
         scene jennsayhi3 with dissolve
-        name "Thanks for the help!"
+        name "Thanks for your help, I really mean that!"
         name "See you..."
         jeni "Oh ok.. bye then.."
         "I get up and gather my things, still feeling a bit disoriented."
-        $ zoey_relation_status_text = "I think I missed my chance with Zoey"
+        $ zoey_relation_status_text = "I think I missed my chance with Zoey."
         $ party_started = False
         $ Jenny_end_done = True
         scene black with dissolve

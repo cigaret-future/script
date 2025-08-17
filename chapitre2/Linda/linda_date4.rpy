@@ -6,8 +6,10 @@ label linda4:
         show unilindaout2
 
         show smilingforreal
-        lin "Hello, boy."
-
+        if gender == "male":
+                lin "Hello, boy."
+        elif gender == "fem":
+                lin "Hello, girl."
         name "Hey, what time do you get here? Every time I come, you’re already sitting here."
 
         lin "I’m an early riser. I get up at 8, have coffee, read the news a bit, then head to campus."
@@ -102,10 +104,14 @@ label linda4:
         lin "Jeez, Auntie, it's noon. Time to put on some real clothes."
 
         scene homeview5
-        ana "Well, if you'd told me you were bringing your boyfriend, I would have."
-
-        scene homeviewlinda
-        lin "He's not my boyfriend; I told you we're working on our theses."
+        if gender == "male":
+                ana "Well, if you'd told me you were bringing your boyfriend, I would have."
+                scene homeviewlinda
+                lin "He's not my boyfriend; I told you we're working on our theses."
+        elif gender == "fem":
+                ana "Well, if you'd told me you were bringing your girlfriend, I would have."
+                scene homeviewlinda
+                lin "She's not my girlfriend; I told you we're working on our theses."
 
         name "Oh, don't worry, it's not a problem. I don't mind."
 
@@ -113,8 +119,6 @@ label linda4:
         ana "See? Your friend doesn't mind."
 
         ana "Plus, I'm on vacation. I don't see why I would dress."
-
-        lin ""
 
         scene homeview7
         ana "So, what are you two working on, kittens?"

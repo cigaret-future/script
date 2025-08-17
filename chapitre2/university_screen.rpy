@@ -3,7 +3,7 @@ screen uniscreenlindaout2:
         imagemap:
             ground "unilindaout.png"
             
-            hotspot (9, 1227, 221, 203) action Jump("gardenuni_start2")
+            hotspot (39, 1202, 288, 225) action Jump("gardenuni_start2")
 
 
 
@@ -15,14 +15,14 @@ screen uniscreen2:
                 ground "uni1.jpg"
                 hover "uni1hover.jpg"
                 hotspot (1879, 713, 281, 469) action Jump("lindadate")
-                hotspot (9, 1227, 221, 203) action Jump("gardenuni_start2")
+                hotspot (52, 1150, 324, 262) action Jump("gardenuni_start2")
                 
     elif linda_conv_done == True:
         frame:
             imagemap:
                 ground "unilindaout.png"
-                
-                hotspot (9, 1227, 221, 203) action Jump("gardenuni_start2")
+                hover "unilindaouthover.png"
+                hotspot (39, 1202, 288, 225) action Jump("gardenuni_start2")
     elif linda_conv_done == False and linda_4th_conv_done == True :
             frame:
                 imagemap:

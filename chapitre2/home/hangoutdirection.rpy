@@ -1,6 +1,6 @@
 label hangoutdirection:
     menu:
-        "smoke a cigarette":
+        "Smoke a cigarette":
             if cig_break_count == 0:
                 jump cigbreak1
             elif cig_break_count == 1 and sarahcafe_conv1_done == False:
@@ -14,7 +14,7 @@ label hangoutdirection:
          
         
         
-        "send a text to chloe" if raver_first_conv_done == True and raver_date_done == False:
+        "Send a text to chloe" if raver_first_conv_done == True and raver_date_done == False:
                     if raver_not_over == True:
                         jump raver_date_0
                     elif raver_first_conv_done == True and raver_not_over == False and raver_date_done == False:

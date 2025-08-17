@@ -3,89 +3,93 @@
 label zoeyscene:
     
     
-    "Zoey grabs me by the arm and pulls me onto the bed above her"
-    "She presses me against her breasts"
+    "Zoey grabs me by the arm and pulls me onto the bed above her."
+    "She presses me against her large and soft breasts."
     scene testt
-    zoey "I'll show you how we fuck"
-    name "wait, are you sure?"
-    name "your dick is really big though"
-    zoey "I'll go slow baby"
-    zoey "you're going to have a good time"
+    zoey "I'll show you how we futas fuck."
+    name "Wait, are you sure?"
+    name "Your dick is really big though..."
+    zoey "I'll go slow baby."
+    zoey "You're going to have a good time, trust me."
     scene contreplongederic1
-    "she pushes her glans against my anus, gently caressing, and slowly easing the wet tip inside"
+    "She pushes her glans against my anus, gently caressing my ass."
     scene contreplongederic2
-    "she massages the entrance, making small back and forth movements"
+    "She massages my entrance, making small back and forth movements with the head of her big dick."
     
-    zoey "Your little ass looks so tight"
-    zoey "I'm going to put the tip in"
-    name "oo...ok "
+    zoey "Your little ass looks so tight."
+    zoey "I'm going to put the tip in baby."
+    name "Ooo...ok."
     scene contreplongederic3
-    "she makes me go down on her cock, opening my ass a bit more"
-    "a burning sensation fills my ass, her glans is already very big"
-    "I try to control the movement with my legs, but it takes a huge effort"
+    
+    "She makes me go down on her cock, opening my ass a bit more."
+    "A burning sensation fills my ass, even her glans feels enormous as she starts to penetrate me."
+    "I try to control the movement with my legs, but it takes a huge effort."
     scene contreplongederic2
-    "Zoey tries to make me go down on her glans more and more"
-    "making her dick go in a little more each time"
+    "Zoey tries to make me go down on her glans more and more..."
+    "...making her fat dick go in a little more each time."
     scene contreplongederic3
-    name "ooh oohh..."
+    name "Ooh oohh..."
     scene ericacloseup
-    "I have to rest on her arms and let her do it"
-    zoey "fuck, you are so sexy"
+    "I have to rest on her arms and let her do it."
+    zoey "Fuck, you are so sexy"
     zoey "I can't believe I haven't fucked you yet"
-    zoey "as soon as I saw you I wanted to take you"
-    name "well go slow though"
-    "Zoey presses me against her and kisses me while still moving her dick in my ass"
+    zoey "As soon as I saw you I wanted to take you."
+    name "Please go slowly though, your dick is so bi-ahhhhhhh"
+    "Zoey presses me against her and kisses me while still moving her monster deeper into my ass."
+    play sound zoeykiss volume 1 loop
     scene erickiss1 with dissolve
-    "Her tongue slips into my mouth and grabs mine"
+    "Her tongue slips into my mouth and grabs mine."
     scene erickiss2 with dissolve
-    "She seems to want to penetrate me in every way"
+    "She seems to want to penetrate me in every way."
     scene erickiss1 with dissolve
-    "Her saliva and breath mix with mine"
+    "Her saliva and breath mix with mine."
     
     scene contredeepderika1 with dissolve
-    "With one hand she controls the penetration of her dick"
-    "Making me moan with pleasure every time she makes me go down on her knees"
+    "With one hand she controls the penetration of her dick."
+    "Making me moan with pleasure every time she makes me go down on her knees."
     scene contredeepderika2 with dissolve
-    "Moving my ass back and forth"
+    "Moving my ass back and forth."
     scene contredeepderika1 with dissolve
-    "I try to keep control of my movements, but the position is too hard to maintain"
+    "I try to keep control of my movements, but the position is too hard to maintain."
     
     scene contredeepderika2 with dissolve
-    "I have to let her do it, and focus on my breathing"
+    "I have to let her do it, and focus on my breathing."
     scene frontcowsideeric1 with dissolve
-    zoey "that's it, let yourself go"
+    stop sound
+    play sound zoeyslowfuck volume 1 loop
+    zoey "that's it, let yourself go."
     scene frontcowsideeric2 with dissolve
-    zoey "I'm going to stretch your little ass"
+    zoey "I'm going to stretch your little ass."
     scene frontcowsideeric1 with dissolve
     window hide
     pause
     scene frontcowsideeric2 with dissolve
-    "She has total control over me"
+    "She has total control over me."
     scene frontcowsideeric3 with dissolve
     window hide
     pause
     scene frontcowsideeric2 with dissolve
     "She makes me go down more and more on her knees."
-    name "aahhh"
-    name "please not too fast"
+    name "Aahhh!"
+    name "Please not so fast!"
     scene frontcowsideeric1 with dissolve
     window hide
     pause
     scene frontcowsideeric2 with dissolve
-    zoey "shhh, you are so good"
+    zoey "Shhh baby, you are making me feel so good!"
     scene frontcowsideeric3 with dissolve
-    zoey "It's gonna be ok"
+    zoey "It's gonna be ok, I'm going to look after you."
     scene frontcowsideeric2 with dissolve
     window hide
     pause
     scene frontcowsideeric1 with dissolve
 
-    "Her member, hard as steel, keeps plunging deeper into my tight ass"
-    "I feel her excitement growing with every thrust, her breathing accelerating"
-    scene frontcowsideeric3 with dissolve
+    "Her member, hard as steel, keeps plunging deeper into my tight ass."
+    "I feel her excitement growing with every thrust, her breathing accelerating."
+    
     scene frontcowsideeric1 with dissolve
     zoey "You take my cock so well... I can feel your little ass trembling..."
-    "Despite her dominance, she remains attentive to my reactions, adjusting her rhythm"
+    "Despite her dominance, she remains attentive to my reactions, adjusting her rhythm."
     scene contredeepderika1 with dissolve
     window hide
     pause
@@ -117,7 +121,8 @@ label zoeyscene:
    
     scene firstcowfront3erika with dissolve
     zoey "Shh... you can take it all."
- 
+    stop sound
+    play sound slapsdryslowv2 volume 1 loop
     scene firstcowfront1erika with dissolve
     window hide
     pause
@@ -186,7 +191,10 @@ label zoeyscene:
     window hide
     pause
     scene cowupsideerika2 with dissolve
-    zoey "No. You're going to take all of my cock like a good boy"
+    if gender == "male":
+        zoey "No. You're going to take all of my cock like a good boy"
+    elif gender == "fem":
+        zoey "No. You're going to take all of my cock like a good girl"
     window hide
     pause
     scene cowupsideerika1 with dissolve
@@ -195,7 +203,9 @@ label zoeyscene:
 
     # //accelerate
     scene acceleratezoey3 with dissolve
-   
+    stop sound
+    play sound slowf volume 1 loop
+    play music mediumbreathzoey volume 1 loop
     name "Oh God! "
     "Her rhythm turns wild."
     "Slamming me into her over and over, my struggle meaningless now."
@@ -336,6 +346,46 @@ label zoeyscene:
     
     window hide
     pause
+    scene acceleratezoey1 with dissolve
+    window hide
+    pause
+    
+    scene acceleratezoey2 with dissolve
+    
+    window hide
+    pause
+    scene acceleratezoey1 with dissolve
+    window hide
+    pause
+    
+    scene acceleratezoey2 with dissolve
+    
+    window hide
+    pause
+    scene acceleratezoey1 with dissolve
+    window hide
+    pause
+    
+    scene acceleratezoey2 with dissolve
+    
+    window hide
+    pause
+    scene acceleratezoey1 with dissolve
+    window hide
+    pause
+    
+    scene acceleratezoey2 with dissolve
+    
+    window hide
+    pause
+    scene acceleratezoey1 with dissolve
+    window hide
+    pause
+    
+    scene acceleratezoey2 with dissolve
+    
+    window hide
+    pause
     scene cowsideerika2 with dissolve
     zoey "That's it, let go..." 
     zoey "I'm in control of everything"
@@ -366,7 +416,7 @@ label zoeyscene:
     pause
     "Zoey after a few seconds of rest, starts moving again"
     "She turns me over and with the strength of her arms lifts me up to fuck me like crazy"
-    
+    play sound mediumfuckbed volume 1 loop
     scene frontangle3085 with dissolve
     window hide
     pause
@@ -393,8 +443,8 @@ label zoeyscene:
     pause
     zoey "Fuck..."
     scene frontangle3cum083 with dissolve
-    "En poussant un grognement, elle jouis un peu en moi..."
-    "Je sens du sperme chaud couler de mon cul..."
+    "Letting out a grunt, she cums a little inside me..."
+    "I feel hot cum dripping from my ass..."
     zoey "Fuuuck.. "
     zoey "It's not over.."
     
@@ -504,7 +554,24 @@ label zoeyscene:
     zoey "From the first glance, your eyes told me that you wanted to be filled."
     scene fcum082 with dissolve
     zoey "Don't worry..."
+    
+    play voicebis zoeyvoice1 volume 1 noloop
+    
     zoey "Mommy is gonna fill you up.."
+    scene fcum085 with dissolve
+    window hide
+    pause
+    
+    scene fcum084 with dissolve
+    
+    window hide
+    pause
+    scene fcum083 with dissolve
+    window hide
+    pause
+    scene fcum082 with dissolve
+    window hide
+    pause
     scene fcum085 with dissolve
     window hide
     pause
@@ -515,15 +582,109 @@ label zoeyscene:
     window hide
     pause
     scene fcum082 with dissolve
+    window hide
+    pause
+    scene fcum085 with dissolve
+    window hide
+    pause
+    scene fcum084 with dissolve
+    window hide
+    pause
+    scene fcum083 with dissolve
+    window hide
+    pause
+    scene fcum082 with dissolve
+    window hide
+    pause
+    scene fcum085 with dissolve
+    window hide
+    pause
+    scene fcum084 with dissolve
+    window hide
+    pause
+    scene fcum083 with dissolve
+    window hide
+    pause
+    scene fcum082 with dissolve
+    stop sound
+    stop music
+    play sound fastfuckzoey volume 2 loop
     zoey "Fuck it's coming..."
     "She yanks me onto my stomach, pinning me roughly into the mattress..."
     scene finalzoey4 with dissolve
     zoey "I’m going to pump my cum so deep inside you..."
-
-    
-   
-
- 
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey6 with dissolve
+    window hide
+    pause
+    scene finalzoey5 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey6 with dissolve
+    window hide
+    pause
+    scene finalzoey5 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey6 with dissolve
+    window hide
+    pause
+    scene finalzoey5 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
+    scene finalzoey3 with dissolve
+    window hide
+    pause
+    scene finalzoey6 with dissolve
+    window hide
+    pause
+    scene finalzoey5 with dissolve
+    window hide
+    pause
+    scene finalzoey4 with dissolve
+    window hide
+    pause
     scene finalzoey3 with dissolve
     zoey "you’ll be full of me for a week."
   
@@ -572,6 +733,8 @@ label zoeyscene:
     window hide
     pause
     scene finalzoey5 with dissolve
+    stop sound
+    play sound enfuckzoey volume 1 loop
     zoey "I'm cumming... take it all..."
     zoey "Fuckkkk..."
     scene finalzoey3 with dissolve
@@ -607,13 +770,15 @@ label zoeyscene:
     pause
     scene finalzoey3 with dissolve
     window hide
-    pause     
+    pause
+    stop sound
     scene finalcum with dissolve
     "Zoey pulls out, letting out a sigh of relief."
     "I thinks i am in love with her.."
+    
     scene finalcum2 with dissolve
     zoey "You were amazing..."
-
+    play sound suckslowv1 volume 1 loop 
     scene finalbjzoey1 with dissolve
     zoey "I think now you know who you belongs to..."
     name "Yes..."
@@ -626,6 +791,7 @@ label zoeyscene:
     scene finalbjzoey5 with dissolve
     zoey "Good girl..."
     scene finalbjzoey6 with dissolve
+    stop sound
     name "Zoey..."
     zoey "shht.. dress up, we should go back to the party..."
     $ zoey_date_done = True
@@ -640,4 +806,5 @@ label zoeyscene:
     "I take a few minutes to regain my composure..."
     "After a few minutes, I go out into the hallway."
     $ renpy.pause(2, hard = True)
+    play background partyambiance volume 2 loop
     jump livingroom

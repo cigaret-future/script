@@ -1,19 +1,25 @@
-label gardenuni: 
-    stop music fadeout 2.0
+label gardenuni:
+    stop music
+    
     scene garden1
     "I'm in the garden of the university."
     jump gardenuni_start
 
 label gardenuni_start:
+    
+    
+    play music universitysound volume 1 loop
     scene garden1
     if linda_1st_conv_done == True and marion_1st_conv_done == True:
         "I am getting tired. I should go home and sleep."
     if classe == False:
         menu:
             "Go to the classroom":
+                stop music fadeout 2.0
                 jump class1sttime
             
             "Go to the library":
+                stop music fadeout 2.0
                 if classe == True and linda_1st_conv_done == False:
                     show screen uniscreen
                     call screen uniscreen
@@ -25,20 +31,24 @@ label gardenuni_start:
                     call screen uniscreenlindaout
 
             "Walk around the university":
+                stop music fadeout 2.0
                 scene corrridor13
                 "There aren't many people around. I should go to class first."
                 jump gardenuni_start
 
             "Return to the street":
-                show screen minicarte2
-                call screen minicarte2
+                stop music fadeout 2.0
+                jump map2
+                
     else:
         menu:
             "Go to the classroom":
+                stop music fadeout 2.0
                 "I already had classes."
                 jump gardenuni_start
 
             "Walk around the university":
+                stop music fadeout 2.0
                 if marion_1st_conv_done == False:
                     jump HugandZoeyStart
                 elif marion_1st_conv_done == True:
@@ -46,6 +56,7 @@ label gardenuni_start:
                     jump gardenuni_start
 
             "Go to the library":
+                stop music fadeout 2.0
                 if classe == True and linda_1st_conv_done == False:
                     show screen uniscreen
                     call screen uniscreen
@@ -57,6 +68,7 @@ label gardenuni_start:
                     call screen uniscreenlindaout
 
             "Return to the street":
+                stop music fadeout 2.0
                 show screen minicarte2
                 call screen minicarte2
 

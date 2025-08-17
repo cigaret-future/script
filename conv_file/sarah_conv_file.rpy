@@ -157,7 +157,7 @@ label sarahelisecafe:
     name "Hey, what's up, guys?"
     elise "Hey, [name]."
     sar "Hey, you."
-    scene kisseric
+    scene kissericsarah
     "As I sit down, Sarah wraps her arm around my neck and kisses me on the cheek."
     "I can smell her perfume and feel her breath on my skin."
     "I'm surprised, but I don't move."

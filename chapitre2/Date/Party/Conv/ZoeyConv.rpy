@@ -6,7 +6,7 @@ label zoeyconv_direction:
         scene livingroomarrowflou
         show zoeyparty2 with dissolve
         zoey "So... [name]"
-        zoey "tell me you're not bored!"
+        zoey "Tell me you're not bored!"
         zoey "Come upstairs with me."
         zoey "I want to show you something."
         name "What is it?"
@@ -36,17 +36,17 @@ label zoeyconv:
    
     if isabelle_date_done == True and zoey_warn_done == False:
         show zoeysuspicious with dissolve
-        name "Hey Zoey"
+        name "Hey, Zoey"
         zoey "Hey I was looking to catch you"
         zoey "I saw you going back and forth"
         zoey "What were you doing?"
         name "Me nothing?"
         zoey "Yeaaah..."
         zoey "I saw you talking to Isabelle."
-        zoey "I hope you behaved yourself"
-        name "i don't know what you are talking about.."
-        zoey "sure... play innocent"
-        zoey "anyway"
+        zoey "I hope you behaved yourself."
+        name "I don't know what you are talking about.."
+        zoey "Sure... play innocent..."
+        zoey "But you can think of her as a warm-up..."
         $ zoey_warn_done = True
         hide zoeysuspicious with dissolve
     else:
@@ -114,20 +114,20 @@ label zoeyconv:
     axel "Yes, we were talking about you Zoey."
     zoey "In a good way I hope?"
     axel "We were saying we really like extroverted people like you."
-    zoey "Hehe, I'm here for you my little freaks."
+    zoey "Hehe, I'm here for you, my little freaks."
     zoey "I get it, I'm a bit of a freak in my own way too."
     axel "A social freak."
     zoey "Exactly."
     zoey "I know how to make you shine."
     "Zoey gives me a wink and warmly strokes my shoulder."
-    axel "Zoey the projector."
+    axel "Zoey's just projecting."
     zoey "That's kind of it, yeah."
     zoey "I could really be a talent agent."
     zoey "I know how to make people stand out."
     axel "Whoa, I don't know if that's a good idea."
-    "Those two seem to get along well, and to have known each other for a long time."
-    "Zoey whispers in my ear"
-    zoey "don't go too far"
+    "Those two seem to get along well; they must have known each other for a long time."
+    "Zoey whispers in my ear."
+    zoey "Don't go too far"
     hide zoeyparty with dissolve
     hide axel1 with dissolve
     $ zoeyaxelconv_count += 1
@@ -139,13 +139,13 @@ label axzoeyconv2:
    
     if isabelle_date_done == True and zoey_warn_done == False:
         show zoeysuspicious at Position(xalign=0.65, yalign=0.99) with dissolve
-        zoey "Hey I saw you going back and forth."
+        zoey "Hey, I saw you going back and forth."
         zoey "What were you doing?"
-        name "Me nothing?"
+        name "Me? Nothing?"
         zoey "Yeaaah..."
         zoey "I saw you talking to Isabelle."
         zoey "I hope you behaved yourself."
-        name "i don't know what you are talking about.."
+        name "I don't know what you are talking about.."
         zoey "Sure... play innocent."
         zoey "Anyway.."
         zoey "Do you want me to get you a beer?"
@@ -184,7 +184,7 @@ label axzoeyconv2:
     name "Yeah, you seem close."
     axel "Yeah, but don't worry about me, if she flirts with you, I won't mind."
     name "Oh ok, thanks, but I don't think she's flirting with me."
-    axel "ahah you're cute"
+    axel "Think again."
     "Zoey comes back with a beer, she got herself a drink too."
     show zoeyparty at Position(xalign=0.65, yalign=0.99) with dissolve
     zoey "Here you go, a beer for my favorite little freak."
@@ -221,9 +221,9 @@ label axzoeyconv2:
     if (sebastianjen_date_done == True or sebastianjen_date_started) and (tracymelaniedate_done == True or tracymelaniedate_done_started):
         
         axel "I don't know who put on the music, I think it's a girl, but I don't know her name."
-        zoey "I am going to ask her to disconnect"
+        zoey "I am going to ask her to disconnect."
         zoey "So we can dance a bit."
-        zoey "I think I saw her in the entrance"
+        zoey "I think I saw her in the entrance."
         zoey "I'll go see."
         "Zoey leaves and gives me a little slap on the butt."
         $ zoeyaxelconv_count += 1
@@ -246,9 +246,9 @@ label axzoeyconv3:
     scene livingroomarrowflou
     show zoeysuspicious at Position(xalign=0.65, yalign=0.99) with dissolve
     if music_changed == False:
-        zoey "Did you found the girl?"
-        name "No, not yet"
-        zoey "Come on, chop chop"
+        zoey "Did you find the girl?"
+        name "No, not yet."
+        zoey "Come on [name], pick up the pace!"
         jump livingroom
         
     
@@ -256,13 +256,13 @@ label axzoeyconv3:
     show zoeysuspicious at Position(xalign=0.65, yalign=0.99) with dissolve
     show axel1 at Position(xalign=0.35, yalign=0.99) with dissolve
     if isabelle_date_done == True and zoey_warn_done == False:
-        zoey "Hey I saw you going back and forth."
+        zoey "Hey, I saw you going back and forth."
         zoey "What were you doing?"
         name "Me nothing?"
         zoey "Yeaaah..."
         zoey "I saw you talking to Isabelle."
         zoey "I hope you behaved yourself."
-        name "i don't know what you are talking about.."
+        name "I don't know what you are talking about.."
         zoey "Sure... play innocent."
         zoey "Anyway.."
         if (sebastianjen_date_done == True or sebastianjen_date_started) and (tracymelaniedate_done == True or tracymelaniedate_done_started):
@@ -284,14 +284,17 @@ label axzoeyconv3:
                 name "Alright, I found the girl."
                 name "She told me she disconnected."
     axel "Yeah, her music really wasn't great."
-    axel "I mean who listen to Modulär these days"
+    axel "I mean who listens to Modulär these days?"
     zoey "We're going to change that."
     zoey "I feel like moving a bit."
     axel "Hey, put on Velvet Pulse"
-    zoey "No, I wanted to put on Rhythm."
+    zoey "No, I wanted to put on Solar Rhythm ."
     axel "Ugh... aren't you tired of always playing that?"
     zoey "Never!"
+    $ renpy.music.stop(channel="background")
+    stop background fadeout 0.5
     scene dancing
+    play background partyambiancezoey volume 2 loop
     zoey "There we go, now we're talking."
     "Zoey starts dancing near me."
     zoey "Come on, Axel, move that body!"
@@ -394,6 +397,7 @@ label axzoeyconv3:
     name "Uh, what do you mean?"
     "Zoey leans in close to my ear."
     zoey "We could go upstairs to the bedroom."
+    zoey "I'm sure you can feel how excited I am..."
     name "I don't know, I'd rather stay here a bit longer and enjoy the party."
     "Zoey presses her hand between my legs."
     "I don't really know what to say."
@@ -414,16 +418,16 @@ label axzoeyconv4:
     "Zoey immediately approaches me."
     "She takes me by the waist."
     zoey "Wow you are barely walking babe.."
-    zoey "I think i should take you home.."
+    zoey "I think I should take you home.."
     zoey "People are gonna ask questions."
     menu: 
-        "end the party here":
+        "End the party here":
             jump partyending
-        "stay a bit longer":
-            name "I am ok, i just need to walk a bit."
+        "Stay a bit longer":
+            name "I'm ok, I just need to walk a bit."
             zoey "You sure?"
-            name "yeah don't worry."
-            zoey "Ok if you want to go home, just tell me."
+            name "Yeah don't worry."
+            zoey "Ok, but if you want to go home, just tell me."
             name "Got it."
             jump livingroom
 
@@ -454,7 +458,7 @@ label kitchenzoeyconv:
         show hugolookingtowardthelivingroom at right with dissolve:
             align (0.3, 0.99)
         hide hugolaughsorry2 with dissolve
-        hug "Wait, was it you?"
+        hug "Wait, it was you?"
         zoey "I just wanted to dance, and everyone loved my playlist."
         zoey "I set the mood."
         hug "Wow, I can't decide if I should apologize or just judge you."
@@ -482,7 +486,7 @@ label kitchenzoeyconv:
 
         zoey "Don't even think about setting up in the bedroom."
         hug "Hey, leave me alone, it wasn't my idea."
-        hug "I'll go ask Stephany."
+        hug "I'll go ask Stephanie."
         hide hugolookingtowardthelivingroom with dissolve
 
         name "Is he really going to watch a movie?"
@@ -518,19 +522,21 @@ label kitchenzoeyconv:
 label zoeysscene:
         scene dancingcloserzoey8
         "Zoey leads me upstairs, her hand firmly holding mine."
+        $ renpy.music.set_volume(0.5, delay=1.0, channel="background")
         scene goingroomzoey
         "We reach the top floor, passing a few people chatting in the hallway."
         "Zoey opens the door to a bedroom and pulls me inside."
         "Some people glance at us and laugh as we go in."
         scene discoverroom2
+        $ renpy.music.set_volume(0.1, delay=1.0, channel="background")
         zoey "So..."
         zoey "Finally alone."
         "Zoey closes the door behind us, leaving us in the softly lit room."
         scene discoverroom
-        "She turns on the light"
-        "The room is cozy, with a big bed in the center"
+        "She turns on the light."
+        "The room is cozy, with a big bed in the center."
         scene roomzoeyasking
-        zoey "I wanted to talk to you for a bit."
+        zoey "I wanted to get you alone for a bit."
         zoey "I feel like you've been avoiding me tonight."
         zoey "And I wanted to clear the air between us."
         name "Avoiding you? No, not at all."
@@ -542,17 +548,29 @@ label zoeysscene:
         name "Wait, what?"
         "Zoey grins, her eyes full of mischief."
         zoey "Come on, don't you want to help me make that fantasy come true?"
+        name "Uhhhh...."
+        if isabelle_date_done == True:
+            zoey "I know you sucked off Isabelle earlier, don't act like you aren't up for this."
+            zoey "If you enjoyed Isabelle's dick, you're going to love mine..."
         name "What do you want me to do?"
         zoey "Just close your eyes and let yourself go."
         "Zoey steps closer, her presence overwhelming."
-        "She lowers her pants, revealing her cock, already hard."
+        "She quickly drops her pants to floor."
         scene roomzoeyasking2
+        play sound pantdown volume 2
+        "As I suspected from her bulge on the day I met her, Zoey's dick is massive."
+        "It's not even fully hard yet."
+        "I think I'm in for a night to remember."
         "There's a faint scent of sweat and sex in the air."
         "It fills my senses, and my heart starts racing."
         "I try not to show how flustered I am."
         zoey "See what you do to me?"
         zoey "Come on, baby."
         zoey "Get on your knees."
+        scene black with dissolve
+        
+        window hide
+        pause
         scene startbjzoey1
         "With one hand, she gently pushes me down, making me kneel in front of her."
         "She holds my head and brings it closer to her cock."
@@ -560,6 +578,7 @@ label zoeysscene:
         zoey "Yeah, you'll definitely feel it."
         zoey "Put it in your mouth."
         scene startbjzoey2
+        play sound zoeysuck volume 1 loop
         "I let her guide me and wrap my lips around Zoey's tip."
         "A salty, musky taste fills my mouth."
         "I swirl my tongue gently around her head, tasting her precum."
@@ -579,15 +598,15 @@ label zoeysscene:
         zoey "I hope you can hold your breath."
         zoey "I want to go even deeper inside you."
         scene startbjzoeyv22
-        "With a thrust of her hips, she pushes her penis even further down my throat."
-        "Making me gag and drool suddenly."
+        "With a thrust of her hips, she pushes her penis even deeper into my mouth."
+        "I gag as her cock invades my throat. Drool drips out of the corners of my mouth suddenly."
         scene startbjzoeyv23
-        zoey "Relax"
-        zoey "Just enjoy"
+        zoey "Relax."
+        zoey "Just enjoy."
         scene startbjzoeyv24
-        "Bracing herself with her strong legs,"
+        "Bracing herself with her strong legs..."
         scene startbjzoeyv23
-        "Zoey thrusts into my mouth as if it were just a toy,"
+        "...Zoey thrusts into my mouth as if it were just a toy..."
         scene startbjzoeyv22
         window hide
         pause
@@ -598,42 +617,46 @@ label zoeysscene:
         window hide
         pause
         scene startbjzoeyv23
-        "Making me feel strangely small."
+        "...making me feel strangely small."
         scene startbjzoeyv22
-        "Her cock seem to fill my entire world."
+        "Her giant dick seem to fill my entire world."
         scene startbjzoeyv23 
         "With every thrust, I feel her taking more and more control over me."
         scene startbjzoeyv24
         "I'm completely giving in to her, letting her do whatever she wants."
         scene startbjzoeyv23
         "Even though I'm struggling to breathe, I keep taking her deep in my throat."
+        "She tastes so good."
         scene startbjzoeyv21
         "After a while, I pull back to catch my breath."
         
-        name "Damn..."
+        name "Damn Zoey..."
         name "Your cock..."
         name "feels so good..."
-        zoey "I know."
+        stop sound
         scene black with dissolve
         zoey "Let's get comfortable."
-        "Zoey undresses completely and throws her clothes on a chair"
+        "Zoey undresses completely and throws her clothes on a chair."
         "I imitate her, a little apprehensive"
         name "What if someone catches us?"
-        zoey "Don't worry, i am gonna lock the door."
+        zoey "Don't worry, I'll lock the door."
         zoey "Unless it turns you on.."
-        name "No lock it please.."
+        name "No, lock it please.."
+        play sound closedoortoilet volume 1 noloop
         "Zoey locks the door and approaches me."
+        play sound zoeysuck volume 1 loop
         zoey "Come on, suck me a little more. Then I'll take your ass."
         scene bjzoeyv2
         zoey "That's it.."
         scene bjzoeyv22
-        zoey "suck it you like mean it.."
+        zoey "Suck it you like mean it.."
         scene bjzoeyv23
-        "I take Zoey's cock in my mouth, and I try to suck it as best as I can"
+        "I take Zoey's cock in my mouth, and I try to suck it as best as I can."
         scene bjzoeyv22
-        zoey "I am going to brand you.."
+        "Her dick is so big."
+        zoey "I am going to mark you.."
         scene bjzoeyv2
-        zoey "You won't be able to take another cock after what i am going to do to you"
+        zoey "You won't be able to take another cock after what I'm going to do to you"
         scene bjzoeyv23
         zoey "Your ass, will be begging for more.."
         scene bjzoeyv2
@@ -675,13 +698,47 @@ label zoeysscene:
         scene bjzoeyv2
         window hide
         pause
+        
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv23
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv2
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv23
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv2
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv23
+        window hide
+        pause
+        scene bjzoeyv22
+        window hide
+        pause
+        scene bjzoeyv2
+        window hide
+        pause
         zoey "Come on, let's get started."
         zoey "Come here, [name]."
-
+        stop sound
     
         zoey "Don't be shy, I promise you'll like it."
-
-
-
 
         jump zoeyscene

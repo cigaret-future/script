@@ -104,7 +104,7 @@ label raverconv:
     name "Nice to meet you."
     rav "Thanks for the water and coffee. People are not usually that nice."
     name "No problem."
-    name "I guess I am not used to seeing people looking like dead bodies in the morning."
+    name "I guess I am not used to seeing people looking like the living dead in the morning."
 
     show chloesmile with dissolve
     hide chloelook with dissolve
@@ -117,7 +117,7 @@ label raverconv:
     rav "I am not really what you would call a reliable source."
     rav "But if you want to try it for yourself, I know a few places to visit."
     rav "If you want to have fun."
-    name "Why not."
+    name "Why not?"
     rav "I don't usually do this, but you seem trustworthy."
     rav "I'll give you my number."
     rav "Send me a text if you want to go out."
@@ -127,7 +127,7 @@ label raverconv:
     if gender == "male":
         rav "Thanks for the coffee, man."
     elif gender == "fem":
-        rav "Thanks for the coffee"
+        rav "Thanks for the coffee."
     name "No problem."
     name "Be safe."
     "She leaves the coffee shop, staggering."

@@ -3,7 +3,7 @@ label Mila1_sarahscreen:
     
     show mila00 with dissolve
     name "Hi, do you come here often?"
-    mil "Shhh, I can't talk to you."
+    mil "Do you mind?"
     mil "I'm in the middle of a sentence."
     mil "I'll lose my train of thought."
     name "Oh, sorry."
@@ -28,7 +28,7 @@ label Mila1:
         scene cafe2
 
     if mila_conv_done == True:
-        "I already talk to her today"
+        "I've already talked to her today."
         jump cafedirection
 
     elif mila_count == 0:
@@ -45,7 +45,7 @@ label Mila1:
 label Mila1_0:
     show mila00 with dissolve
     mil "Can't you see I am busy?"
-    name "oh sorry... "
+    name "Oh sorry... "
     $ mila_count += 1
     $ mila_conv_done = True
     hide mila00 with dissolve

@@ -30,7 +30,7 @@ label isabelleconv:
         show test044 with dissolve
         show hugolaugh at right:
             xalign 0.7
-        "The alcool is starting to have it's effect on me.."
+        "The alcool is starting to have an effect on me.."
         name "I'm so happy to be here."
         name "Everyone around me seems so nice."
         hug "Yeah, it's true, it's pretty cool."
@@ -51,24 +51,31 @@ label isabelleconv:
         hug "It's time to ceeeeelebraaate!"
         show isabellegossip with dissolve
         hide test044 with dissolve
-        isa "Come on Hug, you're not that drunk...."
-        isa "I know you. Stop pretending"
-        isa "Don't start acting all bro"
+        isa "Come on Hugo, you're not that drunk...."
+        isa "I know you. Stop pretending!"
+        isa "Don't start acting all bro-like."
         show hugolaughsorry2 at right with dissolve:
             xalign 0.7
         hide hugopartydrunk with dissolve
 
-        hug "I know, but [name] inspires me. I think I'm going to put my good resolutions aside for tonight."
-        isa "Wow, it didn't take much for you."
+        hug "I know, but [name] inspires me. I think I'm going to put my virtues aside for tonight."
+        isa "Wow, it didn't take much did it?."
         show isabellelaugh4 with dissolve
         hide isabellegossip with dissolve
         
         isa "All it takes is a drunk [name] for you to let loose?"
-        hug "Haha, look at him, he looks like he drank a whole barrel of beer."
-        name "Come on guys, I'm not that drunk."
-        name "I'm just a little warm, that's all."
-        isa "You are so drunk, [name]."
-        hug "Come on, stop patronizing him."
+        if gender == "male":
+            hug "Haha, look at him, he looks like he drank a whole barrel of beer."
+            name "Come on guys, I'm not that drunk."
+            name "I'm just a little warm, that's all."
+            isa "You are so drunk, [name]."
+            hug "Come on, stop patronizing him."
+        else:
+            hug "Haha, look at her, she looks like she drank a whole barrel of beer."
+            name "Come on guys, I'm not that drunk."
+            name "I'm just a little warm, that's all."
+            isa "You are so drunk, [name]."
+            hug "Come on, stop patronizing her."
         hug "I'm going to get a drink."
         isa "Get me a drink too, pour me some gin."
         hug "Of course, baby."
@@ -81,7 +88,7 @@ label isabelleconv:
             hide isabellelaugh4 with dissolve
             "Isabelle looks at me and smiles."
             isa "So, [name], are you having fun?"
-            name "a lot!"
+            name "A lot!"
             isa "You know what? I think you've unlocked some kind of party beast mode."
             name "Party beast mode? I like that!"
             name "Rawr! I'm the party beast!"
@@ -99,7 +106,7 @@ label isabelleconv:
             isa "Come here, party unicorn, before you tumble and damage your horn."
             "Isabelle grabs my arm to steady me."
             name "My horn is unbreakable!"
-            hug "Your horn is saturated with alcohol"
+            hug "Your horn is saturated with alcohol."
             isa "Speaking of poor choices, perhaps we should relocate this discussion somewhere he can fly."
             name "Fly? I like the sound of that."
             hug "Let's go!"
@@ -138,7 +145,7 @@ label isabelleconv:
             "I can tell she wants me."
             "We keep dancing, our bodies pressed close."
             "Every now and then, Isabelle brings a drink to my lips."
-            "The alcohol is starting to hit me."
+            "I can feel my inhibitions slipping away."
             scene ericdansingisabelle3
             "Isabelle slides behind me, her hips moving against mine."
             "The alcohol makes me feel bold, uninhibited."
@@ -147,6 +154,8 @@ label isabelleconv:
             window hide 
             pause
             scene isabellebumping3 with dissolve
+            "As she grinds on me, I can feel a bulge growing in her crotch."
+            "Another futa? This town is full of them..."
             window hide 
             pause
             scene isabellebumping4 with dissolve
@@ -155,20 +164,23 @@ label isabelleconv:
             scene isabellebumping3 with dissolve
             window hide 
             pause
-            isa "You know, I have a penis."
-            name "Yeah, I kind of figured."
-            isa "I need to tell you something.."
+            "Isabelle knows she's given it away."
+            isa "You can feel that right?"
+            name "Yeah. I can feel your dick."
+            isa "You don't seem surprised..."
+            name "You aren't the first I've met. You've kept it more quiet than others though."
             scene isabellewhispering
             "She moves closer to my ear."
-            "Her breath on my neck makes me shiver"   
-            isa "There is this things i wanted to do for a while."
+            "Her breath on my neck makes me shiver."
+            isa "You intrigue me [name]."
+            isa "There is this thing I've wanted to do for a while."
             if gender == "male":
                 isa "I've always fantasized about having a guy go down on me at a party."
             
             elif gender == "fem":
                 isa "I've always fantasized about having a girl go down on me at a party."
         
-            "I listen to her silently, holding my breath"  
+            "I listen to her silently, holding my breath."  
             if gender == "male":
                 isa "Especially if I don't know him very well."
             elif gender == "fem":
@@ -182,10 +194,19 @@ label isabelleconv:
             isa "Telling me what he did this summer."
             isa "Or what kind of music he likes to listen to."
             "While speaking, Isabelle continues to move against me."
-            "Pressing closer and closer to me" 
+            "Pressing closer and closer to me."
+            "The bulge in her pants is getting firmer."
+            play music isaproposal volume 3 noloop
             isa "Want to find somewhere quieter?"
             isa "Just the two of us?"
-            name "Yes... That would be nice."
+            menu:
+                "Accept":
+                    pass
+                "Refuse":
+                    name "Maybe later.."
+                    "I free myself from Isabelle"
+                    jump vestibule
+            name "Yes... I could go for that."
             scene livingroomarrowflou
             "Isabelle takes me by the waist and we slip away from the crowd."
             "We go upstairs."
@@ -194,6 +215,8 @@ label isabelleconv:
             "We arrive upstairs."
             "Isabelle leads me into the toilet."
             scene firsteric3
+            play sound closedoortoilet volume 2 noloop
+            $ renpy.music.set_volume(0.1, delay=1.0, channel="background")
             isa "Finally alone."
             name "The toilet? Seriously?"
             "I groan, but the protest dies in my throat as she slams the door shut behind us, caging me in."
@@ -237,7 +260,7 @@ label isabelleconv:
         tra "I remember such specific things when I listen to it."
         tra "It's weird."
         name "Like what?"
-        tra "Like silly things, like what position I was in when I heard the song."
+        tra "Like silly things, like how I was standing when I heard the song."
         tra "Or whether I was having a good day or not."
         tra "It's weird, right?"
         isa "A little, but at the same time I think I get it."
@@ -268,16 +291,16 @@ label isabelleconv:
         tra "Me too, I'm not ready to have kids."
         isa "But I like the idea of being able to have them if I want."
         name "Like, at any moment, you want to be able to reproduce."
-        isa "Exactly. haha"
+        isa "Exactly!"
         isa "Even now."
         "Isabelle gives me a knowing look."
         tra "I think I get it."
         hug "Hey, have you seen that show, it's like a reality TV show where they just party all the time?"
         hug "What's it called again?"
-        hug "It's something like 'temptations room' or something like that."
-        tra "'Temptation room?' haha what is that?"
-        name "'Temptations rules'?"
-        hug "Yeah, that's it, and they're always playing games."
+        hug "It's something like 'The Temptations Room' or something like that."
+        tra "'Temptation Room?' Haha, I like the sound of that! What is it?"
+        name "I've not heard of that either."
+        hug "It's like a game show, but the forfeits are designed to push your innermost desires."
         isa "I can totally see you on that show."
         hug "Yeah, I'd totally fit in. Party, games, drama... that's my thing."
         tra "It's so weird to be filmed all the time."
@@ -307,7 +330,7 @@ label isabelleconv:
         isa "Liar, I'm sure you're in hunter mode right now."
         isa "You're looking for someone to take home."
         name "Are you talking about yourself?"
-        isa "ahahah"
+        isa "Ahahah"
         isa "I'm not really in the mood to bring someone home tonight."
         isa "I have other ideas."
         name "Like what?"
@@ -315,20 +338,20 @@ label isabelleconv:
         name "Are you going to try to hit on me?"
         isa "Pff... you're not that great."
         name "Oh really?"
-        isa "ahah, I'm kidding."
+        isa "Ahah, I'm kidding."
         isa "You're cute."
-        isa "You have a nice butt"
+        isa "You have a nice butt."
         name "Thanks, I guess."
         isa "Don't you have a girlfriend?"
         name "Yeah, well, it's complicated."
         name "She lives in my old town."
         name "We talk from time to time by message."
-        isa "That's complicated."
+        isa "Long-distance relationships never work."
         isa "Aren't you afraid she'll cheat on you?"
         name "No, strangely enough."
-        isa "Maybe you'll be the one to cheat on her, haha."
-        name "We'll see."
-        isa "ahahah."
+        isa "Maybe you'll be the one to cheat on her..."
+        name "I'm not even sure we agreed to exclusivity in the first place."
+        isa "Interesting..."
         tra "What are you two talking about?"
         isa "Nothing, nothing, we were just talking about relationships."
         hug "Hey Isabelle, do you remember the guy who used to play piano at college?"
@@ -359,12 +382,12 @@ label isabelleconv:
         tra "I'm a little drunk too."
         tra "I hope I won't say too many stupid things."
         
-        name "Don't worry. You are not stupid."
+        name "Don't worry. We'll blame it on the alcohol."
         tra "Thanks."
-        "Isabelle comes back to me, taking me by the waist again"
-        isa "Hey, can i tell you something?"
+        "Isabelle comes back to me, taking me by the waist again."
+        isa "Hey, can I tell you something?"
         name "Of course, what's up?"
-        isa "You know, I have a penis."
+        isa "You know I'm a futa right?"
         name "Yeah, I kind of figured."
 
         if gender == "male":
@@ -394,9 +417,9 @@ label isabelleconv:
         "Hugo starts mocking the neighbors who ask him to be quieter."
         hug "Hey, you shut up, we're having a party here!"
         hug "If you don't like it, go to bed!"
-        isa "omg Hugo shut up hahaha"
+        isa "Oh my God, Hugo shut the fuck up!"
         isa "We won't be able to come back here after this."
-        hug "He started it! He told me to 'shut up'!"
+        hug "He started it! He told me to 'pipe down'!"
         isa "I hope she didn't hear us."
         "Isabelle glances into the kitchen."
         hug "Don't worry, she's probably too busy with her boyfriend."
@@ -441,14 +464,14 @@ label isabelleconv:
         name "So, are you dating Melanie?"
         tra "What? No, not at all..."
         name "It's just that you two seem close."
-        "Tracy looks uncomfortable"
+        "Tracy looks uncomfortable."
         tra "Ah, no, we're just friends..."
         name "Close friends?"
         tra "Yeah, let's say that."
         tra "Close friends..."
         tra "But I'm not in love with her."
         tra "Well..."
-        name "Oh, so you're really close close friends then."
+        name "Oh, so you're really close friends then."
         name "Haha, I didn't get that."
         tra "Yeah well, it's complicated."
         name "You don't have to tell me if you don't want to."
@@ -462,20 +485,20 @@ label isabelleconv:
         name "Haha, yeah, I get it, don't worry."
         "Suddenly Tracy turns to me and looks me straight in the eyes."
         "She moves closer to me and kisses me."
-        scene kisseric
+        scene kisstracy
         "I'm surprised, but I don't pull away."
         "I feel her soft lips against mine, and I let myself get carried away by the moment."
         "Tracy pulls back and looks at me, a shy smile on her lips."
-        scene kisseric2
+        scene kisstracy2
         tra "Sorry, I just wanted to kiss you."
         name "Oh, uh, no problem."
         tra "It's the alcohol."
         tra "I'm not usually like this."
         name "What do you mean, not usually like this?"
-        tra "ahah, you know."
-        scene kisseric
+        tra "Ah, you know."
+        scene kisstracy
         "Tracy kisses me again."
-        tra "I'm so drunk ahah"
+        tra "I'm so drunk."
         name "It's okay."
         "I don't mind."
         "As she kisses me, I feel a pain in my lower belly."
@@ -518,7 +541,7 @@ label isabelleconv:
                 $ isabelle_proposal_refused = True
                 jump tracydate
             "Let her do it (I know where this is going)":
-                
+                play sound closedoortoilet volume 1 noloop
                 jump isabelledate
 
             
@@ -598,35 +621,35 @@ label isabelleconv:
         show isabelleteasing with dissolve
         hide isabellegossip with dissolve
 
-        isa "Yes that's what i am saying Hugo.."
+        isa "Yes that's what I'm saying Hugo, you cretin."
         hug "Wooww..."
-        hug "you are so close minded..."
-        hug "It might even be oppressive for some people"
+        hug "You are so close-minded..."
+        hug "It might even be oppressive for some people."
         hug "Have you think about twins that date each other?"
         show isabellesmug with dissolve
         hide isabelleteasing with dissolve
         isa "I am not saying this should be illegal."
-        hug "I am going to make a post on twitter about this."
-        hug "To say how close minded you are."
-        isa "shut up, i am not."
-        isa "Do your post, i don't care."
+        hug "I am going to make a post on Twitter about this."
+        hug "To say how close-minded you are."
+        isa "Shut up, I am not. I just don't think you should fuck your sibling!"
+        isa "Do your post, everyone knows you're a moron anyway."
         hug "I will..."
         show hugorealizingsomething at right with dissolve:
             xalign 0.8
         
         hide hugopowerfull with dissolve 
-        hug "'Isabelle thinks that twins that dated eachother should be in prison'"
-        isa "Why not tortured will you at it."
-        hug "'And tortured'"
-        isa "Sure"
+        hug "'Isabelle thinks that twins that date one another should be in prison'."
+        isa "It's called incest Hugo, you complete ass."
+        hug "'And she called me a complete ass'."
+        isa "Because you are."
         name "You guys are funny."
         
-        isa "Should'nt we be dancing instead of talking non sense?"
+        isa "Shouldn't we be dancing instead of talking complete nonsense?"
         show hugolookingtowardthelivingroom at right with dissolve:
             xalign 0.8
         hide hugorealizingsomething with dissolve
-        hug "Yeah that's true."
-        hug "But i feel like drinking a bit more before."
+        hug "Yeah, that's true."
+        hug "But I feel like another drink is in order."
         show isabelleteasing with dissolve
         hide isabellesmug with dissolve
         
@@ -646,7 +669,7 @@ label isabelleconv:
         hug "So [name], what kind of people are you looking for here?"
         name "I don't know, I guess I'm just looking to meet new people."
         hug "Yeah, but do you have a type?"
-        name "hmm."
+        name "Hmm."
         name "I guess I like... confident people."
         hug "Confident people, huh?"
         show isabelleteasing with dissolve
@@ -660,10 +683,16 @@ label isabelleconv:
         hug "Yeah, you're in luck, because I'm the most confident person I know."
         hug "Never met someone as confident as me."
 
-        name "ahahah I think you know I am not gonna date you."
+        name "I think you know I am not gonna date you."
+        name "I'm not into narcissists."
         show hugoplanningsomething at right with dissolve:
             xalign 0.7
         hide hugolookintatthesky with dissolve
+        
+        if gender == "male":
+            isa "Sick burnnnnn! Get wrecked Hugo!"
+        else:
+            isa "Sick burnnnnn! She got you good Hugo!"
         hug "Why not?"
         hug "Like I said, most confident person in the room."
         name "I'd rather we just be friends, Hugo."
@@ -681,21 +710,26 @@ label isabelleconv:
         hug "I thought we were going to be the new power couple of the century."
         show isabellelaugh4 with dissolve
         hide isabelleteasing with dissolve
-        isa "You are not his type."
-        isa "He likes people who are more... how can I put it... less weird."
+        isa "You're not his type."
+        isa "He likes people who are more... how can I put it... less of an ass."
         hug "Like you?"
         show isabelleneutral3 with dissolve
         hide isabellelaugh4 with dissolve
-        isa "I mean, I am weird too in some ways."
-        name "We are all weird in our own way."
-        isa "But I think I am weird in a good way."
+        isa "I don't know actually."
+        isa "I mean, I can be ass too, in some ways."
+        if gender == "male":
+            isa "But I think he likes people who are... different."
+        elif gender == "fem":
+            isa "But I think she likes people who are... different."
+        name "We are all different in our own way."
+        isa "But I think I am different in a good way."
         show isabelleteasing with dissolve
         hide isabelleneutral3 with dissolve
         isa "If you know me enough, it can become enjoyable."
         show hugorealizingsomething at right with dissolve:
             xalign 0.7
         hide hugolaughsorry2 with dissolve
-        hug "wow that sounds interesting."
+        hug "Wow. Now that does sound interesting."
         hug "You're hiding things from me, Isa."
         isa "If only you knew..."
         isa "Maybe [name] will discover them tonight."
@@ -704,7 +738,7 @@ label isabelleconv:
         hide hugorealizingsomething with dissolve
         hug "Oh oh..."
         hug "You are in trouble."
-        name "ahah I don't mind."
+        name "Ahah I don't mind."
         $ isabelleconv_count += 1
         jump vestibule
     
@@ -717,43 +751,47 @@ label isabelleconv:
         show test044 with dissolve
         "Isabelle steps closer, close enough that I can smell her perfume."
         isa "Don't mind Hugo.. he is just..."
-        isa "He is just in a mood to joke about everything."
-        name "Yeah, he's funny"
-        isa "yes.. "
-        isa "So you are new here in this city.. "
+        isa "He just likes to joke about everything."
+        isa "I don't think he can ever take anything seriously."
+        name "Yeah, but he's funny though."
+        isa "Uh-huh, its his one redeeming feature..."
+        isa "So, you are new here in this city.. "
         name "Yeah, I just moved here."
         name "It's a bit overwhelming, I'm not gonna lie."
-        name "I'm trying to find my bearings"
-        isa "Yeah life in the city can be intense."
+        name "I'm trying to get my bearings."
+        isa "Yeah life in this city can be intense."
         isa "All these people..."
         isa "When I arrived here, I thought the same thing"
-        name "and people have a very fluid way of approaching relationships."
-        isa "Yes"
+        name "People I've met here have a very fluid way of approaching relationships."
+        name "I grew up in a small-town with more traditional values."
+        name "It's much quicker and more casual here."
+        isa "Yes, I found the same."
         isa "But you get used to it quickly."
         isa "It's a matter of rhythm."
-        name "Yeah, rhythm I see"
+        name "I think I get you."
         isa "You have to be with people who put you in the rhythm."
         isa "And then it all flows by itself."
-        name "Yeah, for now I feel like I have acquaintances that are a bit scattered."
-        isa "It can be just one person too.."
+        name "Yeah, for now I feel like I have acquaintances, but no real friends."
+        isa "You don't need many friends, you just need one person."
         isa "You know, sometimes all it takes is a somewhat revealing moment."
-        isa "And you integrate the rhythm."
-        isa "Just let you go.."
+        isa "And from them, you pick up the rhythm..."
+        isa "...and then you can let it all go."
         show isabelleteasing with dissolve
         hide test044 with dissolve
         isa "I'll show you if you want."
         name "You're going to show me?"
-        isa "Yes"
-        name "What are you going to show me?.."
-        isa "ahahah.."
-        isa "You are asking too many questions"
+        isa "Yes."
+        name "What are you going to show me?"
+        isa "Ahahah.."
+        isa "You are asking too many questions [name], what did I tell you about the rhythm?"
         "She lightly touches my arm while speaking."
+        play sound isavoicea volume 2 noloop
         isa "Let's just say I'd like to get to know you better."
         "Her hand lingers on my arm a moment longer than necessary."
         name "What do you want to know?"
         isa "Things.."   
-        isa "You have decide to making this hard on me do you?"
-        name "ahahah.. sorry"
+        isa "You gotta stop overthinking this [name]."
+        name "...sorry"
         show isabellesmile with dissolve
         hide isabelleteasing with dissolve
         isa "Don't be sorry, just let me take the lead."
@@ -762,12 +800,12 @@ label isabelleconv:
             xalign 0.7
         hug "Hey guys, what are you talking about?"
         "Hugo comes back from the kitchen with a drink in hand."
-        "Isabelle steps back a little from me and glances at Hugo"
+        "Isabelle steps back a little from me and glances at Hugo."
         show isalookleft with dissolve
         hide isabellesmile with dissolve
         $ isabelleconv_count += 1
-        isa "oh you know.. just a nice chill conversation between the two of us.."
-        isa "..that you just interrupted."
+        isa "Oh you know.. just a nice chill conversation between the two of us.."
+        isa "..that you just interrupted, you jerk!"
         jump vestibule
 
 
@@ -799,13 +837,13 @@ label isabelleconv:
         show isabellelaugh3 with dissolve
         hide test044 with dissolve
         isa "Like you asking the girl living here if she want to party with us."
-        hug "Oh wow, that would be so awkard."
+        hug "Oh wow, that would be so awkward."
         show hugoserious at right with dissolve:
             xalign 0.7
         hide hugorealizingsomething with dissolve
 
         isa "Come on, we know it's just for the game."
-        name "Don't worry Hugo, We know you are cooler than her."
+        name "Don't worry Hugo, we know you are way cooler than her."
         hug "..."
         show hugolaugh at right with dissolve:
             xalign 0.7
@@ -814,29 +852,30 @@ label isabelleconv:
         hug "But like, what do I say to her?"
         hug "'Hi, do you want to party with us?'"
         hug "'Hi do you want to play card games with us?'"
-        isa "whatever, we don't care, tell her we're so happy to be here"  
-        isa "and that we hope to spend some time with her."
+        isa "Whatever, we don't care, tell her we're so happy to be here..."  
+        isa "...and that we hope to spend some time with her."
         show hugoserious at right with dissolve:
             xalign 0.7
         hide hugolaugh with dissolve
 
         hug "That's boring.."
-        hug "Maybe I should just ask her how her daddy got so rich..."
-        isa "Or that you want to form the power couple of the century with her."
+        hug "Maybe I should just ask her how her Daddy got so rich..."
+        isa "Or maybe tell her that you want to form the power couple of the century with her?"
+        isa "Go down on one knee, just in case."
         show hugolookingtowardthelivingroom at right with dissolve:
             xalign 0.7
         hide hugoserious with dissolve
-        
-        hug "ok fuck it... i'll find something when i'll be in front of her"
+        hug "Hahaha very funny Isabelle!"
+        hug "Ok fuck it... I'll find something to say when I see her."
         hug "She might even accept."
-        hug "Wish me good luck."
-        "Hugo walks away toward his mission."
+        hug "Wish me luck!"
+        "Hugo walks away, a man on a mission."
         hide hugolookingtowardthelivingroom with dissolve
         
         show isabelleteasing with dissolve
         hide isabellelaugh3 with dissolve
         
-        isa "Finally, he's gone"
+        isa "Finally, he's gone!"
         
         name "You wanted to get rid of him?"
         isa "Not really, but I wanted to talk to you alone for a moment."
@@ -849,7 +888,10 @@ label isabelleconv:
         show isabellelaugh4 with dissolve
         hide isabelleteasing with dissolve
         isa "See? That's exactly what I mean."
-        isa "Most guys would already be trying to impress me or something."
+        if gender == "male":
+            isa "Most guys would already be trying to impress me or something."
+        else:
+            isa "Most girls would already be trying to impress me or something."
         name "Should I be trying to impress you?"
         show isabellegossip with dissolve
         hide isabellelaugh4 with dissolve
@@ -892,9 +934,9 @@ label isabelleconv:
         hug "I mean she just said that she was having fun and that she would join us later."
         hug "It wasn't too weird."
         hug "She was actually kinda happy that I asked her."
-        isa "See? We told you that you were the cooler guy in here."
+        isa "See? We told you that you were the coolest guy in here."
         isa "What did you ask her?"
-        hug "I just said 'Nice party, I hope you'll make us visit your palace.'"
+        hug "I just said 'Nice party, I hope you'll let us come back.'"
         hug "She wanted to know if we were having fun."
         isa "And what did you tell her?"
         hug "That we were having a blast, obviously."
@@ -912,7 +954,7 @@ label isabelleconv:
         hide isabellesmile with dissolve
         isa "Oh boy"
         hug "I dare you to go flirt with that guy over there."
-        isa "the guy by the window?"
+        isa "The guy by the window?"
         hug "Yeah, the one with the blue shirt."
         show isabelleneutral2 with dissolve
         hide isabellegossip with dissolve
@@ -923,17 +965,17 @@ label isabelleconv:
         hug "Look at her, 'too easy'.."
         hug "Bring back his number."
         isa "What is this? A pickup artist competition?"
-        isa "You watch too much youtube.."
+        isa "You watch too much brainrot on YouTube.."
         show hugolaughsorry2 at right with dissolve:
             xalign 0.7
         hide hugolaugh2 with dissolve
-        hug "Just do it instead if talking."
+        hug "Instead of talking a good game, go ahead and play one!"
         isa "Okay, okay, I'll do it."
         show isabellegossip with dissolve
         hide isabelleneutral2 with dissolve
         isa "Fuck... Why did I propose this stupid game.."
         hide isabellegossip with dissolve
-        "Isabelle walks away toward her mission"
+        "Isabelle walks away toward her mission."
         hug "Look at her go..."
         name "Do you think she'll actually get his number?"
         show hugolaughsorry at right with dissolve:
@@ -948,7 +990,7 @@ label isabelleconv:
         hide hugolaughsorry
         hug "Would you date her?"
         name "Me? Yeah, why not."
-        hug "Haha, you two would make a cute couple."
+        hug "You two would make a cute couple."
         name "Maybe I should ask her out..."
         hug "Dude... If she doesn't make a move on you first, I'd be impressed."
         hug "Unless she manages to snag that guy instead."
@@ -972,7 +1014,7 @@ label isabelleconv:
             xalign 0.8
         hide hugopowerfull with dissolve
         hug "What? No way."
-        hug "What is it then?"
+        hug "Where is it then?"
         isa "You think I memorized it? I put it in my phone, dummy."
         hug "Show us."
         isa "Geez, fine, look."
@@ -1037,7 +1079,7 @@ label isabelleconv:
             name "..."
         else:
             name "Hey!"
-            est "what's up?"
+            est "What's up?"
             name "Just saying hi. Are you having fun?"
             est "Yeah sure, I feel like you have something to say.. "
             name "..."
@@ -1049,7 +1091,7 @@ label isabelleconv:
                     hide esther12 with dissolve
                     est "What?"
                     name "The music.. don't you think it's..."
-                    name "nevermind"
+                    name "Never mind."
                     est "Do I look like someone who would dance to this garbage?"
                     name "Come on, it could be fun. Just one song."
                     est "Fun? You have a weird definition of fun."
@@ -1063,13 +1105,11 @@ label isabelleconv:
                     hide esther12 with dissolve
                     name "Would you like to dance with me?"
                     est "Dance with you?"
-                    est "No, I am ok."
-                    est "Thanks for asking."
-                    name "You're welcome."
+                    est "No thanks. I'm good here."
                     hide esther15 with dissolve
                 
-                "Fair maiden, might I humbly beseech thee to honor me with thy gracious presence upon the dance floor?":
-                    name "Fair maiden, might I humbly beseech thee to honor me with thy gracious presence upon the dance floor?"
+                "Fair maiden, might I humbly beseech thee to honor my good self with thy gracious presence upon yonder dance floor?":
+                    name "Fair maiden, might I humbly beseech thee to my good self with thy gracious presence upon yonder dance floor?"
                     show esther15 with dissolve
                     hide esther12 with dissolve
                     est "What did you just say?"
@@ -1086,14 +1126,14 @@ label isabelleconv:
                     
                     est "Well..."
                     est "If other people start dancing, maybe I'll consider honoring your invitation."
-                    name "Oh ok, i'll take that."
-                    name "thanks"
+                    name "Oh ok, I'll take that."
+                    name "Thanks"
                     name "We'll catch up later then."
-                    est "See you later, fair maiden."
+                    est "Until the next, fair maiden!"
                     hide esther15 with dissolve
 
             scene vestibulearrowflou with dissolve
-            "I go back to Hugo and Isabelle"
+            "I go back to Hugo and Isabelle."
             show hugolaugh at right with dissolve:
                 xalign 0.7
             show isabellelaugh4 with dissolve
@@ -1102,15 +1142,15 @@ label isabelleconv:
             name "She said yes.."
             hug "Really?"
             name "Yeah, it's just that she wants other people to dance first."
-            name "But after she'll dance with me."
-            hug "ahahah."
+            name "But after that, she'll dance with me."
+            hug "Ahahah."
             isa "We saw her reaction from here."
             isa "You are not gonna make us believe that she said yes."
             name "No, I swear."
             isa "Anyway, we got what we wanted."
-            hug "It was really funny [name]"
-            hug "thanks for that."
-            hug "But you pulled it off! Respect."
+            hug "It was hugely entertaining, [name]."
+            hug "Thanks for that."
+            hug "But you did anyway! Mad respect."
             isa "Yeah, I didn't think you would actually do it."
             isa "But you did."
             isa "Cheers!"
@@ -1125,7 +1165,7 @@ label isabelleconv:
             hide isabellelaugh4 with dissolve
 
             isa "I guess it's all what left to do."
-            hug "Lets grab some beer"
+            hug "Let's grab some beer."
             scene black with dissolve
             "We crack open a couple of beers in the kitchen and talk for a while."
             "As we talk, I keep drinking without really noticing."
@@ -1236,7 +1276,7 @@ label isabelleconv:
             isa "You look like you need to let off some steam."
             show hugov2 at right:
                 xalign 0.7
-            hug "Come on let's go!"
+            hug "Come on, let's go!"
             "We head toward the living room, Isabelle holding me by the waist, pretending to support me."
             "She takes the opportunity to slip a hand under my shirt."
             scene hugodancingalone
@@ -1293,7 +1333,7 @@ label isabelleconv:
             isa "I need to tell you something.."
             scene isabellewhispering
             "She moves closer to my ear."
-            "Her breath on my neck makes me shiver"   
+            "Her breath on my neck makes me shiver."   
             
             if gender == "male":
                 isa "You know this things i told you earlier about a guy going down on me at a party."
@@ -1312,6 +1352,7 @@ label isabelleconv:
             isa "Just the two of us?"
             name "Yes... That would be nice."
             scene livingroomarrowflou
+            $ renpy.music.set_volume(0.5, delay=1.0, channel="background")
             "Isabelle takes me by the waist and we slip away from the crowd."
             "We go upstairs."
             isa "Haha, watch out not to fall."
@@ -1319,6 +1360,8 @@ label isabelleconv:
             "We arrive upstairs."
             "Isabelle leads me into the toilet."
             scene firsteric3
+            play sound closedoortoilet volume 1 noloop
+            $ renpy.music.set_volume(0.1, delay=1.0, channel="background")
             isa "Finally alone."
             name "The toilet? Seriously?"
             "I groan, but the protest dies in my throat as she slams the door shut behind us, caging me in."

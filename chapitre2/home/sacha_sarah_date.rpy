@@ -1,8 +1,8 @@
 label sacha_sarah_date:
     
     "Someone knocks on the door."
-    "I put on a shirt and go opening the door."
-    "Its sacha."
+    "I put on a shirt, and go and open the door."
+    "Its Sacha."
     scene opendoorsacha
     sac "Hey, do you have a phone charger?"
     name "Hmm, I think so, but I'm not sure if I have two."
@@ -15,10 +15,10 @@ label sacha_sarah_date:
     "He enters without waiting for an invitation."
     name "Make yourself at home..."
     scene sachawoweric
-    sac "Oh, your place is cool. Did you decorate it?"
+    sac "Oh, your place is neat. Did you decorate it?"
     name "No, it's a furnished apartment. The landlord did the decorating... I guess."
-    sac "Yeah, it definitely has that downtown building vibe."
-    name "Yeah, I need to add a personal touch."
+    sac "Yeah, it definitely has that urban vibe."
+    name "I think I need to add a personal touch though."
     sac "Do you want to borrow some posters?"
     sac "I'll lend you one in exchange for a charger."
     name "No, thanks. I'll find my own style."
@@ -37,7 +37,7 @@ label sacha_sarah_date:
     sac "You're a student, right?"
     name "Yeah, in art history."
     sac "Lucky you, enjoy these years."
-    "sacha sits on the couch"
+    "Sacha sits on the couch"
     scene chattingeric
     name "Do you work?"
     sac "Yeah, unfortunately..."
@@ -68,20 +68,20 @@ label sacha_sarah_date:
     name "What?"
     scene sachagetcomputereric
     
-    sac "Wait, can i use your computer?"
+    sac "Wait, can I use your computer?"
     name "Yeah, go ahead."
     name "what do you want to do?"
     scene sachamusiccloseup
     sac "I want to check something."
     name "Ugh, you're silly... stop it."
-    sac "I'm going to reconcile you both"
+    sac "I'm going to reconcile you both."
     name "No, but she wasn't mad."
-    sac "There's this song I really want to listen to"
+    sac "There's this song I really want to listen to."
     sac "how do you turn up the volume?"
     
     sac "There we go."
-    name "Come on, she is probably already sleeping"
-    sac "she better not"
+    name "Come on, she is probably already sleeping."
+    sac "She better not"
     
     scene sachadancing1
     "He gets up to open the window."
@@ -148,7 +148,7 @@ label sacha_sarah_date:
     sac "I have work tomorrow too, what do you think?"
     sar "Yeah, you’ll be folding shirts."
     sac "Yeah, that’s work too."
-    "sarah takes the laptop and stops the music."
+    "Sarah takes the laptop and stops the music."
     stop music
     scene sarahcloseup
     sar "You guys are such kids. Am I the only responsible one here?"
@@ -160,23 +160,29 @@ label sacha_sarah_date:
     sac "Are you really going to play mom now?"
     sar "It can't hurt."
     sar "Someone has to keep an eye on you guys."
-    
-    sar "Come on, leave him alone. Don't you want to go home?"
-    sac "Am I not allowed to visit my neighbors anymore?"
-    sar "You just want to cause trouble."
-    sar "Come on, leave him alone"
+    if gender == "male":
+        sar "Come on, leave him alone. Don't you want to go home?"
+        sac "Am I not allowed to visit my neighbors anymore?"
+        sar "You just want to cause trouble."
+        sar "Come on, leave him alone"
+    elif gender == "fem":
+        sar "Come on, leave her alone. Don't you want to go home?"
+        sac "Am I not allowed to visit my neighbors anymore?"
+        sar "You just want to cause trouble."
+        sar "Come on, leave her alone"
     scene sarahpushsacha
     sac "Okay, okay, I didn't know you lived here too. Anyway, I just came to charge my phone."
     sar "Sure."
-    "I watch them amused by their interaction. They seem like brother and sister."
-    "sacha takes his phone and opens the door."
+    "I watch them, amused by their interaction. They seem like brother and sister."
+    "Sacha takes his phone and opens the door."
     sac "And you? Are you staying?"
     sar "I'm making sure you actually leave."
     sac "Alright, good night then. I see I'm intruding."
-    sar "Yeah, and buy a charger."
-    name "See you, sacha."
-    "sarah stays in the apartment with me."
+    sar "Yeah, now go buy a charger."
+    name "See you, Sacha."
+    "Sarah stays in the apartment with me."
     scene sarahericfinal2
+    "As she stands there, leaning against the wall in her loungewear, it's apparent just how much taller Sarah is then me."
     sar "Jeez, I really have to keep an eye on him."
     name "I told him not to play the music too loud."
     name "I knew it would bother you."
@@ -188,6 +194,8 @@ label sacha_sarah_date:
     sar "You'll get to see other sides of my personality."
     sar "I'm not just the responsible mom."
     sar "Even if some people might like that."
+    "I struggle not to stare at her crotch."
+    "She's hung for sure."
     name "Yeah, don't worry, I don't see you as the boring person."
     name "Sacha seems a bit extreme even for me."
     sar "He is a mess."
@@ -197,7 +205,7 @@ label sacha_sarah_date:
     name "He basically rushed into my apartment and started analyzing my decor."
     sar "Wow, he's not shy."
     sar "Anyway, I should go back home. I didn't throw him out to take his place."
-    sar "I'm going to become the caretaker of this building."
+    sar "I'm going to become the caretaker of this building at this rate."
     name "Don't worry, I wasn't going to sleep just now, unlike some."
     sar "Come on, you don't really want me here, do you?"
     name "I don't mind, really."

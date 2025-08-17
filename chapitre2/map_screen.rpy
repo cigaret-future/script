@@ -1,6 +1,7 @@
 label map3:
+    stop background fadeout 0.5
     
-    play music "music/skyline.mp3" fadein 1 volume 0.2 loop
+    play music "music/skyline.mp3" fadein 1 volume 0.5 loop
     show screen minicarte3 with dissolve 
     call screen minicarte3 
 

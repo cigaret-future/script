@@ -127,7 +127,8 @@ label Barmaid2:
                 scene smallcoffe
                 show text "-3$" at Move((0.5, 0.6), (0.5, 0.5), 2.0) with dissolve
                 hide text with dissolve
-                $ money -= 3 
+                $ money -= 3
+                play sound drinkcoffee volume 1 noloop
                 "Always nice to kick back and enjoy a coffee."
                 
                 "It's something we tend to overlook these days."

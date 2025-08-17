@@ -1,7 +1,7 @@
 define jul = Character('Julia', color="#ff7f7f")
 define ros = Character('Rose', color="#d1c5c5")
 label raver_date_0:
-    "Chloe probably won't be available tonight, i should try another time"
+    "Chloe probably won't be available tonight, I should try another time."
     jump gotobed
 
 label raver_date_1:
@@ -32,7 +32,7 @@ label raver_date_1:
         window hide
         pause
         menu:
-            "continue":
+            "Continue":
                 pass
             "Don't show me that message again":
                 $ characterdesign_done = True
@@ -68,7 +68,7 @@ label raver_date_1:
 
     name "Good, thanks!"
 
-    rav "Follow me, my friend’s already inside."
+    rav "Follow me, my friends are already inside."
 
     name "Where are you taking me?"
 
@@ -78,7 +78,7 @@ label raver_date_1:
 
     name "Thanks, haha. Honestly, I’m not really used to this."
 
-    rav "It’s not as underground as it seems."
+    rav "It’s not as grim as it seems."
 
     rav "A lot of software engineers and CEOs come here, but it’s a good place to dance without worrying too much."
     scene clubview2
@@ -110,19 +110,24 @@ label raver_date_1:
 
     if gender == "male":
         jul "So, are you the guy trying to lose his innocence tonight?"
+        name "Uh, I guess so?"
+        rav "No, no, we’re just helping him get familiar with the city, haha. You’ve got it all wrong."
     elif gender == "fem":
         jul "So, are you the girl trying to lose her innocence tonight?"
+        name "Uh, I guess so?"
+        rav "No, no, we’re just helping her get familiar with the city, haha. You’ve got it all wrong."
 
-    name "Uh, I guess so?"
-
-    rav "No, no, we’re just helping him get familiar with the city, haha. You’ve got it all wrong."
+    
+    
 
     if gender == "male":
         rav "Don’t go corrupting him!"
+        jul "Then why did you bring him here?"
     elif gender == "fem":
         rav "Don't go corrupting her!"
+        jul "Then why did you bring her here?"
 
-    jul "Then why did you bring him here?"
+    
 
     jul "Want something to drink? I’m heading to the bar."
 
@@ -162,7 +167,7 @@ label raver_date_1:
 
     name "Coming from you, an expert in that domain."
 
-    rav "Yeah... I will try to keep it low tonight."
+    rav "Yeah... I will try to keep it under control tonight."
 
     name "I won't be available to pick up what's left of you tomorrow."
 
@@ -250,7 +255,7 @@ label raver_date_1:
     ros "Hey, are you okay?"
     ros "Do you want to have a little fun?"
     menu : 
-        "Yes (i know where is this going)":
+        "Yes (I know where is this going)":
             jump rosefun
 
         "I'd rather go home":
@@ -258,7 +263,7 @@ label raver_date_1:
     label rosegohome:
         scene black
         "I shake my head and mumble something about needing to go home."
-        ros "alright, let's drive you home"
+        ros "Alright, let's drive you home"
         scene black
         "As she drives my senses slowly return to me."
         name "It's here!"
@@ -271,7 +276,7 @@ label raver_date_1:
         "Slowly, I come to my senses. I blink several times, trying to clear my vision."    
 
         scene firstperson2 with dissolve
-        play music "audio/music/suck+fast+v1.wav"
+        play music "audio/music/sscene/suck+fast+v1.wav"
         "As my senses return to me, I become aware of the strange, musky scent surrounding me."
         scene firstperson1 with dissolve
         "Something large and hard is pressing against my lips."
@@ -361,7 +366,7 @@ label raver_date_1:
 
         "I attempt to regain control, slowing her aggressive pace."
         stop music 
-        play music "audio/music/suck+fast+v2.wav"
+        play music "audio/music/sscene/suck+fast+v2.wav"
         pause
         scene feetangle004 with dissolve
         pause
@@ -409,55 +414,55 @@ label raver_date_1:
             
         
         scene deepthroatbis003 with dissolve
-        ros "That's it, take it like the whore you are" 
+        ros "That's it, take it like the whore you are." 
 
         scene deepthroatbis005 with dissolve
         pause
         scene deepthroatbis003 with dissolve
-        ros "oh fuck, I am gonna cum"
+        ros "Oh fuck, I am gonna cum."
         scene deepthroatbis005 with dissolve
         pause
         scene deepthroatbis003 with dissolve
         scene deepthroatbis005 with dissolve
         pause
         scene deepthroatbis003 with dissolve
-        ros "fuuuck"
+        ros "Fuuuck!"
         stop music    
         
         scene cs007 with dissolve
         "With a final, forceful thrust, she buries herself deep in my throat." 
         
         scene cs005 with dissolve
-        play sound "audio/music/swallow1.wav"
-        "A flood of warm, salty liquid fills my mouth and my throat ,"
+        play sound "audio/music/sscene/swallow1.wav"
+        "A flood of warm, salty liquid fills my mouth and my throat..."
         scene cs008 with dissolve
-        play sound "audio/music/swallow2.wav"
-        "the taste of her essence coating my tongue."
-        play sound "audio/music/swallows1.mp3"
-        play sound "audio/music/slurpswallow.mp3"
+        play sound "audio/music/sscene/swallow2.wav"
+        "...the taste of her essence coating my tongue."
+        play sound "audio/music/sscene/swallows1.mp3"
+        play sound "audio/music/sscene/slurpswallow.mp3"
         scene cs005 with dissolve
         pause 
         scene cs008 with dissolve
         pause 
         scene cleaning with dissolve
-        "As she finally pulls away,  a thick string of cum stretches taut between us."
-        "it feels as if I'm not truly free from her dick"
-        ros "Thanks baby"
-        ros "Now clean my dick"
+        "As she finally pulls away, a thick string of cum stretches taut between her cock and my lips."
+        "It feels as if I'm not truly free from her dick, like it wants me back on it."
+        ros "Thanks baby."
+        ros "Now clean my dick."
         scene cleaning2 with dissolve
         pause
         scene endkate with dissolve
-        "Once I've finished cleaning her dick, I settle back into the passenger seat"
+        "Once I've finished cleaning her dick, I settle back into the passenger seat."
         "The cool leather of the seat contrasts sharply with the heat radiating from my body."
         
-        ros "Come on, let's get you home safe"
+        ros "Come on, let's get you home safe."
         scene black 
         
         "As she navigates the familiar streets towards my home, I lean against the window, my mind reeling from the evening's events." 
         "The car comes to a stop outside my apartment building, and Kate turns to face me, her expression unreadable."
         scene endkatecar with dissolve
-        ros "We'll continue this another time"
-        "her tone leaving no room for argument."
+        ros "We'll continue this another time, handsome."
+        "Her tone leaves no room for argument."
         "With a final, lingering look, she watches as I exit the vehicle and make my way inside."
         $ raver_date_done = True
         jump gotobedKate

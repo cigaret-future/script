@@ -9,7 +9,7 @@ label sarahsagain:
     ""
     $ sarah_sagain_done = False
     sar "Oh fuck..."
-    play sound "audio/music/suck+slow+v2.wav"
+    play sound "audio/music/sscene/suck+slow+v2.wav"
     scene black
     ""
     scene bj2 with dissolve
@@ -330,7 +330,7 @@ label sarahdate4:
     "Stretching my mouth wider and wider."
     scene kissc342 with dissolve
     sar "Oh fuck..."
-    play sound "audio/music/suck+slow+v2.wav"
+    play sound "audio/music/sscene/suck+slow+v2.wav"
     scene bj2 with dissolve
     sar "Mmmh."
     sar "That's it."

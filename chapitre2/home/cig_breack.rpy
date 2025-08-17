@@ -33,7 +33,7 @@ label cigarettebreak:
     $ sarah_pissed = True
     "I turn off the music and go back to the balcony. I hear the sound of a window closing."
     $ cig_break_count += 1
-    "I smoke for a few more minutes, trying to relax. After a few minutes I toss it, and go to the bathroom"
+    "I smoke for a few more minutes, trying to relax. After a few minutes I toss it, and go to the bathroom."
 
     jump gotobed
 
@@ -48,6 +48,6 @@ label cigbreak1:
     "I have a descent view from here."
     scene smoking005
     "The sounds from the coffee shop below enliven the street. I smoke my cigarette mechanically."
-    "I don't have much to do, maybe something will come up later"
+    "I don't have much to do, maybe something will come up later."
     $ cig_break_count += 1
     jump gotobed

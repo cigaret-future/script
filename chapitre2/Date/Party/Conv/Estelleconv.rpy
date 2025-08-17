@@ -23,11 +23,14 @@ label estelleconv :
             scene livingroomarrow
             scene livingroomarrowflou with dissolve
             show estherparty with dissolve
-            est "You seem like you want to get in some trouble"
-            name "why do you say that?"
-            est "I see you going back and forth throughout the party."
-            est "You are looking for something i can tell."
-            name "Maybe i am."
+            est "You seem like you're looking for trouble."
+            name "Why do you say that?"
+            est "I see you, mingling throughout the party."
+            name "Isn't that what you do at parties?"
+            est "Yes, but I see that look in your eye."
+            est "You are looking for something, I can tell."
+            name "Maybe I am."
+            est "Maybe you'll find it."
             jump livingroom
 
     label estelleconvbourre:
@@ -72,8 +75,8 @@ label estelleconv :
             scene livingroomarrowflou with dissolve  
             show estherparty with dissolve 
             est "Wow. You’re really pushing your limits tonight, huh?"  
-            name "Nah, ‘m good. I can still… stand. Probably."  
-            est "Mhmm You know, at this rate, you’ll either pass out on the floor, or worse, make a mess someone has to clean up."  
+            name "Nah, ‘m good. I can still... stand. Probably."  
+            est "You know, at this rate, you’ll either pass out on the floor, or worse, make a mess someone has to clean up."  
             "She leans in."  
             est "How about we find you something to sober up?"
             name "Like what? Water?"
@@ -82,33 +85,36 @@ label estelleconv :
             scene black with dissolve
             window hide
             pause
-           
-            "Before you can protest, Estelle takes your arm and guides you toward the kitchen, her grip deceptively gentle but leaving no room for escape."  
+            $ renpy.music.set_volume(0.5, delay=0.5, channel="background")
+            "Before you can protest, Estelle takes your arm and guides you toward the kitchen, her grip surprisingly firm, leaving no room for escape."  
             scene estelledrinkup  
             "She grabs a bottle of milk from the fridge, shaking it playfully."  
             est "Trust me, you’ll thank me later. A little milk, and poof, no more nausea. Easy, right?"  
-            name "Wait, How milk is gonna help me. And I don’t wanna puke!"  
+            name "Wait, How milk is gonna help me? And I don’t wanna puke!"  
 
-            est "You’re way past 'wanting' anything. This is 'needing'."  
+            est "You’re way past 'wanting' anything. This is 'needing'."
 
             
 
-            est "Come on. One big gulp, and it’ll all be over. Or… Do I have to hold your nose and pour it down your throat like a stubborn child?"  
-            name "Ugh… fine. But this is your fault if I die."  
-            est "Oh, don’t be dramatic"
+            est "Come on. One big gulp, and it’ll all be over. Or.. do I have to hold your nose and pour it down your throat like a stubborn child?"  
+            name "Ugh… fine. But if I throw up everywhere I'll blame you."  
+            est "Oh, don’t be so dramatic."
             scene estelledrinkup1 with dissolve
+            play sound swallowisa volume 2
             window hide
             pause            
             scene estelledrinkup4 with dissolve
+            play sound swallowisa volume 2
             "She watches, delighted, as you chug."
             est "See? Not so bad, right?"
-           
+            
             name "Mmph... "
             scene estelledrinkup5 with dissolve
+            play sound swallowisa volume 2 
             est "Keep going, you're doing great!"
             window hide
             pause
-
+            play sound swallowisa volume 2
             scene estelledrinkup2 with dissolve
             
             window hide
@@ -116,17 +122,19 @@ label estelleconv :
             scene estelledrinkup1 with dissolve
             window hide
             pause
+            play sound swallowisa volume 2
             scene estelledrinkup8 with dissolve
             window hide
             pause
             scene estelledrinkup1 with dissolve
             window hide
             pause
+            play sound swallowisa volume 2
             scene estelledrinkup3 with dissolve
-            "I really don't feel good..."
+            "I really don't feel too good..."
             window hide
             pause
-
+            play sound swallowisa volume 2
             scene estelledrinkup4 with dissolve
             est "Just a bit more, trust me!"
             "The milk feels heavy in your stomach."
@@ -148,15 +156,16 @@ label estelleconv :
             window hide
             pause
             scene black with dissolve
+            $ renpy.music.set_volume(0.2, delay=0.5, channel="background")
             "Your legs feel unsteady. Estelle notices and quickly takes your arm."
             est "Let's get you to the bathroom, quickly."
             "Her tone has a hint of amusement in it."
             scene estellefaceview2 with dissolve
-            est "are you okay?"
+            est "Are you okay?"
             name "I don't feel so good..."
             est "Yeah, you look pale."
-            est "you'll feel better after.."
-            "She hold my head down on the bowl."
+            est "You'll feel better after.."
+            "She holds my head up as I fall down onto the toilet bowl."
 
             scene estelletoilet1 with dissolve
             
@@ -172,9 +181,9 @@ label estelleconv :
             pause
             est "There you go, just let it all out."
             scene estelletoilet2 with dissolve
-            "You feel the contents of your stomach emptying into the toilet, and Estelle holds your hair back, her touch surprisingly gentle."
+            "You feel the contents of your stomach emptying into the toilet, and Estelle holds your hair back, her touch tender and gentle."
             scene estelletoilet1 with dissolve
-            est "See? I told you the milk was a good idea"
+            est "See? I told you the milk was a good idea."
             scene estelletoilet2 with dissolve
             window hide
             pause
@@ -214,7 +223,7 @@ label estelleconv :
             est "But it's for the best."
             est "Besides.."
             est "You are pretty cute like that."
-            name "what??.."
+            name "What??.."
             scene estelleupview with dissolve
             est "Yeah you know.."
             est "All messy..."
@@ -222,13 +231,15 @@ label estelleconv :
             est "It's kinda cute."
             name "I don't feel cute at all right now."
             est "You are.."
-            est "You are just a bit drunk, that's all."
+            est "You just have the wrong perspective."
             scene black with dissolve
+            play sound toiletflush volume 1 noloop
            
             "She helps you stand up slowly."
            
             est "You should drink some water, it will help you feel better."
             "You nod, appreciating her concern."
+            stop sound fadeout 0.5
             $ estellepartyconv_count += 1
             $ drink_count = 0
             $ estellepuke_done = True
@@ -278,8 +289,8 @@ label estelleconv :
                 name "Thanks for helping me."
                 est "Anytime!"
                 jump livingroom
-        est "soo..."
-        name "sooo..."
+        est "Soo..."
+        name "Sooo..."
         name "Do you know a lot of people here?"
         est "Yeah, most of them."
         name "Oh, okay."
@@ -293,7 +304,7 @@ label estelleconv :
         jump livingroom
 
         if estelle_spankconv_done == True:
-            est "Hey, so are you looking for something in particular here?"
+            est "Hey honey, looking for something in particular here?"
             name "What do you mean?"
             show estherhorny2 with dissolve
             hide estherparty with dissolve
@@ -302,7 +313,7 @@ label estelleconv :
             name "What?"
             est "Well, you know, like Camille."
             est "Is that what you're looking for?"
-            name "I don't see what you're talking about."
+            name "I don't know what you're talking about."
             est "Yeah, play innocent."
             est "I know your secret."
         hide estherparty

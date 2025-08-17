@@ -26,12 +26,20 @@ screen inventory:
 
 
 screen homescreen3:
+    on "show" action Function(
+        renpy.music.play,
+        "music/home/homeambianceneutral.mp3",
+        channel="music",
+        loop=True,
+        fadein=2.0
+        
+    )
     frame:
         imagemap:
             ground "ericawake2.jpg"
             hover "ericawake2hover.png"
             hotspot (0, 1020, 1088, 414) action Jump("cantsleep")
-            hotspot (2191, 248, 362, 1047) action Jump("map2")
+            hotspot (2149, 1147, 384, 267) action Jump("map2")
 
 screen hover_pinpoint():
     # L'image à afficher lorsque la zone est survolée
@@ -97,6 +105,9 @@ screen minicarte2:
 
 
 label back :
+    stop music fadeout 2.0
+    
+    play sound "audio/music/doorhome.mp3"
     show screen homescreen3
     call screen homescreen3
 label nothing: 

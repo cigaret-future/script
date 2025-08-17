@@ -40,7 +40,7 @@ label stacymelanieconv:
             yalign 0.99
         hide designergirl15 with dissolve
         mela "The girl’s loaded, didn’t you know?"
-        mela "I know who she is—her parents are super rich, engineers or something like that."
+        mela "I know who she is — her parents are super rich executives or something like that."
         mela "Honestly, half the people at uni are like her."
         mela "Rich kids everywhere..."
         tra "And what about me, do I look like a rich kid to you?"
@@ -54,7 +54,7 @@ label stacymelanieconv:
         show tracy3 at right with dissolve:
             xalign 0.8
         hide tracy2 with dissolve
-        tra "Good to know you’ve got me all figured out."
+        tra "Glad to know you’ve got me all figured out."
 
         hide stacyv2
         hide stacyv2 with dissolve
@@ -76,7 +76,7 @@ label stacymelanieconv:
                 yalign 0.99
             $ stacymelanieconv_count += 1
             mela "Hey, are you eavesdropping on us?"
-            name "Me? No, I mean, I was just kind of listening in a bit."
+            name "Me? No, I mean, I was just kind of listening in."
             mela "Oh really? And you think it’s normal to listen in on two girls talking?"
             name "Sorry, I didn’t mean to bother you."
             show designgirl009 with dissolve:
@@ -87,9 +87,9 @@ label stacymelanieconv:
             mela "Did you come here alone?"
             name "I know Hugo and Zoey, but yeah, I came by myself."
             name "I like meeting new people, getting to know them."
-            name "But I don’t really know anyone here, so I’m never sure how to start a conversation."
+            name "But I don’t really know anyone else here, and I'm never sure how to start a conversation."
             mela "So you just stand next to people and listen in?"
-            name "Yeah, well, I’m new here."
+            name "Yeah, well, I'm socially inept."
             tra "Go easy on him, it’s not easy when you don’t know anyone."
             tra "Besides, sometimes it’s nice to just listen."
             tra "I do that a lot at the coffee shop."
@@ -130,10 +130,10 @@ label stacymelanieconv:
                 xalign 0.2
                 yalign 0.99
             hide designgirl011 with dissolve
-            mela "It's probably a theory made by people who had no conversation skills."
+            mela "It's probably a lie up made by people who have no conversation skills."
             mela "Anyway, I’m going to grab a beer, do you want one?"
             tra "Yeah, sure."
-            mela "Here you go"
+            mela "Here you go."
             jump kitchenparty
 
     label stacymelanie3:
@@ -204,7 +204,7 @@ label stacymelanieconv:
         tra "Let it go [name], she just wants to be right."
         tra "I understood your position and I accept it."
         mela "You're so cute when you act all comprehensive."
-        "Melany moves closer to Tracy and whispers in her ear."
+        "Melanie moves closer to Tracy and whispers in her ear."
         "Tracy blushes and laughs nervously."
         
         jump kitchenparty
@@ -233,13 +233,13 @@ label stacymelanieconv:
             tra "Don't worry."
             tra "We don't mind."
             tra "The more, the merrier."
-            tra "I think Melany likes you."
+            tra "I think Melanie likes you."
             name "You think so?"
             tra "Yes, of course."
             tra "You'd know if it wasn't the case."
             tra "You seem like a chill person."
             name "Yeah, people tell me that sometimes."
-            name "How did you and Melany meet?"
+            name "How did you and Melanie meet?"
             tra "Some friends introduced us."
             tra "She helped me come out of my shell..."
             name "I see."
@@ -271,11 +271,11 @@ label stacymelanieconv:
             tra "No! Don't worry."
             tra "I enjoy your presence."
             name "I enjoy yours too."
-            tra "It's a bit lousy here don't you think?"
+            tra "It's a bit lousy, here don't you think?"
             tra "Do you want to go somewhere else?"
             name "Like where?"
             tra "I don't know, maybe we can go upstairs?"
-            name "Oh ok why not."
+            name "Oh ok, why not."
             jump tracyupstairnoisabelle
 
         label stacymelanie5:
@@ -290,16 +290,16 @@ label stacymelanieconv:
             show designergirl15 with dissolve:
                 xalign 0.2
                 yalign 0.99
-            mela "Hey what's up?"
+            mela "Hey, what's up?"
             name "I was just wondering around."
             mela "You are exploring huh?"
             mela "Be careful not to venture too far."
             mela "I think we should go Tracy.."
             tra "Yeah.."
-            mela "See you"
-            name "Oh ok.. bye"
+            mela "See you."
+            name "Oh ok.. bye."
             tra "Bye"
-            "Tracy gives me one last look and leaves with Melanie"
+            "Tracy gives me one last look and leaves with Melanie."
             "What the fuck was that?"
             $ tracymelaniedate_done = True
         jump kitchenparty
@@ -328,7 +328,7 @@ label stacymelanieconv:
         mela "Modulär."
         mela "I discovered them at a festival."
         name "It's pretty unique."
-        mela "It brings back memories—those nights in tents after the concerts..."
+        mela "It brings back memories — those nights in tents after the concerts..."
         mela "It's wild, I've become so bourgeois."
         tra "Alright, we get it, you're a rebel."
         tra "Do you really miss being in the mud, sleeping in a tent, and waking up with frozen feet?"
@@ -339,6 +339,7 @@ label stacymelanieconv:
         name "It's in my playlist, I found it recently. Can you disconnect your phone?"
         mela "Okay..."
         name "You'll see, you're going to love it."
+        play background party volume 2 loop 
         "Why do I always get myself into trouble like this?"
         $ music_changed = True
         jump kitchenparty
@@ -371,7 +372,7 @@ label stacymelanieconv:
                     yalign 0.99
                 name "Hey, do you know where I can find a bathroom?"
                 tra "Yeah, it's upstairs"
-                name "thanks"
+                name "Thanks."
                 show designgirl009 with dissolve:
                     xalign 0.2
                     yalign 0.99
@@ -413,6 +414,7 @@ label stacymelanieconv:
             elo "Sure, let's hear it."
             name "You'll see, you're going to love it."
             "Why do I always get myself into trouble like this?"
+            play background party volume 2 loop 
             $ music_changed = True
             $ trio_musicasked = True
             jump kitchenparty
@@ -492,9 +494,13 @@ label trioconv:
 
             elo "Wow, you didn't waste any time, did you."
 
-            bru "Yeah, he clearly skipped the 'moderation' phase."
+            if gender == "male":
+                bru "Yeah, he clearly skipped the 'moderation' phase."
+            elif gender == "fem": 
+                bru "Yeah, she clearly skipped the 'moderation' phase."
 
-            name "Moderation is for people who are afraid of... of blurry but fun memories!"
+            name "Moderation is for people who are afraid of making memories!"
+            name "They might forget them later but who cares?"
 
             show jennifer064 at left with dissolve:
                 xalign 0.3
@@ -604,9 +610,12 @@ label trioconv:
         name "I’ve bumped into a few familiar faces, but I don’t know many people here. Just trying to blend in, you know?"
         elo "Well, if you’re up for it, Jennifer could use someone to vent to about her breakup."
         name "Oh, I’m sorry to hear that."
-        bru "Don’t worry, Jennifer’s breakups are like seasons—there’s always another one around the corner."
+        bru "Don’t worry, Jennifer’s breakups are like seasons — there’s always another one around the corner."
         jeni "It’s fine, really. It’s not like I’m going to announce it to the whole party."
-        elo "Come on, he seems like someone you can trust, don’t you think?"
+        if gender == "male":
+            elo "Come on, he seems like someone you can trust, don’t you think?"
+        elif gender == "fem":
+            elo "Come on, she seems like someone you can trust, don’t you think?"
         name "No pressure, though. If you don’t feel like talking about it, I totally get it."
         jeni "No, it’s okay. It’s not a big deal, it just happened recently."
         name "Were you together for a long time?"
@@ -673,8 +682,10 @@ label trioconv:
 
         "I walk back to the trio, who are now deeper into their drinks."
 
-        elo "You're back"
-        name "How's everyone doing?"
+        elo "You're back."
+        name "Such fine perception."
+        elo "Ha-fucking-ha you sarcastic prick."
+        name "Tee-hee, how's everyone doing?"
 
         show jennifer064 at left with dissolve:
             xalign 0.3
@@ -685,14 +696,14 @@ label trioconv:
         bru "She's been practicing her pickup lines on us."
         jeni "They're not pickup lines! They're conversation starters."
         name "Like what?"
-        elo "' Do you believe in love at first sight, or if she should walk by again.'"
+        elo "' Do you believe in love at first sight, or if she should walk by again?'"
 
         
         
         name "That's... actually not bad."
         jeni "See? Thank you!"
 
-        elo "That's the least authentic thing you could tell someone"
+        elo "That's the least authentic thing you could tell someone."
 
         show elodie065 at right with dissolve:
             xalign 0.7
@@ -839,15 +850,15 @@ label trioconv5:
         zoom 0.98
     jeni "So what did he said?"
     if sebastian_asked_done == False:
-        name "wait i didn't asked him yet."
-        jeni "what are you wanting for??"
+        name "Hold your horses, I haven't asked him yet!"
+        jeni "Some wingman you are! What are you wanting for??"
         jeni "Come on, I'll owe you one..."
         show brunolaugh at center with dissolve:
             xalign 0.5
             zoom 1.02
         hide bruno062 with dissolve
         bru "How are you going to thank him?"
-        jeni "I don't know, i'll... i'll give him a hug?"
+        jeni "I don't know, I'll... I'll give him a hug?"
         hide brunolaugh with dissolve
         hide jenangst with dissolve
         hide elodie065 with dissolve
@@ -859,15 +870,15 @@ label trioconv5:
             zoom 0.94
         hide jenangst with dissolve
         jeni "Really?"
-        name "yep"
-        elo "see we told you'd find someone."
-        bru "You go jen!"
+        name "Yep."
+        elo "See we told you'd find someone."
+        bru "You go Jen!"
         jeni "Thanks guys!!"
-        jeni "i'll go meet him."
+        jeni "I'll go meet him."
         hide jenasking with dissolve
         elo "I am not sure this guy is the right one for her."
         bru "I don't know, he seems nice."
-        bru "Well at least he is good looking."
+        bru "Well, at least he is good looking."
         elo "Come on, let's move from here, we're not going to stay here all night."
         
         hide bruno062 with dissolve

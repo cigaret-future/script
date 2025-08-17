@@ -1,23 +1,26 @@
 label toiletparty:
     if isabelle_date_done == True and toiletemilie_done == False:
+        play sound dooropening volume 1.0
         scene gettingoutoftoilet
         
         "Someone is getting out."
+        
         scene gettingoutoftoiletblur with dissolve
         show emiliepose100 with dissolve
-        emi "oh..."
-        emi "jeez what you guys were doing in here?"
-        name "huh? nothing."
+        emi "Oh..."
+        emi "Jeez what you guys were doing in here?"
+        name "Huh? nothing."
         emi "I mean it's ok, I don't judge."
         emi "Maybe next time do it in a proper room."
-        name "yeah, sure."
+        name "Yeah, sure."
         show emiliepose101 with dissolve
         hide emiliepose100 with dissolve
         emi "Hmmm, I mean.."
         emi "It's kinda wild."
         name "I guess."
+        play music emiliedoyouthink volume 2 noloop
         emi "Do you think you could do it again?"
-        name "what?"
+        name "What?"
         emi "I mean you know.. don't you want to..."
        
         name "Huh?"
@@ -28,16 +31,16 @@ label toiletparty:
         emi "If you did it with her, you could potentially do it with someone else right?"
         $ toiletemilie_done = True
         menu:
-            "yeah that's true":
+            "Yeah that's true":
                 name "I guess.."
-                emi "great!"
+                emi "Great!"
                 emi "Come on hurry up."
                 emi "Someone might come in."
                 hide emiliepose101 with dissolve
                 scene black with dissolve
                 jump emiliescene
             "It doesn't work like that":
-                emi "pff you are weird.."
+                emi "Alright, I get it..."
                 "She leaves abruptly"
                 hide emiliepose101 with dissolve
                 scene ericpeeing
@@ -56,16 +59,20 @@ label toiletparty:
         
         if renpy.random.randint(1, 2) == 1:
             scene toiletscene
+            play sound dooropening volume 1.0
+
             "I enter the toilet."
             "I don't really feel like peeing, but at least I know where it is."
             "It's a bit cramped, but at least it's clean."
             "I take a moment to gather myself before heading back to the party."
         elif renpy.random.randint(1, 2) == 2:
+            play sound dooropenclose volume 1.0
             scene ericpeeing
             "I enter the toilet and sit on the toilet seat."
             "I take a moment to relax and gather myself."
-            "Jeez this feel nice."
-
+            "Sigh."
+            $ renpy.pause(1.0, hard=True)
+            play sound toiletflush volume 1 noloop
         jump upstairs
     
 
@@ -80,16 +87,18 @@ label partybathroom:
             "Stay outside":
                 jump upstairs
     elif isabelle_date_done == True and sabrinaconv_done == False:
-
+        play sound dooropening volume 1.0
         scene corridorscreenfloutracy with dissolve
+
         "Someone is getting out.."
+        
         show sabrinaview with dissolve
         $ sabrinaconv_done = True
         
         sab "Oh it's you.."
         "She looks at me with a mischievous gaze..."
         sab "You still have some left on your face.."
-        sab "And your tee-shirt.."
+        sab "And your t-shirt.."
         sab "Better clean it up before going back to the party."
     
         jump upstairs
@@ -112,13 +121,13 @@ label partybathroom:
     label sebjendate:
         if jenpeak_count == 0: 
             scene jenniferseb
-            seb "Fuck my cock feels so nice in your mouth"
+            seb "Fuck, my cock feels so nice in your mouth"
             scene jenniferseb2
             seb "Take it"
             scene jenniferseb3
             seb "Yes..."
             scene jenniferseb4
-            jen "Mmmhgh"
+            jen "Mmmhgh!"
             scene jenniferseb
             window hide 
             pause
@@ -147,13 +156,13 @@ label partybathroom:
             jump upstairs
         elif jenpeak_count == 1:
             scene jenniferseb
-            seb "Fuck my cock feels so nice in your mouth"
+            seb "Fuck, my cock feels so nice in your mouth!"
             scene jenniferseb2
-            seb "Take it"
+            seb "Take it!"
             scene jenniferseb3
             seb "Yes..."
             scene jenniferseb4
-            jen "Mmmhgh"
+            jen "Mmmhgh!"
             scene jenniferseb
             window hide 
             pause
@@ -182,13 +191,13 @@ label partybathroom:
             jump upstairs
         elif jenpeak_count == 2:
             scene jenniferseb
-            seb "Fuck my cock feels so nice in your mouth"
+            seb "Fuck, my cock feels so nice in your mouth!"
             scene jenniferseb2
-            seb "Take it"
+            seb "Take it!"
             scene jenniferseb3
             seb "Yes..."
             scene jenniferseb4
-            jen "Mmmhgh"
+            jen "Mmmhgh!"
             scene jenniferseb
             window hide 
             pause
@@ -217,14 +226,14 @@ label partybathroom:
             jump upstairs
         elif jenpeak_count == 3:
             scene jenniferseb
-            seb "Fuckk i am gonna cum..."
+            seb "Fuckk, I'm gonna cum..."
             scene jenniferseb2
             window hide
             pause
             scene jenniferseb3
             seb "Yes..."
             scene jenniferseb4
-            jen "Mmmhgh"
+            jen "Mmmhgh!"
             scene jenniferseb
             window hide 
             pause
@@ -255,29 +264,37 @@ label partybathroom:
             scene jennifersebend
             jeni "Oops.."
             jeni "Hey..."
-            "Jennifer walks past me"
+            "Jennifer walks past me."
             $ jenpeak_count += 1
             $ sebastianjen_date_done = True
             jump upstairs
 
+
+
+
     label emiliescene:
-        
+        play sound closedoortoilet volume 1 noloop
+        $ renpy.pause(1.0, hard=True )
+        $ renpy.music.set_volume(0.1, delay=0.5, channel="background")
         scene black
         "The girl grabs me by the shoulder and pulls me into the bathroom."
+        
         "I kneel obediently as she lowers her pants."
+        play sound pantdown volume 1
         "Her already hardened cock appears before me."
         scene firstpose1 with fade
         "A strange mix of excitement and embarrassment washes over me, but I decide to let go."
         emi "Fuck... You're really doing it..."
+        play music emilievoice2 volume 1 noloop
+        play sound suckslowv1 volume 1 loop
         scene firstpose2 with dissolve
         "I wrap my lips around her warm flesh."
-        "A musky taste, a mix of precum and piss, fills my mouth."
+        "A musky taste fills my mouth."
         emi "Oooh yesss..."
         scene firstpose1 with dissolve
         emi "Just like that..."
         scene firstpose3 with dissolve
-        window hide
-        pause
+        
         scene firstpose2 with dissolve
         window hide
         pause
@@ -291,7 +308,7 @@ label partybathroom:
         scene emilieface2 with dissolve
         emi "Oh God... That's amazing..."
         scene emilieface2 with dissolve
-        emi "You know how do handle dick don't you?"
+        emi "You know how to handle dick, don't you?"
         scene secondpose2v23
         "Feeling more at ease, she takes matters into her own hands and grabs my head."
 
@@ -309,7 +326,7 @@ label partybathroom:
         window hide
         pause
         scene secondpose2v24
-        emi "fuuck.."
+        emi "Fuuck.."
         scene emilieface2 with dissolve
         window hide 
         pause
@@ -336,6 +353,29 @@ label partybathroom:
         scene secondpose2v26 with dissolve
         "Her moans become more frequent and urgent."
         scene secondpose2v25 with dissolve
+        window hide
+        pause
+        scene secondpose2v23 with dissolve
+        window hide
+        pause
+        scene secondpose2v26 with dissolve
+        window hide
+        pause
+        scene secondpose2v24 with dissolve
+        window hide
+        pause
+        scene secondpose2v26 with dissolve
+        window hide
+        pause
+        scene secondpose2v23 with dissolve
+        window hide
+        pause
+        scene secondpose2v24 with dissolve
+        window hide
+        pause
+        stop sound
+        play sound suckfastv1 volume 1 loop
+        scene secondpose2v25 with dissolve
         "I try to match her pace, following her lead."
         scene secondpose2v23 with dissolve
         "She changes angles, seeking the perfect sensation."
@@ -354,11 +394,7 @@ label partybathroom:
         window hide
         pause
         scene finalburst3b with dissolve
-        emi "Fuck.. yes..."
-        emi "You like this don't you."
-        emi "You like when i fucked your mouth."
-        name "mhmmh"
-        emi "I knew it.."
+        
         scene finalburst1b with dissolve
         window hide
         pause
@@ -373,30 +409,102 @@ label partybathroom:
         pause
         scene finalburst1b with dissolve
         window hide
+        pause
+        
+
+        scene emilieface2 with dissolve
+        window hide 
+        pause
+        scene emilieface4 with dissolve
+        window hide 
+        pause
+        scene emilieface3 with dissolve
+        window hide
+        pause 
+        scene emilieface4 with dissolve
+        window hide 
+        pause
+        scene emilieface3 with dissolve
+        window hide 
+        pause
+        scene secondpose2v24
+        window hide
+        pause
+        scene secondpose2v23
+        window hide
+        pause
+        scene secondpose2v24
+        window hide
+        pause
+        scene secondpose2v23
+        window hide
+        pause
+        scene secondpose2v24
+        play music emilievoice4 volume 1 noloop
+        emi "Fuuck.."
+        scene secondpose2v23
+        window hide
+        pause
+        scene secondpose2v24
+        window hide
+        pause
+        scene secondpose2v23
+        window hide
+        pause
+        scene secondpose2v24
+        scene secondpose2v23
+        window hide
+        pause
+        scene secondpose2v24
+        window hide
+        pause
+        scene secondpose2v23
+        window hide
+        pause
+        scene secondpose2v24
+        
+        scene emilieface2 with dissolve
+        window hide 
+        pause
+        scene emilieface4 with dissolve
+        window hide 
+        pause
+        scene emilieface3 with dissolve
+        window hide
+        pause 
+        scene emilieface4 with dissolve
+        window hide 
+        pause
+        scene emilieface3 with dissolve
+        window hide 
         pause
         scene backangle with dissolve
-        emi "oh god.."
-        emi "I am so glad i asked you."
+        emi "Oh god.."
+        emi "I am so glad I asked you."
         scene backangle2 with dissolve
-        emi "My shrink is right, i need to talk about my feelings."
+        emi "I've needed a blowjob for soooo loooonng!"
+        emi "My shrink is right, I need to be direct."
         scene backangle with dissolve
-        emi "That's what she was refering to."
+        emi "That's what she was referring to."
         scene backangle2 with dissolve
         emi "Yeah, that's right."
         scene backangle with dissolve
-        emi "I need to be more open about these kind of thought"
+        emi "I need to be more open about these kind of thoughts, just got for it."
         scene backangle2 with dissolve
         
         scene backangle with dissolve
-        emi "You agree right?"
+        emi "You agree, right?"
         scene backangle2 with dissolve
         emi "It's important to express ourselves."
         scene backangle with dissolve
-        emi "you probably feel the same way."
+        emi "You probably feel the same way."
         scene backangle2 with dissolve
-        emi "You must have sucked a lot of dicks in your life."
+        emi "You must have sucked off a futa before."
         scene backangle with dissolve
-        emi "I mean, you look like the type of guy who would do that."
+        if gender == "male":
+            emi "I mean, you look like the type of guy who would do that."
+        else:
+            emi "I mean, you look like the type of girl who would do that."
         emi "No offense.."
         scene backangle2 with dissolve
         "I feel a bit akward about this conversation."
@@ -414,10 +522,10 @@ label partybathroom:
         window hide
         pause
         scene backangle3 with dissolve
-        emi "Shit... it's coming already..."
+        emi "Shit... I'm coming already..."
         
         scene backangle4 with dissolve
-        emi "I am gonna cum in your mouth.."
+        emi "I'm gonna cum in your mouth.."
         scene backangle3 with dissolve
         emi "I can feel it building up..."
         
@@ -435,7 +543,7 @@ label partybathroom:
         scene backangle4 with dissolve
         window hide
         pause
-        
+        play music emilie7 volume 1 noloop
         scene finalburst3b with dissolve
         emi "Fuck... yes..."
         emi "I'm about to explode..."
@@ -473,21 +581,23 @@ label partybathroom:
         window hide
         pause
         scene backangle3 with dissolve
-       
-        "Her body tenses as orgasm overtakes her."
+        stop sound
+        "Her body tenses as her orgasm overtakes her."
         scene finalburst2b with dissolve
         window hide
         pause
         scene finalburst1 with dissolve
+        play sound swallowisa volume 1
         "A jet of sperm fills my mouth, hot and salty."
         
         scene finalburst2 with dissolve
-        emi "oouuh yeees... "
-        "Followed by a second one"
+        emi "Oouuh yeees... "
+        "Followed by a second one."
+        play sound swallowisa volume 1
         scene finalburst3 
-        "Then a third one"
+        "Then a third one."
         scene finalburst1
-        emi "drink it.."
+        emi "Drink it.."
         scene finalburst3
         window hide
         pause
@@ -496,7 +606,7 @@ label partybathroom:
         pause
         scene finalemilieeric
         emi "That was amazing..."
-        emi "Fuck, i hope no one is waiting.."
+        emi "Fuck, I hope no one is waiting.."
         emi "I should probably get going."
         emi "Thanks a lot for that."
         emi "See you."

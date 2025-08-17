@@ -1,4 +1,6 @@
 label isabelledate:
+    
+    $ renpy.music.set_volume(0.1, delay=1.0, channel="background")
     if isabelledanse_done == False:
         scene firsteric3
         "Isabelle pushes me into the bathroom."
@@ -20,20 +22,30 @@ label isabelledate:
         isa "You little tease."
     scene firsteric
     "Isabelle takes my hand and puts it on her crotch."
+    "I can feel her dick through her pants."
     isa "Look how lucky you are."
     isa "My dick is so hard for you, babe."
     isa "I've probably already leaked a bit."
     isa "Come on, get on your knees."
+    scene black with dissolve
     "She gently but firmly pushes me to my knees and pulls down her pants."
+    
+    play sound pantdown volume 1
     scene contreplongeeric with dissolve
     "I find myself face to face with her cock."
-    "A smell of sweat and cum fills my nostrils."
+    "A smell of sweat and precum fills my nostrils."
     scene contreplongeeric2 with dissolve
     "Then she slides her dick into my mouth."
     
+    
     "The taste is strange at first."
+    play sound yeahisa volume 2
+    window hide
+    pause
+    $ renpy.pause(1, hard=True)
     scene contreplongeeric3 with dissolve
     
+    play sound bjisa1 volume 2 loop
     window hide
     pause
     scene contreplongeeric4 with dissolve
@@ -44,8 +56,8 @@ label isabelledate:
     pause
     scene contreplongeeric3 with dissolve
     
-    "Her dick is not hudge"
-    "But the taste is really strong"
+    "Her dick isn't huge, its a respectable size though."
+    "But the taste is really strong."
     "Like iron dipped in honey."
 
     scene contreplongeeric2 with dissolve
@@ -58,7 +70,7 @@ label isabelledate:
     pause
     scene contreplongeeric2 with dissolve
     "She guides my head."
-    "back and forth"
+    "Back and forth on her cock."
     window hide
     pause
     scene contreplongeeric4 with dissolve
@@ -103,6 +115,7 @@ label isabelledate:
    
     scene turnarounderic3 with dissolve
     "My jaw is already starting to feel the strain."
+    "Isabelle's dick is thicker than I thought."
     
     scene turnarounderic2 with dissolve
     isa "You're doing good."
@@ -115,7 +128,7 @@ label isabelledate:
    
     scene turnarounderic3 with dissolve
     "It's salty and warm."
-    isa "Take it mmmhghh"
+    isa "Take it-mmmhghh!"
     scene turnarounderic1 with dissolve
     window hide
     pause
@@ -150,6 +163,7 @@ label isabelledate:
     "She looks down at me with satisfaction."
     isa "Look at me while you do it."
     "Our eyes meet."
+    play music isayousocutelikethis volume 1 noloop
     "I feel exposed but I continue."
     
     scene sidebiseric4 with dissolve
@@ -204,8 +218,8 @@ label isabelledate:
     window hide
     pause
     scene sidebiseric1 with dissolve
-    isa "You're so cute like this."
-    isa "With my dick in your mouth."
+    
+   
     "I feel my cheeks burning."
     isa "Fuuuck."
     
@@ -214,17 +228,18 @@ label isabelledate:
     scene sideangleeric3 with dissolve
     "She starts to move her hips slightly."
     "Following my movements."
-    isa "mh you wanted this don't you?"
-    "She's getting impatient"
+    isa "Mh you wanted this don't you?"
+    "She's getting impatient."
     "Pushing deeper into my mouth."
     "I try to accommodate her."
-    
+    stop sound
+    play sound bjisa2 volume 2 loop
     scene sideangleeric2 with dissolve
     
     "But it's challenging."
     isa "You wanted me to fuck your pretty little mouth."
     
-    "I nod a bit hesitantly"
+    "I nod a bit hesitantly."
     "Her breathing is heavier."
     scene sideangleeric3 with dissolve
     window hide
@@ -299,7 +314,7 @@ label isabelledate:
     scene sideangleeric2 with dissolve
     isa "Don't worry about the noise."
     "Easy for her to say."
-    "She's not the one getting her mouth fucked"
+    "She's not the one getting her mouth fucked."
     "But I'm too far in to stop now."
   
     
@@ -332,12 +347,12 @@ label isabelledate:
     pause
     # //:::::://////////////////////////////////// plongeside eric
     scene plongesideeric1 with dissolve
-    "Isabelle turn me around and push me against the door"
+    "Isabelle turns me around and pushes me against the door."
     window hide
     pause
     scene plongesideeric2 with dissolve
-    "She now fuck my mouth vigourously"
-    "making me gag everytime she bury her dick down my throat."
+    "She now fucks my mouth vigorously. barely slowing to let me breathe."
+    "Making me gag everytime she plunges her dick down my throat."
     scene plongesideeric3 with dissolve
     window hide
     pause
@@ -380,6 +395,7 @@ label isabelledate:
     "She's definitely getting excited."
 
     scene plongesideeric2 with dissolve
+    play music isayoureallyknow volume 1 noloop
     isa "You're amazing at this."
     isa "You really know how to suck dick don't you?"
   
@@ -402,7 +418,7 @@ label isabelledate:
     pause
     scene plongesideeric2 with dissolve
     "She's completely in control."
-    "And I'm letting her be."
+    "And I'm letting her."
     "The sensation is overwhelming."
     
     scene plongesideeric1 with dissolve
@@ -425,16 +441,18 @@ label isabelledate:
     pause
     
     scene closesideeric1 with dissolve
-    isa "That's a good cocksucker"
+    isa "That's a good cocksucker, you want my load?"
     
     scene closesideeric2 with dissolve
-    "As she fuck my mouth, I can hear people outside talking"
+    "As she fuck my mouth, I can hear people outside talking."
     scene peopleswaiting with dissolve
-    "There are probably waiting to use the toilet"
+    play music doorknocking volume 4 noloop
+    "There are probably waiting to use the toilet."
     isa "Its occupied!"
-    "I hear some laugh outside"
-    "Isabelle laugh"
-    isa "fuck it, lets go all the way"
+    "I hear laughter outside."
+    "Isabelle laughs."
+    play music isavoice1 volume 4 noloop 
+    isa "Fuck it, lets go all the way [name]!"
     
     scene closesideeric1 with dissolve
     "I'm too committed to think clearly now."
@@ -463,6 +481,7 @@ label isabelledate:
     isa "You look like you can't take it anymore."
     scene closeisafinal2 with dissolve
     isa "But you're so cute when you're sucking desperately like that."
+    play music isavoice2 volume 1 noloop
     scene closesideeric2 with dissolve
     window hide
     pause
@@ -514,11 +533,11 @@ label isabelledate:
     scene underangleeric7 with dissolve
     isa "That's it, I love it when it's sloppy."
     scene underangleeric8 with dissolve
-    isa "Don't pretend—I know you love it too."
+    isa "Don't pretend — I know you love it too."
     scene underangleeric7 with dissolve
     "I feel the heat of her gaze on me."
     scene underangleeric6 with dissolve
-    "My heart is racing; I feel completely under her control."
+    "My heart is racing."
     scene underangleeric4 with dissolve
     "I'm having trouble holding back."
     scene underangleeric6 with dissolve
@@ -545,7 +564,9 @@ label isabelledate:
     "Clearly excited by my distress, she keeps fucking my throat."
     scene underangleeric7 with dissolve
     isa "You like it don't you?"
+    play music isayoulikethis volume 1 noloop
     scene underangleeric6 with dissolve
+    "Her cock is leaking so much precum I need to keep swallowing."
     isa "I'm sorry, I know my precum is a bit much."
     scene underangleeric4 with dissolve
     isa "You're doing very well, don't worry."
@@ -571,16 +592,19 @@ label isabelledate:
     window hide
     pause
     scene closeupsideeric1 with dissolve
-    "My mind is completely filled by her back and forth movements"
+    "My mind is completely filled by her back and forth movements."
     scene closeupsideeric3 with dissolve
-    "My mouth totally obeys her cock,"
+    "My mouth totally obeys her cock."
     scene closeupsideeric1 with dissolve
-    "responding to her movements in an instinctive way."
+    "Responding to her movements in an instinctive way."
     scene closeupsideeric3 with dissolve
+    
     if gender == "fem":
         isa "Good girl.."
+        play music isagoodgirl volume 1 noloop
     else:
-        isa "Good boy.."
+        isa "Good boy.." 
+        play music isagoodboy volume 1 noloop
     scene closeupsideeric1 with dissolve
     window hide
     pause
@@ -598,7 +622,10 @@ label isabelledate:
     "With a sudden movement, she puts me back against the toilet."
     
     scene fastgoingeric1 with dissolve
+    stop sound 
+    play sound bjisa3 volume 1 loop
     "She speeds up, producing more and more cum."
+    "I keep swallowing it down."
     scene fastgoingeric2 with dissolve
     window hide
     pause
@@ -614,7 +641,8 @@ label isabelledate:
     scene fastgoingeric3 with dissolve
     isa "You're doing so well, don't stop now."
     scene fastgoingeric2bis with dissolve
-    "My jaw is starting to ache, but I keep going."
+    play music isavoice3 volume 1 noloop
+    "My jaw is aching, but I keep going."
     scene fastgoingeric1bis with dissolve
     window hide
     pause
@@ -649,13 +677,14 @@ label isabelledate:
     window hide
     pause
     scene fastgoingeric1bis with dissolve
-    isa "it's coming!"
+    isa "I'm coming!"
     scene fastgoingeric3 with dissolve
     window hide
     pause
     scene fastgoingeric1 with dissolve
     isa "I am gonna fill you..."
     scene fastgoingeric3 with dissolve
+    play music isavoice4 volume 1 noloop
     window hide
     pause
     scene fastgoingeric3 with dissolve
@@ -684,52 +713,54 @@ label isabelledate:
     scene finalbloweric2 with dissolve
     window hide
     pause
+    stop sound
     scene finalbloweric4 with dissolve
     
-    isa "fuuuuuckk"
+    isa "Fffffffuuuuuckk!"
     isa"..."
-    "A burst of cum fload my mouth and my throat"
+    play sound slurpswallow
+    "A burst of cum floods my mouth and my throat."
     scene finalbloweric4 with dissolve
     window hide
     pause
     scene finalbloweric5 with dissolve
+   
+    play sound swallowisa volume 2
     "I try to swallow but there's so much."
     window hide
     pause
+    
     scene finalbloweric2 with dissolve
-    "Some of it escapes from the corners of my mouth."
-    window hide
-    pause
+    "Some of it escapes from the corners of my mouth, dribbling down my chin."
+    play sound swallowisa volume 2
     scene finalbloweric5 with dissolve
     "Isabelle holds my head in place, making sure I take it all."
-   
+    play sound swallowisa volume 2
     scene finalbloweric2 with dissolve
     isa "Don't waste a drop..."
-    window hide
-    pause
+   
+    
     scene finalbloweric5 with dissolve
     "I can feel her pulsing as she finishes."
-    window hide
-    pause
+   
     scene finalbloweric9 with dissolve
     "Slowly, she pulls out of my mouth."
-    window hide
-    pause
+   
     scene finalbloweric6 with dissolve
     "I'm breathing heavily, trying to catch my breath."
-    window hide
-    pause
+  
     scene finalbloweric7 with dissolve
     isa "Wow..."
-    isa "You did so well"
+    isa "You did so well [name]!"
     
     scene finalblowerika7 with dissolve
     "I wipe my mouth, trying not to stain my clothes too much."
     isa "Wait it's not over yet."
     scene finalfinaleric1 with dissolve
-    isa "Come on, there is more."
+    play sound suckslowv1 volume 1 loop
+    isa "Come on, you can't leave me dripping like this."
     scene finalfinaleric2 with dissolve
-    isa "You don't want to waste do you"
+    isa "You don't want to waste my delicious cum, do you?"
     scene finalfinaleric1 with dissolve
     window hide
     pause
@@ -741,15 +772,16 @@ label isabelledate:
     window hide
     pause
     scene finalfinaleric3 with dissolve
-   
+    stop sound
     "Isabelle lets out a sigh of relief."  
 
-   
-    isa "Believe me or not, it's the first time I do this."  
-    isa "I don't usually do this kind of thing."  
+    play sound isagiggle volume 1
+    isa "Believe me or not, it's the first time I've done this."
+    
     
     scene finalfinaleric4 with dissolve
-    isa "But I saw an opportunity with you."  
+    isa "I saw an opportunity with you."
+
     isa "And I couldn't resist."
     
     "I feel a bit dizzy from all the cum I swallowed."  
@@ -759,21 +791,24 @@ label isabelledate:
     window hide
     pause
     scene corridorscreenfloutracy
-    "We exit the bathroom, Isabelle tries not to draw too much attention."
-    "The people waiting look at us with amused expressions"
+    "We exit the bathroom one after the other."
+    "Isabelle tries not to draw too much attention but I feel sure our antics didn't go unheard."
+    "The people waiting look at us with amused expressions."
     "I try to cover my mouth in case there's still cum around it."
     "Isabelle whispers in my ear."
-    "clearly excited by the situation."
+    "Clearly excited by the situation."
     isa "It was awesome.."
     isa "I loved it."
     isa "You were so cute and eager to please."
     name "I... I didn't expect that."
-    isa "Yeah I loved that you went all the way in."
+    isa "Yeah I loved that you went all the way down. Good luck trying that with other futas."
+    isa "My dick is the perfect size."
     "Isabelle gives me a kiss on the cheek"
     isa "Let's go downstairs and try to act normal."
     isa "Haha, this is so sexy..."
     "We head downstairs, rejoining the party."
     "Trying to act like nothing happened."
     "Isabelle gives me a wink from a distance."
+    stop music
     $ isabelle_date_done = True
     jump livingroom

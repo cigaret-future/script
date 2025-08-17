@@ -27,7 +27,7 @@ label textdirection:
                 n_nvl "I hope no one saw us"
                 cam_nvl "don't count on that"
                 cam_nvl "Anyway it was fun"
-                n_nvl "maybe we could do this again in a more intimate place"
+                n_nvl "maybe we could do this again in a more intimate place ;-)"
                 pause 2.0
                 n_nvl "You there?"
                 pause 2.0
@@ -53,15 +53,15 @@ label textdirection:
                 z_nvl "awesome!"
                 z_nvl "So how was your mythology class?"
                 n_nvl "It was nice!"
-                z_nvl "Did you talked about Dionysus?"
-                n_nvl "Not particularly no..."
+                z_nvl "Did you talk about Dionysus?"
+                n_nvl "No, but I haven't forgotten!"
                 z_nvl "Just wanted to check in on you."
                 z_nvl "Sleep well!"
                 $ zoeytexto_count += 1
                 nvl clear
             elif zoeydate_count == 2 and zoeytexto_count == 1:
                 "A notification pops up on my phone."
-                z_nvl "Hey, I was wondering if you'd be interested in coming to a party"
+                z_nvl "Hey, I was wondering if you'd be interested in coming to a party?"
                 z_nvl "With Hugo and me."
                 n_nvl "Yeah sure, sounds fun!"
                 z_nvl "Cool, I'll text you the details later."
@@ -120,7 +120,7 @@ label textdirection:
             "A notification pops up on my phone."
             s_nvl "Hey, are you sleeping?"             
             n_nvl "No, not yet, I am chilling in bed and you?"
-            s_nvl "I am making diner"
+            s_nvl "I am making dinner"
             n_nvl "What are you making?"
             s_nvl "Pasta"
             n_nvl "Nice, you are making me hungry"
@@ -151,7 +151,7 @@ label textdirection:
                 "Yeah I'm not into texting lately":
                     n_nvl "Yeah, I'm not into texting lately."
                     m_nvl "I see.."
-                    m_nvl "I am bothering you"
+                    m_nvl "Am I bothering you?"
                     n_nvl "I'm just tired"
                     m_nvl "... ok."
                     nvl clear
@@ -185,16 +185,16 @@ label endofday_choice:
     if  quickbed == True:
         jump gotobed
     menu:   
-            "go to bed":
+            "Go to bed":
                 jump gotobed
             
-            "hang out": 
+            "Hang out a bit": 
                 jump hangoutdirection
 
 label bosstexting:
     scene home00
     if work_count == 0:
-        "a notification pops up on my phone"
+        "A notification pops up on my phone"
         elo_nvl "Hello, my name is Elodie, one of my employees told me you were looking for a job."
         n_nvl "Yes, that's me."
         
@@ -204,11 +204,11 @@ label bosstexting:
         $ boss_textconv_done = True
         nvl clear
     elif work_count == 1:
-        "a notification pops up on my phone"
-        elo_nvl "Hello, so do you enjoy working with us?"
-        n_nvl "Yes, it's nice."
+        "A notification pops up on my phone"
+        elo_nvl "Hi [name], are you enjoying working with us?"
+        n_nvl "Yes, I'm enjoying it so far."
         elo_nvl "I told Jenny to keep an eye on you."
-        elo_nvl "She is in charge of your formation"
+        elo_nvl "She is in charge of you during your probation."
         elo_nvl "If you have any questions, don't hesitate to ask her."
         n_nvl "Ok great!"
         elo_nvl "Have a good day!"
