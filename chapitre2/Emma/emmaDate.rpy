@@ -1,5 +1,15 @@
 
-label emmadate:    
+label emmadate:
+    if gender == "fem" and characterdesign_done == False:
+        scene characterdesign2
+        window hide
+        pause
+        menu:
+            "continue":
+                pass
+            "Don't show me that message again":
+                $ characterdesign_done = True
+                pass
     scene firstmeetbathroom eric
     emm "Hey, you're here."
     name "Yeah..."

@@ -1,9 +1,15 @@
 label sebastianconv:
     if sebastianconv_count == 0:
         jump sebastianconv1
+    elif sebastian_mission_started == True and sebastianconv_count == 1:
+        jump sebastianconv3
+    elif sebastian_asked_done == True:
+        jump sebastianconv4
     elif sebastianconv_count == 1:
         jump sebastianconv2
-
+    
+    else:
+        jump sebastianconv2
     label sebastianconv1:
         scene balconynobodyarrow
         scene balconynobodyarrowflou with dissolve
@@ -12,9 +18,9 @@ label sebastianconv:
         name "Hey there..."
         seb "How's it going?"
         name "I'm good, just exploring around a bit."
-        if player_gender == "male":
+        if gender == "male":
             seb "Nice, you seem like a pretty chill guy."
-        elif player_gender == "fem":
+        elif gender == "fem":
             seb "Nice, you seem like a pretty chill girl."
         
         seb "It's good to see."
@@ -84,10 +90,52 @@ label sebastianconv:
         seb "The thing is, you just need to have the right sources."
         name "I'll think about it."
         seb "Yeah, you should."
-        seb "So, tu as quelqu'un en vus sinon?"
-        name "Non, pas vraiment."
-        seb "Moi faut que je trouve quelqu'un pour ce soir."
-        seb "ça fait trop longtemps."
-        
+        seb "So, do you have someone in mind?"
+        name "No, not really."
+        seb "I need to find someone for tonight."
+        seb "It's been too long."
+        seb "..."
+        name "cool.."
+        name "I hope you find someone."
+        seb "I saw plenty of hot girls inside."
+        seb "It shouldn't be too hard."
+        name "Alright.. good luck then"
+        seb "Thanks, you too!"
+        $ sebastian_open = True
+        jump balcony
 
+    label sebastianconv3:
+        scene balconynobodyarrow
+        scene balconynobodyarrowflou with dissolve
+        show sebastian1 with dissolve
+        seb "This apartment is really amazing."
+        seb "And so well located..."
+        seb "One day I'll have a place like this."
+        name "Hey Sebastian, I was wondering if you could help me with something."
+        seb "Sure, what's up?"
+        name "I met this girl inside, and I think she might be interested in you."
+        seb "Really? What makes you say that?"
+        name "She kept asking about you when I mentioned I was talking to someone out here."
+        seb "Interesting... What's she like?"
+        name "She is the girl in the kitchen with the pink sweatshirt and the ponytail."
+        seb "Oh, I think I know exactly who you mean."
+        seb "I noticed her earlier."
+        name "Well, she definitely seemed curious about you."
+        seb "That sounds promising."
+        seb "I should probably go find her before the moment passes."
+        name "Absolutely, go for it. Good luck!"
+        show sebdrinking with dissolve
+        hide sebastian1 with dissolve
+        seb "Thanks, I'll finish this drink and head back inside."
+        
+        $ sebastian_asked_done = True
+        
+        $ sebastianconv_count += 1
+        hide sebastian1 with dissolve
+        jump balcony
+
+    label sebastianconv4:
+        scene balconynobodyarrow
+        scene balconynobodyarrowflou with dissolve
+        "I think he got the message."
         jump balcony

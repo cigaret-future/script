@@ -12,7 +12,7 @@ label raver_date_1:
 
     "Alright, let's go for it."
 
-    n_nvl "Hi, it's [name]. We met at the café recently. Not sure if you recall."
+    n_nvl "Hi, it's [name]. We met at the coffee shop recently. Not sure if you recall."
 
     n_nvl "I wanted to ask if you were free tonight."
 
@@ -27,7 +27,16 @@ label raver_date_1:
     n_nvl "Alright, see you shortly."
 
     "Well, that was quick. Looks like I’m going out."
-
+    if gender == "fem" and characterdesign_done == False:
+        scene characterdesign2
+        window hide
+        pause
+        menu:
+            "continue":
+                pass
+            "Don't show me that message again":
+                $ characterdesign_done = True
+                pass
     scene outbuilding eric
     "I get dressed and head outside."
 
@@ -40,7 +49,7 @@ label raver_date_1:
     scene subway
     "What’s the worst that could happen?"
 
-    "Worst case, I’ll wake up tomorrow with a hangover at the café next door."
+    "Worst case, I’ll wake up tomorrow with a hangover at the coffee shop next door."
 
     "After changing subway lines a few times, I finally arrive at the spot."
     scene subwayouteric
@@ -405,7 +414,7 @@ label raver_date_1:
         scene deepthroatbis005 with dissolve
         pause
         scene deepthroatbis003 with dissolve
-        ros "oh fuck, i am gonna cum"
+        ros "oh fuck, I am gonna cum"
         scene deepthroatbis005 with dissolve
         pause
         scene deepthroatbis003 with dissolve

@@ -1,6 +1,14 @@
 label drinking:
-    if stacydate_activated == True:
+    if stacydate_activated == True or tracymelaniedate_done == True and sebastianjen_date_started == True:
+        scene kitchenarrownobodyblur
+    elif sebastianjen_date_started == True:
+        scene kitchenarrownojenblur
+
+    elif stacydate_activated == True or tracymelaniedate_done == True:
         scene kitchenarrownomelblur
+    elif sebastianjen_date_started == True:
+        scene kitchenarrownojenblur
+    
     else:
         scene kitchenarrow
         scene kitchenarrowflou with dissolve
@@ -10,6 +18,8 @@ label drinking:
     "The taste is a bit bitter at first, but I get used to it quickly."
     "I start to feel a little more relaxed."
     "I take a few more sips while watching people chat around me."
+    if drink_count >= 10:
+        jump endpartydrink10
     show text "Your mind blurs slightly." at Move((0.5, 0.6), (0.5, 0.5), 10.0)
     pause 5.0
     hide text with dissolve

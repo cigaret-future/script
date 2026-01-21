@@ -23,10 +23,32 @@ label BarmaidSarah:
             hide barmaidpissed with dissolve
             ""
             jump cafedirection 
+        "I'm looking for a job." if jobaskedlaura_done == False:
+            name "Hey, I just arrived and I'm a bit short on money."
+            name "I'd like to work alongside my studies."
+            name "Do you need someone extra here?"
+            
+            lau "Good for you, but we don't need any staff at the moment."
+            name "Damn, I would have loved to work here."
+            name "It seems chill."
+            lau "What, you think I just sit around doing nothing?"
+            name "No, no, I didn't mean that."
+            lau "That's what you said."
+            lau "Anyway, we don't need anyone here, but I can ask my boss."
+            lau "She owns several bars and is probably looking for people."
+            name "Oh really? That would be great."
+            lau "Yeah, 'great,' as you say..."
+            lau "I can give her your number."
+            name "Yes, that works."
+            name "Thank you so much!"
+            lau "You're welcome."
+            lau "She'll contact you soon."
+            $ jobaskedlaura_done = True
+            jump cafedirection
 
 label Barmaid3:
     scene slep
-    name "Hello? Is the café closed?"
+    name "Hello? Is the coffee shop closed?"
     
     lau "rrrrrh..."
 
@@ -114,12 +136,12 @@ label Barmaid2:
                 menu: 
                     "Elise" if elise_sdate_done == True and elise_sagain_done == False:
                         "Maybe I should text Elise."
-                        n_nvl "Hey, I'm at the café, can I come to your place?"
+                        n_nvl "Hey, I'm at the coffee shop, can I come to your place?"
                         el_nvl "Sure, come over."
                         el_nvl "I was wondering when you'd ask."
                         nvl clear
                         scene black
-                        "I leave the café and head toward Elise's place." 
+                        "I leave the coffee shop and head toward Elise's place." 
                         jump elise_sdate
                     "Sarah" if sarah_sdate_done == True and sarah_sagain_done == False:
                         "Maybe I should text Sarah."
@@ -141,8 +163,8 @@ label Barmaid2:
                 lau "Don't do anything stupid, alright? I'm watching you."
                 hide barmaidpissed with dissolve
                 jump cafedirection
-            "I'm looking for a job.":
-                if jobaskedlaura_done == False:
+            "I'm looking for a job." if jobaskedlaura_done == False:
+                
                     name "Hey, I just arrived and I'm a bit short on money."
                     name "I'd like to work alongside my studies."
                     name "Do you need someone extra here?"
@@ -162,12 +184,10 @@ label Barmaid2:
                     name "Thank you so much!"
                     lau "You're welcome."
                     lau "She'll contact you soon."
+                    $ quickbed_disabled = True
                     $ jobaskedlaura_done = True
                     jump cafedirection
-                elif jobaskedlaura_done == True:
-                    lau "I already told you, we don't need anyone here."
-                    lau "My boss will contact you soon"
-                    jump cafedirection
+               
     else:
         if elise_cafe == True and elise_cafe_conv_done == False:
             scene cafeelisefinal
@@ -221,7 +241,7 @@ label Barmaid2:
 
     "I take a seat at an empty table."
     "She doesn't seem too thrilled to be working here. But she seems nice." 
-    "There are several young people in the café, probably students or young professionals." 
+    "There are several young people in the coffee shop, probably students or young professionals." 
     "I'm excited to be a young professional too. These holidays have refreshed me;" 
     "I hope this year goes well."
  
@@ -263,7 +283,7 @@ label Barmaid2:
 
     lau "Sure."
 
-    lau "If you've bought something, feel free to hang out in the café."
+    lau "If you've bought something, feel free to hang out in the coffee shop."
 
     hide barmaidsmug
 

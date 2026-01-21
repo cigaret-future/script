@@ -85,7 +85,7 @@ label HugandZoeyStart:
         hide zoeypose03
         show zoeypose01 at right:
             xalign 0.7
-        zoey "Talking about fun, give me your phone number. If there's a party, I'll let you know."
+        hug "Talking about fun, give me your phone number. If there's a party, I'll let you know."
 
         name "Oh, ok, thanks. That's nice of you."
 
@@ -94,13 +94,13 @@ label HugandZoeyStart:
         hide zoeypose01
         show zoeypose11 at right:
             xalign 0.7
-        "Zoey winks at me. That was weird."
+        "Zoey winks at me."
 
         name "Okay. Let's stay in touch."
 
         name "Oh, by the way, do you know where Mrs. Gillsberg's office is?"
         hug "Yeah, it's on the 6th floor. It's an office with a large window."
-
+        $ zoey_first_conv_done = True
         name "Thanks, see you."
 
         jump marion_1st_meet

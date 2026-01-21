@@ -44,7 +44,7 @@ label Mila1:
 
 label Mila1_0:
     show mila00 with dissolve
-    mil "Can't you see i am busy?"
+    mil "Can't you see I am busy?"
     name "oh sorry... "
     $ mila_count += 1
     $ mila_conv_done = True

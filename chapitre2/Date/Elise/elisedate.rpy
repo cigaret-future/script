@@ -357,7 +357,7 @@ label elisedate:
         "As I take the elevator, I feel a mix of confusion and arousal in my gut."
         "Elise's cum is dripping down my boxers."
         "I want to get fucked by her again."
-        $ sarah_relation_status_text = "You can ask your new date to meet you by going to the café and buying a coffee."
+        $ sarah_relation_status_text = "You can ask your new date to meet you by going to the coffee shop and buying a coffee."
 
         $ elise_sdate_done = True
         jump map3
@@ -452,7 +452,7 @@ label elisedate:
         "As I take the elevator, I feel a mix of confusion and arousal in my gut."
         "Elise's cum is dripping down my boxers."
         $ elise_sagain_done = True
-        $ sarah_relation_status_text = "You can ask your new date to meet you by going to the café and buying a coffee."
+        $ sarah_relation_status_text = "You can ask your new date to meet you by going to the coffee shop and buying a coffee."
         "I want to get fucked by Elise again."
         jump map3
 
@@ -569,7 +569,7 @@ label elisesachadate:
     name "thanks for the coffee Sacha"
     sac "No problem, see you soon"
     name "see you"
-    $ sarah_relation_status_text = "I should hang out to the café"
+    $ sarah_relation_status_text = "I should hang out to the coffee shop"
     $ sarahcafe_conv2_done = True
     $ sarah_cafe = False
     $ sarah_conv_done = True

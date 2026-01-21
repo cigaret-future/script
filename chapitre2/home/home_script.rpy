@@ -11,12 +11,15 @@ label backhome:
 label newdaystart:
     if groceries <= 0:
         show closetempty
-        "I have nothing to eat, maybe i should go buy some groceries."
+        "I have nothing to eat, maybe I should go buy some groceries."
         show screen homescreen4
         call screen homescreen4
+    elif party_started == True:
+        jump partydate
+        
     else: 
         scene beforebedphone
-        "I eat dinner then i lay on my bed. Doomscrolling for an hour or two."
+        "I eat dinner then I lay on my bed. Doomscrolling for an hour or two."
         
         jump textdirection
 
@@ -34,6 +37,7 @@ label gotobedKate:
             $ sacha_conv_done = False
             $ mila_conv_done = False
             $ linda_conv_done = False
+            $ corridorconv_done = False
             $ elise_sagain_done = False
             if emma_date_started:
                 $ emma_date_done = True
@@ -51,7 +55,7 @@ label gotobedKate:
             scene black with dissolve
             pause
             scene home00 with dissolve
-            "The next day, i wake up with a bitter taste in my mouth and a bit of a headache."
+            "The next day, I wake up with a bitter taste in my mouth and a bit of a headache."
             if day % 7 == 0:
                 jump rentdue
             show screen homescreen4
@@ -71,9 +75,11 @@ label gotobed:
             $ sarah_conv_done = False
             $ lisa_conv_done = False
             $ sacha_conv_done = False
+            $ corridorconv_done = False
             $ mila_conv_done = False
             $ linda_conv_done = False
             $ elise_sagain_done = False
+            $ workday_done = False
 
             # //////////////////////Emma variables////////////
             if emma_date_started:
@@ -88,7 +94,7 @@ label gotobed:
             if day >= 4 and sarah_count >= 1 and sarahcafe_conv1_done == False:
                 $ sarah_relation_status_text = "I should go for a walk to the cafe, just to clear my mind"
             if sarahcafe_conv1_done == True and sacha_sarah_date_done == False:
-                $ sarah_relation_status_text = "Maybe I'll see Sarah tonight while i hang out"
+                $ sarah_relation_status_text = "Maybe I'll see Sarah tonight while I hang out"
             if day_until_new_date : 
                 $ day_until_new_date -= 1
             if sarah_homedate_done == True:
@@ -99,20 +105,20 @@ label gotobed:
                 $ sarah_elise_cafe = True
             
             # /////////quick bed direction///////////
-            if quickbed == True:
+            if quickbed == True and quickbed_disabled == False:
                 pause 1.0
                 scene black 
                 $ quickbed = False
                 jump map3
             #  /////////////////////////////////
-            
+            $ quickbed_disabled = False
             scene black with dissolve
             pause
             scene home00 with dissolve
-            "The next day, i wake up feeling refreshed."
+            "The next day, I wake up feeling refreshed."
             if day % 7 == 0:
                 jump rentdue
-            elif jobaskedlaura_done == True and boss_textconv_done == False:
+            elif (jobaskedlaura_done == True and boss_textconv_done == False) or work_count == 1:
                 jump bosstexting
             show screen homescreen4
            
@@ -144,7 +150,7 @@ label cantsleep2:
     #     call screen homescreen4
         if groceries == 0:
             scene home00
-            "I have nothing to eat, i should go buy some groceries."
+            "I have nothing to eat, I should go buy some groceries."
             show screen homescreen4
             call screen homescreen4
 label map4: 

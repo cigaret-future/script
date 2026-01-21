@@ -53,7 +53,14 @@ screen livingroomscreen:
                 hotspot (22, 1077, 435, 355) action Jump ('upstairs')
 
 label kitchenparty:
-    if stacydate_activated == True:
+    if (stacydate_activated == True or tracymelaniedate_done == True) and (sebastianjen_date_started == True or sebastianjen_date_done == True):
+        show screen kitchenpartynobody
+        call screen kitchenpartynobody
+        
+    elif sebastianjen_date_started == True:
+        show screen kitchenpartynojenscreen
+        call screen kitchenpartynojenscreen
+    elif stacydate_activated == True or tracymelaniedate_done == True:
         show screen kitchenpartynomelscreen
         call screen kitchenpartynomelscreen
 
@@ -106,6 +113,28 @@ screen kitchenpartynojenscreen:
 
 
 
+screen kitchenpartynobody:
+    frame:
+        if drink_count >= 5:
+            imagemap:
+                ground "party/kitchenarrownobodyblur.png"
+                hover "party/kitchenarrownobodyblurhover.png"
+                hotspot (1445, 193, 213, 434) action Jump("vestibule")
+                
+                hotspot (1836, 412, 387, 578) action Jump("trioconv")
+                hotspot (23, 1143, 418, 270) action Jump("balcony")
+                hotspot (1190, 676, 244, 224) action Jump("drinking")
+        else:
+            imagemap:
+                ground "party/kitchenarrownobody.png"
+                hover "party/kitchenarrownobodyhover.png"
+                hotspot (1445, 193, 213, 434) action Jump("vestibule")
+                
+                hotspot (1836, 412, 387, 578) action Jump("trioconv")
+                hotspot (23, 1143, 418, 270) action Jump("balcony")
+                hotspot (1190, 676, 244, 224) action Jump("drinking")
+
+
 
 
 screen kitchenpartynomelscreen:
@@ -147,7 +176,7 @@ screen upstairspartyscreen:
             hover "party/corridorscreenarrowhover.png"
             hotspot (62, 1117, 411, 317) action Jump("livingroom")
             hotspot (520, 236, 331, 720) action Jump("toiletparty")
-            hotspot (1602, 115, 373, 1127) action Jump("partybathroom")
+            hotspot (1580, 18, 408, 1273) action Jump("partybathroom")
             
 screen upstairspartystactyscreen:
     frame:
@@ -156,7 +185,7 @@ screen upstairspartystactyscreen:
             hover "party/corridorscreenarrowtracyhover.png"
             hotspot (62, 1117, 411, 317) action Jump("livingroom")
             hotspot (520, 236, 331, 720) action Jump("toiletparty")
-            hotspot (1602, 115, 373, 1127) action Jump("partybathroom")
+            hotspot (1580, 18, 408, 1273) action Jump("partybathroom")
             hotspot (540, 945, 293, 174) action Jump("tracydate2")
 
 
