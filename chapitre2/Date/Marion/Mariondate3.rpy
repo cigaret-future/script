@@ -1,0 +1,115 @@
+
+
+label Marion_date3:
+    show marionneutral
+    mar "Hi! Come in."
+    name "Hello, Mrs. Gillsberg."
+    mar "Thanks again for last time."
+    mar "I was a bit scattered that day. I don't usually forget things in my office."
+    mar "Must be the fatigue, I suppose."
+    name "No problem at all."
+    name "You help me, I help you."
+    name "It was the least I could do."
+    mar "That's true."
+    mar "I hope it wasn't too much trouble."
+    mar "After I asked you, I felt a bit guilty."
+    mar "Like maybe it wasn't appropriate to ask you to do that."
+    name "No, really, it didn't bother me at all."
+    mar "Well, that's a relief."
+    mar "It's just that you seem trustworthy."
+    mar "I wondered why you didn't say no."
+    mar "I figured since you come to my office for help anyway,"
+    mar "you wouldn't mind running a small errand."
+    name "I did wonder if it was wise to leave your door unlocked."
+    mar "Haha, yes, very careless of me."
+    name "It caught me so off guard I didn't have time to think about it."
+    mar "Okay, so we both found it strange."
+    mar "That's reassuring."
+    mar "Haha, I still can't get used to having such a big office."
+    mar "Anyway, thank you for not overthinking it."
+    mar "It really helped me out."
+    mar "So then, how's the article coming along?"
+    mar "Have you made any progress?"
+    name "Yes, I've been working on it."
+    mar "Let's see."
+    mar "Did you send it to me?"
+    name "Yes, I emailed it to you last night."
+    mar "Well..."
+    mar "What have you changed since last time?"
+    name "Well... I just polished a few sections and added some references."
+    mar "I see..."
+    mar "Don't underestimate the work that still needs to be done."
+    mar "You've made a good start, but some points need to be developed further."
+    mar "For example, this paragraph here."
+    mar "And this one too."
+    name "I understand."
+    mar "Alright, I'll let you work on that."
+    mar "Don't hesitate to go to the research library if you need a quiet place."
+    
+    scene marion-office
+    "I pack up my things and say goodbye to Mrs. Gillsberg."
+    name "I'll head to the library right away."
+    mar "Good idea. You'll be more productive there."
+    scene marion-corridor with dissolve
+    "I leave her office and walk down the hallway."
+    scene secondfloorelevator with dissolve
+    "I take the elevator down."
+    scene secondfloorscreen with dissolve
+    "I walk through the university corridors."
+    "Students are scattered here and there, chatting or hurrying to their next class."
+    scene universityresearchlibrary with dissolve
+    "I arrive at the research library."
+    "The atmosphere is calm and studious."
+    "I find a quiet spot near the windows and settle in."
+    scene ericsearchingforbooks with dissolve
+    "I open my laptop and get back to work on my article."
+    "With Mrs. Gillsberg's comments fresh in my mind, I know exactly what needs to be improved."
+    "Time to focus."
+    scene black with dissolve
+    window hide
+    pause
+    scene ericsearchingforbooks with dissolve
+    "After several hours of concentrated work, I finally feel satisfied with my progress."
+    name "This is much better."
+    name "I think I'm ready to show this to Mrs. Gillsberg."
+    scene universityresearchlibrary with dissolve
+    "I'm about to pack up when I notice someone approaching."
+    "It's Mrs. Gillsberg."
+    show marionneutral
+    mar "Oh, hello! I didn't expect to see you here."
+    name "Mrs. Gillsberg! I was just working on the revisions you suggested."
+    mar "That's wonderful. May I?"
+    "She gestures toward the empty chair beside me."
+    name "Of course, please."
+    hide marionneutral
+    scene workingwithmarion with dissolve
+    "She sits down and glances at my screen."
+    mar "Let me see what you've done."
+    "I show her the sections I've been working on."
+    "She reads carefully, nodding occasionally."
+    mar "Mm-hmm... yes, this is much better."
+    mar "You've really taken my feedback to heart."
+    mar "This paragraph flows much more naturally now."
+    name "Thank you. Your comments were really helpful."
+    mar "I'm glad to hear that."
+    "She leans back in her chair, looking satisfied."
+    mar "You know, it's refreshing to see a student who actually listens."
+    mar "And who comes to the library to work, no less."
+    name "Well, you recommended it. It really is a great place to focus."
+    mar "Indeed it is."
+    "There's a brief, comfortable silence."
+    mar "How are you finding the research process overall?"
+    mar "Is it what you expected?"
+    name "It's challenging, but... I think I'm starting to enjoy it."
+    mar "That's good to hear."
+    mar "Research isn't for everyone, but those who enjoy it tend to excel."
+    "She stands up."
+    mar "Well, I won't disturb you any longer."
+    mar "Keep up the good work."
+    name "Thank you, Mrs. Gillsberg."
+    mar "See you soon."
+    "She walks away through the stacks."
+    "I feel even more motivated now."
+    $ marion_date_count += 1
+    $ marion_date_done = True
+    jump gardenuni_start2

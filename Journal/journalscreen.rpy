@@ -61,7 +61,7 @@ screen journalopen:
 
             if classdatecamille_count >= 1:
                 textbutton "Camille":
-                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window") Show("camille_window")]
+                    action [Hide("emma_window"), Hide("sarah_window"), Hide("linda_window"), Hide("camille_window"), Hide("chloe_window"), Hide("zoey_window"), Hide("work_window"), Show("camille_window")]
 
             if raver_first_conv_done == True:
                 textbutton "Chloe":

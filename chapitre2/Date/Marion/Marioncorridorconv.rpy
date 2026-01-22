@@ -187,8 +187,7 @@ label Marionconv:
             jump emma_corridor_sequence
         else:
         
-            "But nothing comes up..."
-            "Maybe later."
+            
             if day % 2 == 0 and Jenny_end_done == False and zoey_uni_conv_done == False:           
                 show screen corridor_zoey
                 call screen corridor_zoey

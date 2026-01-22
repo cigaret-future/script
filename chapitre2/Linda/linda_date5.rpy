@@ -1,40 +1,36 @@
 label lindadate5: 
-    scene black
-    "thanks for playing"
-    "this part is still in developpment ;)"
-    jump map3
 
     
-    # scene streetericlinda
-    # "I stop in front of her building and ring the intercom. The door opens after a few seconds with a dull noise."
-    # scene arriving ericopen17
-    # "i get upstairs and ring the doorbell"
-    # "I wonder if her aunt will be there. I feel a bit nervous about seeing her again."
-    # scene arriving ericopen18
-    # lin "hey you, come in"
-    # scene arriving eric
-    # "test"
-    # scene sitting eric
-    # "test"
-    # scene sitting2 eric
-    # "test"
-    # scene sitting3 eric
-    # "test"
-    # scene close up on anais
-    # "test"
-    # scene feet close up eric
-    # "test"
-    # scene linda bringing coffee eric
-    # "test"
-    # scene workingagain
-    # "test"
-    # scene workinglate
-    # "test"
-    # scene testproposal16
-    # "test"
-    # scene testproposal17
-    # "test"
-    # jump map3
+    scene streetericlinda
+    "I stop in front of her building and ring the intercom. The door opens after a few seconds with a dull noise."
+    scene arriving ericopen17
+    "i get upstairs and ring the doorbell"
+    "I wonder if her aunt will be there. I feel a bit nervous about seeing her again."
+    scene arriving ericopen18
+    lin "hey you, come in"
+    scene arriving eric
+    "test"
+    scene sitting eric
+    "test"
+    scene sitting2 eric
+    "test"
+    scene sitting3 eric
+    "test"
+    scene close up on anais
+    "test"
+    scene feet close up eric
+    "test"
+    scene linda bringing coffee eric
+    "test"
+    scene workingagain
+    "test"
+    scene workinglate
+    "test"
+    scene testproposal16
+    "test"
+    scene testproposal17
+    "test"
+    jump map3
 
 
     
