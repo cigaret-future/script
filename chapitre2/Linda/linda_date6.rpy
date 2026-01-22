@@ -116,3 +116,61 @@ Anais (murmure essoufflé, presque tendre)
 Et on est loin d’avoir fini. »
 Elle reste là un long moment, embrassant doucement ma nuque, avant de se retirer très lentement.
 (La scène peut continuer ou s’arrêter là selon ce que tu veux développer ensuite.)
+But Anais isn’t finished. She stands, pulling me by the hand to follow her.
+She guides me to the coffee table in the living room, right next to the couch.
+The room is dim, the only light coming from the small lamp on the side table, casting long shadows over our bodies.
+Anais
+“Come here… bend over the table.”
+I obey, feet planted firmly on the floor, stomach pressed against the edge of the wooden table.
+My hands grip the sides for balance. Anais positions herself standing behind me, her hands spreading my cheeks authoritatively yet precisely.
+Anais (voice thick with lust)
+“Look at you… bent over like a needy little slut, completely exposed for my cock.”
+She lines herself up again, her still-hard shaft pressing against my entrance, and thrusts in with one long, deep stroke, burying herself completely.
+The sounds fill the room: the wet, rhythmic slap of our bodies colliding, my muffled moans, her low, guttural growls. In the half-darkness, everything feels amplified—the rustle of remaining clothes, the faint creak of the table under each impact.
+Anais
+“Feel how deep I fuck you… how completely I claim you inside.”
+She starts pounding me, slow and powerful at first, savoring every thrust.
+Anais
+“You’re my dirty little secret now… my perfect fucktoy bent over this table in the dark.”
+She speeds up, hands gripping my hips to yank me back onto her with every stroke.
+Anais
+“Fuck… your ass grips me so tight… you were made to take my cock like this.”
+“You love being used, don’t you? My personal slut, taking it raw while everyone else sleeps.”
+She fucks me for a long time, the rhythm relentless but controlled. The table shakes, the lamp flickers slightly.
+After what feels like forever, Anais grows more and more impatient. Her thrusts become faster, more erratic.
+Anais
+“I can’t hold back anymore… I need to feel you against me, fuck you standing until you shake.”
+She pulls out abruptly, lifts me effortlessly—arms under my thighs and back, my legs instinctively wrapping around her waist.
+She slams me against the nearest wall, my shoulders hitting the plaster with a dull thud.
+Her mouth crashes onto mine in a savage kiss, tongue invading as she thrusts back inside with one brutal, upward stroke.
+Anais (between fierce kisses, voice raw)
+“Hold on tight… I’m gonna fuck you against this wall until your legs give out.”
+She pounds me with renewed fury, each upward thrust lifting me slightly off the ground. My nails dig into her shoulders, her powerful body keeping me pinned effortlessly.
+Anais
+“You feel that? Every inch owning you… stretching you wide… making you mine.”
+The kiss barely breaks—she bites my lower lip, sucks on my tongue, swallowing my moans while she rails me without mercy.
+Anais (breath ragged, eyes wild in the dim light)
+“I’m so fucking close… I’m gonna flood you…
+Gonna pump you so full of my cum you’ll be dripping for hours…
+Feel how thick it’s gonna be? How hot? I’m gonna breed you deep… fill every inch of your greedy hole until it overflows.”
+She speeds up even more, thrusts turning frantic, almost desperate.
+Anais
+“Take it… take my load… I’m gonna empty everything inside you…
+Gonna stuff you full… make you leak my seed all night… mark you as mine from the inside out…”
+She slams in one final time, burying herself to the hilt and exploding.
+Anais (growling, almost feral)
+“Yes… fuck yes… feel it… every hot spurt…
+I’m filling you… flooding you… so much cum… you’re overflowing with me now…
+My perfect little cum-filled slut… completely bred and claimed.”
+She keeps grinding weakly through the orgasm, milking out every last pulse, her lips still locked on mine, muffling her own groans in the kiss.
+Finally she slows, still buried deep, our foreheads pressed together, panting.
+Anais (whisper, breathless and possessive)
+“You’re so full of me… dripping with my cum…
+And next time… I’m gonna make you even fuller.”
+She gently lowers me to the floor, kisses me one last time on the lips, then softly on the forehead.
+Anais
+“Go clean up… but keep my scent on you until morning.
+And come back soon… I’ve got so much more to give you.”
+$ anais_intimacy_level += 1
+jump lindas_bedroom_morning
+    jump linda_work_end

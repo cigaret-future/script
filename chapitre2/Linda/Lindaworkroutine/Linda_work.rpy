@@ -112,8 +112,7 @@ label linda_work_3:
         "Continue working.":
             "Don’t wake the curator…"
             jump linda_work_end
-        "Join her on the bed for a nap":
-            jump linda_bednap
+   
 
 label linda_work_4:
     scene anaislindadate-workin2
