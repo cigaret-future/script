@@ -19,8 +19,10 @@ define av = Character('Ava', color="#ff7f7f")
 define emi = Character('Emily', color="#ff7f7f")
 define sab = Character('Sabrina', color="#ff7f7f")
 init python:
-
+    renpy.music.register_channel("voicebis", "music", loop=True)
+    renpy.music.register_channel("background", "music", loop=True)
     renpy.music.register_channel('coffee_ambiance', "music")
+    renpy.music.register_channel("soundbis", "music", loop=True)
     class Item:
         def __init__(self, name, image):
             self.name = name
@@ -71,7 +73,7 @@ label start:
         $ laura_repeat = False
         default classe = False
         default day = 0
-        default gender = "male"
+        
         default rentdue_meet_count = 0
         default quickbed = False
         default characterdesign_done = False
@@ -134,6 +136,7 @@ label start:
         default raver_first_conv_done = False
         default raver_text_done = False
         default chloe_relation_status_text = "I should send her a text tonight to see if she's free"
+        default rose_date_done = False
 
         # //Elise variables
         default elise_cafe = False
@@ -237,7 +240,7 @@ label start:
         default party_started = False
         default zoey_relation_status_text = "I should try to see if Zoey hangs in the university corridor"
 
-
+    default gender = "male"
     scene disclaimer with dissolve
     pause
     scene earlyaccess with dissolve
@@ -246,14 +249,17 @@ label start:
     "whats your name?"
     $ name = renpy.input("Enter your name")
     $ name = name.strip()
-
+    
     if not name:
         $ name = "Jess"
+
+    
+    
     "Your name is [name]."
     "You are a 23-year-old student who is moving to a new city to start a thesis."
-   
-
+    stop music fadeout 1.0
     scene train
+   
     with dissolve
     "It's been almost 3 hours since I've been on the train."
     "I open my eyes to a landscape passing by outside the train window."

@@ -10,7 +10,7 @@ label cantsleep:
         call screen homescreen3
 
 label map2:
-    play music "music/skyline.mp3" fadein 1 volume 0.2 loop
+    play music "music/skyline.mp3" fadein 1 volume 0.5 loop
     
     show map1 
 
